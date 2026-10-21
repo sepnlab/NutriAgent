@@ -632,12 +632,13 @@ main text was shortened where possible, but further trimming is deferred until t
 figure/table consolidation.
 
 **R4.10 — Reproducibility package.**
-Accepted with one author action. The repository will be publicly available at
-https://github.com/sepnlab/NutriAgent; the sanitized release is prepared locally and will
-be pushed before resubmission. It will contain the code, configuration, prompts, 54/195
-query sets, de-identified expert scores, audit files, and reproduction commands. API keys,
-raw expert workbooks, and name/label maps are excluded. A Zenodo DOI is optional and will
-be added only if an archive is created.
+Completed. The public release is available at https://github.com/sepnlab/NutriAgent
+(commit `1d5795dc`). It contains the code, configuration, prompts, 54/195 query sets,
+de-identified expert scores, audit files, and reproduction commands. API keys, raw expert
+workbooks, and name/label maps are excluded. The layer-hen corpus is not redistributed
+because some source terms (notably Chinese domestic-breed data compiled through jbzyw.com)
+do not clearly permit redistribution; provenance and extraction are documented in Table S3.
+A Zenodo DOI is optional and will be added only if an archive is created.
 
 ## Closing
 
@@ -652,5 +653,5 @@ from the primary expert gives intra-rater ICC(2,1) = 0.995/0.996/0.932 and is re
 same-expert consistency, not independent reliability. Remaining limitations are the human-labeled faithfulness
 subset, the absence of an external held-out query set, the unresolved provenance fields,
 and the reduced scope of E14. The code, blinded sheets, completed scores, audit artifacts,
-and per-query scores will be available in the repository before resubmission; the archive
-DOI will be added at acceptance.
+and per-query scores are available in the repository (https://github.com/sepnlab/NutriAgent,
+commit `1d5795dc`); the archive DOI will be added at acceptance.
