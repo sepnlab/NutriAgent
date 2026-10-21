@@ -36,6 +36,6 @@ Manuscript: `NutriAgent_paper.md`; supplement: `supplementary_material.md`.
 - Fig. 5/8/9/10 use primary-expert data; Fig. 6/7 are submitted-run automated panels and are labeled; Fig. 4 illustrates C-XD-003.
 - The repeat 120-response sheet is a same-expert repeat/copy pass (user-confirmed) and is reported as intra-rater consistency, not inter-rater.
 - Supplement S3 is regenerated from the curated JSON (54 queries: 42 English / 12 Chinese); S7b reports the 42-pair validator test; S16 is the reliability table heading.
-- The repository is public at https://github.com/sepnlab/NutriAgent (`main`, commit `1d5795dc`); the layer-hen corpus is not redistributed because some source terms do not clearly permit it.
+- The repository is public at https://github.com/sepnlab/NutriAgent (`main`); the layer-hen corpus is not redistributed because some source terms do not clearly permit it.
 - Remaining open items: E4 human labels, E14 two-coder kappa, E10 (not used), exact D4 four-query ITT flag, unresolved provenance fields.
 - The PDF used for page anchors is `NutriAgent_paper_rev1.pdf` (35 pages, line numbers).

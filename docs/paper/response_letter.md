@@ -633,7 +633,7 @@ figure/table consolidation.
 
 **R4.10 — Reproducibility package.**
 Completed. The public release is available at https://github.com/sepnlab/NutriAgent
-(commit `1d5795dc`). It contains the code, configuration, prompts, 54/195 query sets,
+(`main`). It contains the code, configuration, prompts, 54/195 query sets,
 de-identified expert scores, audit files, and reproduction commands. API keys, raw expert
 workbooks, and name/label maps are excluded. The layer-hen corpus is not redistributed
 because some source terms (notably Chinese domestic-breed data compiled through jbzyw.com)
@@ -654,4 +654,4 @@ same-expert consistency, not independent reliability. Remaining limitations are 
 subset, the absence of an external held-out query set, the unresolved provenance fields,
 and the reduced scope of E14. The code, blinded sheets, completed scores, audit artifacts,
 and per-query scores are available in the repository (https://github.com/sepnlab/NutriAgent,
-commit `1d5795dc`); the archive DOI will be added at acceptance.
+`main`); the archive DOI will be added at acceptance.

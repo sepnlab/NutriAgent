@@ -42,7 +42,7 @@ The manuscript addresses the journal's interest in AI-enabled agricultural decis
 - The manuscript is original; all sources are cited.
 - The authors declare no competing interests.
 - No animal experiments were conducted; all data are from public sources.
-- Code, blinded sheets, audit artifacts, and per-query scores are available at https://github.com/sepnlab/NutriAgent (commit `1d5795dc`). The layer-hen corpus is not redistributed because some source terms do not clearly permit it; provenance and extraction are documented in Table S3. A Zenodo DOI is optional and will be added only if an archive is created.
+- Code, blinded sheets, audit artifacts, and per-query scores are available at https://github.com/sepnlab/NutriAgent. The layer-hen corpus is not redistributed because some source terms do not clearly permit it; provenance and extraction are documented in Table S3. A Zenodo DOI is optional and will be added only if an archive is created.
 
 Thank you for your time and consideration.
 
