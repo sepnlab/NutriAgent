@@ -1,0 +1,263 @@
+{
+  "llm_backbone": {
+    "qianwen/Qwen3.8-Flash": {
+      "method": "qianwen/Qwen3.8-Flash",
+      "total_queries": 43,
+      "correctness": {
+        "mean": 4.757575757575758,
+        "std": 0.7084447327730932,
+        "n": 33
+      },
+      "precision": {
+        "mean": 4.62962962962963,
+        "std": 1.005681863909264,
+        "n": 27
+      },
+      "scientific_depth": {
+        "mean": 3.8181818181818183,
+        "std": 0.6351449369310055,
+        "n": 33
+      },
+      "overall_weighted_score": 4.401795735129069,
+      "flesch_reading_ease": {
+        "mean": 45.607752601900835,
+        "std": 18.349705991439443,
+        "n": 43
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.3927645151783083,
+        "std": 0.2581739246275196,
+        "n": 29
+      },
+      "faithfulness_semantic": {
+        "mean": 0.8362889983579639,
+        "std": 0.2351492103036274,
+        "n": 29
+      },
+      "tolerance_p2": {
+        "mean": 0.7222222222222222,
+        "std": 0.45425676257949793,
+        "n": 36
+      },
+      "tolerance_p5": {
+        "mean": 0.75,
+        "std": 0.43915503282683993,
+        "n": 36
+      }
+    },
+    "siliconflow/DeepSeek-V4-Flash": {
+      "method": "siliconflow/DeepSeek-V4-Flash",
+      "total_queries": 44,
+      "correctness": {
+        "mean": 4.659090909090909,
+        "std": 0.7134319875402741,
+        "n": 44
+      },
+      "precision": {
+        "mean": 4.444444444444445,
+        "std": 0.93943583205011,
+        "n": 36
+      },
+      "scientific_depth": {
+        "mean": 4.113636363636363,
+        "std": 0.618170936354914,
+        "n": 44
+      },
+      "overall_weighted_score": 4.405723905723906,
+      "flesch_reading_ease": {
+        "mean": 51.68567332669945,
+        "std": 14.65882511543515,
+        "n": 42
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.3606499803615188,
+        "std": 0.1856631640603829,
+        "n": 26
+      },
+      "faithfulness_semantic": {
+        "mean": 0.8179716117216117,
+        "std": 0.3163206137826303,
+        "n": 26
+      },
+      "tolerance_p2": {
+        "mean": 0.8333333333333334,
+        "std": 0.37796447300922725,
+        "n": 36
+      },
+      "tolerance_p5": {
+        "mean": 0.8888888888888888,
+        "std": 0.3187276291558383,
+        "n": 36
+      }
+    },
+    "siliconflow/Qwen3-8B": {
+      "method": "siliconflow/Qwen3-8B",
+      "total_queries": 42,
+      "correctness": {
+        "mean": 4,
+        "std": 1.3026778945578592,
+        "n": 34
+      },
+      "precision": {
+        "mean": 3.903225806451613,
+        "std": 1.3504280484270514,
+        "n": 31
+      },
+      "scientific_depth": {
+        "mean": 2.9411764705882355,
+        "std": 0.8856148855400953,
+        "n": 34
+      },
+      "overall_weighted_score": 3.6148007590132827,
+      "flesch_reading_ease": {
+        "mean": 43.75855877426013,
+        "std": 16.460517206766294,
+        "n": 42
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.36393557422969186,
+        "std": 0.2655765227558885,
+        "n": 17
+      },
+      "faithfulness_semantic": {
+        "mean": 0.8284313725490197,
+        "std": 0.3391044530308611,
+        "n": 17
+      },
+      "tolerance_p2": {
+        "mean": 0.7777777777777778,
+        "std": 0.4216370213557839,
+        "n": 36
+      },
+      "tolerance_p5": {
+        "mean": 0.7777777777777778,
+        "std": 0.4216370213557839,
+        "n": 36
+      }
+    },
+    "deepseek/DeepSeek-V4-Pro": {
+      "method": "deepseek/DeepSeek-V4-Pro",
+      "total_queries": 43,
+      "correctness": {
+        "mean": 4.790697674418604,
+        "std": 0.5588312435825208,
+        "n": 43
+      },
+      "precision": {
+        "mean": 4.6,
+        "std": 0.8116794499134278,
+        "n": 35
+      },
+      "scientific_depth": {
+        "mean": 4.209302325581396,
+        "std": 0.638381119741242,
+        "n": 43
+      },
+      "overall_weighted_score": 4.533333333333333,
+      "flesch_reading_ease": {
+        "mean": 43.90087209272524,
+        "std": 14.039369208460979,
+        "n": 42
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.3609443423959553,
+        "std": 0.21279985794659842,
+        "n": 31
+      },
+      "faithfulness_semantic": {
+        "mean": 0.8929467485919099,
+        "std": 0.15008993096802278,
+        "n": 31
+      },
+      "tolerance_p2": {
+        "mean": 0.8055555555555556,
+        "std": 0.4013864859597432,
+        "n": 36
+      },
+      "tolerance_p5": {
+        "mean": 0.8333333333333334,
+        "std": 0.37796447300922725,
+        "n": 36
+      }
+    },
+    "qianwen/Qwen3.8-27B": {
+      "method": "qianwen/Qwen3.8-27B",
+      "total_queries": 44,
+      "correctness": {
+        "mean": 4.636363636363637,
+        "std": 0.685087300188445,
+        "n": 44
+      },
+      "precision": {
+        "mean": 4.527777777777778,
+        "std": 0.9996030958367171,
+        "n": 36
+      },
+      "scientific_depth": {
+        "mean": 4,
+        "std": 0.6469966392206304,
+        "n": 44
+      },
+      "overall_weighted_score": 4.388047138047138,
+      "flesch_reading_ease": {
+        "mean": 43.150330459809524,
+        "std": 15.747993564399914,
+        "n": 43
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.3488004183316683,
+        "std": 0.2230618445834763,
+        "n": 32
+      },
+      "faithfulness_semantic": {
+        "mean": 0.8499875992063493,
+        "std": 0.24061418183090766,
+        "n": 32
+      },
+      "tolerance_p2": {
+        "mean": 0.8611111111111112,
+        "std": 0.35073618720610084,
+        "n": 36
+      },
+      "tolerance_p5": {
+        "mean": 0.8888888888888888,
+        "std": 0.3187276291558383,
+        "n": 36
+      }
+    }
+  },
+  "_timing": {
+    "llm_backbone": {
+      "qianwen/Qwen3.8-Flash": 316.3,
+      "siliconflow/DeepSeek-V4-Flash": 361.9,
+      "siliconflow/Qwen3-8B": 1008.1,
+      "deepseek/DeepSeek-V4-Pro": 0.0,
+      "qianwen/Qwen3.8-27B": 438.3
+    }
+  }
+}

@@ -1,0 +1,356 @@
+# models.lock.yaml — Rev.1 论文模型锁定清单
+#
+# 目的：
+#   1) 固定每一个“论文角色”实际使用的 provider + 精确 model ID + 快照/日期 + 参数；
+#   2) 记录投稿版实际使用但已下线的旧入口，供回复信说明与历史结果溯源；
+#   3) 为 provider 迁移提供可执行的替代链，并规定“不混用模型年代”的判定规则。
+#
+# 规则（修订版强制执行）：
+#   - 同一比较网格内（主对比 / 同一消融维度）所有方法必须在同一 provider 契约、同一时间段内重跑；
+#   - 禁止“旧分数 vs 新分数”混排；
+#   - 任何替代先做 provider-equivalence check（10 题 × 3 次），超过阈值按新 vintage 处理并全网格重跑；
+#   - 所有 run 必须落盘本文件的快照 + run_manifest 到 logs/ 目录。
+#
+# 可用性探测方法：各 provider 的 GET /models（2026-10-20, Asia/Shanghai）。
+# 注意：/models 未列出 ≠ 一定不可调用（部分 provider 隐藏旧模型）；以实际 chat 调用为准。
+
+meta:
+  paper: AGRCOM-D-26-00673
+  manuscript: NutriAgent
+  locked_on: "2026-10-20"
+  locked_by: rev1
+  schema_version: 1
+  notes: >
+    投稿版主基座实际走 DeepSeek 官方 deepseek-v4-flash（论文误写为 SiliconFlow）；
+    该 ID 已于 2026-10-20 不在 DeepSeek /models 列表中。Rev.1 主基座迁移到
+    SiliconFlow 的同名模型，备选阿里云日期快照 deepseek-v4-flash-0731。
+    投稿版 EvaluatorLLM 实际为 deepseek-v4-pro（论文误写为 MiMo-V2.5-Pro）；
+    Rev.1 按论文原意改用可用的 mimo-v2.5-pro，并以 deepseek-v4-pro 做稳健性 judge。
+    Qwen 基线改用千问AI平台（qianwen，base_url=https://maas.qianwenaiapi.com/compatible-mode/v1）：
+    qwen3.8-flash / qwen3.8-27b / qwen3.8-max 可用；qwen3.5-flash / qwen3.6-plus / qwen3.7-plus
+    在该账户仍 403，因此不恢复原 Qwen3.5-Flash / Qwen3.6-Plus。
+
+# ── 角色模型 ────────────────────────────────────────────────
+roles:
+
+  backbone:
+    role: nutrichat
+    primary:
+      provider: siliconflow
+      base_url: https://api.siliconflow.cn/v1
+      api_key_env: SILICONFLOW_API_KEY
+      model: deepseek-ai/DeepSeek-V4-Flash
+      display_name: DeepSeek-V4-Flash
+      temperature: 0.0
+      max_tokens: 200
+      extra_body:
+        thinking:
+          type: disabled
+    fallback:
+      provider: aliyun
+      base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api_key_env: ALIYUN_API_KEY
+      model: deepseek-v4-flash-0731
+      display_name: DeepSeek-V4-Flash (0731 snapshot)
+      temperature: 0.0
+      max_tokens: 200
+      extra_body:
+        enable_thinking: false
+    historical:
+      provider: deepseek
+      base_url: https://api.deepseek.com
+      api_key_env: DEEPSEEK_API_KEY
+      model: deepseek-v4-flash
+      status: retired
+      used_in: "logs/comp_layer_20260612_183548, logs/ablation_layer_20260613_003832"
+      note: "投稿版实际入口；2026-10-20 已不在 DeepSeek /models 列表"
+    equivalence:
+      check_queries: 10
+      repeats: 3
+      max_abs_delta_correctness: 0.20
+      min_response_similarity: 0.80
+      on_fail: "treat_as_new_vintage_and_rerun_all"
+      first_check:
+        checked_on: "2026-10-20"
+        pair: "siliconflow:deepseek-ai/DeepSeek-V4-Flash vs aliyun:deepseek-v4-flash-0731"
+        n_queries: 5
+        repeats: 2
+        mean_similarity_thinking_disabled: 0.227
+        fraction_similarity_ge_0_8: 0.0
+        verdict: "not_equivalent_treat_as_new_vintage"
+        evidence: "docs/paper/audit/provider_equivalence.json"
+
+  evaluator:
+    role: evaluator_llm
+    primary:
+      provider: xiaomi
+      base_url: https://api.xiaomimimo.com/v1
+      api_key_env: XIAOMI_API_KEY
+      model: mimo-v2.5-pro
+      display_name: MiMo-V2.5-Pro
+      temperature: 0.0
+      max_tokens: 8192
+      extra_body: null          # 保留思考，评分需要推理
+      protocol: absolute
+      rev1_status: available_verified
+      probe_evidence: docs/paper/audit/model_probe.json
+    robustness:
+      provider: deepseek
+      base_url: https://api.deepseek.com
+      api_key_env: DEEPSEEK_API_KEY
+      model: deepseek-v4-pro
+      display_name: DeepSeek-V4-Pro
+      temperature: 0.0
+      max_tokens: 8192
+      extra_body: null
+      protocol: absolute
+      rev1_status: available_verified
+    historical:
+      provider: deepseek
+      model: deepseek-v4-pro
+      status: available
+      used_in: "logs/comp_layer_20260612_183548 (actual evaluator; paper misreported as MiMo)"
+      protocol_actual: absolute_bulk
+    agreement:
+      report: true
+      metrics: [spearman_rho, icc_2_1, weighted_kappa_quadratic]
+      n_and_ci: true
+
+  selfcheck:
+    role: selfcheck_sampler
+    policy: inherit_backbone
+    temperature: 1.0
+    n_samples: [5, 10, 20]
+    max_tokens: 200
+    extra_body:
+      thinking:
+        type: disabled
+    note: "SelfCheck 采样必须与生成该响应的模型一致；基座迁移时同步迁移"
+
+  guard:
+    role: synthesis_grounding_guard
+    policy: inherit_backbone
+    max_extra_calls_per_query: 1
+    max_tokens: 400
+
+# ── 本地模型（不受 API 下线影响，但需 pin 与归档）────────────
+local_models:
+  nli:
+    path: ./models/mdeberta-v3-mnli-xnli
+    upstream_id: MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
+    labels: [contradiction, entailment, neutral]
+    device: cuda
+    hash_policy: "sha256 of config.json + pytorch_model.bin/safetensors + tokenizer files, recorded by run_manifest.py"
+  embedding:
+    path: ./models/Qwen3-Embedding-0.6B
+    upstream_id: Qwen/Qwen3-Embedding-0.6B
+    dims: 1024
+    device: cuda
+    hash_policy: "sha256 of model files, recorded by run_manifest.py"
+  translation:
+    path: ./models/Hy-MT1.5-1.8B
+    purpose: "optional back-translation check for matched-language subset"
+
+# ── 对比基线（6 个 standalone）──────────────────────────────
+baselines:
+  - name: deepseek/DeepSeek-V4-Flash
+    tier: mid
+    paper_role: baseline
+    historical_provider: deepseek
+    historical_model: deepseek-v4-flash
+    historical_status: retired
+    rev1_provider: siliconflow
+    rev1_model: deepseek-ai/DeepSeek-V4-Flash
+    rev1_status: available_verified
+    note: "与 backbone 同一模型；主对比中作为最强基线"
+
+  - name: deepseek/DeepSeek-V4-Pro
+    tier: strong
+    paper_role: baseline; evaluator robustness
+    rev1_provider: deepseek
+    rev1_model: deepseek-v4-pro
+    rev1_status: available_verified
+
+  - name: aliyun/Qwen3-8B
+    tier: weak
+    paper_role: baseline
+    historical_provider: aliyun
+    historical_model: qwen3-8b
+    historical_status: not_listed
+    rev1_provider: siliconflow
+    rev1_model: Qwen/Qwen3-8B
+    rev1_status: available_verified
+
+  - name: aliyun/Qwen3.5-Flash
+    tier: weak_mid
+    paper_role: baseline (submitted)
+    rev1_provider: aliyun
+    rev1_model: qwen3.5-flash
+    rev1_status: blocked_free_tier_mode
+    fallback_provider: qianwen
+    fallback_model: qwen3.8-flash
+    note: >
+      Aliyun and Qwen AI Platform both returned 403 for qwen3.5-flash on
+      2026-10-20. Rev.1 uses qianwen/Qwen3.8-Flash as the weak-mid Qwen baseline.
+
+  - name: aliyun/Qwen3.6-Plus
+    tier: mid
+    paper_role: baseline; D6; cross-family judge (submitted)
+    rev1_provider: aliyun
+    rev1_model: qwen3.6-plus
+    rev1_status: blocked_free_tier_mode
+    fallback_provider: qianwen
+    fallback_model: qwen3.8-27b
+    note: >
+      Same 403 on Aliyun and Qwen AI Platform. Rev.1 uses qianwen/Qwen3.8-27B
+      for the mid/strong Qwen slot (D6).
+
+  - name: qianwen/Qwen3.8-Flash
+    tier: weak_mid
+    paper_role: baseline (Rev.1 replacement for Qwen3.5-Flash)
+    rev1_provider: qianwen
+    rev1_base_url: https://maas.qianwenaiapi.com/compatible-mode/v1
+    rev1_model: qwen3.8-flash
+    rev1_status: available_verified
+    pricing_cny_per_m: {input: 0.8, output: 2.7}
+    note: "Free-quota model on Qwen AI Platform; thinking disabled for fair comparison."
+
+  - name: qianwen/Qwen3.8-27B
+    tier: mid
+    paper_role: baseline; D6 (Rev.1 replacement for Qwen3.6-Plus)
+    rev1_provider: qianwen
+    rev1_base_url: https://maas.qianwenaiapi.com/compatible-mode/v1
+    rev1_model: qwen3.8-27b
+    rev1_status: available_verified
+    pricing_cny_per_m: {input: 3.0, output: 12.0}
+
+  - name: siliconflow/GLM-4.5-Air
+    tier: mid
+    paper_role: baseline
+    rev1_provider: siliconflow
+    rev1_model: zai-org/GLM-4.5-Air
+    rev1_status: available_verified
+
+  - name: siliconflow/MiniMax-M2.5
+    tier: mid
+    paper_role: baseline
+    historical_provider: siliconflow
+    historical_model: MiniMaxAI/MiniMax-M2.5
+    historical_status: not_listed
+    rev1_provider: tencent
+    rev1_model: minimax-m2.5
+    rev1_status: available_verified
+    note: >
+      Aliyun route returns 403 "Free quota exhausted" (free-tier-only mode),
+      but the Tencent TokenHub route serves the same model and returned content
+      in the 2026-10-20 probe. Thinking must be disabled and max_tokens kept
+      at >=200 because hidden reasoning otherwise consumes the budget.
+
+# ── D6 基座消融（保持能力跨度）──────────────────────────────
+d6_backbones:
+  - name: aliyun/Qwen3-8B
+    provider: siliconflow
+    model: Qwen/Qwen3-8B
+    tier: weak
+  - name: aliyun/Qwen3.5-Flash
+    provider: aliyun
+    model: qwen3.5-flash
+    tier: weak_mid
+  - name: deepseek/DeepSeek-V4-Flash
+    provider: siliconflow
+    model: deepseek-ai/DeepSeek-V4-Flash
+    tier: mid
+  - name: aliyun/Qwen3.6-Plus
+    provider: aliyun
+    model: qwen3.6-plus
+    tier: mid
+  - name: deepseek/DeepSeek-V4-Pro
+    provider: deepseek
+    model: deepseek-v4-pro
+    tier: strong
+
+# ── 定价快照（来自 config/pricing.yaml，价格日期以 provider 页面为准）──
+pricing_snapshot:
+  date: "2026-10-20"
+  currency: USD
+  unit: per_1M_tokens
+  entries:
+    siliconflow::deepseek-ai/DeepSeek-V4-Flash: {input: 0.14, output: 0.28}
+    deepseek::deepseek-v4-pro: {input: 0.435, output: 0.87}
+    aliyun::qwen3-8b: {input: 0.10, output: 0.40}
+    aliyun::qwen3.5-flash: {input: 0.10, output: 0.40}
+    aliyun::qwen3.6-plus: {input: 0.15, output: 0.60}
+    siliconflow::zai-org/GLM-4.5-Air: {input: 0.14, output: 0.86}
+    aliyun::MiniMax-M2.5: {input: 0.30, output: 1.20}
+    qianwen::qwen3.8-flash: {input: 0.111, output: 0.375}
+    qianwen::qwen3.8-27b: {input: 0.417, output: 1.667}
+    qianwen::qwen3.8-max: {input: 1.667, output: 5.0}
+    xiaomi::mimo-v2.5-pro: {input: 0.00, output: 0.00, note: "待补；以 Xiaomi 官方页面为准"}
+  note: "MiMo 价格需在重评前补录；未知价格的模型不得计入成本表"
+
+# ── 运行参数（全角色共享的硬约束）──────────────────────────
+run_defaults:
+  temperature: 0.0
+  top_p: 1.0
+  max_tokens_response: 200
+  max_tokens_router: 200
+  max_tokens_synthesis: 200
+  max_iterations_react: 7
+  specialist_timeout_s: 120
+  api_timeout_s: 30
+  retry_max_attempts: 3
+  rag_k: 1
+  seed: 42
+  sdk_versions: "recorded by run_manifest.py (openai, langchain, langchain-openai, sentence-transformers, torch)"
+
+# ── 已下线/迁移入口汇总（供回复信与 Table “Model versions” 使用）──
+availability_2026_10_20:
+  deepseek_v4_flash_official:
+    provider: deepseek
+    model: deepseek-v4-flash
+    status: retired
+    replacement: siliconflow::deepseek-ai/DeepSeek-V4-Flash
+  qwen3_8b_aliyun:
+    provider: aliyun
+    model: qwen3-8b
+    status: not_listed
+    replacement: siliconflow::Qwen/Qwen3-8B
+  minimax_m2_5_siliconflow:
+    provider: siliconflow
+    model: MiniMaxAI/MiniMax-M2.5
+    status: not_listed
+    replacement: tencent::minimax-m2.5
+  minimax_m2_5_aliyun:
+    provider: aliyun
+    model: MiniMax-M2.5
+    status: blocked_free_tier_mode
+    note: "403 free quota exhausted on 2026-10-20; disable 'use free tier only' or fund account."
+  minimax_m2_5_tencent:
+    provider: tencent
+    model: minimax-m2.5
+    status: available_verified
+    note: "Content returned at max_tokens>=200; hidden reasoning consumes small budgets."
+  mimo_v2_5_pro:
+    provider: xiaomi
+    model: mimo-v2.5-pro
+    status: available_verified
+    note: "Content returned at max_tokens>=64; reasoning is in reasoning_content."
+  deepseek_v4_pro:
+    provider: deepseek
+    model: deepseek-v4-pro
+    status: available_verified
+  aliyun_paid_models:
+    provider: aliyun
+    model: "qwen3.5-flash, qwen3.6-plus, MiniMax-M2.5"
+    status: blocked_free_tier_mode
+    note: "All tested paid Aliyun models returned 403 on 2026-10-20; use SiliconFlow copies or fix the account."
+  qianwen_platform:
+    provider: qianwen
+    base_url: https://maas.qianwenaiapi.com/compatible-mode/v1
+    status: available
+    verified_models: [qwen3.8-flash, qwen3.8-27b, qwen3.8-max]
+    blocked_models: [qwen3.5-flash, qwen3.6-plus, qwen3.7-plus]
+    note: >
+      Qwen AI Platform (OpenAI-compatible). qwen3.8-flash / 27b / max returned
+      content with enable_thinking=false; the older 3.5/3.6/3.7 models returned
+      403 free-quota exhausted on this account.

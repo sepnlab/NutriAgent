@@ -1,0 +1,57 @@
+%%{init: {"flowchart": {"subGraphTitleMargin": {"top": 14, "bottom": 8}}}}%%
+flowchart TD
+    Q["User Query"] --> R["Router Agent<br/>LLM Classification + Keyword Fallback"]
+
+    subgraph STG1["Stage 1 · Routing"]
+        R
+    end
+
+    subgraph STG2["Stage 2 · Specialist retrieval and tool access"]
+        S1["Feed Specialist<br/>Ingredient Composition · Amino Acids · Digestibility"]
+        S2["Nutrition Specialist<br/>Requirements · Vitamins/Minerals · Formulation"]
+        S3["Performance Specialist<br/>Production Benchmarks · Egg Production · Growth"]
+        S4["Terminology Specialist<br/>Term Lookup · Concept Explanations"]
+        T1["Ingredient Composition Tool<br/>108 entries · 97 parameters"]
+        T2["Nutritional Specifications Tool<br/>17 breeds · 20+18 parameters"]
+        T3["Production Benchmarks Tool<br/>1,131 entries · 12 parameters"]
+        T4["Terminology Reference Tool<br/>556 terms"]
+        S1 <--> T1
+        S2 <--> T2
+        S3 <--> T3
+        S4 <--> T4
+    end
+
+    R -->|"Feed"| S1
+    R -->|"Nutrition"| S2
+    R -->|"Performance"| S3
+    R -->|"Terminology"| S4
+
+    RAG["PoultryDB<br/>2,144 documents"] -.-> S1
+    RAG -.-> S2
+    RAG -.-> S3
+    RAG -.-> S4
+
+    subgraph STG3["Stage 3 · Consistency checks and integration"]
+        SYN["Synthesis Agent<br/>Cross-specialist consistency checks + integration"]
+    end
+
+    S1 --> SYN
+    S2 --> SYN
+    S3 --> SYN
+    S4 --> SYN
+    RAG -.-> SYN
+    SYN --> RESP["Final Response"]
+
+    style R fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style S1 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style S2 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style S3 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style S4 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style T1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style T2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style T3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style T4 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style SYN fill:#fff8e1,stroke:#f57f17,stroke-width:2px
+    style RESP fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+    style Q fill:#fafafa,stroke:#616161,stroke-width:2px
+    style RAG fill:#f5f5f5,stroke:#757575,stroke-dasharray:5

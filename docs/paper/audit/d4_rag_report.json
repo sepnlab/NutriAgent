@@ -1,0 +1,104 @@
+{
+  "rag": {
+    "Multi-Agent + RAG": {
+      "method": "Multi-Agent + RAG",
+      "total_queries": 44,
+      "correctness": {
+        "mean": 4.704545454545454,
+        "std": 0.7338824902624003,
+        "n": 44
+      },
+      "precision": {
+        "mean": 4.486486486486487,
+        "std": 1.070348375831741,
+        "n": 37
+      },
+      "scientific_depth": {
+        "mean": 4,
+        "std": 0.7470873676376284,
+        "n": 44
+      },
+      "overall_weighted_score": 4.397010647010647,
+      "flesch_reading_ease": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.37840868282044754,
+        "std": 0.22162952218744594,
+        "n": 33
+      },
+      "faithfulness_semantic": {
+        "mean": 0.8787931839402428,
+        "std": 0.1624314493204394,
+        "n": 34
+      },
+      "tolerance_p2": {
+        "mean": 0.8571428571428571,
+        "std": 0.35503580124836315,
+        "n": 35
+      },
+      "tolerance_p5": {
+        "mean": 0.8857142857142857,
+        "std": 0.32280285109067564,
+        "n": 35
+      }
+    },
+    "Multi-Agent (no RAG)": {
+      "method": "Multi-Agent (no RAG)",
+      "total_queries": 34,
+      "correctness": {
+        "mean": 4.5588235294117645,
+        "std": 0.823561242063752,
+        "n": 34
+      },
+      "precision": {
+        "mean": 4.615384615384615,
+        "std": 0.8978607053178383,
+        "n": 26
+      },
+      "scientific_depth": {
+        "mean": 3.8181818181818183,
+        "std": 0.8083372383535791,
+        "n": 33
+      },
+      "overall_weighted_score": 4.330796654326066,
+      "flesch_reading_ease": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.4081026000143647,
+        "std": 0.18724783685315827,
+        "n": 34
+      },
+      "faithfulness_semantic": {
+        "mean": 0.8765756302521008,
+        "std": 0.21014921268419787,
+        "n": 34
+      },
+      "tolerance_p2": {
+        "mean": 0.8333333333333334,
+        "std": 0.37796447300922725,
+        "n": 36
+      },
+      "tolerance_p5": {
+        "mean": 0.8611111111111112,
+        "std": 0.35073618720610084,
+        "n": 36
+      }
+    }
+  }
+}

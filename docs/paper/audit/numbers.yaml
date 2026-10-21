@@ -1,0 +1,736 @@
+meta:
+  paper: AGRCOM-D-26-00673
+  manuscript: NutriAgent
+  generated_at: '2026-10-20T12:36:37.205659+08:00'
+  sources:
+    data_audit: docs\paper\audit\data_audit.json
+    agreement: docs\paper\audit\agreement_report.json
+    report: logs\comp_layer_20260612_183548\report.json
+  rule: Every number in the manuscript must match an entry here.
+rev1:
+  status: current
+  model_set: Table 6 / config/models.lock.yaml
+  e1:
+    standalone: {correctness: 4.63, precision: 4.44, depth: 4.15, n: 54}
+    tools_only: {correctness: 4.31, precision: 4.41, depth: 3.81, n: 54}
+    tools_rag: {correctness: 4.54, precision: 4.51, depth: 4.13, n: 54}
+    tools_rag_synthesis: {correctness: 4.48, precision: 4.26, depth: 3.94, n: 54}
+    multi_off: {correctness: 4.74, precision: 4.64, depth: 4.35, n: 54}
+    multi_on: {correctness: 4.83, precision: 4.72, depth: 4.17, n: 54}
+  e2:
+    concatenation: {correctness: 4.28, precision: 4.41, depth: 3.69, n: 54}
+    validation_concat: {correctness: 4.11, precision: 4.14, depth: 3.74, n: 54}
+    shuffled: {correctness: 4.87, precision: 4.84, depth: 4.37, n: 54}
+    validation_off: {correctness: 4.91, precision: 4.78, depth: 4.35, n: 54}
+    query_only: {correctness: 4.85, precision: 4.83, depth: 4.44, n: 54}
+    correct: {correctness: 4.91, precision: 4.83, depth: 4.35, n: 54}
+  d2:
+    full: {correctness: 4.44, precision: 4.39, depth: 4.00, n: 54}
+    wo_feed: {correctness: 4.67, precision: 4.48, depth: 3.94, n: 54}
+    wo_definitions: {correctness: 4.57, precision: 4.43, depth: 3.79, n: 54}
+    wo_performance: {correctness: 4.39, precision: 3.98, depth: 3.72, n: 54}
+    wo_nutrition: {correctness: 4.37, precision: 4.20, depth: 3.98, n: 54}
+  d3:
+    llm_router: {correctness: 4.63, precision: 4.56, depth: 3.96, n: 54}
+    broadcast: {correctness: 4.59, precision: 4.47, depth: 4.00, n: 54}
+    keyword_router: {correctness: 4.48, precision: 4.26, depth: 3.76, n: 54}
+  d4:
+    no_rag: {correctness: 4.52, precision: 4.33, depth: 3.96, n: 54}
+    with_rag: {correctness: 4.52, precision: 4.37, depth: 3.74, n: 54}
+    itt_proxy:
+      failure_rule: 16 E6 hit@5 misses = 1
+      with_rag_correctness: 3.50
+      no_rag_correctness: 4.52
+      delta_correctness: -1.02
+      ci: [-1.52, -0.52]
+      wilcoxon_p: 0.0008
+      note: proxy, not exact four-query ITT
+  d6:
+    ds_v4_pro: {correctness: 4.67, precision: 4.48, depth: 3.87, n: 54}
+    ds_v4_flash: {correctness: 4.61, precision: 4.48, depth: 4.04, n: 54}
+    qwen3_8_27b: {correctness: 4.50, precision: 4.24, depth: 3.69, n: 54}
+    qwen3_8_flash: {correctness: 4.43, precision: 4.17, depth: 3.80, n: 54}
+    qwen3_8b: {correctness: 3.81, precision: 3.78, depth: 2.93, n: 54}
+  e7:
+    full: {correctness: 4.40, precision: 4.40, depth: 3.70, n: 20}
+    hard_removal: {correctness: 4.70, precision: 4.47, depth: 3.70, n: 20}
+    hard_minus_full_correctness: 0.30
+  d2_per_item:
+    full: {correctness: 4.037, precision: 4.1064, depth: 3.50, n: 54}
+    wo_nutrition: {correctness: 3.9815, precision: 3.7447, depth: 3.4444, n: 54}
+  e4:
+    direct_support: {validation_on: 0.109, validation_off: 0.167}
+    any_number: {validation_on: 0.139, validation_off: 0.135}
+  e6:
+    hit_at_1: 0.273
+    hit_at_3: 0.545
+    hit_at_5: 0.636
+    mrr: 0.411
+    n_queries: 44
+  e9:
+    mean_similarity: 0.371
+    exact_match_rate: 0.0
+    n_queries: 10
+  e11:
+    zh: {correctness: 4.92, precision: 4.80, depth: 4.42, n: 12}
+    en: {correctness: 4.69, precision: 4.69, depth: 4.26, n: 42}
+  e14:
+    n_numeric_queries: 36
+    correct: 32
+    wrong_value: 4
+    no_numeric_answer: 0
+    pass_at_2pct: 0.833
+    pass_at_5pct: 0.889
+    rule_changed_cases: 0
+  e15:
+    resolved_rate: 0.718
+    family_correct_rate: 0.641
+    chinese_alias: 0.0
+    misspelling_family_correct: 0.375
+  e18_nutriagent_auto:
+    correctness: 4.74
+    precision: 4.71
+    scientific_depth: 4.30
+    n: 54
+  e18_expert:
+    nutriagent: {correctness: 4.463, precision: 4.474, depth: 4.074, overall: 4.337, n: 54}
+    ds_v4_pro: {correctness: 4.259, precision: 3.974, depth: 3.926, overall: 4.053, n: 54}
+    ds_v4_flash: {correctness: 4.056, precision: 3.737, depth: 4.333, overall: 4.042, n: 54}
+    qwen3_8_flash: {correctness: 3.963, precision: 3.789, depth: 4.278, overall: 4.010, n: 54}
+    glm_4_5_air: {correctness: 3.741, precision: 3.632, depth: 3.278, overall: 3.550, n: 54}
+    qwen3_8b: {correctness: 3.130, precision: 2.868, depth: 3.130, overall: 3.043, n: 54}
+    minimax_m2_5: {correctness: 2.796, precision: 2.526, depth: 2.556, overall: 2.626, n: 54}
+    vs_ds_v4_pro: {delta_c: 0.204, ci_c: [-0.093, 0.500], p_holm_c: 0.146,
+                   delta_p: 0.500, p_p: 0.037, p_holm_p_all_dimensions: 0.256,
+                   delta_d: 0.148, delta_o: 0.204, p_o: 0.062,
+                   overall_note: 'overall column = mean of dimension means (4.337 vs 4.053, gap 0.28); delta_o = paired per-response overall (0.204)'}
+    vs_ds_v4_flash: {delta_c: 0.407, ci_c: [0.093, 0.704], p_holm_c: 0.026}
+  e12_reliability:
+    independent_rater: {icc_c: 0.847, icc_p: 0.876, icc_d: 0.760,
+                        kappa_c: 0.846, kappa_p: 0.874, kappa_d: 0.758,
+                        spearman_c: 0.862, spearman_p: 0.913, spearman_d: 0.725}
+    primary_repeat_intra_rater: {icc_c: 0.995, icc_p: 0.996, icc_d: 0.932,
+                                  kappa_c: 0.995, kappa_p: 0.996, kappa_d: 0.931,
+                                  exact_c: 0.983, note: same_expert_repeat_copy}
+  evaluator_agreement:
+    correctness: {rho: 0.55, ci: [0.27, 0.77], n: 54, within1: 0.907}
+    precision: {rho: 0.71, ci: [0.51, 0.84], n: 38, within1: 0.947}
+    depth: {rho: 0.34, ci: [0.06, 0.59], n: 54, within1: 0.981}
+    note: supersedes submitted 0.575/0.529/0.038
+  e18_sensitivity:
+    excluded: [C-XD-005, C-XD-006, C-PM-006]
+    n_queries: 51
+    nutriagent_correctness: 4.45
+    ds_v4_pro_correctness: 4.22
+    paired_delta_c: 0.23
+    wilcoxon_p: 0.115
+    minimax_overall: 2.76
+    minimax_correctness: 2.90
+  main_comparison:
+    status: primary_expert_completed
+    gap_over_strongest_baseline: 0.28
+    strongest_baseline: DeepSeek-V4-Pro
+dataset:
+  feed_ingredient_bank:
+    rows: 108
+    n_parameters: 38
+    nominal_cells: 4104
+    present_cells: 2376
+    completeness: 0.5789
+    n_breeds: null
+    n_phase_labels: null
+    file: corpus/shared/feed_ingredient_bank.csv
+  feed_ingredient_amino_acids:
+    rows: 108
+    n_parameters: 19
+    nominal_cells: 2052
+    present_cells: 2052
+    completeness: 1.0
+    n_breeds: null
+    n_phase_labels: null
+    file: corpus/shared/feed_ingredient_amino_acids.csv
+  feed_ingredient_digestibility:
+    rows: 108
+    n_parameters: 40
+    nominal_cells: 4320
+    present_cells: 4320
+    completeness: 1.0
+    n_breeds: null
+    n_phase_labels: null
+    file: corpus/shared/feed_ingredient_digestibility.csv
+  nutrient_requirements:
+    rows: 103
+    n_parameters: 20
+    nominal_cells: 2060
+    present_cells: 1517
+    completeness: 0.7364
+    n_breeds: 17
+    n_phase_labels: 55
+    file: corpus/layer/nutrient_requirements.csv
+  nutrient_vitamin_mineral:
+    rows: 30
+    n_parameters: 18
+    nominal_cells: 540
+    present_cells: 540
+    completeness: 1.0
+    n_breeds: 13
+    n_phase_labels: 10
+    file: corpus/layer/nutrient_vitamin_mineral.csv
+  performance_management:
+    rows: 1131
+    n_parameters: 12
+    nominal_cells: 13572
+    present_cells: 5798
+    completeness: 0.4272
+    n_breeds: 16
+    n_phase_labels: null
+    file: corpus/layer/performance_management.csv
+  definitions:
+    rows: 556
+    n_parameters: 0
+    nominal_cells: null
+    present_cells: null
+    completeness: null
+    n_breeds: null
+    n_phase_labels: null
+    file: corpus/shared/definitions.csv
+totals:
+  ingredient_parameters_total: 97
+  records:
+    feed_entries: 108
+    nutrition_breed_phase_entries: 103
+    vitamin_mineral_entries: 30
+    performance_records: 1131
+    definitions: 556
+  records_total: 1928
+  scalar_cells_nominal: 26648
+  scalar_cells_present: 16603
+  scalar_plus_definitions_nominal: 27204
+  scalar_plus_definitions_present: 17159
+  paper_claim_14800_convention: feed 108x97 + nutrition 2,060 + vitamin 540 + performance
+    1,131 + definitions 556 = 14,767 (mixes scalar cells with records and definitions)
+  poultrydb_documents: 2144
+queries:
+  n_total: 54
+  by_language:
+    en: 42
+    zh: 12
+  by_type:
+    single-value: 21
+    comparison: 10
+    open-ended: 7
+    definition: 7
+    multi-hop: 4
+    constraint: 3
+    counterfactual: 2
+  by_category:
+    Feed Ingredient Bank: 10
+    Nutrient Requirements: 12
+    Performance Management: 11
+    Definitions: 6
+    Cross-Domain: 10
+    Edge Cases: 5
+  n_expected_value: 36
+  n_expected_behavior: 5
+  zh_breed_mentions:
+    Dawu Jinfeng: 5
+    Jingfen 6: 3
+    Hy-Line Brown: 1
+agreement:
+  nutriagent_correctness:
+    n: 54
+    spearman_rho: 0.575
+    ci_low: 0.246
+    ci_high: 0.807
+    within_1_point: 0.926
+  nutriagent_precision:
+    n: 34
+    spearman_rho: 0.038
+    ci_low: -0.272
+    ci_high: 0.419
+    within_1_point: 0.794
+  nutriagent_scientific_depth:
+    n: 54
+    spearman_rho: 0.529
+    ci_low: 0.274
+    ci_high: 0.734
+    within_1_point: 0.926
+  pooled_correctness:
+    n: 378
+    spearman_rho: 0.478
+    ci_low: 0.388
+    ci_high: 0.564
+  pooled_precision:
+    n: 237
+    spearman_rho: 0.156
+    ci_low: 0.027
+    ci_high: 0.285
+  pooled_scientific_depth:
+    n: 378
+    spearman_rho: 0.516
+    ci_low: 0.435
+    ci_high: 0.591
+paired_vs_baselines:
+  aliyun/Qwen3-8B:
+    correctness:
+      n: 54
+      mean_diff: 1.1296
+      ci_low: 0.7593
+      ci_high: 1.5185
+      cohen_dz: 0.784
+      wilcoxon_p: 1.0e-05
+      holm_p: 6.0e-05
+    precision:
+      n: 37
+      mean_diff: 1.4865
+      ci_low: 0.973
+      ci_high: 2.0
+      cohen_dz: 0.904
+      wilcoxon_p: 7.0e-05
+      holm_p: 0.00042
+    scientific_depth:
+      n: 54
+      mean_diff: 1.2037
+      ci_low: 0.9259
+      ci_high: 1.4444
+      cohen_dz: 1.206
+      wilcoxon_p: 0.0
+      holm_p: 0.0
+  siliconflow/GLM-4.5-Air:
+    correctness:
+      n: 54
+      mean_diff: 0.7593
+      ci_low: 0.4074
+      ci_high: 1.1296
+      cohen_dz: 0.553
+      wilcoxon_p: 0.00048
+      holm_p: 0.0024
+    precision:
+      n: 38
+      mean_diff: 1.0789
+      ci_low: 0.5789
+      ci_high: 1.5526
+      cohen_dz: 0.674
+      wilcoxon_p: 0.00093
+      holm_p: 0.00372
+    scientific_depth:
+      n: 54
+      mean_diff: 1.037
+      ci_low: 0.7778
+      ci_high: 1.2963
+      cohen_dz: 1.068
+      wilcoxon_p: 0.0
+      holm_p: 0.0
+  aliyun/Qwen3.5-Flash:
+    correctness:
+      n: 54
+      mean_diff: 0.7222
+      ci_low: 0.3519
+      ci_high: 1.0926
+      cohen_dz: 0.514
+      wilcoxon_p: 0.00098
+      holm_p: 0.00392
+    precision:
+      n: 36
+      mean_diff: 1.3333
+      ci_low: 0.7778
+      ci_high: 1.8889
+      cohen_dz: 0.773
+      wilcoxon_p: 0.00035
+      holm_p: 0.00175
+    scientific_depth:
+      n: 54
+      mean_diff: 0.3704
+      ci_low: 0.0926
+      ci_high: 0.6296
+      cohen_dz: 0.352
+      wilcoxon_p: 0.01203
+      holm_p: 0.01203
+  deepseek/DeepSeek-V4-Pro:
+    correctness:
+      n: 54
+      mean_diff: 0.4074
+      ci_low: 0.0926
+      ci_high: 0.7222
+      cohen_dz: 0.334
+      wilcoxon_p: 0.01997
+      holm_p: 0.01997
+    precision:
+      n: 38
+      mean_diff: 0.7368
+      ci_low: 0.2895
+      ci_high: 1.1579
+      cohen_dz: 0.523
+      wilcoxon_p: 0.00518
+      holm_p: 0.01554
+    scientific_depth:
+      n: 54
+      mean_diff: 0.6111
+      ci_low: 0.3704
+      ci_high: 0.8333
+      cohen_dz: 0.696
+      wilcoxon_p: 4.0e-05
+      holm_p: 0.00012
+  deepseek/DeepSeek-V4-Flash:
+    correctness:
+      n: 54
+      mean_diff: 0.4444
+      ci_low: 0.1296
+      ci_high: 0.7593
+      cohen_dz: 0.368
+      wilcoxon_p: 0.00896
+      holm_p: 0.01792
+    precision:
+      n: 39
+      mean_diff: 0.7436
+      ci_low: 0.2821
+      ci_high: 1.1795
+      cohen_dz: 0.508
+      wilcoxon_p: 0.00704
+      holm_p: 0.01554
+    scientific_depth:
+      n: 54
+      mean_diff: 0.5185
+      ci_low: 0.2778
+      ci_high: 0.7407
+      cohen_dz: 0.586
+      wilcoxon_p: 7.0e-05
+      holm_p: 0.00014
+  siliconflow/MiniMax-M2.5:
+    correctness:
+      n: 54
+      mean_diff: 0.4815
+      ci_low: 0.1481
+      ci_high: 0.8148
+      cohen_dz: 0.388
+      wilcoxon_p: 0.00583
+      holm_p: 0.01749
+    precision:
+      n: 36
+      mean_diff: 0.8611
+      ci_low: 0.3333
+      ci_high: 1.3611
+      cohen_dz: 0.548
+      wilcoxon_p: 0.00625
+      holm_p: 0.01554
+    scientific_depth:
+      n: 54
+      mean_diff: 0.6852
+      ci_low: 0.4074
+      ci_high: 0.9444
+      cohen_dz: 0.681
+      wilcoxon_p: 2.0e-05
+      holm_p: 8.0e-05
+second_rater: null
+evaluation:
+  _status: submitted_archived_20260612; not Rev.1; historical comparison only
+  methods:
+    NutriCHAT (deepseek-v4-flash):
+      correctness:
+        mean: 4.703703703703703
+        std: 0.7171650063974944
+        n: 54
+      precision:
+        mean: 4.444444444444445
+        std: 1.1976407785072427
+        n: 45
+      scientific_depth:
+        mean: 3.9444444444444446
+        std: 0.8106988987302967
+        n: 54
+      overall: 4.364197530864198
+      inconsistency:
+        mean: 0.11724639251427979
+        std: 0.13258298876614236
+        n: 47
+      flesch:
+        mean: 43.42405826375445
+        std: 13.338348009626989
+        n: 42
+      tolerance_p2:
+        mean: 0.75
+        std: 0.43915503282683993
+        n: 36
+      tolerance_p5:
+        mean: 0.8055555555555556
+        std: 0.4013864859597432
+        n: 36
+      faithfulness_numeric:
+        mean: 0.4440910100001009
+        std: 0.23775176285735414
+        n: 33
+      faithfulness_semantic:
+        mean: 0.8105339105339106
+        std: 0.3016774074828897
+        n: 33
+    deepseek/DeepSeek-V4-Pro:
+      correctness:
+        mean: 4.518518518518518
+        std: 0.8182065232842706
+        n: 54
+      precision:
+        mean: 4.318181818181818
+        std: 0.8565134102787387
+        n: 44
+      scientific_depth:
+        mean: 3.8518518518518516
+        std: 0.9982514412221835
+        n: 54
+      overall: 4.229517396184062
+      inconsistency:
+        mean: 0.3716508665877478
+        std: 0.23967992798575025
+        n: 47
+      flesch:
+        mean: 51.22645942992115
+        std: 17.809534506139283
+        n: 41
+      tolerance_p2:
+        mean: 0.6388888888888888
+        std: 0.4871361075732195
+        n: 36
+      tolerance_p5:
+        mean: 0.8611111111111112
+        std: 0.35073618720610084
+        n: 36
+      faithfulness_numeric:
+        mean: null
+        std: null
+        n: 0
+      faithfulness_semantic:
+        mean: null
+        std: null
+        n: 0
+    siliconflow/GLM-4.5-Air:
+      correctness:
+        mean: 4.37037037037037
+        std: 0.830918934272132
+        n: 54
+      precision:
+        mean: 3.9318181818181817
+        std: 0.925044996334302
+        n: 44
+      scientific_depth:
+        mean: 3.5925925925925926
+        std: 0.7895190443893858
+        n: 54
+      overall: 3.964927048260382
+      inconsistency:
+        mean: 0.42263853393141293
+        std: 0.23827925190445956
+        n: 47
+      flesch:
+        mean: 37.535688061903
+        std: 19.079158468342495
+        n: 42
+      tolerance_p2:
+        mean: 0.5833333333333334
+        std: 0.5
+        n: 36
+      tolerance_p5:
+        mean: 0.7222222222222222
+        std: 0.45425676257949793
+        n: 36
+      faithfulness_numeric:
+        mean: null
+        std: null
+        n: 0
+      faithfulness_semantic:
+        mean: null
+        std: null
+        n: 0
+    aliyun/Qwen3.5-Flash:
+      correctness:
+        mean: 4.037037037037037
+        std: 1.045438663242553
+        n: 54
+      precision:
+        mean: 3.5454545454545454
+        std: 1.2474074594850146
+        n: 44
+      scientific_depth:
+        mean: 3.685185185185185
+        std: 0.9871643030852636
+        n: 54
+      overall: 3.755892255892256
+      inconsistency:
+        mean: 0.3470362004242036
+        std: 0.19086387789279136
+        n: 47
+      flesch:
+        mean: 40.77357997674047
+        std: 14.497370985415682
+        n: 42
+      tolerance_p2:
+        mean: 0.4166666666666667
+        std: 0.5
+        n: 36
+      tolerance_p5:
+        mean: 0.5277777777777778
+        std: 0.506309397848002
+        n: 36
+      faithfulness_numeric:
+        mean: null
+        std: null
+        n: 0
+      faithfulness_semantic:
+        mean: null
+        std: null
+        n: 0
+    deepseek/DeepSeek-V4-Flash:
+      correctness:
+        mean: 4.537037037037037
+        std: 0.7193540856137319
+        n: 54
+      precision:
+        mean: 4.217391304347826
+        std: 0.8670010503200319
+        n: 46
+      scientific_depth:
+        mean: 4.092592592592593
+        std: 0.7835217668893303
+        n: 54
+      overall: 4.282340311325818
+      inconsistency:
+        mean: 0.3898531674228494
+        std: 0.23988263944023808
+        n: 47
+      flesch:
+        mean: 51.190676909926516
+        std: 16.024471257764166
+        n: 42
+      tolerance_p2:
+        mean: 0.5
+        std: 0.50709255283711
+        n: 36
+      tolerance_p5:
+        mean: 0.7222222222222222
+        std: 0.45425676257949793
+        n: 36
+      faithfulness_numeric:
+        mean: null
+        std: null
+        n: 0
+      faithfulness_semantic:
+        mean: null
+        std: null
+        n: 0
+    aliyun/Qwen3-8B:
+      correctness:
+        mean: 3.314814814814815
+        std: 1.241181331286799
+        n: 54
+      precision:
+        mean: 2.75
+        std: 1.3661182488230812
+        n: 44
+      scientific_depth:
+        mean: 2.6666666666666665
+        std: 0.8901981971385244
+        n: 54
+      overall: 2.9104938271604937
+      inconsistency:
+        mean: 0.33882582463615224
+        std: 0.2887989966217287
+        n: 47
+      flesch:
+        mean: 44.548943944982284
+        std: 14.491499441501574
+        n: 41
+      tolerance_p2:
+        mean: 0.3333333333333333
+        std: 0.47809144373375745
+        n: 36
+      tolerance_p5:
+        mean: 0.5
+        std: 0.50709255283711
+        n: 36
+      faithfulness_numeric:
+        mean: null
+        std: null
+        n: 0
+      faithfulness_semantic:
+        mean: null
+        std: null
+        n: 0
+    siliconflow/MiniMax-M2.5:
+      correctness:
+        mean: 4.296296296296297
+        std: 0.9240932246859902
+        n: 54
+      precision:
+        mean: 3.9555555555555557
+        std: 1.0650556015267159
+        n: 45
+      scientific_depth:
+        mean: 3.685185185185185
+        std: 0.8649151790471662
+        n: 54
+      overall: 3.979012345679013
+      inconsistency:
+        mean: 0.3397249220498333
+        std: 0.22509628658722192
+        n: 47
+      flesch:
+        mean: 49.864875735358645
+        std: 16.412310126216244
+        n: 42
+      tolerance_p2:
+        mean: 0.4857142857142857
+        std: 0.50709255283711
+        n: 35
+      tolerance_p5:
+        mean: 0.7142857142857143
+        std: 0.45834924851410563
+        n: 35
+      faithfulness_numeric:
+        mean: null
+        std: null
+        n: 0
+      faithfulness_semantic:
+        mean: null
+        std: null
+        n: 0
+  cost:
+    NutriCHAT (deepseek-v4-flash):
+      calls: 54
+      total_tokens: 258002
+      total_time_s: 407.46
+      avg_time_s: 7.55
+      cost_usd: 0.039041
+    deepseek/DeepSeek-V4-Pro:
+      calls: 54
+      total_tokens: 10844
+      total_time_s: 302.23
+      avg_time_s: 5.6
+      cost_usd: 0.002779
+    siliconflow/GLM-4.5-Air:
+      calls: 54
+      total_tokens: 10894
+      total_time_s: 331.17
+      avg_time_s: 6.13
+      cost_usd: 0.007764
+    aliyun/Qwen3.5-Flash:
+      calls: 54
+      total_tokens: 13320
+      total_time_s: 121.79
+      avg_time_s: 2.26
+      cost_usd: 0.004542
+    deepseek/DeepSeek-V4-Flash:
+      calls: 54
+      total_tokens: 11272
+      total_time_s: 337.77
+      avg_time_s: 6.25
+      cost_usd: 0.002898
+    aliyun/Qwen3-8B:
+      calls: 54
+      total_tokens: 13036
+      total_time_s: 265.52
+      avg_time_s: 4.92
+      cost_usd: 0.004424
+    siliconflow/MiniMax-M2.5:
+      calls: 54
+      total_tokens: 34983
+      total_time_s: 1889.07
+      avg_time_s: 34.98
+      cost_usd: 0.005247

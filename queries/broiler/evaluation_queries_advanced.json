@@ -1,0 +1,278 @@
+{
+  "Multi-hop Queries": [
+    {
+      "id": "MH-001",
+      "query": "What is the phosphorus digestibility coefficient of Corn Grain? If a Ross 308 starter diet contains 60% Corn Grain, and the total phosphorus in corn is 0.28%, what is the available phosphorus contributed by corn (as % of diet)?",
+      "type": "multi-hop",
+      "expected_answer": "Corn P digestibility = 31.8%. Available P from corn at 60% inclusion = 0.28% × 0.60 × 0.318 = 0.053%",
+      "expected_value": 0.053,
+      "steps": [
+        "Corn Grain P digestibility = 31.8% (from digestibility table)",
+        "Corn total P = 0.28%, at 60% inclusion: total P from corn = 0.28 × 0.60 = 0.168%",
+        "Available P = 0.168% × 31.8/100 = 0.053%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_digestibility"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "MH-002",
+      "query": "Compare the SID lysine digestibility coefficients of Canola Meal and Soybean Meal 48%. If both are included at 15% each in a diet, what is the combined SID lysine contribution (as % of diet), given total lysine of 2.8% for SBM and 1.2% for Canola Meal?",
+      "type": "multi-hop",
+      "expected_answer": "SBM SID Lys = 88%, Canola SID Lys = 75%. SBM contribution: 2.8% × 0.15 × 0.88 = 0.370%. Canola: 1.2% × 0.15 × 0.75 = 0.135%. Combined = 0.505%",
+      "expected_value": 0.505,
+      "steps": [
+        "SBM SID Lys = 88%, Canola Meal SID Lys = 75%",
+        "SBM: total Lys = 2.8%, at 15% → 2.8 × 0.15 = 0.42% total Lys, SID = 0.42 × 0.88 = 0.370%",
+        "Canola: total Lys = 1.2%, at 15% → 1.2 × 0.15 = 0.18% total Lys, SID = 0.18 × 0.75 = 0.135%",
+        "Combined SID Lys = 0.370 + 0.135 = 0.505%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_amino_acids"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "MH-003",
+      "query": "What is the calcium digestibility of Limestone? If 2.0% Limestone is added to a Ross 308 starter diet (Ca requirement = 0.96%), what is the digestible calcium contributed? How much additional calcium (from other sources) is still needed to meet the requirement?",
+      "type": "multi-hop",
+      "expected_answer": "Limestone Ca digestibility = 49.3%. Ca from 2% Limestone = 38% × 0.02 = 0.76%. Digestible Ca = 0.76% × 0.493 = 0.375%. Additional needed = 0.96 - 0.375 = 0.585%",
+      "expected_value": 0.585,
+      "steps": [
+        "Limestone Ca digestibility = 49.3% (from digestibility table)",
+        "Total Ca from 2% Limestone = 38.0 × 0.02 = 0.76%",
+        "Digestible Ca = 0.76 × 0.493 = 0.375%",
+        "Ross 308 Starter Ca requirement = 0.96%",
+        "Additional needed = 0.96 - 0.375 = 0.585%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_digestibility",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "MH-004",
+      "query": "What are the SID methionine digestibility coefficients for Fish Meal 65% and Insect Meal (Black Soldier Fly)? If both contain approximately 0.75% total methionine at a 10% inclusion rate, which provides more SID methionine and by how much?",
+      "type": "multi-hop",
+      "expected_answer": "Fish Meal 65% SID Met = 93%, Insect Meal SID Met = 88%. Fish Meal provides 0.75% × 0.10 × 0.93 = 0.070% SID Met. Insect Meal: 0.75% × 0.10 × 0.88 = 0.066%. Fish Meal provides 0.004% more.",
+      "expected_value": 0.004,
+      "steps": [
+        "Fish Meal 65% SID Met = 93%",
+        "Insect Meal (BSF) SID Met = 88%",
+        "Fish Meal at 10%: 0.75% total Met × 0.10 × 0.93 = 0.070% SID Met",
+        "Insect Meal at 10%: 0.75% total Met × 0.10 × 0.88 = 0.066% SID Met",
+        "Difference = 0.070 - 0.066 = 0.004 percentage points"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "MH-005",
+      "query": "What is the calcium digestibility of Dicalcium Phosphate? If a diet contains 1.2% Dicalcium Phosphate (Ca=22%) and 1.5% Limestone (Ca=38%), what is the total digestible calcium contributed, and which ingredient is the more efficient calcium source per unit of total calcium?",
+      "type": "multi-hop",
+      "expected_answer": "DCP Ca digestibility = 56.0%, Limestone Ca digestibility = 49.3%. DCP digestible Ca: 22% × 0.012 × 0.56 = 0.148%. Limestone: 38% × 0.015 × 0.493 = 0.281%. Total = 0.429%. DCP has higher digestibility (56% vs 49.3%) making it more efficient per unit Ca.",
+      "expected_value": 0.429,
+      "steps": [
+        "DCP Ca digestibility = 56.0%, Limestone Ca digestibility = 49.3%",
+        "DCP digestible Ca = 22.0 × 0.012 × 0.56 = 0.148%",
+        "Limestone digestible Ca = 38.0 × 0.015 × 0.493 = 0.281%",
+        "Total digestible Ca = 0.148 + 0.281 = 0.429%",
+        "DCP digestibility (56%) > Limestone (49.3%), so DCP is more efficient per unit Ca"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_digestibility"
+      ],
+      "difficulty": "L3"
+    }
+  ],
+  "Constraint Queries": [
+    {
+      "id": "CS-001",
+      "query": "A Ross 308 starter diet uses only Corn Grain (60%) and Soybean Meal 48% (32%) as the main ingredients (remaining 8% is minerals/vitamins which contribute negligible SID Lys). Using the SID lysine digestibility coefficients, total lysine content, and the SID lysine requirement of 1.28%, is the SID lysine requirement met? If not, what is the deficit?",
+      "type": "advanced",
+      "expected_answer": "Corn SID Lys contribution: 0.58% total × 0.60 × 0.85(SID) = 0.296%. SBM: 2.8% × 0.32 × 0.88 = 0.788%. Total = 1.084%. Requirement = 1.28%. Deficit = 0.196%.",
+      "expected_value": 0.196,
+      "steps": [
+        "Corn: total Lys 0.58%, at 60% → 0.58×0.60=0.348% total, SID 85% → 0.348×0.85=0.296%",
+        "SBM: total Lys 2.8%, at 32% → 2.8×0.32=0.896% total, SID 88% → 0.896×0.88=0.788%",
+        "Total SID Lys = 0.296+0.788 = 1.084%",
+        "Requirement = 1.28%",
+        "Deficit = 1.28 - 1.084 = 0.196%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_amino_acids",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L4"
+    },
+    {
+      "id": "CS-002",
+      "query": "Using the ingredient digestibility data, check whether Corn Grain or Wheat Grain has higher phosphorus bioavailability for poultry. Calculate the available phosphorus contribution of each grain at a 60% inclusion rate, assuming total P is 0.28% for corn and 0.38% for wheat.",
+      "type": "advanced",
+      "expected_answer": "Corn P digestibility = 31.8%, Wheat P digestibility = 74.1%. Corn avail P = 0.28% × 0.60 × 0.318 = 0.053%. Wheat avail P = 0.38% × 0.60 × 0.741 = 0.169%. Wheat provides 3.2x more available P despite only 36% more total P.",
+      "steps": [
+        "Corn P digestibility = 31.8%",
+        "Wheat P digestibility = 74.1%",
+        "Corn avail P = 0.28 × 0.60 × 0.318 = 0.053%",
+        "Wheat avail P = 0.38 × 0.60 × 0.741 = 0.169%",
+        "Conclusion: Wheat has much higher P bioavailability despite modestly higher total P"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_digestibility"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "CS-003",
+      "query": "Can Meat and Bone Meal (Ca=8.5%, P_total=4.5%) at 5% of the diet serve as the sole calcium source for a Ross 308 starter diet? Calculate the Ca contributed and check against the 0.96% requirement. What percentage of Ca requirement does it cover?",
+      "type": "advanced",
+      "expected_answer": "Ca from 5% MBM = 8.5% × 0.05 = 0.425%. Requirement = 0.96%. Only 44.3% of requirement met. Cannot serve as sole Ca source.",
+      "expected_value": 44.3,
+      "steps": [
+        "MBM Ca = 8.5%, at 5%: 8.5 × 0.05 = 0.425% Ca",
+        "Requirement = 0.96%",
+        "Coverage = 0.425 / 0.96 × 100 = 44.3%",
+        "Conclusion: insufficient as sole Ca source"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L2"
+    }
+  ],
+  "Counterfactual Queries": [
+    {
+      "id": "CF-001",
+      "query": "If the price of Soybean Meal 48% doubles, a nutritionist considers replacing 50% of it with Canola Meal. The original formula had 30% SBM. Calculate the new SID lysine contribution of the SBM+Canola combination and compare it with the original SID lysine from 30% SBM alone. How much L-Lysine HCl (assume 100% SID, 78% lysine activity) needs to be added to compensate for the deficit?",
+      "type": "advanced",
+      "expected_answer": "Original: 2.8%×0.30×0.88 = 0.739% SID Lys. New: SBM at 15% = 2.8×0.15×0.88=0.370%, Canola at 15% = 1.2×0.15×0.75=0.135%, total=0.505%. Deficit = 0.234%. L-Lysine HCl needed = 0.234/0.78 = 0.30% of diet.",
+      "expected_value": 0.3,
+      "steps": [
+        "Original SID Lys from SBM: 2.8 × 0.30 × 0.88 = 0.739%",
+        "New SBM (15%): 2.8 × 0.15 × 0.88 = 0.370%",
+        "New Canola (15%): 1.2 × 0.15 × 0.75 = 0.135%",
+        "New total = 0.370 + 0.135 = 0.505%",
+        "Deficit = 0.739 - 0.505 = 0.234% SID Lys",
+        "L-Lysine HCl (78% Lys activity): 0.234 / 0.78 = 0.30%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_amino_acids"
+      ],
+      "difficulty": "L4"
+    },
+    {
+      "id": "CF-002",
+      "query": "A batch of Corn Grain has its CP content drop from 8.5% to 7.0% due to drought. If the original formula used 65% corn, by how many percentage points must Soybean Meal 48% (CP=48%) be increased to maintain the same total CP level? Assume the reduced corn is offset by reducing a non-protein filler.",
+      "type": "advanced",
+      "expected_answer": "Original CP from corn = 8.5%×0.65=5.525%. New CP from corn = 7.0%×0.65=4.55%. Loss = 0.975%. SBM needed = 0.975/48×100 = 2.03% additional SBM.",
+      "expected_value": 2.03,
+      "steps": [
+        "Original CP from corn: 8.5 × 0.65 = 5.525%",
+        "New CP from corn: 7.0 × 0.65 = 4.55%",
+        "CP loss = 5.525 - 4.55 = 0.975%",
+        "SBM CP = 48%, so additional SBM = 0.975 / 48 × 100 = 2.03%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank"
+      ],
+      "difficulty": "L2"
+    },
+    {
+      "id": "CF-003",
+      "query": "If the phosphorus digestibility of Dicalcium Phosphate were to drop from 73.1% to 50%, how much additional DCP would be needed per tonne of feed to maintain the same available phosphorus supply? Assume the original formula used 1.5% DCP (P_total=18.5%). Calculate both the original and new available P levels.",
+      "type": "advanced",
+      "expected_answer": "Original avail P from DCP: 18.5%×0.015×0.731=0.203%. New avail P at 50% digestibility: 18.5%×0.015×0.50=0.139%. New DCP needed for same avail P: 0.203/(18.5×0.50)×100=2.19%. Additional = 2.19-1.5=0.69% = 6.9 kg/tonne.",
+      "expected_value": 6.9,
+      "steps": [
+        "Original avail P = 18.5 × 0.015 × 0.731 = 0.203%",
+        "New avail P (if kept at 1.5%) = 18.5 × 0.015 × 0.50 = 0.139%",
+        "New DCP needed = 0.203 / (18.5 × 0.50 / 100) = 2.19%",
+        "Additional = 2.19 - 1.5 = 0.69% = 6.9 kg/tonne"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_digestibility"
+      ],
+      "difficulty": "L3"
+    }
+  ],
+  "Cross-validate Queries": [
+    {
+      "id": "CV-001",
+      "query": "The phosphorus digestibility of Corn Grain is 31.8% while Wheat Grain is 74.1%. Using the definitions of available phosphorus and phytate phosphorus, explain why wheat has higher P bioavailability than corn, and discuss the implications for feed formulation and phytase enzyme supplementation strategies.",
+      "type": "advanced",
+      "expected_answer": "Wheat has higher native phytase activity, releasing more phytate-bound P. This means wheat-based diets need less supplemental P and respond differently to phytase. The digestibility values confirm: Wheat's P digestibility (74.1%) is 2.3x higher than corn (31.8%).",
+      "tools_required": [
+        "feed_ingredient_digestibility",
+        "definitions_tool",
+        "rag"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "CV-002",
+      "query": "Using the performance data for Ross 308 males and the definition of cumulative feed conversion ratio, verify that the FCR at day 35 calculated from cumulative feed intake and body weight matches the reported value in the table. Then explain what biological factors cause FCR to increase as birds age.",
+      "type": "advanced",
+      "expected_answer": "Day 35: CumFI=2829g, BW=1995.4g, CumFCR=2829/1995.4=1.418. Matches table CumFCR value. FCR increases with age because maintenance energy requirements increase as a proportion of total energy intake.",
+      "expected_value": 1.418,
+      "steps": [
+        "Retrieve Ross 308 male day 35 CumFI and BW",
+        "Calculate: 2829.0 / 1995.4 = 1.418",
+        "Compare with table value",
+        "Explain age-related FCR increase using biological principles"
+      ],
+      "tools_required": [
+        "performance_management",
+        "definitions_tool"
+      ],
+      "difficulty": "L2"
+    }
+  ],
+  "Scenario Queries": [
+    {
+      "id": "SC-001",
+      "query": "My Cobb 500 male broilers at 35 days have an average body weight of only 1840g, while the breed standard is approximately 2060g. First find the exact standard body weight for Cobb 500 males at day 35 from the performance data. Calculate the percentage deficit. Then check whether the cumulative feed intake is on track, and recommend whether nutritional adjustment is needed in the finisher phase.",
+      "type": "advanced",
+      "expected_answer": "Requires retrieving Cobb 500 male standard BW at day 35, comparing with 1840g actual, calculating deficit %, and checking feed intake data for diagnosis.",
+      "tools_required": [
+        "performance_management",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L4"
+    },
+    {
+      "id": "SC-002",
+      "query": "A Ross 308 flock has higher than expected mortality at day 35. Look up the standard mortality percentage for Ross 308 males at day 35 from the performance data (at 5% intervals). Compare it with the industry action threshold of 5% and recommend at what age mortality monitoring should be most intensive based on the data pattern.",
+      "type": "advanced",
+      "expected_answer": "Requires retrieving Ross 308 mortality data across ages, identifying critical periods, and providing management recommendations.",
+      "tools_required": [
+        "performance_management"
+      ],
+      "difficulty": "L4"
+    },
+    {
+      "id": "SC-003",
+      "query": "An organic poultry producer wants to replace all synthetic DL-Methionine with natural ingredients. Using the feed ingredient bank, identify which ingredients have the highest natural methionine content. Check whether a combination of Corn Grain, Soybean Meal 48%, and Fish Meal 65% at typical inclusion levels (60%, 30%, 5%) can meet the Ross 308 starter SID methionine requirement of 0.50% without synthetic methionine.",
+      "type": "advanced",
+      "expected_answer": "Requires: checking natural Met levels in ingredients, calculating SID Met contribution from each ingredient, comparing total with 0.50% requirement.",
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_amino_acids",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L4"
+    }
+  ]
+}

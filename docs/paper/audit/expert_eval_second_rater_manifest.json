@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "n": 120,
+  "n_queries": 54,
+  "per_model": {
+    "Model_E": 21,
+    "Model_F": 20,
+    "Model_D": 18,
+    "Model_A": 17,
+    "Model_B": 17,
+    "Model_G": 16,
+    "Model_C": 11
+  },
+  "sheet": "logs\\comp_layer_20261020_190019\\expert_eval_all.csv",
+  "out": "logs\\comp_layer_20261020_190019\\expert_eval_second_rater.csv"
+}

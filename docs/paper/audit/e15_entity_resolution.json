@@ -1,0 +1,392 @@
+{
+  "summary": {
+    "n_cases": 39,
+    "resolved_rate": 0.718,
+    "family_correct_rate": 0.641,
+    "by_category": {
+      "ambiguous_family": {
+        "n": 5,
+        "resolved": 1.0,
+        "family_correct": 0.8
+      },
+      "case_whitespace": {
+        "n": 4,
+        "resolved": 1.0,
+        "family_correct": 1.0
+      },
+      "chinese_alias": {
+        "n": 8,
+        "resolved": 0.0,
+        "family_correct": 0.0
+      },
+      "commodity_short": {
+        "n": 7,
+        "resolved": 1.0,
+        "family_correct": 1.0
+      },
+      "exact_canonical": {
+        "n": 7,
+        "resolved": 1.0,
+        "family_correct": 1.0
+      },
+      "misspelling": {
+        "n": 8,
+        "resolved": 0.625,
+        "family_correct": 0.375
+      }
+    }
+  },
+  "rows": [
+    {
+      "input": "Maize",
+      "expected_family": "maize",
+      "category": "exact_canonical",
+      "resolved": true,
+      "got_family": "maize",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: maize"
+    },
+    {
+      "input": "Wheat bran",
+      "expected_family": "wheat bran",
+      "category": "exact_canonical",
+      "resolved": true,
+      "got_family": "wheat bran",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: wheat bran"
+    },
+    {
+      "input": "Barley",
+      "expected_family": "barley",
+      "category": "exact_canonical",
+      "resolved": true,
+      "got_family": "barley",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: barley"
+    },
+    {
+      "input": "Limestone",
+      "expected_family": "limestone",
+      "category": "exact_canonical",
+      "resolved": true,
+      "got_family": "limestone",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: limestone"
+    },
+    {
+      "input": "Soybean meal, oil < 5%, 46% protein + oil",
+      "expected_family": "soybean meal",
+      "category": "exact_canonical",
+      "resolved": true,
+      "got_family": "soybean meal",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: soybean meal, oil < 5%, 46% protein + oil"
+    },
+    {
+      "input": "Fish meal, protein 62%",
+      "expected_family": "fish meal",
+      "category": "exact_canonical",
+      "resolved": true,
+      "got_family": "fish meal",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: fish meal, protein 62%"
+    },
+    {
+      "input": "Alfalfa, dehydrated, protein 17-19% dry matter",
+      "expected_family": "alfalfa",
+      "category": "exact_canonical",
+      "resolved": true,
+      "got_family": "alfalfa",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: alfalfa, dehydrated, protein 17-19% dry matter"
+    },
+    {
+      "input": "maize",
+      "expected_family": "maize",
+      "category": "commodity_short",
+      "resolved": true,
+      "got_family": "maize",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: maize"
+    },
+    {
+      "input": "wheat bran",
+      "expected_family": "wheat bran",
+      "category": "commodity_short",
+      "resolved": true,
+      "got_family": "wheat bran",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: wheat bran"
+    },
+    {
+      "input": "barley",
+      "expected_family": "barley",
+      "category": "commodity_short",
+      "resolved": true,
+      "got_family": "barley",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: barley"
+    },
+    {
+      "input": "limestone",
+      "expected_family": "limestone",
+      "category": "commodity_short",
+      "resolved": true,
+      "got_family": "limestone",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: limestone"
+    },
+    {
+      "input": "soybean meal",
+      "expected_family": "soybean meal",
+      "category": "commodity_short",
+      "resolved": true,
+      "got_family": "soybean meal",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: soybean meal, oil < 5%, 46% protein + oil"
+    },
+    {
+      "input": "fish meal",
+      "expected_family": "fish meal",
+      "category": "commodity_short",
+      "resolved": true,
+      "got_family": "fish meal",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: fish meal, protein 62%"
+    },
+    {
+      "input": "alfalfa",
+      "expected_family": "alfalfa",
+      "category": "commodity_short",
+      "resolved": true,
+      "got_family": "alfalfa",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: alfalfa, dehydrated, protein 17-19% dry matter"
+    },
+    {
+      "input": "  MAIZE  ",
+      "expected_family": "maize",
+      "category": "case_whitespace",
+      "resolved": true,
+      "got_family": "maize",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: maize"
+    },
+    {
+      "input": "  WHEAT BRAN  ",
+      "expected_family": "wheat bran",
+      "category": "case_whitespace",
+      "resolved": true,
+      "got_family": "wheat bran",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: wheat bran"
+    },
+    {
+      "input": "  BARLEY  ",
+      "expected_family": "barley",
+      "category": "case_whitespace",
+      "resolved": true,
+      "got_family": "barley",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: barley"
+    },
+    {
+      "input": "  LIMESTONE  ",
+      "expected_family": "limestone",
+      "category": "case_whitespace",
+      "resolved": true,
+      "got_family": "limestone",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: limestone"
+    },
+    {
+      "input": "maise",
+      "expected_family": "maize",
+      "category": "misspelling",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient 'maise' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple pomac"
+    },
+    {
+      "input": "soyabean meal",
+      "expected_family": "soybean meal",
+      "category": "misspelling",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient 'soyabean meal' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, app"
+    },
+    {
+      "input": "lime stone",
+      "expected_family": "limestone",
+      "category": "misspelling",
+      "resolved": true,
+      "got_family": "limestone",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: limestone"
+    },
+    {
+      "input": "wheatt",
+      "expected_family": "wheat",
+      "category": "misspelling",
+      "resolved": true,
+      "got_family": "wheat bran",
+      "family_correct": false,
+      "response_head": "Feed Ingredient: wheat bran"
+    },
+    {
+      "input": "barleyy",
+      "expected_family": "barley",
+      "category": "misspelling",
+      "resolved": true,
+      "got_family": "barley",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: barley"
+    },
+    {
+      "input": "fishmeal",
+      "expected_family": "fish meal",
+      "category": "misspelling",
+      "resolved": true,
+      "got_family": "fish meal",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: fish meal, protein 62%"
+    },
+    {
+      "input": "soya meal",
+      "expected_family": "soybean meal",
+      "category": "misspelling",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient 'soya meal' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple p"
+    },
+    {
+      "input": "corn meal",
+      "expected_family": "maize",
+      "category": "misspelling",
+      "resolved": true,
+      "got_family": "corn gluten feed",
+      "family_correct": false,
+      "response_head": "Feed Ingredient: corn gluten feed"
+    },
+    {
+      "input": "苜蓿粉",
+      "expected_family": "alfalfa",
+      "category": "chinese_alias",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient '苜蓿粉' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple pomace,"
+    },
+    {
+      "input": "苹果渣",
+      "expected_family": "apple pomace",
+      "category": "chinese_alias",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient '苹果渣' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple pomace,"
+    },
+    {
+      "input": "面包副产物",
+      "expected_family": "bakery byproduct",
+      "category": "chinese_alias",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient '面包副产物' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple pomac"
+    },
+    {
+      "input": "大麦",
+      "expected_family": "barley",
+      "category": "chinese_alias",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient '大麦' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple pomace, "
+    },
+    {
+      "input": "大麦DDGS",
+      "expected_family": "barley distillers grains",
+      "category": "chinese_alias",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient '大麦DDGS' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple poma"
+    },
+    {
+      "input": "大麦胚芽",
+      "expected_family": "barley rootlets",
+      "category": "chinese_alias",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient '大麦胚芽' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple pomace"
+    },
+    {
+      "input": "甜菜粕",
+      "expected_family": "beet pulp",
+      "category": "chinese_alias",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient '甜菜粕' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple pomace,"
+    },
+    {
+      "input": "饼干副产物",
+      "expected_family": "biscuit byproduct",
+      "category": "chinese_alias",
+      "resolved": false,
+      "got_family": null,
+      "family_correct": false,
+      "response_head": "Ingredient '饼干副产物' not found. Available ingredients include: alfalfa, dehydrated, protein 17-19% dry matter, apple pomac"
+    },
+    {
+      "input": "soybean meal",
+      "expected_family": "soybean meal",
+      "category": "ambiguous_family",
+      "resolved": true,
+      "got_family": "soybean meal",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: soybean meal, oil < 5%, 46% protein + oil"
+    },
+    {
+      "input": "fish meal",
+      "expected_family": "fish meal",
+      "category": "ambiguous_family",
+      "resolved": true,
+      "got_family": "fish meal",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: fish meal, protein 62%"
+    },
+    {
+      "input": "wheat",
+      "expected_family": "wheat",
+      "category": "ambiguous_family",
+      "resolved": true,
+      "got_family": "wheat bran",
+      "family_correct": false,
+      "response_head": "Feed Ingredient: wheat bran"
+    },
+    {
+      "input": "barley",
+      "expected_family": "barley",
+      "category": "ambiguous_family",
+      "resolved": true,
+      "got_family": "barley",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: barley"
+    },
+    {
+      "input": "maize",
+      "expected_family": "maize",
+      "category": "ambiguous_family",
+      "resolved": true,
+      "got_family": "maize",
+      "family_correct": true,
+      "response_head": "Feed Ingredient: maize"
+    }
+  ]
+}

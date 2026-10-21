@@ -1,0 +1,162 @@
+{
+  "Performance Management Multi-Hop": [
+    {
+      "id": "L-ADV-PM-001",
+      "query": "What is the egg mass per day for Hy-Line W-36 at 30 weeks, given its hen-day production rate and egg weight?",
+      "type": "multi-hop"
+    },
+    {
+      "id": "L-ADV-PM-002",
+      "query": "For Lohmann Pink at 72 weeks, how does the mortality rate compare between Hy-Line W-36 and Jinghong 1 v3.0?",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-PM-003",
+      "query": "Calculate the daily egg mass for Jingbai 939 at 40 weeks based on its production rate and egg weight.",
+      "type": "multi-hop"
+    },
+    {
+      "id": "L-ADV-PM-004",
+      "query": "What is the body weight of Nongda 6 at 40 weeks, and how does it compare to Nongda 3?",
+      "type": "multi-hop"
+    },
+    {
+      "id": "L-ADV-PM-005",
+      "query": "Which has higher peak production: Jingfen 6 or Hy-Line Pink? What are their respective peak values?",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-PM-006",
+      "query": "What is the feed conversion ratio for Dawu Jinfeng at 72 weeks in kg feed per kg eggs?",
+      "type": "advanced"
+    },
+    {
+      "id": "L-ADV-PM-007",
+      "query": "Compare body weight trajectories: which breed reaches 1800g earliest, Beinong 1, Beinong 2, or Dawu Jinfeng?",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-PM-008",
+      "query": "What is the cumulative egg count for Jinghong 1 v3.0 at 60 weeks and how does it compare to Jingbai 939?",
+      "type": "multi-hop"
+    }
+  ],
+  "Nutrient Requirements Multi-Hop": [
+    {
+      "id": "L-ADV-NR-001",
+      "query": "What calcium level does Hy-Line Brown need during peak lay, and how does it change from pre-lay to peak?",
+      "type": "multi-hop"
+    },
+    {
+      "id": "L-ADV-NR-002",
+      "query": "Compare the SID lysine requirements between Hy-Line W-36 and Jinghong 1 v3.0 during the peak laying phase.",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-NR-003",
+      "query": "If Jingbai 939 consumes 105g of feed daily during Layer I, what is its daily methionine intake in mg?",
+      "type": "multi-hop"
+    },
+    {
+      "id": "L-ADV-NR-004",
+      "query": "How does the calcium requirement change across the three laying phases for Dawu Jinfeng?",
+      "type": "advanced"
+    },
+    {
+      "id": "L-ADV-NR-005",
+      "query": "Compare crude protein requirements across all phases for Nongda 6 vs Nongda 3.",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-NR-006",
+      "query": "What is the SID methionine+cysteine requirement for Lohmann Pink in Layer I phase?",
+      "type": "multi-hop"
+    },
+    {
+      "id": "L-ADV-NR-007",
+      "query": "Does Jinghong 1 v3.0 have higher or lower calcium requirements than Hy-Line Brown in the peak phase?",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-NR-008",
+      "query": "What is the choline requirement for Hy-Line Pink during the starter phase, in mg per kg of feed?",
+      "type": "single-value"
+    }
+  ],
+  "Cross-Breed Complex Comparison": [
+    {
+      "id": "L-ADV-CB-001",
+      "query": "Compare the body weight at 40 weeks across Hy-Line W-36, Jingbai 939, and Nongda 6. Which is heaviest and which is lightest?",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-CB-002",
+      "query": "Which Chinese breed has the highest peak egg production rate: Jinghong 1 v3.0, Jingfen 6, or Jingbai 939?",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-CB-003",
+      "query": "Compare the calcium requirements during peak lay between international breeds (Hy-Line W-36, ISA Brown) and Chinese breeds (Jinghong 1, Dawu Jinfeng).",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-CB-004",
+      "query": "Which breed reaches sexual maturity earliest based on weeks to 50% production: Hy-Line Pink, Lohmann Pink, or Lohmann Grey?",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-CB-005",
+      "query": "Compare egg weight at 40 weeks between ISA Brown, Hy-Line Pink, and Beinong 1.",
+      "type": "comparison"
+    }
+  ],
+  "Constraint and Edge Case": [
+    {
+      "id": "L-ADV-CE-001",
+      "query": "If a farmer wants a breed with <100g daily feed intake and >90% peak production, which breeds satisfy both constraints?",
+      "type": "advanced"
+    },
+    {
+      "id": "L-ADV-CE-002",
+      "query": "Which Chinese layer breeds have a published SID amino acid profile? List their SID lysine requirements.",
+      "type": "advanced"
+    },
+    {
+      "id": "L-ADV-CE-003",
+      "query": "What would happen to eggshell quality if calcium is reduced from 4.0% to 3.5% for Jinghong 1 v3.0 during Layer II?",
+      "type": "advanced"
+    },
+    {
+      "id": "L-ADV-CE-004",
+      "query": "If Hy-Line Brown's daily feed intake drops from 112g to 100g during peak production, how would calcium intake change?",
+      "type": "advanced"
+    },
+    {
+      "id": "L-ADV-CE-005",
+      "query": "Rank these breeds by body weight at 40 weeks: Hy-Line W-36, ISA Brown, Lohmann Pink, Nongda 6.",
+      "type": "advanced"
+    }
+  ],
+  "Vitamin and Mineral": [
+    {
+      "id": "L-ADV-VM-001",
+      "query": "What is the Vitamin A requirement for Jinghong 1 v3.0 during the layer phase?",
+      "type": "single-value"
+    },
+    {
+      "id": "L-ADV-VM-002",
+      "query": "Compare zinc requirements between Hy-Line Pink and Lohmann Pink.",
+      "type": "comparison"
+    },
+    {
+      "id": "L-ADV-VM-003",
+      "query": "What selenium level is recommended for Jingbai 939 in the layer phase?",
+      "type": "single-value"
+    },
+    {
+      "id": "L-ADV-VM-004",
+      "query": "Does Nongda 6 have published vitamin recommendations? If so, what is its Vitamin D3 level?",
+      "type": "single-value"
+    }
+  ]
+}

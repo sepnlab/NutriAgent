@@ -1,0 +1,222 @@
+{
+  "Chinese White-Feathered Broiler Performance": [
+    {
+      "id": "CN-BW-001",
+      "query": "圣泽901 35日龄公鸡的体重是多少？",
+      "type": "single-value",
+      "expected_answer": "1795.9 g",
+      "expected_value": 1795.9
+    },
+    {
+      "id": "CN-BW-002",
+      "query": "光明2号 35日龄母鸡的体重是多少？",
+      "type": "single-value",
+      "expected_answer": "1576.9 g",
+      "expected_value": 1576.9
+    },
+    {
+      "id": "CN-BW-003",
+      "query": "沃德188 42日龄的饲料转化率是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-BW-004",
+      "query": "比较圣泽901和沃德188公鸡42日龄的体重。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-BW-005",
+      "query": "与罗斯308相比，中国国产白羽肉鸡品种的生长性能特点是什么？",
+      "type": "open-ended"
+    }
+  ],
+  "Chinese Yellow-Feathered Broiler Performance": [
+    {
+      "id": "CN-BY-001",
+      "query": "三黄鸡63日龄的体重是多少？",
+      "type": "single-value",
+      "expected_value": 2150.4
+    },
+    {
+      "id": "CN-BY-002",
+      "query": "817肉杂鸡42日龄的体重是多少？",
+      "type": "single-value",
+      "expected_value": 1164.8
+    },
+    {
+      "id": "CN-BY-003",
+      "query": "清远麻鸡70日龄的饲料转化率是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-BY-004",
+      "query": "比较三黄鸡和817肉杂鸡的生长速度。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-BY-005",
+      "query": "说明中国黄羽肉鸡和白羽肉鸡生产周期的差异。",
+      "type": "open-ended"
+    },
+    {
+      "id": "CN-BY-006",
+      "query": "清远麻鸡的出栏日龄和体重是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-BY-007",
+      "query": "为什么817肉杂鸡的饲料转化率高于罗斯308？",
+      "type": "open-ended"
+    }
+  ],
+  "Chinese Broiler Nutrient Requirements": [
+    {
+      "id": "CN-BN-001",
+      "query": "圣泽901育雏期的粗蛋白需要量是多少？",
+      "type": "single-value",
+      "expected_answer": "22.5%",
+      "expected_value": 22.5
+    },
+    {
+      "id": "CN-BN-002",
+      "query": "三黄鸡育成期的钙需要量是多少？",
+      "type": "single-value",
+      "expected_answer": "0.82%",
+      "expected_value": 0.82
+    },
+    {
+      "id": "CN-BN-003",
+      "query": "817肉杂鸡育成期的代谢能需要量是多少？",
+      "type": "single-value",
+      "expected_answer": "3025 kcal/kg",
+      "expected_value": 3025
+    },
+    {
+      "id": "CN-BN-004",
+      "query": "比较圣泽901和817肉杂鸡各阶段的粗蛋白需要量。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-BN-005",
+      "query": "光明2号各阶段的标准回肠可消化赖氨酸需要量是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-BN-006",
+      "query": "中国白羽肉鸡和黄羽肉鸡的营养需要量有何不同？",
+      "type": "open-ended"
+    },
+    {
+      "id": "CN-BN-007",
+      "query": "沃德188育肥期的有效磷需要量是多少？",
+      "type": "single-value",
+      "expected_answer": "0.39%",
+      "expected_value": 0.39
+    }
+  ],
+  "Cross-Breed Comparison (Broiler)": [
+    {
+      "id": "CN-CB-001",
+      "query": "比较科宝500和圣泽901的35日龄体重。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-CB-002",
+      "query": "比较西方肉鸡品种和中国黄羽肉鸡的饲料转化率。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-CB-003",
+      "query": "饲喂西方肉鸡品种和中国地方品种的主要营养差异是什么？",
+      "type": "open-ended"
+    },
+    {
+      "id": "CN-CB-004",
+      "query": "比较科宝500和圣泽901各阶段的钙需要量。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-CB-005",
+      "query": "中国国产白羽肉鸡品种在国内家禽产业中的市场地位如何？",
+      "type": "open-ended"
+    }
+  ],
+  "Chinese Layer Performance": [
+    {
+      "id": "CN-LP-001",
+      "query": "京粉1号的产蛋高峰期母鸡日产蛋率是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LP-002",
+      "query": "大午金凤40周龄的蛋重是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LP-003",
+      "query": "农大3号18周龄的体重是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LP-004",
+      "query": "比较京粉1号和京粉2号的产蛋量。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-LP-005",
+      "query": "大午金凤的体重与农大3号相比如何？",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-LP-006",
+      "query": "描述京粉1号蛋鸡的产蛋曲线。",
+      "type": "open-ended"
+    },
+    {
+      "id": "CN-LP-007",
+      "query": "京粉2号产蛋高峰期的采食量是多少？",
+      "type": "single-value"
+    }
+  ],
+  "Chinese Layer Nutrient Requirements": [
+    {
+      "id": "CN-LN-001",
+      "query": "京粉1号产蛋I期的钙需要量是多少？",
+      "type": "single-value",
+      "expected_answer": "4.0%",
+      "expected_value": 4.0
+    },
+    {
+      "id": "CN-LN-002",
+      "query": "大午金凤产蛋I期的粗蛋白需要量是多少？",
+      "type": "single-value",
+      "expected_value": 17.5
+    },
+    {
+      "id": "CN-LN-003",
+      "query": "农大3号产蛋II期的代谢能需要量是多少？",
+      "type": "single-value",
+      "expected_value": 2769
+    },
+    {
+      "id": "CN-LN-004",
+      "query": "比较大午金凤和海兰W-36各产蛋期的钙需要量。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-LN-005",
+      "query": "描述京粉1号蛋鸡的阶段饲喂方案。",
+      "type": "open-ended"
+    },
+    {
+      "id": "CN-LN-006",
+      "query": "京粉1号产蛋I期的标准回肠可消化蛋氨酸需要量是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LN-007",
+      "query": "比较农大3号和京粉1号的氨基酸需要量。",
+      "type": "comparison"
+    }
+  ]
+}

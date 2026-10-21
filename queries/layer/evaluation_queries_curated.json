@@ -1,0 +1,972 @@
+{
+  "Feed Ingredient Bank": [
+    {
+      "id": "C-FIB-001",
+      "query": "What is the crude protein content of maize?",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 8.8,
+      "breed": [
+        "Maize"
+      ],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [
+        "feed_ingredient_bank:Maize"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-FIB-002",
+      "query": "What is the calcium content of limestone?",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 35.0,
+      "breed": [
+        "Limestone"
+      ],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [
+        "feed_ingredient_bank:Limestone"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-FIB-003",
+      "query": "What is the metabolizable energy of soybean meal 48% in kcal/kg?",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 2260.0,
+      "breed": [
+        "Soybean meal, oil < 5%, 48% protein + oil"
+      ],
+      "phase": null,
+      "expected_unit": "kcal/kg",
+      "target_doc": [
+        "feed_ingredient_bank:Soybean meal, oil < 5%, 48% protein + oil"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-FIB-004",
+      "query": "Which has higher metabolizable energy, maize or soft wheat? State both values.",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 3090.0,
+      "breed": [
+        "Maize",
+        "Wheat, soft"
+      ],
+      "phase": null,
+      "expected_unit": "kcal/kg",
+      "target_doc": [
+        "feed_ingredient_bank:Maize",
+        "feed_ingredient_bank:Wheat, soft"
+      ],
+      "review": null,
+      "expected_behavior": "Maize 3090 kcal/kg; soft wheat 2860 kcal/kg; maize higher by 230 kcal/kg."
+    },
+    {
+      "id": "C-FIB-005",
+      "query": "Compare the crude protein of soybean meal 48% and canola meal. Which is higher and by how much?",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 11.6,
+      "breed": [
+        "Soybean meal, oil < 5%, 48% protein + oil",
+        "Canola meal, oil < 5%"
+      ],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [
+        "feed_ingredient_bank:Soybean meal, oil < 5%, 48% protein + oil",
+        "feed_ingredient_bank:Canola meal, oil < 5%"
+      ],
+      "review": null,
+      "expected_behavior": "SBM48 52.6%; canola meal 41.0%; SBM48 higher by 11.6 pp."
+    },
+    {
+      "id": "C-FIB-006",
+      "query": "List three plant protein sources from the feed ingredient bank with crude protein above 30%. Cite exact CP values.",
+      "type": "open-ended",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L2",
+      "language": "en",
+      "breed": [],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [],
+      "review": "open-ended; multiple ingredient records",
+      "expected_behavior": "Any three plant-protein sources with CP>30; e.g. SBM48 52.6%, canola 41.0%, rapeseed 38.1%."
+    },
+    {
+      "id": "C-FIB-007",
+      "query": "Compare the SID lysine digestibility of maize and soybean meal 48%. What does this imply for formulation?",
+      "type": "open-ended",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L2",
+      "language": "en",
+      "breed": [
+        "Maize",
+        "Soybean meal, oil < 5%, 48% protein + oil"
+      ],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [
+        "feed_ingredient_digestibility:Maize",
+        "feed_ingredient_digestibility:Soybean meal, oil < 5%, 48% protein + oil"
+      ],
+      "review": null,
+      "expected_behavior": "Maize Lys SID 90%, SBM48 88%; absolute SID Lys 1.89 vs 22.26 g/kg; SBM contributes more."
+    },
+    {
+      "id": "C-FIB-008",
+      "query": "Define metabolizable energy (ME). How does it differ from gross energy?",
+      "type": "definition",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [
+        "definitions:metabolizable energy"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-FIB-009",
+      "query": "玉米的粗蛋白含量是多少？",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 8.8,
+      "breed": [
+        "Maize"
+      ],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [
+        "feed_ingredient_bank:Maize"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-FIB-010",
+      "query": "豆粕48和菜粕的代谢能各是多少？哪个更高？",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 2260.0,
+      "breed": [
+        "Soybean meal, oil < 5%, 48% protein + oil",
+        "Rapeseed meal, oil < 5%"
+      ],
+      "phase": null,
+      "expected_unit": "kcal/kg",
+      "target_doc": [
+        "feed_ingredient_bank:Soybean meal, oil < 5%, 48% protein + oil",
+        "feed_ingredient_bank:Rapeseed meal, oil < 5%"
+      ],
+      "review": null,
+      "expected_behavior": "SBM48 2260 kcal/kg; rapeseed meal 1450 kcal/kg; SBM48 higher by 810 kcal/kg; MJ/kg conversions accepted."
+    }
+  ],
+  "Nutrient Requirements": [
+    {
+      "id": "C-NR-001",
+      "query": "What is the calcium requirement for Isa Brown in Lay I?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 4.04,
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:ISA Brown/Lay I"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-NR-002",
+      "query": "What is the SID methionine requirement for Isa Brown in Lay I?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 0.36,
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:ISA Brown/Lay I"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-NR-003",
+      "query": "What is the crude protein requirement for Jinghong 1 in Layer I?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 17.2,
+      "breed": [
+        "Jinghong 1 v3.0"
+      ],
+      "phase": "Layer I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:Jinghong 1 v3.0/Layer I"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-NR-004",
+      "query": "Compare calcium requirement: Isa Brown Lay I vs Lay III. Which is higher?",
+      "type": "comparison",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 4.44,
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "Lay I/Lay III",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:ISA Brown/Lay I",
+        "nutrient_requirements:ISA Brown/Lay III"
+      ],
+      "review": null,
+      "expected_behavior": "Lay I 4.04%; Lay III 4.44%; Lay III higher by 0.40 pp."
+    },
+    {
+      "id": "C-NR-005",
+      "query": "Compare calcium requirement: Isa Brown vs Dawu Jinfeng, both in Lay I. Which is higher?",
+      "type": "comparison",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 4.04,
+      "breed": [
+        "ISA Brown",
+        "Dawu Jinfeng"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:ISA Brown/Lay I",
+        "nutrient_requirements:Dawu Jinfeng/Lay I"
+      ],
+      "review": null,
+      "expected_behavior": "ISA Brown 4.04%; Dawu Jinfeng 3.90%; ISA higher by 0.14 pp."
+    },
+    {
+      "id": "C-NR-006",
+      "query": "How does the calcium requirement for Isa Brown change from Developer through Lay III? State the Ca% for each phase.",
+      "type": "open-ended",
+      "category": "Nutrient Requirements",
+      "difficulty": "L2",
+      "language": "en",
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "Developer-Lay III",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:ISA Brown"
+      ],
+      "review": "multi-phase trend",
+      "expected_behavior": "Developer 1.01%; Pre-Lay 2.52%; Lay I 4.04%; Lay II 4.24%; Lay III 4.44%."
+    },
+    {
+      "id": "C-NR-007",
+      "query": "A feed ingredient has total lysine of 0.85% and SID lysine digestibility of 88%. What is the SID lysine content (in %)?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 0.748,
+      "breed": [],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [],
+      "review": "arithmetic: total AA x SID coefficient"
+    },
+    {
+      "id": "C-NR-008",
+      "query": "A diet has 0.45% total phosphorus and 0.30% phytate phosphorus. If phytase improves phytate P release by 50%, what is the effective available phosphorus?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 0.3,
+      "breed": [],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [],
+      "review": "arithmetic: total P / phytate P / phytase"
+    },
+    {
+      "id": "C-NR-009",
+      "query": "Define SID (Standardized Ileal Digestible) amino acids. Why is it preferred over total amino acids?",
+      "type": "definition",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [
+        "definitions:standardized ileal digestibility"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-NR-010",
+      "query": "大午金凤在产蛋I期的钙需要量是多少？",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 3.9,
+      "breed": [
+        "Dawu Jinfeng"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:Dawu Jinfeng/Lay I"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-NR-011",
+      "query": "大午金凤从产蛋I期到产蛋III期，钙需要量怎么变化？",
+      "type": "comparison",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 4.2,
+      "breed": [
+        "Dawu Jinfeng"
+      ],
+      "phase": "Lay I-Lay III",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:Dawu Jinfeng"
+      ],
+      "review": null,
+      "expected_behavior": "Lay I 3.90%; Lay III 4.20%; increase 0.30 pp."
+    },
+    {
+      "id": "C-NR-012",
+      "query": "大午金凤在产蛋I期的SID蛋氨酸需要量是多少？",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 0.39,
+      "breed": [
+        "Dawu Jinfeng"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:Dawu Jinfeng/Lay I"
+      ],
+      "review": null
+    }
+  ],
+  "Performance Management": [
+    {
+      "id": "C-PM-001",
+      "query": "What is the hen-day production for Isa Brown at week 30?",
+      "type": "single-value",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 95.5,
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "week 30",
+      "expected_unit": "%",
+      "target_doc": [
+        "performance_management:ISA Brown/week 30"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-PM-002",
+      "query": "What is the egg weight for Hy-Line Brown at week 30?",
+      "type": "single-value",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 61.3,
+      "breed": [
+        "Hy-Line Brown"
+      ],
+      "phase": "week 30",
+      "expected_unit": "g",
+      "target_doc": [
+        "performance_management:Hy-Line Brown/week 30"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-PM-003",
+      "query": "Compare hen-day production: Isa Brown week 30 vs Hy-Line Brown week 30. Which is higher?",
+      "type": "comparison",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 95.7,
+      "breed": [
+        "ISA Brown",
+        "Hy-Line Brown"
+      ],
+      "phase": "week 30",
+      "expected_unit": "%",
+      "target_doc": [
+        "performance_management:ISA Brown/week 30",
+        "performance_management:Hy-Line Brown/week 30"
+      ],
+      "review": null,
+      "expected_behavior": "ISA 95.5%; Hy-Line 95.7%; Hy-Line higher by 0.2 pp."
+    },
+    {
+      "id": "C-PM-004",
+      "query": "Compare daily feed intake: Isa Brown week 30 vs Hy-Line Brown week 30.",
+      "type": "comparison",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 113.0,
+      "breed": [
+        "ISA Brown",
+        "Hy-Line Brown"
+      ],
+      "phase": "week 30",
+      "expected_unit": "g/d",
+      "target_doc": [
+        "performance_management:ISA Brown/week 30",
+        "performance_management:Hy-Line Brown/week 30"
+      ],
+      "review": null,
+      "expected_behavior": "ISA 112 g/d; Hy-Line 113 g/d; Hy-Line higher by 1 g/d."
+    },
+    {
+      "id": "C-PM-005",
+      "query": "Track the body weight of Isa Brown pullets at week 5, 10, and 15. What is the weight at each point?",
+      "type": "open-ended",
+      "category": "Performance Management",
+      "difficulty": "L2",
+      "language": "en",
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "weeks 5/10/15",
+      "expected_unit": "g",
+      "target_doc": [
+        "performance_management:ISA Brown/weeks 5,10,15"
+      ],
+      "review": null,
+      "expected_behavior": "Week 5 370 g; week 10 894.5 g; week 15 1307.5 g."
+    },
+    {
+      "id": "C-PM-006",
+      "query": "Isa Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily calcium intake in mg/hen/day. Is it sufficient for eggshell (~4000 mg/day)?",
+      "type": "open-ended",
+      "category": "Performance Management",
+      "difficulty": "L3",
+      "language": "en",
+      "expected_value": 4525.0,
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "week 30",
+      "expected_unit": "mg/hen/day",
+      "target_doc": [
+        "performance_management:ISA Brown/week 30",
+        "nutrient_requirements:ISA Brown/Lay I"
+      ],
+      "review": "multi-hop; combines performance and nutrient data"
+    },
+    {
+      "id": "C-PM-007",
+      "query": "Isa Brown at week 30: hen-day production 95.5%, average egg weight 61.5g. Calculate egg mass in g/hen/day.",
+      "type": "single-value",
+      "category": "Performance Management",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 58.7,
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "week 30",
+      "expected_unit": "g/hen/day",
+      "target_doc": [
+        "performance_management:ISA Brown/week 30"
+      ],
+      "review": "arithmetic: HD% x egg weight"
+    },
+    {
+      "id": "C-PM-008",
+      "query": "Define hen-day egg production. How is it calculated?",
+      "type": "definition",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [
+        "definitions:hen-day egg production"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-PM-009",
+      "query": "京粉6号在第30周的产蛋率是多少？",
+      "type": "single-value",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 95.5,
+      "breed": [
+        "Jingfen 6"
+      ],
+      "phase": "week 30",
+      "expected_unit": "%",
+      "target_doc": [
+        "performance_management:Jingfen 6/week 30"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-PM-010",
+      "query": "京粉6号和海兰褐在第30周的产蛋率各是多少？哪个更高？",
+      "type": "comparison",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 95.7,
+      "breed": [
+        "Jingfen 6",
+        "Hy-Line Brown"
+      ],
+      "phase": "week 30",
+      "expected_unit": "%",
+      "target_doc": [
+        "performance_management:Jingfen 6/week 30",
+        "performance_management:Hy-Line Brown/week 30"
+      ],
+      "review": null,
+      "expected_behavior": "Jingfen 6 95.5%; Hy-Line 95.7%; Hy-Line higher by 0.2 pp."
+    },
+    {
+      "id": "C-PM-011",
+      "query": "京粉6号第30周的产蛋率和蛋重各是多少？",
+      "type": "single-value",
+      "category": "Performance Management",
+      "difficulty": "L2",
+      "language": "zh",
+      "expected_value": 95.5,
+      "expected_value_2": 55.0,
+      "breed": [
+        "Jingfen 6"
+      ],
+      "phase": "week 30",
+      "expected_unit": "% / g",
+      "target_doc": [
+        "performance_management:Jingfen 6/week 30"
+      ],
+      "review": null,
+      "expected_behavior": "Jingfen 6 week 30: hen-day 95.5%; egg weight 55.0 g."
+    }
+  ],
+  "Definitions": [
+    {
+      "id": "C-DEF-001",
+      "query": "Define metabolizable energy (ME). How does it differ from digestible energy (DE)?",
+      "type": "definition",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "en",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [
+        "definitions:metabolizable energy",
+        "definitions:digestible energy"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-DEF-002",
+      "query": "Define available phosphorus. Why is it different from total phosphorus?",
+      "type": "definition",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "en",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [
+        "definitions:available phosphorus",
+        "definitions:total phosphorus"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-DEF-003",
+      "query": "What is feed conversion ratio (FCR)? How is it calculated?",
+      "type": "definition",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "en",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [
+        "definitions:feed conversion ratio"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-DEF-004",
+      "query": "A feed sample has 2.5% nitrogen. Using N×6.25, what is the crude protein percentage?",
+      "type": "single-value",
+      "category": "Definitions",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 15.625,
+      "breed": [],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [],
+      "review": "arithmetic: N x 6.25"
+    },
+    {
+      "id": "C-DEF-005",
+      "query": "什么是代谢能？它和消化能有什么区别？",
+      "type": "definition",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "zh",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [
+        "definitions:metabolizable energy",
+        "definitions:digestible energy"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-DEF-006",
+      "query": "蛋鸡饲料配方为什么优先用代谢能而不是消化能？",
+      "type": "open-ended",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "zh",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [
+        "definitions:metabolizable energy",
+        "definitions:digestible energy"
+      ],
+      "review": null
+    }
+  ],
+  "Cross-Domain": [
+    {
+      "id": "C-XD-001",
+      "query": "A Lay I diet uses 60% maize (total lysine=0.247%, SID=90%) and 25% SBM48 (total lysine=0.620%, SID=88%). Calculate the SID lysine contribution. Does it meet the ISA Brown layers requirement (0.77%)?",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 0.27,
+      "breed": [],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [],
+      "review": "multi-hop; diet formulation arithmetic",
+      "expected_behavior": "SID Lys 0.27%; requirement 0.77%; does not meet."
+    },
+    {
+      "id": "C-XD-002",
+      "query": "Ca requirement for ISA Brown layers is 4.04%. Limestone has 35% Ca. What % of limestone is needed in the diet?",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 11.5,
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:ISA Brown/Lay I",
+        "feed_ingredient_bank:Limestone"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-XD-003",
+      "query": "Can limestone at 9% inclusion meet the Ca requirement of 4.04% for ISA Brown layers? Calculate the Ca contribution.",
+      "type": "constraint",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 3.15,
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:ISA Brown/Lay I",
+        "feed_ingredient_bank:Limestone"
+      ],
+      "review": null,
+      "expected_behavior": "9% x 35% = 3.15% Ca; below 4.04%; does not meet."
+    },
+    {
+      "id": "C-XD-004",
+      "query": "A Lay I diet: 55% maize + 30% SBM48. Using SID lysine values, calculate total SID lysine. Does it meet 0.77%?",
+      "type": "constraint",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 0.286,
+      "breed": [],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [],
+      "review": "multi-hop; diet formulation arithmetic",
+      "expected_behavior": "SID Lys 0.286%; requirement 0.77%; does not meet."
+    },
+    {
+      "id": "C-XD-005",
+      "query": "Maize CP drops from 8.8% to 5.0% (severe drought). Original formula: 60% maize. By how many percentage points must SBM48 (CP=52.6%) increase to maintain total CP?",
+      "type": "counterfactual",
+      "category": "Cross-Domain",
+      "difficulty": "L3",
+      "language": "en",
+      "expected_value": 4.33,
+      "breed": [
+        "Maize"
+      ],
+      "phase": null,
+      "expected_unit": "percentage points",
+      "target_doc": [
+        "feed_ingredient_bank:Maize"
+      ],
+      "review": "multi-hop; original formula 60% maize + 40% SBM48; answer is +4.33 pp",
+      "expected_behavior": "Assume the remaining 40% is SBM48; original SBM48 40% -> 44.33%, increase 4.33 pp."
+    },
+    {
+      "id": "C-XD-006",
+      "query": "SBM price doubles. Replace 50% of SBM with canola meal. Original: 25% SBM (CP=52.6%). New: 12.5% SBM + 12.5% canola (CP=41.0%). Calculate the CP contribution change.",
+      "type": "counterfactual",
+      "category": "Cross-Domain",
+      "difficulty": "L3",
+      "language": "en",
+      "expected_value": 1.45,
+      "breed": [
+        "Soybean meal, oil < 5%, 48% protein + oil",
+        "Canola meal, oil < 5%"
+      ],
+      "phase": null,
+      "expected_unit": "percentage points (decrease)",
+      "target_doc": [
+        "feed_ingredient_bank:Soybean meal, oil < 5%, 48% protein + oil",
+        "feed_ingredient_bank:Canola meal, oil < 5%"
+      ],
+      "review": "arithmetic: report the change, not the new contribution",
+      "expected_behavior": "New CP contribution 11.70%; change is a decrease of 1.45 pp (13.15 -> 11.70)."
+    },
+    {
+      "id": "C-XD-007",
+      "query": "ISA Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily Ca intake (mg/hen/day). Sufficient for eggshell?",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "difficulty": "L3",
+      "language": "en",
+      "expected_value": 4525.0,
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "week 30",
+      "expected_unit": "mg/hen/day",
+      "target_doc": [
+        "nutrient_requirements:ISA Brown/Lay I",
+        "performance_management:ISA Brown/week 30"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-XD-008",
+      "query": "A nutritionist has maize, SBM48, limestone, and dicalcium phosphate. Explain how to balance Ca and P in a layer diet. What constraints must be satisfied?",
+      "type": "open-ended",
+      "category": "Cross-Domain",
+      "difficulty": "L3",
+      "language": "en",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [],
+      "review": "open-ended diet formulation; no single target record"
+    },
+    {
+      "id": "C-XD-009",
+      "query": "一个产蛋I期配方用60%玉米（总赖氨酸0.247%，SID消化率90%）和25%豆粕48（总赖氨酸0.620%，SID消化率88%）。这两样原料的SID赖氨酸加起来是多少？能不能满足大午金凤蛋鸡的需要量（0.76%）？",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "zh",
+      "expected_value": 0.27,
+      "breed": [
+        "Dawu Jinfeng"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:Dawu Jinfeng/Lay I"
+      ],
+      "review": "multi-hop; diet formulation arithmetic",
+      "expected_behavior": "SID Lys 0.27%; requirement 0.76%; does not meet."
+    },
+    {
+      "id": "C-XD-010",
+      "query": "石灰石含钙35%，大午金凤蛋鸡的钙需要量是3.90%。配方里要加多少石灰石才能满足？",
+      "type": "constraint",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "zh",
+      "expected_value": 11.1,
+      "breed": [
+        "Dawu Jinfeng"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:Dawu Jinfeng/Lay I",
+        "feed_ingredient_bank:Limestone"
+      ],
+      "review": null
+    }
+  ],
+  "Edge Cases": [
+    {
+      "id": "C-EC-001",
+      "query": "What is the crude protein content of unicorn feed?",
+      "type": "single-value",
+      "category": "Edge Cases",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_behavior": "Should indicate ingredient not found in database",
+      "breed": [],
+      "phase": null,
+      "expected_unit": null,
+      "target_doc": [],
+      "review": "out-of-scope ingredient; expected refusal"
+    },
+    {
+      "id": "C-EC-002",
+      "query": "What is the calcium requirement for Lohmann Tinted in Lay I?",
+      "type": "single-value",
+      "category": "Edge Cases",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_behavior": "Should indicate breed not found; list available breeds",
+      "breed": [
+        "Lohmann Tinted"
+      ],
+      "phase": null,
+      "expected_unit": "%",
+      "target_doc": [],
+      "review": "breed not in corpus; expected clarification"
+    },
+    {
+      "id": "C-EC-003",
+      "query": "What is the body weight of ISA Brown broilers at day 35?",
+      "type": "single-value",
+      "category": "Edge Cases",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_behavior": "Should clarify ISA Brown is a layer breed, not broiler",
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "day 35",
+      "expected_unit": "g",
+      "target_doc": [],
+      "review": "broiler query against a layer corpus"
+    },
+    {
+      "id": "C-EC-004",
+      "query": "What is the methionine requirement for ISA Brown in Lay I?",
+      "type": "single-value",
+      "category": "Edge Cases",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_behavior": "Should either provide the value or indicate column name difference (SID_Met_pct vs methionine)",
+      "breed": [
+        "ISA Brown"
+      ],
+      "phase": "Lay I",
+      "expected_unit": "%",
+      "target_doc": [
+        "nutrient_requirements:ISA Brown/Lay I"
+      ],
+      "review": null
+    },
+    {
+      "id": "C-EC-005",
+      "query": "Compare the metabolizable energy of fish meal and limestone.",
+      "type": "comparison",
+      "category": "Edge Cases",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_behavior": "Fish meal 3180 kcal/kg; limestone 0 kcal/kg; fish meal higher; limestone is a mineral.",
+      "breed": [
+        "Fish meal, protein 65%",
+        "Limestone"
+      ],
+      "phase": null,
+      "expected_unit": "kcal/kg",
+      "target_doc": [
+        "feed_ingredient_bank:Fish meal, protein 65%",
+        "feed_ingredient_bank:Limestone"
+      ],
+      "review": null
+    }
+  ]
+}

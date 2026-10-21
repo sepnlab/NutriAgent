@@ -1,0 +1,82 @@
+{
+  "reports": [
+    {
+      "role": "primary",
+      "rows": 378,
+      "queries": 54,
+      "models": {
+        "Model_B": 54,
+        "Model_E": 54,
+        "Model_D": 54,
+        "Model_C": 54,
+        "Model_A": 54,
+        "Model_F": 54,
+        "Model_G": 54
+      },
+      "issues": [],
+      "missing_notes": 352
+    },
+    {
+      "role": "second",
+      "rows": 120,
+      "queries": 54,
+      "models": {
+        "Model_D": 18,
+        "Model_E": 21,
+        "Model_A": 17,
+        "Model_B": 17,
+        "Model_C": 11,
+        "Model_G": 16,
+        "Model_F": 20
+      },
+      "issues": [],
+      "missing_notes": 112
+    },
+    {
+      "role": "third",
+      "rows": 120,
+      "queries": 54,
+      "models": {
+        "Model_D": 18,
+        "Model_E": 21,
+        "Model_A": 17,
+        "Model_B": 17,
+        "Model_C": 11,
+        "Model_G": 16,
+        "Model_F": 20
+      },
+      "issues": [],
+      "missing_notes": 78
+    }
+  ],
+  "overlap": {
+    "primary_second": 120,
+    "primary_third": 120,
+    "second_third": 120,
+    "second_only": 0,
+    "third_only": 0
+  },
+  "second_third_agreement": {
+    "correctness": {
+      "n": 120,
+      "exact": 81,
+      "mean_abs_diff": 0.35
+    },
+    "precision": {
+      "n": 80,
+      "exact": 59,
+      "mean_abs_diff": 0.3
+    },
+    "scientific_depth": {
+      "n": 120,
+      "exact": 79,
+      "mean_abs_diff": 0.342
+    },
+    "provenance": {
+      "n": 120,
+      "exact": 112,
+      "mean_abs_diff": 0.067
+    }
+  },
+  "same_second_third_rows": true
+}

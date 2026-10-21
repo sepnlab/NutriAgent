@@ -1,0 +1,154 @@
+{
+  "Chinese Layer Performance": [
+    {
+      "id": "CN-LP-001",
+      "query": "京粉6号的产蛋高峰期母鸡日产蛋率是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LP-002",
+      "query": "京红1号40周龄的蛋重是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LP-003",
+      "query": "大午金凤18周龄的体重是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LP-004",
+      "query": "农大3号40周龄的体重是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LP-005",
+      "query": "比较京粉6号和海兰W-36的产蛋高峰和持续性。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-LP-006",
+      "query": "比较大午金凤和农大3号40周龄的体重。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-LP-007",
+      "query": "描述中国国产蛋鸡品种的特点。",
+      "type": "open-ended"
+    },
+    {
+      "id": "CN-LP-008",
+      "query": "京粉6号30周龄的日均采食量是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LP-009",
+      "query": "大午金凤60周龄的蛋壳强度是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LP-010",
+      "query": "比较大午金凤和农大3号40周龄的蛋重。",
+      "type": "comparison"
+    }
+  ],
+  "Chinese Layer Nutrient Requirements": [
+    {
+      "id": "CN-LN-001",
+      "query": "京粉6号产蛋I期的钙需要量是多少？",
+      "type": "single-value",
+      "expected_answer": "4.0%",
+      "expected_value": 4.0
+    },
+    {
+      "id": "CN-LN-002",
+      "query": "大午金凤产蛋I期的粗蛋白需要量是多少？",
+      "type": "single-value",
+      "expected_value": 17.5
+    },
+    {
+      "id": "CN-LN-003",
+      "query": "京红1号产蛋II期的有效磷需要量是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LN-004",
+      "query": "农大3号产蛋I期的代谢能需要量是多少？",
+      "type": "single-value",
+      "expected_value": 2769
+    },
+    {
+      "id": "CN-LN-005",
+      "query": "比较大午金凤从预产期到产蛋III期的钙需要量。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-LN-006",
+      "query": "比较京粉6号和海兰W-36的氨基酸需要量。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-LN-007",
+      "query": "京粉6号产蛋I期的维生素D3需要量是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-LN-008",
+      "query": "描述中国国产蛋鸡品种的阶段饲喂策略。",
+      "type": "open-ended"
+    },
+    {
+      "id": "CN-LN-009",
+      "query": "中国蛋鸡品种与西方商业蛋鸡品种的营养需要量有何不同？",
+      "type": "open-ended"
+    },
+    {
+      "id": "CN-LN-010",
+      "query": "农大3号产蛋I期的标准回肠可消化赖氨酸需要量是多少？",
+      "type": "single-value"
+    }
+  ],
+  "Cross-Breed Comparison (Layer)": [
+    {
+      "id": "CN-CL-001",
+      "query": "比较京粉6号和海兰W-36的产蛋曲线。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-CL-002",
+      "query": "比较大午金凤和伊莎褐的体重。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-CL-003",
+      "query": "中国国产蛋鸡品种与西方品种在生产性能上有何不同？",
+      "type": "open-ended"
+    },
+    {
+      "id": "CN-CL-004",
+      "query": "比较中国国产蛋鸡和海兰W-36标准的钙需要量。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-CL-005",
+      "query": "国产蛋鸡品种在中国禽蛋产业中的作用是什么？",
+      "type": "open-ended"
+    }
+  ],
+  "Definitions (Chinese Context)": [
+    {
+      "id": "CN-DEF-001",
+      "query": "什么是黄羽肉鸡？",
+      "type": "definition"
+    },
+    {
+      "id": "CN-DEF-002",
+      "query": "什么是817肉杂鸡？",
+      "type": "definition"
+    },
+    {
+      "id": "CN-DEF-003",
+      "query": "中国国产肉鸡品种的现状如何？",
+      "type": "open-ended"
+    }
+  ]
+}

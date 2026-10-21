@@ -1,0 +1,663 @@
+{
+  "Feed Ingredient Bank Set 1": [
+    {
+      "id": "FIB-001",
+      "query": "What is the crude protein content of Soybean Meal 48%?",
+      "type": "single-value",
+      "expected_answer": "48.0%",
+      "expected_value": 48.0
+    },
+    {
+      "id": "FIB-002",
+      "query": "What is the calcium content of Limestone?",
+      "type": "single-value",
+      "expected_answer": "38.0%",
+      "expected_value": 38.0
+    },
+    {
+      "id": "FIB-003",
+      "query": "What is the metabolizable energy of Corn Grain?",
+      "type": "single-value",
+      "expected_answer": "3350 kcal/kg",
+      "expected_value": 3350
+    },
+    {
+      "id": "FIB-004",
+      "query": "What is the lysine content of Fish Meal 65%?",
+      "type": "single-value",
+      "expected_answer": "0.75%",
+      "expected_value": 0.75
+    },
+    {
+      "id": "FIB-005",
+      "query": "What is the crude fiber content of Sunflower Meal?",
+      "type": "single-value",
+      "expected_answer": "22.0%",
+      "expected_value": 22.0
+    },
+    {
+      "id": "FIB-006",
+      "query": "What is the total phosphorus content of Dicalcium Phosphate?",
+      "type": "single-value",
+      "expected_answer": "18.5%",
+      "expected_value": 18.5
+    },
+    {
+      "id": "FIB-007",
+      "query": "What is the methionine content of DL-Methionine supplement?",
+      "type": "single-value",
+      "expected_answer": "58.0%",
+      "expected_value": 58.0
+    },
+    {
+      "id": "FIB-008",
+      "query": "What is the sodium content of Salt?",
+      "type": "single-value",
+      "expected_answer": "39.3%"
+    },
+    {
+      "id": "FIB-009",
+      "query": "What is the ether extract content of Full-Fat Soybean?",
+      "type": "single-value",
+      "expected_answer": "18.0%",
+      "expected_value": 18.0
+    },
+    {
+      "id": "FIB-010",
+      "query": "Compare the calcium content between Fish Meal 65% and Meat and Bone Meal.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-011",
+      "query": "Compare the crude protein levels of Corn Grain and Soybean Meal 48%.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-012",
+      "query": "Which has higher metabolizable energy: Soybean Oil or Tallow?",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-013",
+      "query": "How does the amino acid profile of Blood Meal compare to Feather Meal?",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-014",
+      "query": "Explain the nutritional differences between Canola Meal and Cottonseed Meal for poultry feeding.",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-015",
+      "query": "What are the main energy sources available in the Feed Ingredient Bank and how do they compare?",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-016",
+      "query": "Describe the role of synthetic amino acid supplements in poultry diet formulation.",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-017",
+      "query": "What is the SID lysine value for Soybean Meal 48% and why is it important?",
+      "type": "single-value",
+      "expected_value": 88.0
+    },
+    {
+      "id": "FIB-018",
+      "query": "Compare the tryptophan content of Corn Grain and Soybean Meal 48%.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-019",
+      "query": "Which mineral supplements provide both calcium and phosphorus?",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-020",
+      "query": "What are the characteristics of insect meal as a poultry feed ingredient?",
+      "type": "open-ended"
+    }
+  ],
+  "Feed Ingredient Bank Set 2": [
+    {
+      "id": "FIB-021",
+      "query": "What is the arginine content in Soybean Meal 48%?",
+      "type": "single-value",
+      "expected_value": 3.19
+    },
+    {
+      "id": "FIB-022",
+      "query": "What is the valine content of Corn Grain?",
+      "type": "single-value",
+      "expected_value": 0.06
+    },
+    {
+      "id": "FIB-023",
+      "query": "What is the histidine level in Fish Meal 65%?",
+      "type": "single-value",
+      "expected_value": 1.65
+    },
+    {
+      "id": "FIB-024",
+      "query": "What is the isoleucine content of Wheat Grain?",
+      "type": "single-value",
+      "expected_value": 0.42
+    },
+    {
+      "id": "FIB-025",
+      "query": "What is the phenylalanine content in Soybean Meal 48%?",
+      "type": "single-value",
+      "expected_value": 2.5
+    },
+    {
+      "id": "FIB-026",
+      "query": "Compare the leucine content between Corn Grain and Sorghum Grain.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-027",
+      "query": "Compare the proline content of Corn Gluten Meal and Soybean Meal 48%.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-028",
+      "query": "Which ingredient has higher glycine content: Fish Meal 65% or Meat and Bone Meal?",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-029",
+      "query": "Compare serine and threonine content in Wheat Grain and Barley Grain.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-030",
+      "query": "Compare the total amino acid profile between Corn Grain and Soybean Meal 48%.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-031",
+      "query": "What is the glutamic acid content of Corn Gluten Meal?",
+      "type": "single-value",
+      "expected_value": 7.8
+    },
+    {
+      "id": "FIB-032",
+      "query": "What is the aspartic acid content of Canola Meal?",
+      "type": "single-value",
+      "expected_value": 3.5
+    },
+    {
+      "id": "FIB-033",
+      "query": "What is the alanine content of Poultry By-Product Meal?",
+      "type": "single-value",
+      "expected_value": 3.8
+    },
+    {
+      "id": "FIB-034",
+      "query": "What is the cysteine content of Feather Meal?",
+      "type": "single-value",
+      "expected_value": 8.5
+    },
+    {
+      "id": "FIB-035",
+      "query": "Which feed ingredient has the highest leucine content?",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-036",
+      "query": "Describe the importance of branched-chain amino acids in poultry nutrition.",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-037",
+      "query": "Explain the relationship between amino acid profiles and protein quality in feed ingredients.",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-038",
+      "query": "Compare the limiting amino acids in corn-based versus wheat-based poultry diets.",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-039",
+      "query": "What are the implications of imbalanced amino acid profiles in poultry feed formulation?",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-040",
+      "query": "Describe how amino acid supplementation can reduce crude protein levels in poultry diets.",
+      "type": "open-ended"
+    }
+  ],
+  "Feed Ingredient Bank Set 3": [
+    {
+      "id": "FIB-041",
+      "query": "What is the dry matter digestibility of Corn Grain?",
+      "type": "single-value",
+      "expected_value": 74.2
+    },
+    {
+      "id": "FIB-042",
+      "query": "What is the protein digestibility of Soybean Meal 48%?",
+      "type": "single-value",
+      "expected_value": 90.0
+    },
+    {
+      "id": "FIB-043",
+      "query": "What is the fat digestibility of Fish Meal 65%?",
+      "type": "single-value",
+      "expected_value": 95.0
+    },
+    {
+      "id": "FIB-044",
+      "query": "What is the calcium digestibility of Meat and Bone Meal?",
+      "type": "single-value",
+      "expected_value": 85.0
+    },
+    {
+      "id": "FIB-045",
+      "query": "What is the phosphorus digestibility of Dicalcium Phosphate?",
+      "type": "single-value",
+      "expected_value": 75.0
+    },
+    {
+      "id": "FIB-046",
+      "query": "Compare the protein digestibility between plant-based and animal-based protein meals.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-047",
+      "query": "Which cereal grain has the highest dry matter digestibility?",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-048",
+      "query": "Compare the SID lysine values between Soybean Meal 48% and Canola Meal.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-049",
+      "query": "How do anti-nutritional factors affect nutrient digestibility in poultry?",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-050",
+      "query": "Explain the role of exogenous enzymes in improving feed ingredient digestibility.",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-051",
+      "query": "Compare digestibility coefficients across different protein sources.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-052",
+      "query": "What factors affect the digestibility of feed ingredients in poultry?",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-053",
+      "query": "Describe the standardized ileal digestibility (SID) concept and its importance.",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-054",
+      "query": "What is the SID methionine value for Soybean Meal 48%?",
+      "type": "single-value",
+      "expected_value": 90.0
+    },
+    {
+      "id": "FIB-055",
+      "query": "Compare SID amino acid coefficients of Corn Grain and Wheat Grain.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-056",
+      "query": "How does feed processing affect ingredient digestibility?",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-057",
+      "query": "What is the relationship between crude fiber content and energy digestibility?",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-058",
+      "query": "Compare the digestibility of full-fat versus defatted soybean products.",
+      "type": "comparison"
+    },
+    {
+      "id": "FIB-059",
+      "query": "Explain how particle size influences feed ingredient digestibility.",
+      "type": "open-ended"
+    },
+    {
+      "id": "FIB-060",
+      "query": "What role do non-starch polysaccharides play in digestibility?",
+      "type": "open-ended"
+    }
+  ],
+  "Definitions": [
+    {
+      "id": "DEF-001",
+      "query": "What is the definition of Feed Conversion Ratio?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-002",
+      "query": "Define Metabolizable Energy in poultry nutrition.",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-003",
+      "query": "What is a Broiler?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-004",
+      "query": "Define Standardized Ileal Digestibility.",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-005",
+      "query": "What are Non-Starch Polysaccharides?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-006",
+      "query": "Define the Starter Phase in broiler production.",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-007",
+      "query": "What is the ideal protein concept?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-008",
+      "query": "Define phytase and its role in poultry nutrition.",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-009",
+      "query": "What is coccidiosis?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-010",
+      "query": "Define ascites in broiler production.",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-011",
+      "query": "What is the difference between prebiotics and probiotics?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-012",
+      "query": "Define limiting amino acid.",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-013",
+      "query": "What is the gizzard and what is its function?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-014",
+      "query": "Define heat stress in poultry production.",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-015",
+      "query": "What are mycotoxins and why are they important in poultry nutrition?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-016",
+      "query": "Define precision feeding.",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-017",
+      "query": "What is the Ross 308 genetic line?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-018",
+      "query": "Define gut-associated lymphoid tissue (GALT).",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-019",
+      "query": "What is the difference between apparent and true metabolizable energy?",
+      "type": "definition"
+    },
+    {
+      "id": "DEF-020",
+      "query": "Define the withdrawal period in poultry production.",
+      "type": "definition"
+    }
+  ],
+  "Nutrient Requirements": [
+    {
+      "id": "NR-001",
+      "query": "What is the crude protein requirement for Ross 308 in the Starter phase?",
+      "type": "single-value",
+      "expected_value": 23.0
+    },
+    {
+      "id": "NR-002",
+      "query": "What is the calcium requirement for Cobb 500 in the Grower phase?",
+      "type": "single-value",
+      "expected_value": 0.87
+    },
+    {
+      "id": "NR-003",
+      "query": "What is the available phosphorus requirement for Ross 708 in the Finisher phase?",
+      "type": "single-value",
+      "expected_value": 0.4
+    },
+    {
+      "id": "NR-004",
+      "query": "What is the SID lysine requirement for Ross 308 Starter phase?",
+      "type": "single-value",
+      "expected_value": 1.28
+    },
+    {
+      "id": "NR-005",
+      "query": "What is the metabolizable energy requirement for Cobb 500 in the Starter phase?",
+      "type": "single-value",
+      "expected_value": 3025
+    },
+    {
+      "id": "NR-006",
+      "query": "Compare calcium requirements across feeding phases for Ross 308.",
+      "type": "comparison"
+    },
+    {
+      "id": "NR-007",
+      "query": "Compare the SID methionine+cysteine requirements between Ross 308 and Cobb 500 in the Grower phase.",
+      "type": "comparison"
+    },
+    {
+      "id": "NR-008",
+      "query": "How do crude protein requirements change from Starter to Withdrawal phase in Ross 708?",
+      "type": "comparison"
+    },
+    {
+      "id": "NR-009",
+      "query": "Compare the amino acid density in starter versus finisher diets.",
+      "type": "open-ended"
+    },
+    {
+      "id": "NR-010",
+      "query": "Explain how nutrient requirements change as broilers age.",
+      "type": "open-ended"
+    },
+    {
+      "id": "NR-011",
+      "query": "What is the threonine requirement for Cobb 500 in the Finisher phase?",
+      "type": "single-value",
+      "expected_value": 0.76
+    },
+    {
+      "id": "NR-012",
+      "query": "What is the Vitamin A requirement for Ross 308 in the Starter phase?",
+      "type": "single-value",
+      "expected_value": 12500
+    },
+    {
+      "id": "NR-013",
+      "query": "What is the zinc requirement for broilers in the Starter phase?",
+      "type": "single-value",
+      "expected_value": 110
+    },
+    {
+      "id": "NR-014",
+      "query": "What is the selenium requirement for Cobb 500 in the Grower phase?",
+      "type": "single-value",
+      "expected_value": 0.3
+    },
+    {
+      "id": "NR-015",
+      "query": "Compare the calcium and phosphorus requirements across all phases for a typical broiler.",
+      "type": "comparison"
+    },
+    {
+      "id": "NR-016",
+      "query": "Explain the importance of vitamin and mineral specifications in broiler diets.",
+      "type": "open-ended"
+    },
+    {
+      "id": "NR-017",
+      "query": "How do nutrient requirement specifications differ between Ross and Cobb genetic lines?",
+      "type": "comparison"
+    },
+    {
+      "id": "NR-018",
+      "query": "What are the sodium requirements for Ross 308 across all phases?",
+      "type": "comparison"
+    },
+    {
+      "id": "NR-019",
+      "query": "Describe the rationale behind phase feeding in broiler production.",
+      "type": "open-ended"
+    },
+    {
+      "id": "NR-020",
+      "query": "What is the choline requirement for broilers and why is it important?",
+      "type": "single-value",
+      "expected_value": 1700
+    }
+  ],
+  "Performance Management": [
+    {
+      "id": "PM-001",
+      "query": "What is the body weight of Ross 308 male broilers at day 35?",
+      "type": "single-value",
+      "expected_value": 1995.4
+    },
+    {
+      "id": "PM-002",
+      "query": "What is the cumulative feed intake of Cobb 500 females at day 42?",
+      "type": "single-value",
+      "expected_value": 2602.7
+    },
+    {
+      "id": "PM-003",
+      "query": "What is the FCR of Ross 708 males at day 42?",
+      "type": "single-value",
+      "expected_value": 0.662
+    },
+    {
+      "id": "PM-004",
+      "query": "What is the average daily gain of Ross 308 females at day 21?",
+      "type": "single-value"
+    },
+    {
+      "id": "PM-005",
+      "query": "What is the mortality percentage for Ross 308 males at day 35?",
+      "type": "single-value",
+      "expected_value": 2.41
+    },
+    {
+      "id": "PM-006",
+      "query": "Compare body weight gain between Ross 308 and Cobb 500 males.",
+      "type": "comparison"
+    },
+    {
+      "id": "PM-007",
+      "query": "Compare FCR between Ross 308 and Ross 708 at day 42.",
+      "type": "comparison"
+    },
+    {
+      "id": "PM-008",
+      "query": "Compare male versus female performance in Ross 308 broilers.",
+      "type": "comparison"
+    },
+    {
+      "id": "PM-009",
+      "query": "Describe the typical growth curve of a modern broiler.",
+      "type": "open-ended"
+    },
+    {
+      "id": "PM-010",
+      "query": "Explain factors affecting feed conversion ratio in broiler production.",
+      "type": "open-ended"
+    },
+    {
+      "id": "PM-011",
+      "query": "What is the body weight of Ross 708 at day 49?",
+      "type": "single-value",
+      "expected_value": 3783.1
+    },
+    {
+      "id": "PM-012",
+      "query": "What is the breast meat yield of Cobb 500 at day 42?",
+      "type": "single-value"
+    },
+    {
+      "id": "PM-013",
+      "query": "Compare the performance characteristics of Ross 308, Ross 708, and Cobb 500.",
+      "type": "comparison"
+    },
+    {
+      "id": "PM-014",
+      "query": "What is the relationship between body weight and feed intake in broilers?",
+      "type": "open-ended"
+    },
+    {
+      "id": "PM-015",
+      "query": "Compare cumulative FCR between male and female broilers at market age.",
+      "type": "comparison"
+    },
+    {
+      "id": "PM-016",
+      "query": "Describe typical mortality patterns in commercial broiler production.",
+      "type": "open-ended"
+    },
+    {
+      "id": "PM-017",
+      "query": "What is the fat pad percentage for Ross 308 at day 42?",
+      "type": "single-value",
+      "expected_value": 2.0
+    },
+    {
+      "id": "PM-018",
+      "query": "Compare the growth rate of Ross 708 males and females.",
+      "type": "comparison"
+    },
+    {
+      "id": "PM-019",
+      "query": "Explain how stocking density affects broiler performance.",
+      "type": "open-ended"
+    },
+    {
+      "id": "PM-020",
+      "query": "What are the key performance indicators used in broiler production?",
+      "type": "open-ended"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "Chinese Multi-Hop (Broiler)": [
+    {
+      "id": "CN-MH-001",
+      "query": "玉米的磷消化率是多少？如果罗斯308育雏期日粮中含 60% 玉米，玉米总磷含量 0.28%，玉米贡献的有效磷是多少（占日粮百分比）？",
+      "type": "multi-hop",
+      "expected_answer": "玉米磷消化率 = 31.8%。60% 玉米贡献有效磷 = 0.28% × 0.60 × 0.318 = 0.053%",
+      "expected_value": 0.053,
+      "steps": [
+        "玉米磷消化率 = 31.8%（从消化率表）",
+        "60% 玉米总磷 = 0.28 × 0.60 = 0.168%",
+        "有效磷 = 0.168 × 31.8/100 = 0.053%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_digestibility"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "CN-MH-002",
+      "query": "比较菜粕和豆粕48%的 SID 赖氨酸消化率。如果两者各添加 15%，来自菜粕和豆粕的 SID 赖氨酸总量是多少（已知豆粕总赖氨酸 2.8%，菜粕总赖氨酸 1.2%）？",
+      "type": "multi-hop",
+      "expected_answer": "豆粕 SID Lys=88%，菜粕=75%。豆粕贡献：2.8%×0.15×0.88=0.370%。菜粕：1.2%×0.15×0.75=0.135%。合计=0.505%",
+      "expected_value": 0.505,
+      "steps": [
+        "豆粕 SID Lys=88%，菜粕 SID Lys=75%",
+        "豆粕总赖氨酸=2.8%，15%添加→2.8×0.15=0.42%总赖氨酸，SID=0.42×0.88=0.370%",
+        "菜粕总赖氨酸=1.2%，15%添加→1.2×0.15=0.18%总赖氨酸，SID=0.18×0.75=0.135%",
+        "合计 SID Lys = 0.370+0.135=0.505%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_amino_acids"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "CN-MH-003",
+      "query": "石粉的钙消化率是多少？如果在罗斯308育雏期日粮中添加 2.0% 石粉（钙需要量=0.96%），可消化钙贡献了多少？还需从其他来源补充多少钙？",
+      "type": "multi-hop",
+      "expected_answer": "石粉钙消化率=49.3%。2% 石粉提供总钙=38%×0.02=0.76%，可消化钙=0.76%×0.493=0.375%。还需补充=0.96-0.375=0.585%",
+      "expected_value": 0.585,
+      "steps": [
+        "石粉钙消化率=49.3%（从消化率表）",
+        "2%石粉总钙=38.0×0.02=0.76%",
+        "可消化钙=0.76×0.493=0.375%",
+        "罗斯308育雏期钙需要量=0.96%",
+        "还需补充=0.96-0.375=0.585%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_digestibility",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "CN-MH-004",
+      "query": "鱼粉65%和黑水虻虫粉的 SID 蛋氨酸消化率分别是多少？如果两者各含约 0.75% 总蛋氨酸，以 10% 添加量加入日粮，哪个提供的 SID 蛋氨酸更多？多多少？",
+      "type": "multi-hop",
+      "expected_answer": "鱼粉65% SID Met=93%，黑水虻虫粉=88%。鱼粉提供 0.75%×0.10×0.93=0.070%。虫粉：0.75%×0.10×0.88=0.066%。鱼粉多提供 0.004%。",
+      "expected_value": 0.004,
+      "steps": [
+        "鱼粉65% SID Met=93%，黑水虻虫粉 SID Met=88%",
+        "鱼粉10%添加：0.75×0.10×0.93=0.070%",
+        "虫粉10%添加：0.75×0.10×0.88=0.066%",
+        "鱼粉多提供=0.070-0.066=0.004%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank"
+      ],
+      "difficulty": "L3"
+    }
+  ],
+  "Chinese Constraint (Broiler)": [
+    {
+      "id": "CN-CS-001",
+      "query": "一个罗斯308育雏期日粮仅用玉米（60%）和豆粕48%（32%），其余8%为矿物质维生素。已知玉米总赖氨酸=0.58%，豆粕总赖氨酸=2.8%。利用 SID 赖氨酸消化率计算能否满足 1.28% 的 SID 赖氨酸需要量？缺口是多少？",
+      "type": "advanced",
+      "expected_answer": "玉米SID Lys贡献：0.58%×0.60×0.85=0.296%。豆粕：2.8%×0.32×0.88=0.788%。合计=1.084%。需要量=1.28%。缺口=0.196%。",
+      "expected_value": 0.196,
+      "steps": [
+        "玉米总Lys=0.58%×0.60=0.348%，SID 85%→0.296%",
+        "豆粕总Lys=2.8%×0.32=0.896%，SID 88%→0.788%",
+        "合计=1.084%，需要量=1.28%，缺口=0.196%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_amino_acids",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L4"
+    },
+    {
+      "id": "CN-CS-002",
+      "query": "利用原料消化率数据，比较玉米和小麦的磷生物利用率。在 60% 添加量下，各自贡献的有效磷是多少（玉米总磷=0.28%，小麦总磷=0.38%）？",
+      "type": "advanced",
+      "expected_answer": "玉米磷消化率=31.8%，小麦=74.1%。玉米有效磷=0.053%。小麦有效磷=0.169%。小麦总磷虽只高36%，有效磷却是玉米的3.2倍。",
+      "steps": [
+        "玉米P消化率=31.8%，小麦=74.1%",
+        "玉米有效磷=0.28×0.60×0.318=0.053%",
+        "小麦有效磷=0.38×0.60×0.741=0.169%",
+        "小麦磷生物利用率显著高于玉米"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_digestibility"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "CN-CS-003",
+      "query": "在日粮中添加 5% 的肉骨粉（Ca=8.5%, P=4.5%），能否作为罗斯308育雏期的唯一钙源？计算贡献的钙量，占需要量（0.96%）的百分比是多少？",
+      "type": "advanced",
+      "expected_answer": "5%肉骨粉提供 Ca=8.5%×0.05=0.425%。需要量=0.96%。仅满足44.3%，不能作为唯一钙源。",
+      "expected_value": 44.3,
+      "steps": [
+        "肉骨粉Ca=8.5%，5%添加：8.5×0.05=0.425%",
+        "需要量=0.96%",
+        "覆盖率=0.425/0.96×100=44.3%",
+        "结论：不足以作为唯一钙源"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L2"
+    }
+  ],
+  "Chinese Counterfactual (Broiler)": [
+    {
+      "id": "CN-CF-001",
+      "query": "如果豆粕48%价格翻倍，营养师考虑用菜粕替代50%的豆粕。原配方含30%豆粕。计算替代后的 SID 赖氨酸贡献，与原配方相比缺口多少？需要添加多少 L-赖氨酸盐酸盐（78% 赖氨酸活性，100% SID）来补偿？",
+      "type": "advanced",
+      "expected_answer": "原配方 SID Lys=2.8%×0.30×0.88=0.739%。替代后：豆粕15%→0.370%，菜粕15%→0.135%，合计=0.505%。缺口=0.234%。L-赖氨酸盐需要=0.234/0.78=0.30%。",
+      "expected_value": 0.3,
+      "steps": [
+        "原SID Lys=2.8×0.30×0.88=0.739%",
+        "替代后豆粕15%：2.8×0.15×0.88=0.370%",
+        "替代后菜粕15%：1.2×0.15×0.75=0.135%",
+        "合计=0.505%，缺口=0.739-0.505=0.234%",
+        "L-赖氨酸盐酸盐(78%活性)需要=0.234/0.78=0.30%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_amino_acids"
+      ],
+      "difficulty": "L4"
+    },
+    {
+      "id": "CN-CF-002",
+      "query": "一批玉米因干旱粗蛋白从 8.5% 降至 7.0%。原配方用 65% 玉米，需要增加多少豆粕48%（CP=48%）才能保持总蛋白水平不变？",
+      "type": "advanced",
+      "expected_answer": "原玉米蛋白贡献=8.5%×0.65=5.525%。新=7.0%×0.65=4.55%。损失=0.975%。需增加豆粕=0.975/48×100=2.03%。",
+      "expected_value": 2.03,
+      "steps": [
+        "原蛋白：8.5×0.65=5.525%",
+        "新蛋白：7.0×0.65=4.55%",
+        "损失=0.975%",
+        "豆粕CP=48%，增加量=0.975/48×100=2.03%"
+      ],
+      "tools_required": [
+        "feed_ingredient_bank"
+      ],
+      "difficulty": "L2"
+    }
+  ],
+  "Chinese Cross-Validate (Broiler)": [
+    {
+      "id": "CN-CV-001",
+      "query": "玉米磷消化率 31.8% 而小麦 74.1%。结合有效磷和植酸磷的定义，解释为什么小麦的磷生物利用率高于玉米，以及对植酸酶使用策略的启示。",
+      "type": "advanced",
+      "expected_answer": "小麦含天然植酸酶活性高，释放更多植酸结合磷。小麦P消化率(74.1%)是玉米(31.8%)的2.3倍。小麦型日粮需补充的无机磷更少，植酸酶的增效空间也不同。",
+      "tools_required": [
+        "feed_ingredient_digestibility",
+        "definitions_tool",
+        "rag"
+      ],
+      "difficulty": "L3"
+    },
+    {
+      "id": "CN-CV-002",
+      "query": "罗斯308公鸡35日龄累计采食量2829g，体重1995.4g。验证计算出的FCR是否与性能表中的累计FCR一致，然后解释 FCR 随日龄增长的原因。",
+      "type": "advanced",
+      "expected_answer": "FCR=2829/1995.4=1.418，与表中一致。FCR随日龄增长是因为维持需要占总能量比例增加。",
+      "expected_value": 1.418,
+      "steps": [
+        "计算FCR：2829/1995.4=1.418",
+        "与性能表对比",
+        "解释FCR随日龄增长的生理原因"
+      ],
+      "tools_required": [
+        "performance_management",
+        "definitions_tool"
+      ],
+      "difficulty": "L2"
+    }
+  ],
+  "Chinese Scenario (Broiler)": [
+    {
+      "id": "CN-SC-001",
+      "query": "我的科宝500公鸡35日龄平均体重1840g，低于品种标准。从性能数据中查找科宝500公鸡35日龄的标准体重，计算偏差百分比，结合采食量数据分析是否需要在育肥期调整营养方案。",
+      "type": "advanced",
+      "expected_answer": "需要检索科宝500标准体重，计算偏差，分析采食量数据并给出营养建议。",
+      "tools_required": [
+        "performance_management",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L4"
+    },
+    {
+      "id": "CN-SC-002",
+      "query": "一个有机家禽养殖户想完全用天然原料替代合成 DL-蛋氨酸。查询原料库中天然蛋氨酸含量最高的原料，检查玉米（60%）、豆粕48%（30%）、鱼粉65%（5%）的组合能否满足罗斯308育雏期 0.50% 的 SID 蛋氨酸需要量。",
+      "type": "advanced",
+      "expected_answer": "需要检索各种原料的蛋氨酸含量和SID消化率，计算总SID Met贡献与需要量比较。",
+      "tools_required": [
+        "feed_ingredient_bank",
+        "feed_ingredient_amino_acids",
+        "nutrient_requirements"
+      ],
+      "difficulty": "L4"
+    }
+  ]
+}

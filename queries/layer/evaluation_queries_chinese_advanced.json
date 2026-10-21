@@ -1,0 +1,93 @@
+{
+  "Chinese Multi-Hop (Layer)": [
+    {
+      "id": "CN-ADV-001",
+      "query": "京红1号3.0在产蛋I期的钙需要量是多少？与产蛋IV期相比如何变化？",
+      "type": "multi-hop"
+    },
+    {
+      "id": "CN-ADV-002",
+      "query": "京白939在30周龄的日产蛋量是多少克？需要用到产蛋率和蛋重两个数据。",
+      "type": "multi-hop"
+    },
+    {
+      "id": "CN-ADV-003",
+      "query": "京粉6号在产蛋高峰期的可消化赖氨酸需要量是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-ADV-004",
+      "query": "农大6号从育雏期到产蛋期的钙需要量如何变化？",
+      "type": "advanced"
+    },
+    {
+      "id": "CN-ADV-005",
+      "query": "比较京红1号3.0和京白939在40周龄的体重。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-ADV-006",
+      "query": "北农2号的育雏期代谢能需要量是多少？",
+      "type": "single-value"
+    }
+  ],
+  "Chinese Nutrient Comparison (Layer)": [
+    {
+      "id": "CN-ADV-NR-001",
+      "query": "京红1号3.0和大午金凤在产蛋高峰期的钙需要量有何不同？",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-ADV-NR-002",
+      "query": "京白939的粗蛋白需要量在育雏期和产蛋期分别是多少？",
+      "type": "multi-hop"
+    },
+    {
+      "id": "CN-ADV-NR-003",
+      "query": "北农1号有哪些营养阶段数据可用？列出其粗蛋白需要量。",
+      "type": "advanced"
+    },
+    {
+      "id": "CN-ADV-NR-004",
+      "query": "京粉6号的维生素A和维生素D3添加量在育雏期是多少？",
+      "type": "single-value"
+    },
+    {
+      "id": "CN-ADV-NR-005",
+      "query": "大午金凤在Layer I和Layer III期的钙需要量差异有多大？",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-ADV-NR-006",
+      "query": "农大6号的胆碱推荐量在育雏期和产蛋期各是多少？",
+      "type": "multi-hop"
+    }
+  ],
+  "Chinese Breed Comparison (Layer)": [
+    {
+      "id": "CN-ADV-CB-001",
+      "query": "在中国品种中，哪个品种的产蛋高峰期最高？京红1号、京粉6号还是大午金凤？",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-ADV-CB-002",
+      "query": "比较北农1号和北农2号的产蛋性能差异。",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-ADV-CB-003",
+      "query": "农大3号和农大6号在40周龄的蛋重和体重有何差异？",
+      "type": "comparison"
+    },
+    {
+      "id": "CN-ADV-CB-004",
+      "query": "如果农户希望选择耗料量低(<100g/天)且产蛋率高的中国品种，有哪些选择？",
+      "type": "advanced"
+    },
+    {
+      "id": "CN-ADV-CB-005",
+      "query": "京红1号3.0在60周龄的累计产蛋数是多少？与京粉6号相比如何？",
+      "type": "multi-hop"
+    }
+  ]
+}

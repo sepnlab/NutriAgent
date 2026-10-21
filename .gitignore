@@ -1,0 +1,81 @@
+# API keys
+.env
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Vector DB (regeneratable)
+vector_db/
+
+# API response cache
+.cache/
+
+# Model directories (large binaries + regeneratable)
+models/
+
+# Paper PDF (reference, not part of source)
+NutriCHAT A Reasoning-Driven*.md
+
+# Logs
+logs/
+
+# Paper 2 — generated figures (regeneratable)
+docs/paper2/assert/
+
+# Paper 2 — docx output (regeneratable via md_to_docx.py)
+docs/paper2/output/
+
+# Paper 2 — internal audit reports (pre-publication, not for submission)
+docs/paper2/internal_audit/
+
+# pytest
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.claude/
+.omo/
+.idea/
+.vscode/
+
+# Local backups (pre-edit snapshots, not part of corpus)
+corpus/broiler/_backup/
+corpus/shared/_backup/
+
+# Data pipeline scripts (scraping, PDF parsing — not part of corpus)
+docs/data_pipeline/
+
+# Project memory (non-public notes)
+docs/项目记忆.md
+
+package-logs/
+scripts/_test_import.py
+docs/resources/
+
+# Paper assets (figures, references — regeneratable)
+docs/paper/assert/
+
+# Temporary experiment scripts and outputs
+eval_single_value.py
+eval_single_value_results.json
+score_v0_baseline.py
+v0_vs_v1_scores.json
+run_full_eval_fixed.py
+run_review_ds.py
+run_review_mimo.py
+run_reviews.sh
+tmp_review.json
+
+# LLM review outputs (generated, not part of source)
+review*.txt
+review*_ds.py
+review*_mimo.py
+review*_glm.py
+review*_qwen.py

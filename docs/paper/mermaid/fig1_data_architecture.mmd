@@ -1,0 +1,65 @@
+flowchart LR
+    subgraph Sources["External Data Sources"]
+        direction TB
+        S1[("feedtables.com<br/>feedipedia.org")]
+        S2[("Breed Management<br/>Guides")]
+    end
+
+    subgraph Shared["Tier 1 — Shared (Species-Independent)"]
+        direction TB
+        subgraph FIB["Ingredient Composition · 108 entries · 324 docs"]
+            direction TB
+            FIB1["Chemical Composition<br/>7 categories · 38 params"]
+            FIB2["Amino Acid Profiles<br/>10 EAA + 9 NEAA · 19 params"]
+            FIB3["Digestibility Coefficients<br/>20 AA × 2 metrics · 40 params"]
+        end
+        DEF["Terminology<br/>556 terms · 556 docs<br/>exact · partial · fuzzy"]
+    end
+
+    subgraph Breed["Tier 2 — Breed-Specific"]
+        direction TB
+        subgraph NR["Nutritional Specifications · 133 docs"]
+            direction TB
+            NR1["Requirements<br/>17 breeds · 7 phases<br/>20 params · 103 entries"]
+            NR2["Vitamins & Minerals<br/>13 breeds · 18 params<br/>30 entries"]
+        end
+        subgraph PM["Production Benchmarks · 1,131 docs"]
+            direction TB
+            PM1["Production: egg %, egg wt,<br/>egg mass, cumul count"]
+            PM2["Efficiency: FI, feed/dozen,<br/>feed/kg egg mass"]
+            PM3["Quality: BW, mortality,<br/>shell str, Haugh, water"]
+        end
+    end
+
+    S1 --> FIB
+    S2 --> NR
+    S2 --> PM
+
+    FIB --> DB[("PoultryDB<br/>2,144 docs")]
+    DEF --> DB
+    NR --> DB
+    PM --> DB
+
+    DB --> R1["Structured Retrieval<br/>parameter-specific queries"]
+    DB --> R2["Semantic Retrieval<br/>open-ended queries"]
+
+    style Sources fill:#f5f5f5,stroke:#999,stroke-width:1px,color:#666
+    style Shared fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style Breed fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style DB fill:#fff8e1,stroke:#f57f17,stroke-width:2px
+    style R1 fill:#fff8e1,stroke:#f57f17
+    style R2 fill:#fff8e1,stroke:#f57f17
+    style FIB fill:#f1f8e9,stroke:#558b2f
+    style FIB1 fill:#f9fbe7,stroke:#7cb342
+    style FIB2 fill:#f9fbe7,stroke:#7cb342
+    style FIB3 fill:#f9fbe7,stroke:#7cb342
+    style DEF fill:#f1f8e9,stroke:#558b2f
+    style NR fill:#e8eaf6,stroke:#283593
+    style NR1 fill:#eef1fa,stroke:#5c6bc0
+    style NR2 fill:#eef1fa,stroke:#5c6bc0
+    style PM fill:#e8eaf6,stroke:#283593
+    style PM1 fill:#eef1fa,stroke:#5c6bc0
+    style PM2 fill:#eef1fa,stroke:#5c6bc0
+    style PM3 fill:#eef1fa,stroke:#5c6bc0
+    style S1 fill:#fafafa,stroke:#bbb
+    style S2 fill:#fafafa,stroke:#bbb

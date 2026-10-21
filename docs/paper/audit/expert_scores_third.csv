@@ -1,0 +1,121 @@
+﻿query_id,model_id,category,query_type,language,correctness,precision,scientific_depth,provenance,notes
+C-DEF-001,Model_D,Definitions,definition,en,5,N/A,5,0,
+C-DEF-001,Model_E,Definitions,definition,en,5,N/A,5,0,响应截断：附加段落（为何家禽偏好ME）未写完，但题目所问的定义与区别已完整作答
+C-DEF-002,Model_A,Definitions,definition,en,3,N/A,3,0,响应截断：Why different from total P 整段缺失，第二问未答；已呈现内容本身准确
+C-DEF-002,Model_E,Definitions,definition,en,5,N/A,5,0,响应截断：末尾实践示例未收尾，核心答案已完整
+C-DEF-003,Model_B,Definitions,definition,en,5,N/A,4,0,
+C-DEF-003,Model_E,Definitions,definition,en,5,N/A,5,0,响应截断：示例计算收尾被截，定义与公式已完整
+C-DEF-004,Model_B,Definitions,single-value,en,5,5,3,0,
+C-DEF-004,Model_C,Definitions,single-value,en,5,5,3,0,
+C-DEF-005,Model_B,Definitions,definition,zh,5,N/A,4,0,
+C-DEF-005,Model_D,Definitions,definition,zh,5,N/A,5,0,
+C-DEF-005,Model_G,Definitions,definition,zh,5,N/A,5,0,响应截断：TME补充说明未写完，核心答案已完整
+C-DEF-006,Model_B,Definitions,open-ended,zh,3,N/A,3,0,关键机制（家禽泄殖腔粪尿同排、DE难以单独测定）缺失；理由1、2表述含混，禽类尿能损失不可忽略
+C-DEF-006,Model_G,Definitions,open-ended,zh,5,N/A,5,1,响应截断：第2点末尾被截，核心论证已完整
+C-EC-001,Model_B,Edge Cases,single-value,en,5,N/A,2,0,
+C-EC-001,Model_E,Edge Cases,single-value,en,5,N/A,2,0,
+C-EC-002,Model_C,Edge Cases,single-value,en,2,N/A,3,0,未按真值表识别品种不在库（应拒答并列出可用品种），以通用数值冒充该品种数据；'28周产蛋周期''Lay I为18-20周龄'及Ca:P 2.5-3:1均有误；响应截断
+C-EC-002,Model_F,Edge Cases,single-value,en,3,N/A,4,1,未按真值表拒答（品种不在库应指出并列出可用品种）；数值本身符合褐壳蛋鸡行业常规
+C-EC-002,Model_G,Edge Cases,single-value,en,3,N/A,3,2,未按真值表拒答；将Lohmann Tinted径直等同于Lohmann Pink且未说明依据，来源标注完整
+C-EC-003,Model_D,Edge Cases,single-value,en,5,N/A,4,0,
+C-EC-003,Model_F,Edge Cases,single-value,en,5,N/A,4,1,
+C-EC-003,Model_G,Edge Cases,single-value,en,5,N/A,4,2,响应截断：末句肉鸡对比未收尾，核心已答
+C-EC-004,Model_D,Edge Cases,single-value,en,5,N/A,4,1,
+C-EC-004,Model_E,Edge Cases,single-value,en,5,N/A,5,0,响应截断：第4节Source Verification仅有标题，核心答案已完整
+C-EC-005,Model_C,Edge Cases,comparison,en,4,N/A,5,0,表述自相矛盾：先称鱼粉非重要ME来源，随后又给出3000–3500 kcal/kg（与真值3180相符）；响应截断
+C-EC-005,Model_D,Edge Cases,comparison,en,5,N/A,4,0,
+C-FIB-001,Model_D,Feed Ingredient Bank,single-value,en,5,4,4,0,
+C-FIB-001,Model_F,Feed Ingredient Bank,single-value,en,4,4,5,0,将常规7–10%的CP范围标注为干物质基础欠准确，该范围通常为风干基础
+C-FIB-002,Model_A,Feed Ingredient Bank,single-value,en,5,5,4,0,响应截断：典型含量句在'35%'处被截，关键数值已给出
+C-FIB-002,Model_D,Feed Ingredient Bank,single-value,en,4,4,3,0,
+C-FIB-002,Model_F,Feed Ingredient Bank,single-value,en,4,4,5,0,真值表疑问：库值35%偏保守，行业常用饲料级石灰石36–38%
+C-FIB-003,Model_A,Feed Ingredient Bank,single-value,en,5,4,3,0,
+C-FIB-003,Model_G,Feed Ingredient Bank,single-value,en,4,4,3,2,ME 2220与真值2260接近但略低；G称库内条目名为'46% protein + oil'，与真值表'48% protein + oil'条目名不一致；响应截断（GE值未给出）
+C-FIB-004,Model_A,Feed Ingredient Bank,comparison,en,3,3,3,0,"未用库值：以干物质基础给出3300–3400/3000–3200，与真值(3090/2860, 风干)偏差7–12%，且未给差值"
+C-FIB-004,Model_D,Feed Ingredient Bank,comparison,en,4,3,4,0,真值表疑问：库值玉米3090/小麦2860明显低于常见家禽AME(~3350/3100)；D给出行业典型值，两值均偏高8–10%但差值200–250与真值230一致
+C-FIB-005,Model_F,Feed Ingredient Bank,comparison,en,3,3,4,0,未用库值：SBM48按名义48%（真值52.6%，实际48%蛋白豆粕CP通常52–54%），菜粕36–38%（真值41.0%）；差值10–12pp勉强覆盖11.6
+C-FIB-005,Model_G,Feed Ingredient Bank,comparison,en,4,3,3,2,菜粕41.0与真值一致，但SBM取49.5（真值52.6，−5.9%），差值8.5pp与真值11.6不符；响应截断（Final answer未写出）
+C-FIB-006,Model_E,Feed Ingredient Bank,open-ended,en,4,N/A,4,1,题目要求给出确切CP值，仅给区间并附免责声明；三个来源均>30%属实
+C-FIB-006,Model_F,Feed Ingredient Bank,open-ended,en,4,N/A,4,1,SBM48以名义值48%当作实际CP（真值52.6%）；豌豆蛋白浓缩物55%属实，三个来源均>30%
+C-FIB-007,Model_A,Feed Ingredient Bank,open-ended,en,3,N/A,4,0,玉米SID赖氨酸消化率50–55%错误（真值表及实际均约90%，玉米SID消化率高）；响应截断
+C-FIB-007,Model_B,Feed Ingredient Bank,open-ended,en,3,N/A,3,0,未给出消化率系数（90% vs 88%）；SBM48 SID Lys 0.67–0.70%与真值22.26 g/kg差约3倍，仅玉米绝对量接近
+C-FIB-008,Model_A,Feed Ingredient Bank,definition,en,3,N/A,3,0,严重截断：公式未写完，与GE的区别一段缺失
+C-FIB-008,Model_F,Feed Ingredient Bank,definition,en,5,N/A,5,0,响应截断：末尾玉米GE示例未收尾，核心答案已完整
+C-FIB-009,Model_E,Feed Ingredient Bank,single-value,zh,4,4,3,0,把8–10%标注为干物质基础欠准，该区间通常为风干基础
+C-FIB-009,Model_F,Feed Ingredient Bank,single-value,zh,4,4,4,0,常见值8.0–8.5%标注为干物质基础欠准（通常为风干基础）；真值8.8%位于7–9%区间上缘
+C-FIB-009,Model_G,Feed Ingredient Bank,single-value,zh,5,5,3,2,
+C-FIB-010,Model_C,Feed Ingredient Bank,comparison,zh,2,2,3,0,粗脂肪15–20%为全脂大豆水平，脱脂豆粕48的EE约1–2%，明显错误；菜粕EE 10–15%亦过高；ME 2800–3000/2400–2600远偏离库值2260/1450；响应截断
+C-FIB-010,Model_E,Feed Ingredient Bank,comparison,zh,4,3,5,1,豆粕2350与真值2260接近(+4%)，但菜粕1800较真值1450偏高24%，差值500–600与810不符；真值表疑问：菜粕ME 1450低于中国常用参考值(~1800–2000)；响应截断
+C-NR-001,Model_E,Nutrient Requirements,single-value,en,4,4,4,0,钙磷比2:1–2.5:1与所给aP 0.35–0.40%不自洽（4.04:0.38≈10:1，蛋鸡Ca:aP通常≥8:1）
+C-NR-001,Model_G,Nutrient Requirements,single-value,en,5,5,4,2,
+C-NR-002,Model_B,Nutrient Requirements,single-value,en,3,3,3,0,疑将总蛋氨酸（0.42–0.45%）当作SID值；真值SID Met 0.36%，偏差+17–25%
+C-NR-002,Model_D,Nutrient Requirements,single-value,en,5,5,4,0,
+C-NR-003,Model_A,Nutrient Requirements,single-value,en,5,4,2,0,
+C-NR-003,Model_B,Nutrient Requirements,single-value,en,5,4,3,0,
+C-NR-004,Model_D,Nutrient Requirements,comparison,en,3,3,4,1,将Lay I/Lay III理解为ISA指南版本而非产蛋期分期，答非所问方向；两版曲线对比后结论偶然同向，但未给出4.04% vs 4.44%的分期对比；响应截断
+C-NR-004,Model_F,Nutrient Requirements,comparison,en,5,4,5,1,响应截断：末句未收尾，核心对比已完整
+C-NR-005,Model_A,Nutrient Requirements,comparison,en,4,4,4,0,Dawu Jinfeng 3.5–3.7%较真值3.90%偏低6–10%；响应截断（Key caveats未完）
+C-NR-005,Model_F,Nutrient Requirements,comparison,en,3,3,4,0,事实错误：ISA Brown为褐壳蛋鸡，非白壳；DJ产蛋率70–80%偏低（商业化粉壳配套系峰值通常85%+）；DJ钙3.2–3.6%低于真值3.90%
+C-NR-006,Model_F,Nutrient Requirements,open-ended,en,3,N/A,4,1,后期趋势错误：真值Lay II/III升至4.24/4.44%，F称Lay II持平3.8–4.0%、Lay III降至3.6–3.8%（常规做法为后期上调）；响应截断
+C-NR-006,Model_G,Nutrient Requirements,open-ended,en,4,N/A,3,2,分期与上升趋势正确，但Lay I–III均较真值低约5–6%；响应截断
+C-NR-007,Model_A,Nutrient Requirements,single-value,en,5,5,3,0,
+C-NR-007,Model_E,Nutrient Requirements,single-value,en,5,5,3,0,
+C-NR-007,Model_G,Nutrient Requirements,single-value,en,5,5,3,0,
+C-NR-008,Model_B,Nutrient Requirements,single-value,en,5,5,3,0,
+C-NR-008,Model_C,Nutrient Requirements,single-value,en,3,2,3,0,自行引入'植酸磷基线利用率30%'假设偏离题意（题意为50%植酸磷被释放），且响应截断致最终EAP值未写出
+C-NR-009,Model_B,Nutrient Requirements,definition,en,5,N/A,4,0,
+C-NR-009,Model_F,Nutrient Requirements,definition,en,5,N/A,5,0,响应截断：第3点后未收尾，定义、公式与可加性论证已完整
+C-NR-010,Model_B,Nutrient Requirements,single-value,zh,4,4,3,0,3.5–3.8%未覆盖真值3.9%（上缘3.8在±5%内）
+C-NR-010,Model_E,Nutrient Requirements,single-value,zh,5,4,5,1,
+C-NR-010,Model_F,Nutrient Requirements,single-value,zh,5,4,4,0,
+C-NR-011,Model_D,Nutrient Requirements,comparison,zh,4,4,4,0,产蛋I期3.5–3.8%较真值3.90%偏低；III期4.0–4.2%上缘与真值一致，趋势正确
+C-NR-011,Model_E,Nutrient Requirements,comparison,zh,3,3,4,0,I期3.2–3.5%较真值3.90%偏低10–18%，III期3.8–4.0%较真值4.20%偏低7%；趋势正确；响应截断
+C-NR-012,Model_C,Nutrient Requirements,single-value,zh,4,4,3,0,仅给0.35–0.45%宽区间；'以干物质为基础'表述欠规范；响应截断
+C-NR-012,Model_F,Nutrient Requirements,single-value,zh,5,4,4,1,
+C-PM-001,Model_D,Performance Management,single-value,en,5,4,3,1,
+C-PM-001,Model_F,Performance Management,single-value,en,5,4,4,0,
+C-PM-002,Model_D,Performance Management,single-value,en,5,4,2,1,
+C-PM-002,Model_G,Performance Management,single-value,en,5,5,3,2,
+C-PM-003,Model_B,Performance Management,comparison,en,3,2,3,0,方向错误：真值为Hy-Line高0.2pp（95.7 vs 95.5），B答成Isa Brown更高，两值亦偏低
+C-PM-003,Model_E,Performance Management,comparison,en,3,2,4,0,方向错误：真值为Hy-Line高0.2pp，E答成Isa Brown更高
+C-PM-003,Model_G,Performance Management,comparison,en,5,5,3,2,响应截断：末句未收尾，核心对比与数据已完整
+C-PM-004,Model_A,Performance Management,comparison,en,3,2,4,0,方向错误：真值Hy-Line高1 g/d（113 vs 112），A答成Isa Brown高约5 g/d；数值区间本身接近；响应截断
+C-PM-004,Model_C,Performance Management,comparison,en,4,4,3,0,方向正确；Isa值100–110偏低、差值约5g高估（真值1g）；FCR 1.6–1.8偏低；响应截断（表格末行被截）
+C-PM-004,Model_E,Performance Management,comparison,en,3,2,4,0,方向错误：真值Hy-Line更高，E答成Isa高5–10 g/d；两系数值均偏高约3–10%；响应截断
+C-PM-005,Model_B,Performance Management,open-ended,en,3,N/A,2,0,第5周450–500 g较真值370 g偏高22–35%，第10/15周区间覆盖真值
+C-PM-005,Model_D,Performance Management,open-ended,en,4,N/A,3,1,380/870与真值(370/894.5)接近，第15周1380较真值1307.5偏高5.5%
+C-PM-005,Model_E,Performance Management,open-ended,en,3,N/A,4,0,第10周780–850、第15周1150–1250均较真值(894.5/1307.5)偏低5–13%；第5周380接近370
+C-PM-006,Model_B,Performance Management,open-ended,en,5,5,4,0,真值表疑问：该题scoring_note称'无数值应填N/A'，但expected_value=4525.0含数值，按验证规则已填Precision
+C-PM-006,Model_C,Performance Management,open-ended,en,5,5,5,0,
+C-PM-006,Model_G,Performance Management,open-ended,en,5,5,4,2,响应截断：末句未收尾，计算与结论已完整
+C-PM-007,Model_E,Performance Management,single-value,en,5,5,3,0,
+C-PM-007,Model_F,Performance Management,single-value,en,5,5,3,0,
+C-PM-008,Model_D,Performance Management,definition,en,5,N/A,4,0,
+C-PM-008,Model_F,Performance Management,definition,en,5,N/A,5,0,响应截断：末段未收尾，定义、公式与hen-housed区分已完整
+C-PM-009,Model_A,Performance Management,single-value,zh,4,4,2,0,仅给92–95%区间，未覆盖真值95.5%（差0.5pp，在舍入范围内）
+C-PM-009,Model_E,Performance Management,single-value,zh,4,4,4,1,92–95%区间未覆盖真值95.5%；峰值24–26周表述合理
+C-PM-010,Model_B,Performance Management,comparison,zh,3,2,2,0,方向错误：真值为海兰褐高0.2pp（95.7 vs 95.5），B答成京粉6号更高，两值亦偏低3–5pp
+C-PM-010,Model_D,Performance Management,comparison,zh,4,4,3,0,方向正确；差距表述为1–2pp，真值仅0.2pp，有所高估
+C-PM-011,Model_A,Performance Management,single-value,zh,3,3,3,1,蛋重60–62g较真值55.0g偏高约10%（粉壳蛋鸡30周蛋重通常53–56g）；品种归属'华牧家禽育种中心'存疑（京粉系列通常归峪口禽业）
+C-PM-011,Model_E,Performance Management,single-value,zh,4,3,4,1,蛋重58–60g较真值55.0g偏高5–9%；产蛋率区间合理；峪口禽业归属正确
+C-XD-001,Model_A,Cross-Domain,multi-hop,en,1,1,1,0,空响应
+C-XD-001,Model_E,Cross-Domain,multi-hop,en,4,5,4,0,响应截断：与0.77%要求的比较未完成；SID Lys 0.27%数值部分完整且与真值一致
+C-XD-002,Model_A,Cross-Domain,multi-hop,en,1,1,1,0,空响应
+C-XD-002,Model_D,Cross-Domain,multi-hop,en,5,5,3,0,
+C-XD-003,Model_A,Cross-Domain,constraint,en,1,1,1,0,空响应
+C-XD-003,Model_B,Cross-Domain,constraint,en,4,4,3,0,未用库值35%（题面未给Ca%，B自设36%），3.24%与真值3.15%差+2.9%；'不满足'结论正确
+C-XD-004,Model_A,Cross-Domain,constraint,en,1,1,1,0,空响应
+C-XD-004,Model_C,Cross-Domain,constraint,en,2,2,2,0,编造SID赖氨酸值（玉米0.85%、豆粕48仅1.05%），且单位换算算错（55kg×0.85%≠4.675kg），响应截断致最终值未给出
+C-XD-004,Model_E,Cross-Domain,constraint,en,3,2,4,0,采用行业典型值（玉米0.25%、豆粕2.75% SID Lys）而非库内隐含值，得0.96%并判'满足'，与真值0.286%、'不满足'不符；真值表疑问：库内SBM48总赖氨酸0.62%远低于真实值(~3%)，口径特殊；响应截断
+C-XD-005,Model_B,Cross-Domain,counterfactual,en,5,5,3,0,
+C-XD-005,Model_E,Cross-Domain,counterfactual,en,5,5,3,0,响应截断：Important Considerations一节未写完，计算与答案4.33pp已完整
+C-XD-006,Model_F,Cross-Domain,counterfactual,en,5,5,4,0,
+C-XD-006,Model_G,Cross-Domain,counterfactual,en,3,1,3,2,响应截断：最终变化值未写出（止于'11.70% − 13.'，11.70−13.15=−1.45）；中间计算全部正确
+C-XD-007,Model_C,Cross-Domain,multi-hop,en,3,5,3,0,蛋壳钙需要量1500–1800 mg/day有误（题面约4000 mg；60–65g鸡蛋壳钙约2.0–2.4g）；'第30周为early laying phase'欠准；最终Ca摄入量4524.8与真值一致；响应截断
+C-XD-007,Model_F,Cross-Domain,multi-hop,en,5,5,5,0,
+C-XD-008,Model_C,Cross-Domain,open-ended,en,2,N/A,3,0,蛋鸡Ca:P写成1.5–2:1（应为Ca:有效磷约8–12:1）；玉米总磷0.01%严重有误（约0.25–0.28%）；SBM48 Ca/P值亦不可靠；响应截断
+C-XD-008,Model_G,Cross-Domain,open-ended,en,4,N/A,4,2,Ca 3.8–4.2%、aP 0.32–0.40%、Ca:AvP 10–12:1均正确；响应截断：原料分析自SBM48起中断，DCP处理与约束总结缺失
+C-XD-009,Model_A,Cross-Domain,multi-hop,zh,1,1,1,0,空响应
+C-XD-009,Model_D,Cross-Domain,multi-hop,zh,5,5,4,0,
+C-XD-010,Model_F,Cross-Domain,constraint,zh,5,5,4,0,
+C-XD-010,Model_G,Cross-Domain,constraint,zh,5,5,4,2,响应截断：石灰石钙含量差异说明未写完，答案11.14%已完整

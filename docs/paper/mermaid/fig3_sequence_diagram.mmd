@@ -1,0 +1,31 @@
+sequenceDiagram
+    actor User
+    participant R as 🔍 Router
+    participant N as 🥚 Nutrition Specialist
+    participant F as 🌾 Feed Specialist
+    participant DB as 📚 PoultryDB
+    participant S as ⚖️ Synthesis Agent
+
+    User->>R: Can limestone at 9% inclusion meet the Ca requirement for ISA Brown in Lay I?
+
+    Note over R: Intent classification
+    R->>R: Classify → multi-domain (Nutrition + Feed)
+    R-->>N: Activate
+    R-->>F: Activate
+
+    Note over N: ReAct loop
+    N->>N: nutrient_requirements(ISA Brown, Lay I)
+    N->>N: Ca = 4.04%
+
+    Note over F: ReAct loop
+    F->>F: feed_ingredient_bank(limestone)
+    F->>F: Ca = 35.0%
+
+    DB-->>S: Supplementary context (RAG)
+    N-->>S: Ca requirement = 4.04%
+    F-->>S: Limestone Ca = 35.0%
+
+    Note over S: Consistency check and synthesis
+    S->>S: 9% × 35.0% = 3.15% supplied Ca
+    S->>S: 3.15% < 4.04% → insufficient
+    S-->>User: No. 9% limestone supplies 3.15% Ca, below the 4.04% requirement.

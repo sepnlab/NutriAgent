@@ -1,0 +1,525 @@
+{
+  "n_cases": 42,
+  "tp": 16,
+  "fp": 0,
+  "fn": 0,
+  "tn": 26,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "accuracy": 1.0,
+  "by_category": {
+    "conflict": {
+      "n": 16,
+      "correct": 16,
+      "accuracy": 1.0
+    },
+    "consistent": {
+      "n": 12,
+      "correct": 12,
+      "accuracy": 1.0
+    },
+    "distractor": {
+      "n": 14,
+      "correct": 14,
+      "accuracy": 1.0
+    }
+  },
+  "errors": [],
+  "cases": [
+    {
+      "id": "C01",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Limestone calcium: feed reports 35.00 % vs nutrition reports 38.00 % (relative difference 7.9%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C02",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Maize crude protein: feed reports 8.80 % vs nutrition reports 9.60 % (relative difference 8.3%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C03",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for soybean meal crude protein: feed reports 44.00 % vs nutrition reports 48.00 % (relative difference 8.3%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C04",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Lay I calcium: nutrition reports 4.04 % vs performance reports 4.40 % (relative difference 8.2%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C05",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Limestone phosphorus: feed reports 0.02 % vs nutrition reports 0.05 % (relative difference 60.0%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C06",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Hy-Line Brown calcium: nutrition reports 4.20 % vs performance reports 4.60 % (relative difference 8.7%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C07",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Maize metabolizable energy: feed reports 3,350 kcal/kg vs nutrition reports 3,100 kcal/kg (relative difference 7.5%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C08",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for soybean meal lysine: feed reports 2.90 % vs nutrition reports 3.30 % (relative difference 12.1%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C09",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for wheat crude protein: feed reports 12.00 % vs nutrition reports 13.00 % (relative difference 7.7%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C10",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for fish meal crude protein: feed reports 62.00 % vs nutrition reports 66.00 % (relative difference 6.1%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C11",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Limestone calcium: feed reports 35.00 % vs nutrition reports 38.00 % (relative difference 7.9%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C12",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Maize metabolizable energy: feed reports 3,107 kcal/kg vs nutrition reports 3,350 kcal/kg (relative difference 7.3%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C13",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for soybean meal methionine: feed reports 0.65 % vs nutrition reports 0.72 % (relative difference 9.7%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C14",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for wheat lysine: feed reports 0.35 % vs nutrition reports 0.40 % (relative difference 12.5%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "C15",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Barley crude protein: feed reports 11.00 % vs nutrition reports 12.00 % (relative difference 8.3%)."
+      ],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S01",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S02",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S03",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S04",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S05",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S06",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S07",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S08",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S09",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S10",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S11",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "S12",
+      "category": "consistent",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 1
+    },
+    {
+      "id": "D01",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D02",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D03",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D04",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D05",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D06",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D07",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D08",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D09",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D10",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D11",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D12",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D13",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "D14",
+      "category": "distractor",
+      "expected_conflict": false,
+      "predicted_conflict": false,
+      "correct": true,
+      "n_claims_a": 0,
+      "n_claims_b": 0,
+      "warnings": [],
+      "compared_pairs": 0
+    },
+    {
+      "id": "A01",
+      "category": "conflict",
+      "expected_conflict": true,
+      "predicted_conflict": true,
+      "correct": true,
+      "n_claims_a": 1,
+      "n_claims_b": 1,
+      "warnings": [
+        "Cross-specialist inconsistency for Maize crude protein: feed reports 8.80 % vs nutrition reports 9.60 % (relative difference 8.3%)."
+      ],
+      "compared_pairs": 1
+    }
+  ]
+}

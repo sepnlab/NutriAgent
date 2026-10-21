@@ -1,0 +1,154 @@
+{
+  "router": {
+    "LLM Router": {
+      "method": "LLM Router",
+      "total_queries": 54,
+      "correctness": {
+        "mean": 4.62962962962963,
+        "std": 0.7083410407769105,
+        "n": 54
+      },
+      "precision": {
+        "mean": 4.555555555555555,
+        "std": 0.8932971498777985,
+        "n": 45
+      },
+      "scientific_depth": {
+        "mean": 3.962962962962963,
+        "std": 0.6431925960266551,
+        "n": 54
+      },
+      "overall_weighted_score": 4.382716049382716,
+      "flesch_reading_ease": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.40120443792318794,
+        "std": 0.263994341412588,
+        "n": 32
+      },
+      "faithfulness_semantic": {
+        "mean": 0.8104538690476191,
+        "std": 0.3343235391345782,
+        "n": 32
+      },
+      "tolerance_p2": {
+        "mean": 0.8888888888888888,
+        "std": 0.3187276291558383,
+        "n": 36
+      },
+      "tolerance_p5": {
+        "mean": 0.9166666666666666,
+        "std": 0.2803059552906941,
+        "n": 36
+      }
+    },
+    "Keyword Router": {
+      "method": "Keyword Router",
+      "total_queries": 44,
+      "correctness": {
+        "mean": 4.636363636363637,
+        "std": 0.685087300188445,
+        "n": 44
+      },
+      "precision": {
+        "mean": 4.388888888888889,
+        "std": 0.9936305084394236,
+        "n": 36
+      },
+      "scientific_depth": {
+        "mean": 4.045454545454546,
+        "std": 0.6804425869718215,
+        "n": 44
+      },
+      "overall_weighted_score": 4.356902356902357,
+      "flesch_reading_ease": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.3560873991908475,
+        "std": 0.2548790343147,
+        "n": 29
+      },
+      "faithfulness_semantic": {
+        "mean": 0.8419877344877345,
+        "std": 0.2698984686798056,
+        "n": 30
+      },
+      "tolerance_p2": {
+        "mean": 0.8333333333333334,
+        "std": 0.37796447300922725,
+        "n": 36
+      },
+      "tolerance_p5": {
+        "mean": 0.8888888888888888,
+        "std": 0.3187276291558383,
+        "n": 36
+      }
+    },
+    "Broadcast (All)": {
+      "method": "Broadcast (All)",
+      "total_queries": 44,
+      "correctness": {
+        "mean": 4.681818181818182,
+        "std": 0.6387752551864214,
+        "n": 44
+      },
+      "precision": {
+        "mean": 4.314285714285714,
+        "std": 1.0784364654832632,
+        "n": 35
+      },
+      "scientific_depth": {
+        "mean": 4.2272727272727275,
+        "std": 0.6773284169110135,
+        "n": 44
+      },
+      "overall_weighted_score": 4.407792207792208,
+      "flesch_reading_ease": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "inconsistency": {
+        "mean": null,
+        "std": null,
+        "n": 0
+      },
+      "faithfulness": {
+        "mean": 0.3718981355344992,
+        "std": 0.20299255363456387,
+        "n": 33
+      },
+      "faithfulness_semantic": {
+        "mean": 0.783080808080808,
+        "std": 0.3198744059099488,
+        "n": 33
+      },
+      "tolerance_p2": {
+        "mean": 0.7777777777777778,
+        "std": 0.4216370213557839,
+        "n": 36
+      },
+      "tolerance_p5": {
+        "mean": 0.8888888888888888,
+        "std": 0.3187276291558383,
+        "n": 36
+      }
+    }
+  }
+}

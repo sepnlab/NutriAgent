@@ -1,0 +1,488 @@
+{
+  "summary": {
+    "n_queries": 44,
+    "hit@1": 0.273,
+    "hit@3": 0.545,
+    "hit@5": 0.636,
+    "mrr": 0.411
+  },
+  "by_type": {
+    "comparison": {
+      "n": 10,
+      "hit@1": 0.1,
+      "hit@5": 0.5
+    },
+    "constraint": {
+      "n": 2,
+      "hit@1": 0.0,
+      "hit@5": 0.0
+    },
+    "counterfactual": {
+      "n": 2,
+      "hit@1": 1.0,
+      "hit@5": 1.0
+    },
+    "definition": {
+      "n": 7,
+      "hit@1": 0.714,
+      "hit@5": 1.0
+    },
+    "multi-hop": {
+      "n": 3,
+      "hit@1": 0.0,
+      "hit@5": 0.667
+    },
+    "open-ended": {
+      "n": 5,
+      "hit@1": 0.2,
+      "hit@5": 0.8
+    },
+    "single-value": {
+      "n": 15,
+      "hit@1": 0.2,
+      "hit@5": 0.533
+    }
+  },
+  "rows": [
+    {
+      "id": "C-FIB-001",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 1
+    },
+    {
+      "id": "C-FIB-002",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "first_hit_rank": 5,
+      "n_targets": 1
+    },
+    {
+      "id": "C-FIB-003",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 3,
+      "n_targets": 1
+    },
+    {
+      "id": "C-FIB-004",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 3,
+      "n_targets": 2
+    },
+    {
+      "id": "C-FIB-005",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "first_hit_rank": 5,
+      "n_targets": 2
+    },
+    {
+      "id": "C-FIB-007",
+      "type": "open-ended",
+      "category": "Feed Ingredient Bank",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 2,
+      "n_targets": 2
+    },
+    {
+      "id": "C-FIB-008",
+      "type": "definition",
+      "category": "Feed Ingredient Bank",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 1
+    },
+    {
+      "id": "C-FIB-009",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 1
+    },
+    {
+      "id": "C-FIB-010",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 3,
+      "n_targets": 2
+    },
+    {
+      "id": "C-NR-001",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 2,
+      "n_targets": 1
+    },
+    {
+      "id": "C-NR-002",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 2,
+      "n_targets": 1
+    },
+    {
+      "id": "C-NR-003",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 1
+    },
+    {
+      "id": "C-NR-004",
+      "type": "comparison",
+      "category": "Nutrient Requirements",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 2,
+      "n_targets": 2
+    },
+    {
+      "id": "C-NR-005",
+      "type": "comparison",
+      "category": "Nutrient Requirements",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 2
+    },
+    {
+      "id": "C-NR-006",
+      "type": "open-ended",
+      "category": "Nutrient Requirements",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 2,
+      "n_targets": 1
+    },
+    {
+      "id": "C-NR-009",
+      "type": "definition",
+      "category": "Nutrient Requirements",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 1
+    },
+    {
+      "id": "C-NR-010",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-NR-011",
+      "type": "comparison",
+      "category": "Nutrient Requirements",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-NR-012",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-PM-001",
+      "type": "single-value",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-PM-002",
+      "type": "single-value",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-PM-003",
+      "type": "comparison",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 2
+    },
+    {
+      "id": "C-PM-004",
+      "type": "comparison",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 2
+    },
+    {
+      "id": "C-PM-005",
+      "type": "open-ended",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-PM-006",
+      "type": "open-ended",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 3,
+      "n_targets": 2
+    },
+    {
+      "id": "C-PM-007",
+      "type": "single-value",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-PM-008",
+      "type": "definition",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 2,
+      "n_targets": 1
+    },
+    {
+      "id": "C-PM-009",
+      "type": "single-value",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-PM-010",
+      "type": "comparison",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 2
+    },
+    {
+      "id": "C-PM-011",
+      "type": "single-value",
+      "category": "Performance Management",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-DEF-001",
+      "type": "definition",
+      "category": "Definitions",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 2
+    },
+    {
+      "id": "C-DEF-002",
+      "type": "definition",
+      "category": "Definitions",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 2,
+      "n_targets": 2
+    },
+    {
+      "id": "C-DEF-003",
+      "type": "definition",
+      "category": "Definitions",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 1
+    },
+    {
+      "id": "C-DEF-005",
+      "type": "definition",
+      "category": "Definitions",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 2
+    },
+    {
+      "id": "C-DEF-006",
+      "type": "open-ended",
+      "category": "Definitions",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 2
+    },
+    {
+      "id": "C-XD-002",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "first_hit_rank": 4,
+      "n_targets": 2
+    },
+    {
+      "id": "C-XD-003",
+      "type": "constraint",
+      "category": "Cross-Domain",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 2
+    },
+    {
+      "id": "C-XD-005",
+      "type": "counterfactual",
+      "category": "Cross-Domain",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 1
+    },
+    {
+      "id": "C-XD-006",
+      "type": "counterfactual",
+      "category": "Cross-Domain",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 2
+    },
+    {
+      "id": "C-XD-007",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": true,
+      "first_hit_rank": 4,
+      "n_targets": 2
+    },
+    {
+      "id": "C-XD-009",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 1
+    },
+    {
+      "id": "C-XD-010",
+      "type": "constraint",
+      "category": "Cross-Domain",
+      "hit@1": false,
+      "hit@3": false,
+      "hit@5": false,
+      "first_hit_rank": null,
+      "n_targets": 2
+    },
+    {
+      "id": "C-EC-004",
+      "type": "single-value",
+      "category": "Edge Cases",
+      "hit@1": false,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 3,
+      "n_targets": 1
+    },
+    {
+      "id": "C-EC-005",
+      "type": "comparison",
+      "category": "Edge Cases",
+      "hit@1": true,
+      "hit@3": true,
+      "hit@5": true,
+      "first_hit_rank": 1,
+      "n_targets": 2
+    }
+  ]
+}

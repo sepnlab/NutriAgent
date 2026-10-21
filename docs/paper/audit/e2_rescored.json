@@ -1,0 +1,1355 @@
+{
+  "Validation + concatenation": {
+    "correctness": {
+      "mean": 4.1111,
+      "std": 1.2983,
+      "n": 54
+    },
+    "precision": {
+      "mean": 4.1429,
+      "std": 1.3717,
+      "n": 42
+    },
+    "scientific_depth": {
+      "mean": 3.7407,
+      "std": 1.1846,
+      "n": 54
+    },
+    "per_query": [
+      {
+        "id": "C-FIB-002",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 3,
+        "precision": 2,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-FIB-001",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-003",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-004",
+        "type": "comparison",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-006",
+        "type": "open-ended",
+        "category": "Feed Ingredient Bank",
+        "correctness": 1,
+        "precision": null,
+        "scientific_depth": 1
+      },
+      {
+        "id": "C-FIB-005",
+        "type": "comparison",
+        "category": "Feed Ingredient Bank",
+        "correctness": 3,
+        "precision": 3,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-008",
+        "type": "definition",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-007",
+        "type": "open-ended",
+        "category": "Feed Ingredient Bank",
+        "correctness": 3,
+        "precision": 2,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-FIB-009",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-001",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-010",
+        "type": "comparison",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-002",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-NR-004",
+        "type": "comparison",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-003",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-006",
+        "type": "open-ended",
+        "category": "Nutrient Requirements",
+        "correctness": 1,
+        "precision": null,
+        "scientific_depth": 1
+      },
+      {
+        "id": "C-NR-005",
+        "type": "comparison",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-007",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-NR-008",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 2,
+        "precision": 1,
+        "scientific_depth": 2
+      },
+      {
+        "id": "C-NR-009",
+        "type": "definition",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-010",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-011",
+        "type": "comparison",
+        "category": "Nutrient Requirements",
+        "correctness": 1,
+        "precision": 1,
+        "scientific_depth": 1
+      },
+      {
+        "id": "C-NR-012",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-001",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-002",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-003",
+        "type": "comparison",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-005",
+        "type": "open-ended",
+        "category": "Performance Management",
+        "correctness": 1,
+        "precision": 1,
+        "scientific_depth": 1
+      },
+      {
+        "id": "C-PM-004",
+        "type": "comparison",
+        "category": "Performance Management",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-007",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-006",
+        "type": "open-ended",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-008",
+        "type": "definition",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-009",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-011",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-PM-010",
+        "type": "comparison",
+        "category": "Performance Management",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-DEF-001",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 4,
+        "precision": null,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-DEF-003",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 4,
+        "precision": null,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-DEF-002",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-004",
+        "type": "single-value",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-DEF-005",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-006",
+        "type": "open-ended",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-002",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-XD-003",
+        "type": "constraint",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-001",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 3,
+        "precision": 3,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-005",
+        "type": "counterfactual",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-004",
+        "type": "constraint",
+        "category": "Cross-Domain",
+        "correctness": 3,
+        "precision": 3,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-006",
+        "type": "counterfactual",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-007",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-008",
+        "type": "open-ended",
+        "category": "Cross-Domain",
+        "correctness": 1,
+        "precision": null,
+        "scientific_depth": 1
+      },
+      {
+        "id": "C-XD-009",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-010",
+        "type": "constraint",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-001",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-EC-002",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 2,
+        "precision": 1,
+        "scientific_depth": 2
+      },
+      {
+        "id": "C-EC-003",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 3,
+        "precision": 2,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-EC-004",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-005",
+        "type": "comparison",
+        "category": "Edge Cases",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 4
+      }
+    ]
+  },
+  "Synthesis (validation off)": {
+    "correctness": {
+      "mean": 4.9074,
+      "std": 0.3512,
+      "n": 54
+    },
+    "precision": {
+      "mean": 4.7826,
+      "std": 0.841,
+      "n": 46
+    },
+    "scientific_depth": {
+      "mean": 4.3519,
+      "std": 0.6773,
+      "n": 54
+    },
+    "per_query": [
+      {
+        "id": "C-FIB-002",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-001",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-003",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-004",
+        "type": "comparison",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-006",
+        "type": "open-ended",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-FIB-005",
+        "type": "comparison",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-008",
+        "type": "definition",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-007",
+        "type": "open-ended",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-009",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-001",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-010",
+        "type": "comparison",
+        "category": "Feed Ingredient Bank",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-NR-002",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-003",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-004",
+        "type": "comparison",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-006",
+        "type": "open-ended",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-005",
+        "type": "comparison",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-007",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-008",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-009",
+        "type": "definition",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-010",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-011",
+        "type": "comparison",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-001",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-002",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-012",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-003",
+        "type": "comparison",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-004",
+        "type": "comparison",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-005",
+        "type": "open-ended",
+        "category": "Performance Management",
+        "correctness": 4,
+        "precision": 1,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-PM-006",
+        "type": "open-ended",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-007",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-PM-008",
+        "type": "definition",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-009",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-010",
+        "type": "comparison",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-PM-011",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-DEF-001",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-002",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-003",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-004",
+        "type": "single-value",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-DEF-005",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-006",
+        "type": "open-ended",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-XD-002",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-XD-001",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-003",
+        "type": "constraint",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-004",
+        "type": "constraint",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-005",
+        "type": "counterfactual",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-007",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-XD-006",
+        "type": "counterfactual",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-008",
+        "type": "open-ended",
+        "category": "Cross-Domain",
+        "correctness": 3,
+        "precision": 2,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-009",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-001",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 2,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-010",
+        "type": "constraint",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-003",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-002",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-004",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-005",
+        "type": "comparison",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      }
+    ]
+  },
+  "Query-only synthesis": {
+    "correctness": {
+      "mean": 4.8519,
+      "std": 0.4917,
+      "n": 54
+    },
+    "precision": {
+      "mean": 4.8261,
+      "std": 0.4855,
+      "n": 46
+    },
+    "scientific_depth": {
+      "mean": 4.4444,
+      "std": 0.6635,
+      "n": 54
+    },
+    "per_query": [
+      {
+        "id": "C-FIB-002",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-001",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-003",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-004",
+        "type": "comparison",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-005",
+        "type": "comparison",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-006",
+        "type": "open-ended",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-007",
+        "type": "open-ended",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-008",
+        "type": "definition",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-009",
+        "type": "single-value",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-010",
+        "type": "comparison",
+        "category": "Feed Ingredient Bank",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-001",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-002",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-004",
+        "type": "comparison",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-003",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-006",
+        "type": "open-ended",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-005",
+        "type": "comparison",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-007",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-NR-009",
+        "type": "definition",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-008",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-010",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 4,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-NR-011",
+        "type": "comparison",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-001",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-NR-012",
+        "type": "single-value",
+        "category": "Nutrient Requirements",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-002",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-003",
+        "type": "comparison",
+        "category": "Performance Management",
+        "correctness": 3,
+        "precision": 3,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-004",
+        "type": "comparison",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 4,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-005",
+        "type": "open-ended",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-007",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-006",
+        "type": "open-ended",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-008",
+        "type": "definition",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-009",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-PM-010",
+        "type": "comparison",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-PM-011",
+        "type": "single-value",
+        "category": "Performance Management",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-DEF-002",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-001",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-003",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-004",
+        "type": "single-value",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-005",
+        "type": "definition",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-DEF-006",
+        "type": "open-ended",
+        "category": "Definitions",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-XD-001",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-XD-002",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-004",
+        "type": "constraint",
+        "category": "Cross-Domain",
+        "correctness": 3,
+        "precision": 3,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-003",
+        "type": "constraint",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-005",
+        "type": "counterfactual",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-006",
+        "type": "counterfactual",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-007",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-008",
+        "type": "open-ended",
+        "category": "Cross-Domain",
+        "correctness": 3,
+        "precision": 4,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-009",
+        "type": "multi-hop",
+        "category": "Cross-Domain",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-EC-001",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-010",
+        "type": "constraint",
+        "category": "Cross-Domain",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-EC-002",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-003",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-004",
+        "type": "single-value",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-EC-005",
+        "type": "comparison",
+        "category": "Edge Cases",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 5
+      }
+    ]
+  }
+}

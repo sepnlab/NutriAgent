@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "n_queries": 10,
+    "n_runs_per_query": 3,
+    "mean_similarity": 0.3709,
+    "min_similarity": 0.1057,
+    "max_similarity": 0.8698,
+    "exact_match_rate": 0.0,
+    "mean_latency_s": 14.03
+  },
+  "rows": [
+    {
+      "id": "C-FIB-001",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "similarity": 0.186,
+      "similarity_min": 0.1232,
+      "exact_match": false,
+      "latencies_s": [
+        16.15,
+        7.68,
+        12.38
+      ]
+    },
+    {
+      "id": "C-FIB-002",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "similarity": 0.2164,
+      "similarity_min": 0.1835,
+      "exact_match": false,
+      "latencies_s": [
+        9.43,
+        13.02,
+        19.49
+      ]
+    },
+    {
+      "id": "C-FIB-004",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "similarity": 0.395,
+      "similarity_min": 0.3433,
+      "exact_match": false,
+      "latencies_s": [
+        15.04,
+        6.44,
+        14.14
+      ]
+    },
+    {
+      "id": "C-FIB-005",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "similarity": 0.1057,
+      "similarity_min": 0.0507,
+      "exact_match": false,
+      "latencies_s": [
+        17.87,
+        7.83,
+        12.67
+      ]
+    },
+    {
+      "id": "C-FIB-006",
+      "type": "open-ended",
+      "category": "Feed Ingredient Bank",
+      "similarity": 0.8698,
+      "similarity_min": 0.8265,
+      "exact_match": false,
+      "latencies_s": [
+        4.52,
+        4.47,
+        4.92
+      ]
+    },
+    {
+      "id": "C-FIB-007",
+      "type": "open-ended",
+      "category": "Feed Ingredient Bank",
+      "similarity": 0.2532,
+      "similarity_min": 0.108,
+      "exact_match": false,
+      "latencies_s": [
+        24.46,
+        35.21,
+        9.34
+      ]
+    },
+    {
+      "id": "C-FIB-008",
+      "type": "definition",
+      "category": "Feed Ingredient Bank",
+      "similarity": 0.7124,
+      "similarity_min": 0.6721,
+      "exact_match": false,
+      "latencies_s": [
+        6.91,
+        13.18,
+        14.34
+      ]
+    },
+    {
+      "id": "C-NR-009",
+      "type": "definition",
+      "category": "Nutrient Requirements",
+      "similarity": 0.3242,
+      "similarity_min": 0.2188,
+      "exact_match": false,
+      "latencies_s": [
+        10.02,
+        17.01,
+        16.73
+      ]
+    },
+    {
+      "id": "C-XD-001",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "similarity": 0.4755,
+      "similarity_min": 0.248,
+      "exact_match": false,
+      "latencies_s": [
+        28.41,
+        14.45,
+        16.66
+      ]
+    },
+    {
+      "id": "C-XD-002",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "similarity": 0.1708,
+      "similarity_min": 0.1204,
+      "exact_match": false,
+      "latencies_s": [
+        10.03,
+        12.92,
+        25.26
+      ]
+    }
+  ]
+}

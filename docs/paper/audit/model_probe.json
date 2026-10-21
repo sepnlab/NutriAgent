@@ -1,0 +1,203 @@
+{
+  "max_tokens": 256,
+  "results": [
+    {
+      "provider": "xiaomi",
+      "model": "mimo-v2.5-pro",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "api_key_present": true,
+      "extra_body": null,
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "4",
+      "reasoning_chars": 136,
+      "completion_tokens": 44
+    },
+    {
+      "provider": "xiaomi",
+      "model": "mimo-v2.6-pro",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "api_key_present": true,
+      "extra_body": null,
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "Four",
+      "reasoning_chars": 1,
+      "completion_tokens": 5
+    },
+    {
+      "provider": "aliyun",
+      "model": "MiniMax-M2.5",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key_present": true,
+      "extra_body": null,
+      "status": "error",
+      "error_type": "PermissionDeniedError",
+      "error": "Error code: 403 - {'error': {'message': 'Free quota exhausted. To continue accessing the model on a paid basis, please add funds or disable the \"use free tier only\" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', '"
+    },
+    {
+      "provider": "aliyun",
+      "model": "qwen3.5-flash",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key_present": true,
+      "extra_body": null,
+      "status": "error",
+      "error_type": "PermissionDeniedError",
+      "error": "Error code: 403 - {'error': {'message': 'Free quota exhausted. To continue accessing the model on a paid basis, please add funds or disable the \"use free tier only\" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', '"
+    },
+    {
+      "provider": "aliyun",
+      "model": "qwen3.6-plus",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key_present": true,
+      "extra_body": null,
+      "status": "error",
+      "error_type": "PermissionDeniedError",
+      "error": "Error code: 403 - {'error': {'message': 'Free quota exhausted. To continue accessing the model on a paid basis, please add funds or disable the \"use free tier only\" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', '"
+    },
+    {
+      "provider": "tencent",
+      "model": "minimax-m2.5",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "api_key_present": true,
+      "extra_body": {
+        "enable_thinking": false
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "Four",
+      "reasoning_chars": 385,
+      "completion_tokens": 116
+    },
+    {
+      "provider": "qianwen",
+      "model": "qwen3.8-flash",
+      "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+      "api_key_present": true,
+      "extra_body": {
+        "enable_thinking": false
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "4",
+      "reasoning_chars": 0,
+      "completion_tokens": 1
+    },
+    {
+      "provider": "qianwen",
+      "model": "qwen3.8-27b",
+      "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+      "api_key_present": true,
+      "extra_body": {
+        "enable_thinking": false
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "4",
+      "reasoning_chars": 0,
+      "completion_tokens": 2
+    },
+    {
+      "provider": "qianwen",
+      "model": "qwen3.8-max",
+      "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+      "api_key_present": true,
+      "extra_body": {
+        "enable_thinking": false
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "Four",
+      "reasoning_chars": 0,
+      "completion_tokens": 1
+    },
+    {
+      "provider": "qianwen",
+      "model": "qwen3.5-flash",
+      "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+      "api_key_present": true,
+      "extra_body": {
+        "enable_thinking": false
+      },
+      "status": "error",
+      "error_type": "PermissionDeniedError",
+      "error": "Error code: 403 - {'error': {'message': 'Free quota exhausted. To continue accessing the model on a paid basis, please add funds or disable the \"use free tier only\" mode in the management console.', 'id': 'fd1195ba-1d15-9bc2-8558-d9d654dffd"
+    },
+    {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "base_url": "https://api.deepseek.com",
+      "api_key_present": true,
+      "extra_body": null,
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "Four",
+      "reasoning_chars": 206,
+      "completion_tokens": 57
+    },
+    {
+      "provider": "siliconflow",
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "api_key_present": true,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "4",
+      "reasoning_chars": 0,
+      "completion_tokens": 1
+    },
+    {
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3-8B",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "api_key_present": true,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "Four.",
+      "reasoning_chars": 0,
+      "completion_tokens": 2
+    },
+    {
+      "provider": "siliconflow",
+      "model": "Qwen/Qwen3.6-27B",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "api_key_present": true,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "4",
+      "reasoning_chars": 0,
+      "completion_tokens": 1
+    },
+    {
+      "provider": "siliconflow",
+      "model": "zai-org/GLM-4.5-Air",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "api_key_present": true,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "status": "ok",
+      "finish_reason": "stop",
+      "content_preview": "Four",
+      "reasoning_chars": 0,
+      "completion_tokens": 1
+    }
+  ]
+}

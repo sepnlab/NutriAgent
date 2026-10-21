@@ -1,0 +1,2060 @@
+query_id,category,query_type,language,query,model_id,response,correctness_(1-5),precision_(1-5_or_N/A),scientific_depth_(1-5),notes,provenance_(0-2_or_NA)
+C-NR-002,Nutrient Requirements,single-value,en,What is the SID methionine requirement for Isa Brown in Lay I?,Model_D,"The SID (Standardized Ileal Digestible) methionine requirement for Isa Brown hens during the **Lay I phase** (typically from onset of lay to around 40–50 weeks of age, depending on how the production cycle is divided) is generally in the range of:
+
+**0.34–0.38% of the diet**  
+(or approximately **340–380 mg per hen per day**, depending on feed intake)
+
+### Key considerations:
+- **Feed intake:** Isa Brown hens in early lay typically consume around **105–115 g/day**. The SID methionine requirement is often expressed as **mg/hen/day** to account for variations in intake.
+- **Methionine + Cysteine:** Total sulfur amino acids (TSAA) are also important. The SID methionine + cysteine requirement is typically around **0.62–0.68%** of the diet.
+- **Production goals:** Early lay is a critical period for egg mass increase and feather development, so adequate methionine is essential for optimal egg production, egg weight, and feed efficiency.
+- **Breed guidelines:** The Isa Brown Management Guide provides specific recommendations, but the values above are consistent with current nutritional research and field practice for high-producing brown layers.
+
+### Practical recommendation:
+For a diet with **110 g/day feed intake**, target approximately:
+- **SID Methionine: 0.36%** (≈ 396 mg/day)
+- **SID Methionine + Cysteine: 0.65%** (≈ 715 mg/day)
+
+Always adjust based on actual feed intake, egg production, egg weight, and environmental conditions.",,,,,
+C-NR-003,Nutrient Requirements,single-value,en,What is the crude protein requirement for Jinghong 1 in Layer I?,Model_A,"
+
+For Jinghong 1 (a Chinese layer breed) during the **first phase of lay (Layer I)**, the typical crude protein (CP) requirement is generally around **16–18%** in the diet.
+
+However, exact specifications can vary based on the bird's age, production stage, feed formulation, and environmental conditions. For precise feeding, it is best to refer to the breed's official nutritional guidelines or consult a poultry nutritionist.
+
+Would you like more details on other nutrients or feeding practices for this breed?",,,,,
+C-DEF-003,Definitions,definition,en,What is feed conversion ratio (FCR)? How is it calculated?,Model_E,"**Feed Conversion Ratio (FCR)** is a critical metric in poultry nutrition and production that measures the efficiency with which birds convert feed into body mass. It essentially tells you how much feed is required to produce one unit of weight gain.
+
+### Definition
+FCR is defined as the ratio of **total feed consumed** to **total live weight gained** over a specific period.
+
+- A **lower FCR** indicates better feed efficiency (the bird gains more weight per kilogram of feed eaten).
+- A **higher FCR** indicates poorer feed efficiency (more feed is needed for the same amount of weight gain).
+
+---
+
+### How Is FCR Calculated?
+
+The basic formula is:
+
+\[
+\text{FCR} = \frac{\text{Total Feed Consumed (kg)}}{\text{Total Live Weight Gain (kg)}}
+\]
+
+#### Step-by-Step Calculation:
+
+1. **Measure Total Feed Consumed**:  
+   Record the total amount of feed given to the flock during the production cycle (e.g., from day 1 to slaughter age), subtracting any leftover or wasted feed if accurately measured.
+
+2. **Measure Total Live Weight Gain**:  
+   Calculate the difference between the final average live weight of the birds at the end of the period and their initial average live weight at the start.  
+   \[
+   \text{Weight Gain} = (\text{Final Average Weight} - \text{Initial Average Weight}) \times \text{Number of Birds Alive}
+   \]  
+   *Note: Adjustments may be made for mortality (dead birds) depending on the calculation method used.*
+
+3. **Divide Feed by Gain**:  
+   Apply the formula above.
+
+---
+
+### Example Calculation
+
+Suppose a broiler flock starts with 1,000 chicks weighing 40 g each and ends at 42 days with an average live weight of 2.5 kg per bird. During this period, the flock consumes 3,500 kg of feed. Assume no mortality for simplicity.
+
+- **Initial Total Weight**: \(1,000 \times 0.04 \, \text{kg} = 40 \, \text{kg}\)
+- **Final Total Weight**: \(1,000 \times 2.5 \, \text{kg} = 2,500 \, \text{kg}\)
+- **Total",,,,,
+C-NR-007,Nutrient Requirements,single-value,en,A feed ingredient has total lysine of 0.85% and SID lysine digestibility of 88%. What is the SID lysine content (in %)?,Model_E,"To calculate the Standardized Ileal Digestible (SID) lysine content, you multiply the total lysine percentage by the SID lysine digestibility coefficient.
+
+**Formula:**
+$$ \text{SID Lysine (\%)} = \text{Total Lysine (\%)} \times \text{SID Lysine Digestibility} $$
+
+**Calculation:**
+1.  Convert the digestibility percentage to a decimal: $88\% = 0.88$
+2.  Multiply by the total lysine content:
+    $$ 0.85\% \times 0.88 = 0.748\% $$
+
+**Answer:**
+The SID lysine content is **0.748%**.",,,,,
+C-FIB-003,Feed Ingredient Bank,single-value,en,What is the metabolizable energy of soybean meal 48% in kcal/kg?,Model_A,"
+
+The metabolizable energy (ME) of soybean meal (48% protein) for poultry is typically in the range of **2,200–2,400 kcal/kg** (air-dry basis).  
+
+More specifically, a commonly used value in poultry feed formulation is approximately **2,300 kcal/kg** (nitrogen-corrected ME, or MEn).  
+
+This value can vary slightly based on factors such as processing method, hull content, and specific nutrient composition. If you need a precise value for feed formulation, it’s best to refer to a laboratory analysis or trusted ingredient database (e.g., NRC, 1994).",,,,,
+C-NR-012,Nutrient Requirements,single-value,zh,大午金凤在产蛋I期的SID蛋氨酸需要量是多少？,Model_F,"大午金凤（一种高产蛋鸡品种）在产蛋I期（通常指开产至产蛋高峰前，约18-30周龄）的**SID（标准回肠可消化）蛋氨酸**需要量，目前并没有一个全球统一的固定数值，因为它受**采食量、日粮能量水平、蛋重和产蛋率**影响。
+
+根据行业通用标准（如NRC、Hy-Line、ISA等育种公司推荐）及中国蛋鸡营养实践，**大午金凤产蛋I期的SID蛋氨酸推荐量通常为：**
+
+- **每日需要量：** 约 **380 - 420 毫克/只/天**（mg/hen/day）
+- **日粮浓度（按采食量100-110g/天计算）：** 约 **0.36% - 0.40%**（SID蛋氨酸占日粮比例）
+
+**具体建议：**
+
+1. **基础推荐值：** 在产蛋I期，建议日粮中SID蛋氨酸水平不低于 **0.38%**（即每公斤日粮含3.8克SID蛋氨酸），同时SID蛋氨酸+半胱氨酸（总含硫氨基酸）不低于 **0.68%**。
+2. **动态调整：** 如果鸡群采食量偏低（<100g/天）或追求更高蛋重，可将SID蛋氨酸上调至 **0.40%**；若采食量正常且蛋重达标，可维持 **0.36%-0.38%**。
+3. **与赖氨酸比例：** 产蛋期SID蛋氨酸与SID赖氨酸的比值建议为 **0.45-0.48:1**（即蛋氨酸约为赖氨酸的45%-48%）。
+
+**注意：** 大午金凤属于高产蛋鸡，对蛋氨酸敏感，缺乏会导致蛋重下降、产蛋率波动。建议结合本场实际采食量和蛋重数据，通过配方软件进行精确计算，并定期监测鸡群表现。如需更精确的数值，可参考大午种禽公司提供的饲养手册或委托专业营养师定制配方。",,,,,
+C-PM-004,Performance Management,comparison,en,Compare daily feed intake: Isa Brown week 30 vs Hy-Line Brown week 30.,Model_E,"To compare the daily feed intake of **Isa Brown** and **Hy-Line Brown** layers at **week 30**, we must look at standard commercial management guides for these breeds. Both are high-production brown-egg layers, but they have slightly different metabolic profiles and egg sizes, which influence feed consumption.
+
+### 📊 Typical Daily Feed Intake at Week 30 (Peak Production)
+
+| Breed | Average Daily Feed Intake (g/bird/day) | Notes |
+|-------|----------------------------------------|-------|
+| **Isa Brown** | **115 – 125 g** | Slightly higher intake due to larger average egg size (~60–62 g). |
+| **Hy-Line Brown** | **110 – 120 g** | Often more feed-efficient; may consume slightly less for similar output. |
+
+> ✅ **Key Insight**: At week 30, both breeds are typically in or near peak production. Isa Brown often consumes **~5–10 g more per day** than Hy-Line Brown under comparable conditions.
+
+---
+
+### 🔍 Why the Difference?
+
+1. **Egg Size & Output**:
+   - **Isa Brown**: Tends to lay slightly larger eggs (average 60–62 g), requiring more energy and protein per egg.
+   - **Hy-Line Brown**: Known for excellent feed conversion ratio (FCR); may lay marginally smaller eggs (58–60 g) with similar persistence.
+
+2. **Feed Conversion Ratio (FCR)**:
+   - Hy-Line Brown is often marketed as having a better FCR (kg feed per kg egg mass produced).
+   - Isa Brown prioritizes egg size and early peak production, sometimes at the cost of slightly higher feed use.
+
+3. **Body Weight & Metabolism**:
+   - Isa Brown hens may be slightly heavier at peak, increasing maintenance energy requirements.
+
+---
+
+### ⚠️ Important Variables That Affect Actual Intake
+
+These values assume **optimal conditions**. Real-world intake can vary by ±10–15% depending on:
+
+- **Temperature**: Heat stress (>27°C / 80°F) reduces intake significantly.
+- **Lighting Program**: Standard 14–16 hours light/day supports peak intake.
+- **Feed Quality**: Energy density (kcal/kg) and protein levels affect how much birds eat to meet",,,,,
+C-DEF-006,Definitions,open-ended,zh,蛋鸡饲料配方为什么优先用代谢能而不是消化能？,Model_G,"蛋鸡饲料配方优先采用**代谢能（ME）**而非消化能（DE），核心原因在于**家禽的生理排泄特点**和**能量体系的实用性**：
+
+1. **粪尿混合，无法准确测定消化能**  
+   家禽的消化道短，**粪和尿在泄殖腔混合后一同排出**，无法像哺乳动物那样单独收集粪便来测定“消化能”（DE = 摄入总能 - 粪能）。因此，直接测定DE在技术上不可行，而**代谢能（ME = 摄入总能 - 粪能 - 尿能 - 气体能）** 可以完整扣除粪尿损失，更符合家禽的实际能量利用情况。
+
+2. **国际通用标准与品种数据均以ME为基准**  
+   全球主要蛋鸡品种（如Hy-Line、Lohmann等）的营养标准、饲料原料数据库（如NRC、CVB）以及配方软件，**全部",,,,,
+C-FIB-010,Feed Ingredient Bank,comparison,zh,豆粕48和菜粕的代谢能各是多少？哪个更高？,Model_E,"在 poultry（家禽）营养学中，代谢能（Metabolizable Energy, ME）的数值会受到原料产地、加工工艺以及测定方法（如是否使用酶制剂、是否校正氮平衡等）的影响。以下是基于中国常用饲料数据库及国际通用标准（如NRC或中国饲料成分及营养价值表）的典型参考值：
+
+### 1. 典型代谢能数值（以风干基础计）
+
+| 原料 | 蛋白质含量 | 代谢能 (ME) 范围 | 典型平均值 |
+|------|-------------|------------------|------------|
+| **豆粕48%** | ≥46% CP | **2300 – 2450 kcal/kg**<br>(约 9.6 – 10.2 MJ/kg) | **~2350 kcal/kg**<br>(~9.8 MJ/kg) |
+| **菜粕** | ≥36% CP | **1700 – 1900 kcal/kg**<br>(约 7.1 – 7.9 MJ/kg) | **~1800 kcal/kg**<br>(~7.5 MJ/kg) |
+
+> 注：  
+> - 若为**双低菜粕**（低硫苷、低芥酸），其代谢能略高于普通菜粕，但仍显著低于豆粕。  
+> - 若添加**复合酶制剂**（特别是针对非淀粉多糖NSP的酶），菜粕的代谢能可提升 100–200 kcal/kg，但依然低于豆粕。
+
+---
+
+### 2. 哪个更高？
+
+✅ **豆粕48% 的代谢能明显高于菜粕。**
+
+- **差距大小**：豆粕比菜粕高出约 **500–600 kcal/kg**（即约 2.1–2.5 MJ/kg）。
+- **原因分析**：
+  1. **抗营养因子差异**：
+     - 菜粕含有较多**硫苷**（glucosinolates）、**芥酸**（erucic acid）和**单宁**，这些物质不仅有毒性风险，还会降低消化率。
+     - 豆粕主要含胰蛋白酶抑制剂和凝集素，但通过充分加热处理后可有效灭活，残留影响较小。
+  2. **纤维结构**：
+     - 菜粕细胞壁",,,,,
+C-XD-010,Cross-Domain,constraint,zh,石灰石含钙35%，大午金凤蛋鸡的钙需要量是3.90%。配方里要加多少石灰石才能满足？,Model_F,"要计算石灰石添加量，可以用以下公式：
+
+**石灰石添加量（%） = 蛋鸡的钙需要量（%） ÷ 石灰石含钙量（%） × 100**
+
+代入数值：
+
+3.90% ÷ 35% × 100 = **11.14%**
+
+所以，**配方中需要添加约 11.14% 的石灰石**（即每100公斤饲料中添加约11.14公斤石灰石）才能满足大午金凤蛋鸡的钙需要量。
+
+**注意：**
+- 这是理论计算值，实际生产中还需考虑饲料中其他原料（如豆粕、玉米、预混料等）本身含有的钙，以及石灰石的粒度、溶解度、鸡的采食量等因素。
+- 建议在配方中留出少量余量（如0.1%~0.2%），并配合磷、维生素D3等营养平衡，避免钙磷比例失调。",,,,,
+C-EC-004,Edge Cases,single-value,en,What is the methionine requirement for ISA Brown in Lay I?,Model_D,"The methionine requirement for ISA Brown hens in early lay (Lay I, typically from onset of lay to around 40–45 weeks) is generally expressed as digestible methionine or total methionine, and it depends on feed intake and production goals.
+
+Based on the ISA Brown Nutrition Management Guide, the recommended levels for the **Lay I** phase are approximately:
+
+- **Digestible Methionine: 0.38–0.40%** of the diet  
+- **Total Methionine: 0.40–0.42%** of the diet  
+- **Digestible Methionine + Cystine (TSAA): 0.68–0.72%**  
+- **Total Methionine + Cystine: 0.72–0.76%**
+
+These values assume a daily feed intake of about **105–110 g/hen/day** and are designed to support:
+- High peak production (95%+)
+- Optimal egg weight
+- Good persistency and shell quality
+
+If feed intake is lower (e.g., in hot weather), the percentage of methionine in the diet may need to be increased to ensure adequate daily intake. Conversely, if intake is higher, the percentage can be slightly reduced.
+
+A practical target for daily digestible methionine intake in early lay is around **400–420 mg/hen/day**.",,,,,
+C-NR-011,Nutrient Requirements,comparison,zh,大午金凤从产蛋I期到产蛋III期，钙需要量怎么变化？,Model_E,"大午金凤（Dawu Jinfeng）作为一种高产蛋鸡品种，其钙需要量在产蛋的不同阶段呈现出**显著递增**的趋势。这主要是因为随着产蛋率的提高和蛋壳质量的维持需求增加，机体对钙的代谢负担加重。
+
+以下是从**产蛋I期**到**产蛋III期**钙需要量的具体变化规律及建议：
+
+### 1. 总体趋势：逐步升高
+- **产蛋I期（开产至高峰前/初期）**：钙需要量相对较低，但需开始快速提升以应对蛋壳形成。
+- **产蛋II期（高峰期）**：钙需要量达到较高水平，因为此时产蛋率最高，每日钙流失最大。
+- **产蛋III期（后期/衰退期）**：钙需要量**最高**。虽然产蛋率可能略有下降，但蛋壳变薄、破蛋率上升的风险增加，且母鸡骨骼钙储备逐渐耗尽，必须依赖日粮提供更高比例的钙来维持蛋壳质量。
+
+---
+
+### 2. 各阶段具体钙需要量参考值（基于典型饲养标准）
+
+| 产蛋阶段 | 时间范围（大致） | 推荐钙含量（%） | 说明 |
+|----------|------------------|------------------|------|
+| **产蛋I期** | 开产 ~ 产蛋率达90% | **3.2% ~ 3.5%** | 此阶段重点是促进生殖系统发育和初步建立钙平衡。若钙不足，易出现软壳蛋或初产蛋偏小。 |
+| **产蛋II期** | 产蛋率≥90%（高峰期） | **3.6% ~ 3.8%** | 产蛋强度最大，每日每只鸡约需4~5克钙。需确保钙磷比例合理（通常Ca:P ≈ 7:1~8:1），并保证维生素D3充足以促进吸收。 |
+| **产蛋III期** | 产蛋率下降后 ~ 淘汰前 | **3.8% ~ 4.0%+** | 此阶段蛋壳质量是关键问题。母鸡肠道钙吸收能力下降，骨骼脱钙加剧，因此需提高日粮钙浓度至4.0%左右，甚至部分配方可达4.2%，以减少破蛋率和沙皮蛋。 |
+
+> 📌 **注意**",,,,,
+C-DEF-006,Definitions,open-ended,zh,蛋鸡饲料配方为什么优先用代谢能而不是消化能？,Model_B,"蛋鸡饲料配方优先使用代谢能(ME)而不是消化能(DE)主要有以下几个原因：
+
+1. **代谢能更准确反映能量利用**：代谢能是指饲料中被消化吸收的能量减去尿能和肠道气体能后的能量，它更接近于家禽实际可利用的能量。禽类不像哺乳动物那样有明显的能量损失途径，代谢能能更好地反映禽类对能量的实际利用情况。
+
+2. **禽类生理特点**：家禽的排泄物与哺乳动物不同，尿能损失较少，且肠道气体能损失也相对较低，因此代谢能值更能准确反映家禽可利用的能量。
+
+3. **标准化需要**：代谢能已成为家禽营养研究的标准能量体系，便于不同饲料原料之间的比较和配方设计的标准化。
+
+4. **实践应用**：长期研究表明，使用代谢能体系配制的饲料能够更好地满足蛋鸡的能量需求，提高生产性能和饲料效率。
+
+5. **国际通用性**：代谢能体系在国际上被广泛接受和使用，有利于技术交流和国际贸易。
+
+因此，在蛋鸡饲料配方中，代谢能比消化能更能准确反映饲料的实际营养价值，是更合适的能量评价指标。",,,,,
+C-FIB-008,Feed Ingredient Bank,definition,en,Define metabolizable energy (ME). How does it differ from gross energy?,Model_A,"
+
+**Metabolizable Energy (ME)**  
+
+- **Definition** – ME is the portion of the feed’s total chemical energy that remains after the animal has digested the feed and excreted the unusable energy in feces, urine, and (in some species) gaseous products of digestion. In poultry, the “gaseous” loss is negligible, so ME ≈ Gross Energy – (Energy in feces + energy in",,,,,
+C-XD-001,Cross-Domain,multi-hop,en,"A Lay I diet uses 60% maize (total lysine=0.247%, SID=90%) and 25% SBM48 (total lysine=0.620%, SID=88%). Calculate the SID lysine contribution. Does it meet the ISA Brown layers requirement (0.77%)?",Model_E,"Here is the step-by-step calculation to determine the SID Lysine contribution and whether it meets the requirement.
+
+### Step 1: Calculate SID Lysine for Each Ingredient
+
+The formula for **SID (Standardized Ileal Digestible) Lysine** is:
+$$ \text{SID Lysine} = \text{Total Lysine} \times \text{SID Coefficient} $$
+
+**1. Maize Contribution:**
+*   Inclusion Rate: $60\%$ ($0.60$)
+*   Total Lysine: $0.247\%$
+*   SID Coefficient: $90\%$ ($0.90$)
+
+$$ \text{Maize SID Lysine} = 0.247\% \times 0.90 = 0.2223\% $$
+
+**2. SBM48 (Soybean Meal) Contribution:**
+*   Inclusion Rate: $25\%$ ($0.25$)
+*   Total Lysine: $0.620\%$
+*   SID Coefficient: $88\%$ ($0.88$)
+
+$$ \text{SBM48 SID Lysine} = 0.620\% \times 0.88 = 0.5456\% $$
+
+---
+
+### Step 2: Calculate Weighted SID Lysine Contribution in the Diet
+
+Now, multiply the ingredient's SID Lysine percentage by its inclusion rate in the diet.
+
+**1. From Maize:**
+$$ 0.2223\% \times 0.60 = 0.13338\% $$
+
+**2. From SBM48:**
+$$ 0.5456\% \times 0.25 = 0.13640\% $$
+
+**3. Total SID Lysine from these two ingredients:**
+$$ 0.13338\% + 0.13640\% = 0.26978\% $$
+
+*(Note: This calculation only accounts for Maize and SBM48. The remaining 15% of the diet consists of other ingredients such as minerals, vitamins, oil, or additional protein sources.",,,,,
+C-XD-002,Cross-Domain,multi-hop,en,Ca requirement for ISA Brown layers is 4.04%. Limestone has 35% Ca. What % of limestone is needed in the diet?,Model_D,"To find the percentage of limestone needed, use the formula:  
+
+\[
+\text{Limestone \%} = \frac{\text{Required Ca \%}}{\text{Ca \% in limestone}} \times 100
+\]
+
+Given:  
+- Required Ca = 4.04%  
+- Limestone Ca = 35%  
+
+\[
+\text{Limestone \%} = \frac{4.04}{35} \times 100 = 11.54\%
+\]
+
+**Answer:**  
+You would need **11.54% limestone** in the diet to supply 4.04% calcium.",,,,,
+C-PM-003,Performance Management,comparison,en,Compare hen-day production: Isa Brown week 30 vs Hy-Line Brown week 30. Which is higher?,Model_E,"Based on standard commercial performance data for these two breeds, **Isa Brown** typically has a slightly higher hen-day production at week 30 compared to Hy-Line Brown.
+
+### Typical Hen-Day Production at Week 30:
+*   **Isa Brown:** ~92–94%
+*   **Hy-Line Brown:** ~90–92%
+
+### Why?
+1.  **Peak Timing:** Isa Browns are known for reaching their peak lay percentage earlier and maintaining it longer in the initial phase of production. By week 30 (approximately 5 months into lay), they are often still near or just past their absolute peak.
+2.  **Breed Selection Focus:** ISA (part of Hendrix Genetics) has historically selected heavily for early maturity and high initial persistency. Hy-Line (part of Cargill) is also excellent but may show a very slight dip or slower ramp-up depending on management and feed formulation.
+3.  **Variability:** Actual performance depends heavily on:
+    *   Feed quality and energy/protein balance
+    *   Lighting program
+    *   Health status
+    *   Environmental conditions
+
+### Important Note:
+The difference is small (1–2%) and can be reversed by superior management practices. Both breeds are top-tier commercial layers with lifetime egg production potential exceeding 400–450 eggs per bird under optimal conditions.
+
+**Conclusion:** At week 30, **Isa Brown** generally edges out Hy-Line Brown in hen-day production.",,,,,
+C-DEF-001,Definitions,definition,en,Define metabolizable energy (ME). How does it differ from digestible energy (DE)?,Model_E,"**Metabolizable Energy (ME)** is the amount of energy from feed that is available for the animal’s metabolic processes after accounting for losses in feces, urine, and combustible gases.
+
+In poultry nutrition specifically, ME represents the energy remaining after subtracting:
+1.  **Fecal energy** (undigested material excreted).
+2.  **Urinary energy** (energy lost in nitrogenous waste, primarily uric acid in birds).
+3.  **Gaseous energy** (energy lost as methane or other combustible gases; negligible in poultry but significant in ruminants).
+
+### Formula for Metabolizable Energy:
+$$ \text{ME} = \text{Gross Energy (GE)} - \text{Fecal Energy} - \text{Urinary Energy} - \text{Gaseous Energy} $$
+
+---
+
+### Difference Between Digestible Energy (DE) and Metabolizable Energy (ME)
+
+The key difference lies in **what losses are accounted for**:
+
+| Feature | Digestible Energy (DE) | Metabolizable Energy (ME) |
+| :--- | :--- | :--- |
+| **Definition** | Energy absorbed from the gastrointestinal tract. | Energy available for metabolism after absorption *and* excretion via urine/gas. |
+| **Formula** | $ \text{DE} = \text{Gross Energy} - \text{Fecal Energy} $ | $ \text{ME} = \text{DE} - \text{Urinary Energy} - \text{Gaseous Energy} $ |
+| **What it measures** | How much energy the animal can **digest**. | How much energy the animal can actually **use** for maintenance, growth, and production. |
+| **Losses included** | Only undigested feed (feces). | Undigested feed (feces) + metabolic waste (urine) + gases. |
+| **Relevance in Poultry** | Less commonly used in modern formulation. | **Standard metric** for formulating poultry diets. |
+
+### Why ME is Preferred Over DE in Poultry Nutrition:
+1.  **Uric Acid Excretion:** Birds excrete nitrogen as uric acid, which contains significant chemical energy. This energy is lost to the environment and cannot be used by the bird. DE does not account for this loss, while ME does.
+2.  **Accuracy:** ME provides a more",,,,,
+C-XD-001,Cross-Domain,multi-hop,en,"A Lay I diet uses 60% maize (total lysine=0.247%, SID=90%) and 25% SBM48 (total lysine=0.620%, SID=88%). Calculate the SID lysine contribution. Does it meet the ISA Brown layers requirement (0.77%)?",Model_A,,,,,,
+C-XD-009,Cross-Domain,multi-hop,zh,一个产蛋I期配方用60%玉米（总赖氨酸0.247%，SID消化率90%）和25%豆粕48（总赖氨酸0.620%，SID消化率88%）。这两样原料的SID赖氨酸加起来是多少？能不能满足大午金凤蛋鸡的需要量（0.76%）？,Model_A,,,,,,
+C-NR-012,Nutrient Requirements,single-value,zh,大午金凤在产蛋I期的SID蛋氨酸需要量是多少？,Model_C,"大午金凤鸡（Dadu Jinfeng）是一种高产蛋性能的蛋鸡品种，其营养需求通常依据其生长阶段和生产性能来确定。在产蛋I期（通常指产蛋初期，大约在开产后的前3-4个月），蛋鸡对氨基酸的需求较高，尤其是蛋氨酸（Methionine），因为它在蛋清蛋白中含量较高，且是蛋氨酸半胱氨酸（Met-Cys）循环中的关键成分。
+
+### 关于SID蛋氨酸（可消化蛋氨酸）的需要量：
+
+SID（Standardized Ileal Digestibility，标准回肠消化率）蛋氨酸是指在蛋鸡日粮中，经过回肠消化后可被吸收利用的蛋氨酸含量。不同品种、不同产蛋阶段、不同环境条件（如温度、光照、饲养水平）都会影响SID蛋氨酸的需要量。
+
+根据目前的行业标准和相关研究，**大午金凤鸡在产蛋I期的SID蛋氨酸推荐需要量**一般为：
+
+> **0.35% ~ 0.45%**（以干物质为基础）
+
+### 说明：
+
+- **SID蛋氨酸**是衡量蛋鸡日粮中蛋氨酸利用率的重要指标，通常用于精确配制蛋鸡日粮。
+- 产蛋I期是蛋鸡产蛋性能快速提升的阶段，因此需要较高的蛋氨酸水平以支持蛋清蛋白的合成。
+- 实际需要量可能因鸡群的健康状况、饲料原料的消化率、环境应激等因素而有所变化，建议根据具体饲养情况和营养师的建议进行调整。
+
+### 建议：
+
+- 如果使用的是**合成蛋氨酸**（如DL-蛋氨酸），应根据SID值进行计算，确保日粮中SID蛋氨酸含量达到上述范围。
+- 如果使用的是**天然来源的蛋氨酸**（如鱼粉、豆粕等），需考虑其SID值，通常天然蛋氨酸的SID值约为**80%~90%**，因此需要适当提高添加量。
+- 在实际生产中，建议参考**大午集团提供的饲料配方手册**或与营养专家沟通，以获得更精确的SID蛋氨酸需要量。
+
+如需更具体的数值，建议提供以下信息：
+- 鸡群的年龄（如28周龄、32周龄等）
+- 当前产蛋率
+- 饲料",,,,,
+C-NR-002,Nutrient Requirements,single-value,en,What is the SID methionine requirement for Isa Brown in Lay I?,Model_B,"The Standard Ileal Digestible (SID) methionine requirement for Isa Brown hens in the first phase of lay (Lay I) is typically around 0.42-0.45% of the diet. This requirement is based on research and recommendations from the primary breeder, which may vary slightly depending on:
+
+1. Feed intake levels
+2. Environmental temperatures
+3. Body weight management
+4. Egg production targets
+5. Feed formulation strategies
+
+For optimal performance during this critical early lay period, it's important to monitor not just methionine but also the methionine+cystine level, which should typically be around 0.72-0.76% SID.
+
+Would you like more specific information about managing Isa Brown nutrition during Lay I?",,,,,
+C-FIB-005,Feed Ingredient Bank,comparison,en,Compare the crude protein of soybean meal 48% and canola meal. Which is higher and by how much?,Model_F,"Soybean meal (48% crude protein) is higher in crude protein than canola meal. 
+
+Here’s the breakdown:
+
+- **Soybean meal (48% CP):** Contains **48%** crude protein (as the name suggests).
+- **Canola meal:** Typically contains **36% to 38%** crude protein (depending on the processor and oil extraction method).
+
+**Difference:** Soybean meal is higher by approximately **10 to 12 percentage points** (e.g., 48% vs. 36% = 12 points higher; 48% vs. 38% = 10 points higher).
+
+In practical terms, for every 100 kg of feed, soybean meal provides about 10–12 kg more crude protein than the same amount of canola meal. However, canola meal is often used as a cost-effective partial replacement because it has a better amino acid profile for certain essential amino acids (like methionine and cysteine) relative to its protein content, though it is lower in lysine than soybean meal.",,,,,
+C-PM-003,Performance Management,comparison,en,Compare hen-day production: Isa Brown week 30 vs Hy-Line Brown week 30. Which is higher?,Model_B,"At week 30, Isa Brown hens typically have a higher hen-day production compared to Hy-Line Brown hens.
+
+Isa Brown hens at week 30 usually achieve approximately 92-94% hen-day production, while Hy-Line Brown hens at the same age typically produce at around 90-92% hen-day production.
+
+The Isa Brown is known for its rapid early production and sustained high output, while the Hy-Line Brown offers excellent persistency but may have slightly lower peak production. Both are excellent commercial brown egg layers, but the Isa Brown generally has a slight edge in hen-day production at this specific stage in the production cycle.
+
+Keep in mind that actual performance can be influenced by factors like management practices, nutrition, housing conditions, and health status of the flock.",,,,,
+C-NR-001,Nutrient Requirements,single-value,en,What is the calcium requirement for Isa Brown in Lay I?,Model_E,"For **Isa Brown** hens during the **Lay I phase** (typically defined as the period from first egg production up to approximately 40–45 weeks of age, or until peak production is reached), the calcium requirement is generally:
+
+### **3.8% – 4.0% Calcium in the diet**
+
+#### Key Details:
+- **Why this level?**  
+  Lay I is a critical period for establishing strong eggshell quality and building skeletal reserves. Hens are rapidly increasing egg output while still growing slightly. Adequate calcium ensures optimal shell thickness and prevents early onset of osteoporosis or poor shell quality later in lay.
+  
+- **Source Recommendation:**  
+  Use a mix of **fine limestone** (for rapid absorption) and **coarse oyster shell/grit** (for slow-release calcium during nighttime when shells form). A common ratio is 50:50 fine:coarse.
+
+- **Phosphorus Balance:**  
+  Maintain an available phosphorus level of **0.35% – 0.40%** to ensure proper calcium-phosphorus ratio (~2:1 to 2.5:1).
+
+- **Vitamin D3:**  
+  Ensure adequate Vitamin D3 (typically 2,000–3,000 IU/kg feed) to support calcium absorption.
+
+> ⚠️ **Note:** Always refer to the specific **Isa Brown Management Guide** provided by your hatchery or supplier, as recommendations can vary slightly based on climate, housing system, and genetic line updates. However, 3.8–4.0% is the industry standard for commercial brown layers in early lay.",,,,,
+C-EC-001,Edge Cases,single-value,en,What is the crude protein content of unicorn feed?,Model_B,"That's an interesting question! Since unicorns are mythical creatures, there isn't any established nutritional data for unicorn feed. In poultry nutrition, we focus on real animals like chickens, turkeys, ducks, and other domestic fowl, where we carefully formulate feeds to meet their specific protein, energy, vitamin, and mineral requirements.
+
+If you have questions about poultry feed formulations or nutritional requirements for actual birds, I'd be happy to help with that information instead!",,,,,
+C-EC-002,Edge Cases,single-value,en,What is the calcium requirement for Lohmann Tinted in Lay I?,Model_C,"The calcium requirement for Lohmann Tinted in Lay I (which refers to the first laying phase of the laying cycle) depends on the age of the birds and their stage of production. Lohmann Tinted is a commercial layer breed, and their nutritional needs are typically managed through a well-balanced diet to support optimal egg production and shell quality.
+
+### Calcium Requirements for Lohmann Tinted in Lay I:
+
+- **Age Range:** Lay I typically refers to the first 10–12 weeks of the laying cycle, which corresponds to **weeks 18–20** of the bird's life (assuming a standard 28-week laying cycle).
+- **Calcium Requirement:** During Lay I, the recommended **calcium level in the diet** is generally **3.5% to 4.0%** on a dry matter basis.
+- **Phosphorus Requirement:** The phosphorus level should be around **0.8% to 1.0%**.
+- **Calcium-to-Phosphorus Ratio:** A ratio of **2.5:1 to 3.0:1** is typically recommended to support proper eggshell formation and overall bone health.
+
+### Key Considerations:
+- **Eggshell Quality:** Calcium is critical for maintaining strong eggshells. Insufficient calcium can lead to thin or cracked shells.
+- **Feed Formulation:** Diets should be formulated to provide adequate calcium, often through the inclusion of limestone, shell grit, or other calcium sources.
+- **Dietary Balance:** It's important to balance calcium with other nutrients like phosphorus, vitamin D3, and protein to ensure optimal utilization and prevent health issues such as metabolic bone disease.
+
+### Example Feed Composition (for Lay I):
+| Nutrient         | Percentage (%) |
+|------------------|----------------|
+| Calcium          | 3.5 – 4.0       |
+| Phosphorus       | 0.8 – 1.0       |
+| Calcium:Phosphorus Ratio | 2.5:1 – 3.0:1 |
+| Crude Protein    | 16 – 18%        |
+| Energy (ME)      | 2.8 – 3.0 Mcal/kg |
+| Vitamin D3       | 1,500 – 2,000 IU/kg |
+
+### Notes:
+- The exact requirements may vary slightly depending on the specific strain, environmental conditions, and management practices.
+- It",,,,,
+C-PM-006,Performance Management,open-ended,en,"Isa Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily calcium intake in mg/hen/day. Is it sufficient for eggshell (~4000 mg/day)?",Model_B,"To calculate the daily calcium intake for your Isa Brown hens at week 30, I'll use the information you provided:
+
+Feed intake: 112 g/hen/day
+Calcium requirement: 4.04%
+
+First, let's calculate the calcium intake in grams per day:
+112 g feed/day × 4.04% Ca = 4.5248 g Ca/hen/day
+
+Now, let's convert this to milligrams:
+4.5248 g × 1000 = 4,524.8 mg Ca/hen/day
+
+Comparison with eggshell requirement:
+- Calculated calcium intake: ~4,525 mg/hen/day
+- Required for eggshell: ~4,000 mg/hen/day
+
+Assessment:
+Yes, the calculated calcium intake of approximately 4,525 mg/hen/day appears sufficient for eggshell formation, which requires about 4,000 mg/day. The hen is consuming about 525 mg more than the minimum requirement for eggshell formation.
+
+This excess calcium is actually beneficial as it allows for:
+1. Proper eggshell formation
+2. Maintenance of bone calcium reserves
+3. Buffer against any day-to-day variations in feed intake
+
+The calcium level in the diet appears adequate for your 30-week-old Isa Brown hens.",,,,,
+C-PM-006,Performance Management,open-ended,en,"Isa Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily calcium intake in mg/hen/day. Is it sufficient for eggshell (~4000 mg/day)?",Model_C,"To estimate the **daily calcium intake (in mg/hen/day)** for **Isa Brown hens at week 30**, we can use the following information:
+
+- **Feed intake per hen per day**: 112 g  
+- **Calcium content in feed**: 4.04%  
+- **Calcium requirement for eggshell formation**: ~4000 mg/day
+
+---
+
+### Step 1: Calculate daily calcium intake from feed
+
+$$
+\text{Daily calcium intake} = \text{Feed intake (g/day)} \times \text{Calcium percentage} \times 1000
+$$
+
+$$
+= 112 \, \text{g/day} \times 4.04\% \times 1000
+$$
+
+$$
+= 112 \times 0.0404 \times 1000 = 4524.8 \, \text{mg/day}
+$$
+
+---
+
+### Step 2: Compare with eggshell requirement
+
+- **Eggshell calcium requirement**: ~4000 mg/day  
+- **Calcium provided by feed**: ~4525 mg/day
+
+---
+
+### Conclusion:
+
+The **daily calcium intake from feed (4525 mg)** is **slightly higher than the eggshell requirement (4000 mg)**. This means the **calcium intake is sufficient** for eggshell formation at week 30 for Isa Brown hens.
+
+However, it's important to note that **not all calcium in the feed is utilized for eggshell formation**. Some calcium is used for other physiological functions (e.g., bone maintenance, blood clotting, etc.). Therefore, while the total calcium intake is sufficient, the **actual amount used for eggshells may be less**.
+
+If you're concerned about **eggshell quality**, you may want to consider:
+
+- Monitoring **eggshell thickness** or **breakage rate**
+- Checking for **calcium deficiency symptoms** (e.g., soft-shelled eggs, reduced egg production)
+- Ensuring that the **calcium source is bioavailable** (e.g., limestone, shell grit, etc.)
+
+Let me know if you'd like help calculating the **calcium content in the feed** or evaluating **eggshell quality**!",,,,,
+C-XD-005,Cross-Domain,counterfactual,en,Maize CP drops from 8.8% to 5.0% (severe drought). Original formula: 60% maize. By how many percentage points must SBM48 (CP=52.6%) increase to maintain total CP?,Model_B,"To maintain the total crude protein (CP) in the poultry feed formula when maize CP drops from 8.8% to 5.0%, we need to calculate how much soybean meal (SBM48) with 52.6% CP should increase.
+
+Let's break this down:
+
+1. Original formula:
+   - 60% maize with 8.8% CP
+   - 40% SBM48 with 52.6% CP
+
+2. New formula:
+   - 60% maize with 5.0% CP
+   - X% SBM48 with 52.6% CP
+
+First, calculate the original CP contribution:
+- Maize: 60% × 8.8% = 5.28%
+- SBM48: 40% × 52.6% = 21.04%
+- Total CP: 5.28% + 21.04% = 26.32%
+
+Now, calculate how much SBM48 is needed to maintain 26.32% total CP with the new maize CP:
+- Maize: 60% × 5.0% = 3.0%
+- SBM48 needed: (26.32% - 3.0%) ÷ 52.6% = 23.32% ÷ 52.6% = 44.32%
+
+The increase in SBM48 is: 44.32% - 40% = 4.32%
+
+Therefore, SBM48 must increase by 4.32 percentage points to maintain the total CP in the formula.",,,,,
+C-FIB-002,Feed Ingredient Bank,single-value,en,What is the calcium content of limestone?,Model_F,"Limestone is primarily composed of calcium carbonate (CaCO₃). Its **calcium (Ca) content typically ranges from 36% to 38%** by weight.
+
+Here are the key details for poultry nutrition:
+
+- **Pure calcium carbonate** contains exactly **40% calcium**.
+- **Commercial limestone** (feed grade) usually contains **36–38% calcium** because it contains impurities like magnesium, silica, and clay.
+- **Particle size matters:** For laying hens, coarse limestone (2–4 mm) is preferred for slow calcium release in the gizzard, especially for shell formation during the night. Fine limestone (powder) is more rapidly soluble and is often used in younger birds or as a top-up.
+
+**Practical note:** When formulating feed, always use the **analyzed calcium value** from your specific limestone source (ask your supplier for a certificate of analysis), rather than assuming 38%, to avoid calcium/phosphorus imbalances.",,,,,
+C-PM-007,Performance Management,single-value,en,"Isa Brown at week 30: hen-day production 95.5%, average egg weight 61.5g. Calculate egg mass in g/hen/day.",Model_E,"To calculate the egg mass in grams per hen per day, you use the following formula:
+
+$$ \text{Egg Mass (g/hen/day)} = \text{Hen-Day Production (\%)} \times \text{Average Egg Weight (g)} $$
+
+**Given:**
+*   Hen-Day Production = 95.5% = 0.955
+*   Average Egg Weight = 61.5 g
+
+**Calculation:**
+$$ 0.955 \times 61.5 = 58.7325 $$
+
+**Result:**
+The egg mass is **58.73 g/hen/day** (rounded to two decimal places).",,,,,
+C-FIB-001,Feed Ingredient Bank,single-value,en,What is the crude protein content of maize?,Model_F,"The crude protein content of maize (corn) typically ranges from **7% to 10%** on a dry matter basis (or about 6.5% to 9% as-fed, depending on moisture content). 
+
+Here are the key details for poultry nutrition:
+
+- **Typical average:** Most standard yellow dent maize used in poultry feed contains about **8% to 8.5% crude protein** (as-fed at 12-14% moisture).
+- **Variability:** The exact level depends on the variety, growing conditions, soil nitrogen, and climate. High-oil or specialty varieties may have slightly higher protein (up to 10-11%).
+- **Protein quality:** Maize protein is relatively low in essential amino acids for poultry, particularly **lysine** (approx. 0.25%) and **tryptophan** (approx. 0.06%). It is also deficient in methionine, though not as severely as lysine.
+- **Practical implication:** In poultry diets, maize is primarily an **energy source** (starch), not a protein source. It is always supplemented with higher-protein ingredients like soybean meal, canola meal, or synthetic amino acids (L-lysine, DL-methionine) to meet the bird's amino acid requirements.
+
+If you are formulating a diet, always use the actual lab analysis of your specific maize batch rather than relying on book values, as protein and amino acid content can vary by 1-2 percentage points.",,,,,
+C-XD-005,Cross-Domain,counterfactual,en,Maize CP drops from 8.8% to 5.0% (severe drought). Original formula: 60% maize. By how many percentage points must SBM48 (CP=52.6%) increase to maintain total CP?,Model_E,"To determine how much the Soybean Meal (SBM48) inclusion must increase to compensate for the drop in Maize Crude Protein (CP), we need to calculate the **protein deficit** caused by the maize change and then determine how much SBM is needed to fill that gap.
+
+### Step 1: Calculate the CP contribution from Maize before and after drought
+
+*   **Original Maize CP:** $8.8\%$
+*   **New Maize CP:** $5.0\%$
+*   **Maize Inclusion Rate:** $60\%$ of the diet
+
+**Original CP contribution from Maize:**
+$$60\% \times 8.8\% = 0.60 \times 0.088 = 0.0528 \text{ (or } 5.28\% \text{ CP in the total diet)}$$
+
+**New CP contribution from Maize:**
+$$60\% \times 5.0\% = 0.60 \times 0.050 = 0.0300 \text{ (or } 3.00\% \text{ CP in the total diet)}$$
+
+### Step 2: Calculate the Protein Deficit
+
+The loss in dietary CP due to the maize quality drop is:
+$$5.28\% - 3.00\% = 2.28\% \text{ CP deficit}$$
+
+We need to add enough SBM48 to contribute an additional **2.28%** CP to the total diet.
+
+### Step 3: Calculate Required Increase in SBM48
+
+*   **SBM48 CP Content:** $52.6\%$ ($0.526$)
+
+Let $\Delta X$ be the percentage point increase in SBM48 inclusion.
+
+The equation is:
+$$\Delta X \times 52.6\% = 2.28\%$$
+
+Solving for $\Delta X$:
+$$\Delta X = \frac{2.28}{52.6}$$
+$$\Delta X \approx 0.043346$$
+
+Convert to percentage points:
+$$0.043346 \times 100 = 4.33\%$$
+
+### Important Consider",,,,,
+C-NR-008,Nutrient Requirements,single-value,en,"A diet has 0.45% total phosphorus and 0.30% phytate phosphorus. If phytase improves phytate P release by 50%, what is the effective available phosphorus?",Model_B,"To calculate the effective available phosphorus, I'll need to determine how much phosphorus becomes available after phytase treatment.
+
+First, let's break down the phosphorus sources:
+- Total phosphorus: 0.45%
+- Phytate phosphorus: 0.30%
+- Non-phytate phosphorus: 0.45% - 0.30% = 0.15%
+
+The non-phytate phosphorus is already available, so we don't need to modify that value.
+
+For the phytate phosphorus:
+- Original phytate phosphorus: 0.30%
+- Phytase improves phytate P release by 50%, so 50% of the phytate phosphorus becomes available
+- Available phytate phosphorus: 0.30% × 50% = 0.15%
+
+Now, add the available phytate phosphorus to the non-phytate phosphorus:
+- Effective available phosphorus = Non-phytate P + Available phytate P
+- Effective available phosphorus = 0.15% + 0.15% = 0.30%
+
+Therefore, the effective available phosphorus in this diet after phytase treatment is 0.30%.",,,,,
+C-NR-007,Nutrient Requirements,single-value,en,A feed ingredient has total lysine of 0.85% and SID lysine digestibility of 88%. What is the SID lysine content (in %)?,Model_A,"
+
+The SID (standardized ileal digestibility) lysine content is calculated by multiplying the total lysine by the digestibility coefficient:
+
+\[
+\text{SID lysine (\%)} = \text{Total lysine (\%)} \times \text{SID digestibility (decimal)}
+\]
+
+\[
+\text{SID lysine (\%)} = 0.85\% \times 0.88 = 0.748\%
+\]
+
+Rounded to a typical feed‑formulation precision, this is approximately **0.75 % SID lysine**.",,,,,
+C-FIB-005,Feed Ingredient Bank,comparison,en,Compare the crude protein of soybean meal 48% and canola meal. Which is higher and by how much?,Model_G,"**Comparison: Soybean Meal (48%) vs. Canola Meal – Crude Protein**
+
+| Ingredient | CP (%) |
+|------------|--------|
+| Soybean Meal (48%) | 49.5 [from Feed Ingredient Bank] |
+| Canola Meal (oil < 5%) | 41.0 [from Feed Ingredient Bank] |
+
+**Result:** Soybean meal is higher in crude protein.
+
+- **Difference:** 49.5% − 41.0% = **8.5 percentage points** higher in soybean meal.
+
+**Note on discrepancy:** The supplementary definition lists canola meal at ~36% CP, but the Feed Ingredient Bank value of 41.0% is the more reliable, industry-standard figure for solvent-extracted canola meal (oil < 5%). The 36% figure likely refers to a lower-quality or older reference. The 41.0% value is best supported for modern canola meal.
+
+**Final answer",,,,,
+C-NR-006,Nutrient Requirements,open-ended,en,How does the calcium requirement for Isa Brown change from Developer through Lay III? State the Ca% for each phase.,Model_G,"**Calcium (Ca%) requirements for Isa Brown by phase:**
+
+- **Developer (8–16 wks):** **1.0%** [from Nutrient tool]
+- **Pre-Lay (17–18 wks):** **2.5%** (transition to layer diet) [from Nutrient tool]
+- **Lay I (19–40 wks):** **3.8%** [from Nutrient tool]
+- **Lay II (41–60 wks):** **4.0%** [from Nutrient tool]
+- **Lay III (61+ wks):** **4.2%** [from Nutrient tool]
+
+**Key notes:**
+- The requirement increases steadily from 1.0% in Developer to 4.2% in Lay III, reflecting the hen’s rising egg mass and shell output with age.
+- The jump from 1.0% to 2.5% at Pre-Lay is critical for",,,,,
+C-FIB-009,Feed Ingredient Bank,single-value,zh,玉米的粗蛋白含量是多少？,Model_F,"玉米（籽实）的粗蛋白含量通常在 **7%～9%** 之间，具体数值会因品种、产地、种植条件及储存方式而有所差异。
+
+**常见参考值：**
+- 普通黄玉米：约 **8.0%～8.5%**（干物质基础）
+- 高蛋白玉米品种：可达 **9%～10%**
+- 低蛋白或受环境影响较大的玉米：可能低至 **6.5%～7%**
+
+**在饲料配方中的注意事项：**
+1. **蛋白质质量**：玉米蛋白主要是玉米醇溶蛋白（zein），缺乏赖氨酸和色氨酸，属于**低质量蛋白**，在配方中需搭配豆粕、鱼粉等优质蛋白源。
+2. **水分影响**：若玉米水分较高（如15%以上），其粗蛋白含量（按饲喂状态）会相应降低，配方计算时应以干物质为基础。
+3. **检测建议**：实际生产中，建议通过近红外（NIR）或凯氏定氮法对每批玉米进行实测，避免因批次差异导致配方偏差。
+
+如需更精确的数据，请提供玉米的具体品种或产地，我可以进一步分析。",,,,,
+C-DEF-005,Definitions,definition,zh,什么是代谢能？它和消化能有什么区别？,Model_B,"# 代谢能与消化能的区别
+
+代谢能(Metabolizable Energy, ME)和消化能(Digestible Energy, DE)都是衡量饲料能量价值的指标，但它们在计算方法和应用上有重要区别：
+
+## 消化能(DE)
+消化能是指饲料中被动物消化吸收的能量，计算公式为：
+DE = 摄入总能 - 粪能
+
+消化能只考虑了粪便中损失的能量，没有考虑尿能和气体能(如甲烷)的损失。
+
+## 代谢能(ME)
+代谢能是指饲料中被动物用于代谢的能量，计算公式为：
+ME = 摄入总能 - (粪能 + 尿能 + 气体能)
+
+或者：
+ME = 消化能 - (尿能 + 气体能)
+
+## 主要区别
+1. **计算范围不同**：ME比DE多减去了尿能和气体能的损失
+2. **准确性不同**：ME更能准确反映饲料的实际可利用能量
+3. **应用不同**：在家禽营养中，ME是更常用的能量评定指标，因为它更准确地反映了饲料的实际营养价值
+
+在家禽生产中，代谢能是配制日粮时最重要的能量指标，直接影响家禽的生长性能和生产效率。",,,,,
+C-FIB-006,Feed Ingredient Bank,open-ended,en,List three plant protein sources from the feed ingredient bank with crude protein above 30%. Cite exact CP values.,Model_E,"Based on standard poultry feed ingredient databases (such as those referenced in NRC Nutrient Requirements of Poultry or common commercial feed formulation software like Brill or Format), here are three plant protein sources with crude protein (CP) levels above 30%:
+
+1. **Soybean Meal (48% CP)**  
+   - **Crude Protein:** ~48–50%  
+   - *Note:* This is the most widely used plant protein source in poultry diets due to its high digestibility and balanced amino acid profile.
+
+2. **Canola Meal (Rapeseed Meal)**  
+   - **Crude Protein:** ~36–38%  
+   - *Note:* Modern ""double-zero"" canola varieties have reduced glucosinolates, making it a viable alternative to soybean meal, though it may require enzyme supplementation for optimal fiber digestion.
+
+3. **Sunflower Seed Meal (Hulled)**  
+   - **Crude Protein:** ~32–34%  
+   - *Note:* Hulled sunflower meal has higher CP than unhulled versions due to lower fiber content. It is often used in broiler and layer diets but must be limited due to high fiber and lysine deficiency.
+
+*Disclaimer: Exact CP values can vary by crop variety, processing method, and geographic origin. Always verify with laboratory analysis for precise formulation.*",,,,,
+C-FIB-002,Feed Ingredient Bank,single-value,en,What is the calcium content of limestone?,Model_A,"
+
+The calcium you get from limestone comes from the calcium carbonate (CaCO₃) that makes up the rock.  
+
+**Elemental calcium (Ca) in pure CaCO₃**  
+- Atomic weight of Ca ≈ 40.08 g mol⁻¹  
+- Molecular weight of CaCO₃ ≈ 100.09 g mol⁻¹  
+- **% Ca = (40.08 / 100.09) × 100 ≈ 40 %**  
+
+**Typical limestone**  
+- Most commercial limestone used for feed or soil amendment is not 100 % pure CaCO₃; it contains varying amounts of impurities (silica, clay, iron oxide, magnesium, etc.).  
+- In practice, the **elemental calcium content of typical limestone ranges from about 35 %",,,,,
+C-PM-002,Performance Management,single-value,en,What is the egg weight for Hy-Line Brown at week 30?,Model_G,"**Egg weight for Hy-Line Brown at week 30: 61.3 g** [from Performance tool].
+
+**Supporting data at week 30** [from Performance tool]:
+- Hen-day egg production: 95.7%
+- Feed intake: 113.0 g/d
+- Body weight: 1980 g
+- Shell breaking strength: 45.4 N
+- Haugh Unit: 93.3
+
+**Note on data consistency**: The supplementary reference (week 99) shows 65.4 g egg weight, which is consistent with the expected age-related increase (heavier eggs later in lay). No contradiction exists — the week 30 value is the direct answer to the question.
+
+**Source**: Hy-Line Brown Official Manual (via Performance Management tool).",,,,,
+C-FIB-004,Feed Ingredient Bank,comparison,en,"Which has higher metabolizable energy, maize or soft wheat? State both values.",Model_D,"Maize (corn) has higher metabolizable energy than soft wheat in poultry.
+
+Typical apparent metabolizable energy (AME) values for poultry are approximately:
+
+- **Maize:** ~3,350 kcal/kg (14.0 MJ/kg)
+- **Soft wheat:** ~3,100–3,150 kcal/kg (13.0–13.2 MJ/kg)
+
+So maize is generally about 200–250 kcal/kg higher in metabolizable energy than soft wheat.",,,,,
+C-XD-006,Cross-Domain,counterfactual,en,SBM price doubles. Replace 50% of SBM with canola meal. Original: 25% SBM (CP=52.6%). New: 12.5% SBM + 12.5% canola (CP=41.0%). Calculate the CP contribution change.,Model_G,"**CP Contribution Change Calculation**
+
+**Original formulation (25% SBM @ CP 52.6%):**  
+- CP contribution = 25% × 52.6% = **13.15%** [from user-specified SBM CP]
+
+**New formulation (12.5% SBM @ CP 52.6% + 12.5% Canola @ CP 41.0%):**  
+- SBM contribution = 12.5% × 52.6% = **6.575%** [from user-specified SBM CP]  
+- Canola contribution = 12.5% × 41.0% = **5.125%** [from Feed Ingredient Bank – canola CP 41.0%]  
+- Total CP = 6.575% + 5.125% = **11.70%**
+
+**Change in CP contribution:**  
+- 11.70% − 13.",,,,,
+C-PM-010,Performance Management,comparison,zh,京粉6号和海兰褐在第30周的产蛋率各是多少？哪个更高？,Model_D,"要准确回答京粉6号和海兰褐在第30周的产蛋率，需要参考这两个品种最新版的生产性能标准手册或育种公司发布的标准产蛋曲线数据。
+
+根据常见标准生产性能资料，大致情况如下：
+
+- **海兰褐（Hy-Line Brown）**：第30周龄时通常仍处于产蛋高峰期，标准产蛋率一般在 **94%～96%** 左右。
+- **京粉6号**：作为国内培育的粉壳蛋鸡品种，第30周龄也处于高峰期，标准产蛋率通常也在 **93%～95%** 左右。
+
+因此，在标准饲养管理条件下：
+
+**海兰褐第30周的产蛋率通常略高于京粉6号，但两者差距不大，一般只有1～2个百分点。**
+
+不过需要注意：  
+实际产蛋率受饲料营养、环境温度、光照程序、鸡群健康状况、育成期均匀度等因素影响很大。如果你需要用于生产对比或配方调整，建议以你手头鸡群的实际周报数据为准。",,,,,
+C-DEF-003,Definitions,definition,en,What is feed conversion ratio (FCR)? How is it calculated?,Model_B,"Feed Conversion Ratio (FCR) is a key performance indicator in poultry nutrition that measures the efficiency of feed utilization by birds. It represents the amount of feed required to produce a unit of weight gain.
+
+FCR is calculated using the following formula:
+
+FCR = Total feed consumed (kg) / Total body weight gain (kg)
+
+For example, if a group of chickens consumes 100 kg of feed and gains 50 kg in body weight during the same period, the FCR would be:
+
+FCR = 100 kg / 50 kg = 2.0
+
+This means it takes 2 kg of feed to produce 1 kg of weight gain.
+
+A lower FCR indicates better feed efficiency, as less feed is required to produce each kilogram of weight gain. In modern poultry production, typical FCR values might range from 1.4 to 1.8 for broilers raised to market weight, depending on factors like genetics, age, health status, and feed quality.",,,,,
+C-XD-002,Cross-Domain,multi-hop,en,Ca requirement for ISA Brown layers is 4.04%. Limestone has 35% Ca. What % of limestone is needed in the diet?,Model_A,,,,,,
+C-PM-002,Performance Management,single-value,en,What is the egg weight for Hy-Line Brown at week 30?,Model_D,"Based on the Hy-Line Brown Commercial Management Guide, the average egg weight at 30 weeks of age is approximately **61.5 to 62.0 grams per egg**. 
+
+At this stage, hens are typically in peak production and egg weight is continuing to gradually increase as the flock ages.",,,,,
+C-FIB-009,Feed Ingredient Bank,single-value,zh,玉米的粗蛋白含量是多少？,Model_G,"**玉米（Corn Grain）的粗蛋白含量通常为 8.8%**（以干物质 90% 为基础）[from Feed Ingredient Bank – INRAE-CIRAD-AFZ feed tables]。
+
+**注意区分：** 若查询的是 **玉米蛋白饲料（Corn Gluten Feed）**，其粗蛋白含量为 **21.6%** [from Feed Ingredient Bank]，但这是玉米湿法加工后的副产品，并非常规玉米谷物。
+
+**结论：** 常规玉米的粗蛋白含量约为 **8.8%**（干物质基础），而玉米蛋白饲料的粗蛋白含量为 **21.6%**。两者差异显著，需根据实际原料类型选择对应数据。",,,,,
+C-NR-004,Nutrient Requirements,comparison,en,Compare calcium requirement: Isa Brown Lay I vs Lay III. Which is higher?,Model_D,"To compare the calcium requirements of **Isa Brown Layer I** and **Isa Brown Layer III**, we need to look at the official ISA Nutrition Management Guides. 
+
+The short answer is: **The calcium requirement for Isa Brown Layer III is slightly higher than for Layer I, particularly during the early stages of lay.**
+
+Here is the detailed breakdown of the differences based on the official ISA management guides (measured in grams of calcium per bird per day, and % of feed):
+
+### 1. Isa Brown Layer I (Older Genetics)
+The Layer I guide focuses heavily on a step-up phase feeding program to prevent early osteoporosis while maximizing shell quality.
+
+- **Phase 1 (18–37 weeks):** 4.10 g/bird/day (approx. 3.70% of feed)
+- **Phase 2 (38–48 weeks):** 4.30 g/bird/day (approx. 3.90% of feed)
+- **Phase 3 (49–62 weeks):** 4.50 g/bird/day (approx. 4.10% of feed)
+- **Phase 4 (63–76 weeks):** 4.60 g/bird/day (approx. 4.30% of feed)
+- **Phase 5 (77+ weeks):** 4.60 g/bird/day (approx. 4.40% of feed)
+
+### 2. Isa Brown Layer III (Current Genetics)
+The Layer III guide was updated to reflect the genetic improvements in persistency, egg mass, and shell quality. The calcium curve is slightly more aggressive at the start.
+
+- **Phase 1 (18–37 weeks):** 4.20 g/bird/day (approx. 3.80% of feed)
+- **Phase 2 (38–48 weeks):** 4.40 g/bird/day (approx. 4.00% of feed)
+- **Phase 3 (49–62 weeks):** 4.60 g/bird/day (approx. 4.20% of feed)
+- **Phase 4 (63–76 weeks):** 4.70 g/bird/day (approx. 4.40% of feed)
+- **Phase 5 (77+ weeks):** 4.70 g/bird/day (approx. 4.50% of feed)
+
+### Key Differences & Why It Matters
+
+1. **Early Lay (18–37 weeks):** Layer III requires **+0.10 g/bird",,,,,
+C-FIB-007,Feed Ingredient Bank,open-ended,en,Compare the SID lysine digestibility of maize and soybean meal 48%. What does this imply for formulation?,Model_B,"# Comparison of SID Lysine Digestibility: Maize vs. Soybean Meal 48%
+
+## Digestibility Values
+- **Maize**: Standardized Ileal Digestible (SID) lysine content is approximately 0.22-0.24%
+- **Soybean Meal 48%**: SID lysine content is approximately 0.67-0.70%
+
+## Implications for Formulation
+
+1. **Amino Acid Profile**: Soybean meal 48% contains approximately 3 times more SID lysine than maize, making it a much better source of this essential amino acid.
+
+2. **Protein Quality**: Soybean meal provides a more balanced amino acid profile overall, while maize is limiting in lysine and tryptophan.
+
+3. **Formulation Balance**: When using maize as a primary energy source, you'll need to supplement with lysine from other sources (like synthetic L-lysine) to meet poultry requirements.
+
+4. **Cost Considerations**: While soybean meal is more expensive per ton, its higher lysine digestibility means you may need less of it to meet amino acid requirements compared to using maize alone.
+
+5. **Feed Efficiency**: Proper balancing of lysine from these ingredients will impact growth performance and feed efficiency in poultry.
+
+Would you like more specific information on how to balance these ingredients in a poultry diet?",,,,,
+C-EC-003,Edge Cases,single-value,en,What is the body weight of ISA Brown broilers at day 35?,Model_F,"ISA Brown is a **layer** breed, not a broiler breed. Therefore, they are not typically raised for meat production at day 35, and their body weight at that age is significantly lower than that of a broiler.
+
+However, if you are asking about the **body weight of ISA Brown pullets (young female layers) at 35 days of age**, the standard target weight according to the ISA Brown management guide is approximately:
+
+- **350 to 400 grams (0.77 to 0.88 lbs)** at 35 days.
+
+**Important note:** 
+- This is a **pullet (future layer)** weight, not a broiler weight.
+- If you are actually looking for a **broiler** (meat-type chicken) weight at day 35, that would be a different breed (e.g., Ross 308, Cobb 500), which typically weighs **2.0 to 2.4 kg (4.4 to 5.3 lbs)** at 35 days.
+
+If you meant a different age or a specific production goal (e.g., free-range layers vs. caged layers), please clarify, and I can provide more precise data.",,,,,
+C-PM-001,Performance Management,single-value,en,What is the hen-day production for Isa Brown at week 30?,Model_F,"At week 30, the **hen-day production** for Isa Brown layers is typically at its **peak**, ranging between **95% and 96%**.
+
+Here are the specific performance standards for Isa Brown at 30 weeks of age:
+
+- **Peak Production:** Isa Browns usually reach their peak (95–96%) between 28 and 30 weeks of age.
+- **Egg Weight:** At week 30, the average egg weight is approximately **60–62 grams**.
+- **Feed Intake:** Daily feed consumption at this age is typically around **110–115 grams per bird per day** (depending on environmental temperature and feed energy level).
+
+**Important Note:** 
+Hen-day production is calculated as the number of eggs laid in a day divided by the number of hens alive on that day, multiplied by 100. At 30 weeks, you should expect nearly every healthy hen to lay an egg every day, which is why the percentage is so high. 
+
+If your flock is below 93% at week 30, check for common issues such as insufficient feed intake, heat stress, poor water quality, or lighting program deficiencies (they should be receiving 14–16 hours of light per day).",,,,,
+C-FIB-007,Feed Ingredient Bank,open-ended,en,Compare the SID lysine digestibility of maize and soybean meal 48%. What does this imply for formulation?,Model_A,"
+
+Excellent question. This is a fundamental concept in modern poultry nutrition.
+
+Here’s a comparison of the **Standardized Ileal Digestibility (SID) of Lysine** for maize and soybean meal (48% protein):
+
+*   **Maize (Corn):** SID Lysine is typically very low, around **50-55%** of total lysine. The total lysine content is also low (~0.24-0.30%).
+*   **Soybean Meal (SBM 48%):** SID Lysine is high, typically around **85-90%** of total lysine. The total lysine content is much higher (~2.90-3.20%).
+
+### What This Implies for Formulation
+
+This stark difference in SID lysine digestibility has several critical implications for feed formulation:
+
+**1. The ""First Limiting Amino Acid"" Concept:**
+Lysine is often the **second or third limiting amino acid** in typical corn-soybean meal diets (after Methionine). Because maize provides very little digestible lysine, the diet is heavily dependent on soybean meal to meet the lysine requirement. If soybean meal inclusion is low, lysine will become the first limiting amino acid, restricting growth and feed efficiency.
+
+**2. The Need for Synthetic Lysine:**
+To formulate cost-effectively and meet the bird's precise amino acid requirements (especially for digestible lysine), synthetic **L-Lysine-HCl** (typically 78% lysine) is almost always added to corn-soybean meal diets. This is because:
+*   It is a pure, highly digestible (near 100%) source.
+*   It allows nutritionists to fine-tune the lysine level",,,,,
+C-FIB-002,Feed Ingredient Bank,single-value,en,What is the calcium content of limestone?,Model_D,"The calcium content of limestone typically ranges from **32% to 38% calcium**, depending on the purity of the limestone deposit.
+
+More specifically:
+
+- **Pure calcium carbonate (CaCO₃)** contains **40% calcium** by weight.
+- **High-quality limestone** (feed-grade) usually contains **36–38% calcium**.
+- **Lower-quality limestone** may contain **32–36% calcium**, with the remainder being impurities like magnesium, silica, or other minerals.
+
+For poultry feed formulation, it's important to use **feed-grade limestone** with a known, consistent calcium content (typically around **38%**) and to account for the actual analyzed value when balancing rations, especially for laying hens where calcium is critical for eggshell quality.",,,,,
+C-DEF-004,Definitions,single-value,en,"A feed sample has 2.5% nitrogen. Using N×6.25, what is the crude protein percentage?",Model_C,"To calculate the **crude protein percentage** from the **nitrogen content**, you can use the following formula:
+
+$$
+\text{Crude Protein (\%)} = \text{Nitrogen (\%)} \times 6.25
+$$
+
+Given:
+- Nitrogen content = 2.5%
+
+$$
+\text{Crude Protein} = 2.5\% \times 6.25 = 15.625\%
+$$
+
+So, the **crude protein percentage** is **15.625%**.",,,,,
+C-NR-001,Nutrient Requirements,single-value,en,What is the calcium requirement for Isa Brown in Lay I?,Model_G,"**Calcium requirement for ISA Brown in Lay I (21–40 weeks): 4.04%** [from Nutrient Requirements tool].
+
+**Progression across phases (for context):**
+- Lay I (21–40w): 4.04%
+- Lay II (41–60w): 4.24%
+- Lay III (61w+): 4.44%
+
+**Rationale:** Calcium increases with age to maintain eggshell quality as shell deposition efficiency declines.
+
+**Supplementary micronutrient reference (ISA Brown Official Manual):** Vitamin D₃ 3,300 IU/kg, available phosphorus typically paired at 0.45–0.48% in Lay I, with zinc 75 mg/kg and manganese 85 mg/kg to support shell matrix formation.
+
+**Note:** No conflicting values were provided across specialists. The 4.04% figure is consistent with ISA Brown breed standards and industry layer phase feeding programs.",,,,,
+C-PM-004,Performance Management,comparison,en,Compare daily feed intake: Isa Brown week 30 vs Hy-Line Brown week 30.,Model_A,"
+
+Excellent question. Comparing the feed intake of **Isa Brown** and **Hy-Line Brown** hens at **week 30** (which is during peak production) is crucial for accurate feeding and management.
+
+While both are high-producing brown egg strains, there can be slight genetic differences. Here’s a detailed comparison.
+
+### Typical Daily Feed Intake at Week 30
+
+| Strain | Typical Daily Feed Intake | Key Notes |
+| :--- | :--- | :--- |
+| **Isa Brown** | **110–120 grams/hen/day** | Often at the higher end of the range. Known for being robust and efficient. |
+| **Hy-Line Brown** | **105–115 grams/hen/day** | Often slightly lower than Isa Brown. Bred for high efficiency and feed conversion. |
+
+**Important Caveats:** These are *general guidelines* from breed performance guides. Actual intake can vary based on:
+*   **Diet Energy Density:** Higher energy diets will result in lower intake.
+*   **Environmental Temperature:** Heat stress drastically reduces intake; cold weather increases it.
+*   **Management & Lighting:** Proper feed allocation and light programs influence intake.
+*   **Health & Parasite Status:** Ill birds eat less.
+
+### Analysis & Practical Implications
+
+1.  **The Difference is Small:** The ~5 gram/day difference is modest. For a flock of 10,000 hens, that's only 50 kg (110 lbs) of feed difference per day. In practical terms, they are often managed very similarly.
+
+2.  **Why They Differ Slightly:**
+    *   **Isa Brown:** A cross of Rhode Island Red and Rhode",,,,,
+C-PM-001,Performance Management,single-value,en,What is the hen-day production for Isa Brown at week 30?,Model_D,"Based on the ISA Brown commercial management guide, at week 30 of production, the hen-day production is typically around **94–95%**. 
+
+For context, ISA Brown hens usually reach peak production (around 96–97%) between 26 and 29 weeks of age, and production begins to gradually decline after peak. By week 30, a drop of about 1–2% from peak is normal.",,,,,
+C-PM-009,Performance Management,single-value,zh,京粉6号在第30周的产蛋率是多少？,Model_E,"根据《京粉6号蛋鸡饲养管理手册》及该品种的标准生产性能数据，京粉6号在第30周龄时的产蛋率通常处于**高峰期**。
+
+具体参考数据如下：
+
+*   **标准产蛋率**：约为 **92% - 95%**。
+*   **说明**：
+    *   京粉6号一般在开产后（约18-20周）迅速爬升，在24-26周左右达到峰值（可达95%-97%）。
+    *   到第30周时，产蛋率仍维持在较高水平，但可能已从峰值略有回落或保持稳定，具体数值受以下因素影响：
+        *   饲料营养水平（尤其是能量、蛋白质和氨基酸平衡）；
+        *   光照管理（是否稳定提供16小时光照）；
+        *   环境控制（温度、通风、应激管理）；
+        *   疾病防控情况。
+
+✅ **建议**：若实际产蛋率低于90%，应检查饲料配方、饮水质量、光照程序及是否存在隐性健康问题（如新城疫、减蛋综合征抗体水平等）。
+
+如需更精确的数据，请参考您所用批次对应的官方最新饲养指南或联系供应商获取针对性推荐值。",,,,,
+C-FIB-003,Feed Ingredient Bank,single-value,en,What is the metabolizable energy of soybean meal 48% in kcal/kg?,Model_G,"**Metabolizable Energy of Soybean Meal 48% (CP basis):**
+
+The most reliable value from the available data is **2,220 kcal/kg ME** (as-fed basis) [from Feed Ingredient Bank – INRAE-CIRAD-AFZ feed tables].
+
+**Key clarification:** The database does not contain an exact entry labeled ""Soybean Meal 48%."" The closest match is **""soybean meal, oil < 5%, 46% protein + oil""** with a crude protein content of **49.5%** (on a 99% DM basis). This is the standard high-protein soybean meal (solvent-extracted, dehulled) commonly referred to as ""48% CP"" in commercial practice.
+
+**Supporting data for this entry:**
+- DM: 99.0%
+- CP: 49.5%
+- EE: 1.9%
+- CFiber: 7.2%
+- GE:",,,,,
+C-EC-004,Edge Cases,single-value,en,What is the methionine requirement for ISA Brown in Lay I?,Model_E,"For **ISA Brown** hens in the **Lay I phase** (typically defined as the period from onset of lay up to approximately 40–45 weeks of age, or until peak production is well-established), the methionine requirement is generally recommended as follows:
+
+### **Methionine Requirement for ISA Brown – Lay I Phase**
+
+*   **Total Methionine:** **0.38% – 0.42%** of the diet
+*   **Digestible Methionine:** **0.36% – 0.39%** of the diet
+
+*(Note: These values are on an ""as-fed"" basis for a standard layer diet with ~16–17% crude protein and adequate energy levels.)*
+
+---
+
+### **Key Considerations & Context**
+
+1.  **Phase Definition**:  
+    - **Lay I** usually covers the first 10–15 weeks after the onset of egg production (e.g., 18–30 weeks or 18–40 weeks depending on the management program). During this phase, birds are still growing slightly while ramping up egg output, so amino acid needs are high.
+    - **Lay II** (later lay) often has slightly lower methionine requirements (~0.36–0.38%) because growth has ceased and egg size stabilizes.
+
+2.  **Sulfur Amino Acid Balance**:  
+    - Methionine is the first limiting sulfur-containing amino acid. It is often formulated alongside **cystine**.
+    - The total **sulfur amino acids (Met + Cys)** should be around **0.65% – 0.70%** of the diet.
+    - If cystine is low, more methionine may be needed to meet sulfur amino acid requirements.
+
+3.  **Impact of Other Factors**:  
+    - **Energy Level**: Higher energy diets may require proportionally higher methionine per unit of feed intake.
+    - **Egg Size**: Larger eggs require more sulfur amino acids. If egg mass is increasing rapidly, ensure methionine is at the upper end of the range.
+    - **Heat Stress**: During hot weather, feed intake drops, but nutrient requirements remain constant. In such cases, use **digestible methionine** targets and consider increasing concentration per kg of feed.
+
+4.  **Source Verification**:  
+   ",,,,,
+C-XD-004,Cross-Domain,constraint,en,"A Lay I diet: 55% maize + 30% SBM48. Using SID lysine values, calculate total SID lysine. Does it meet 0.77%?",Model_C,"To calculate the **Total Standardized Ileal Digestible (SID) lysine** in a **Lay I diet**, we need to know the **SID lysine values** for each ingredient in the diet. You've provided the following:
+
+- **Maize**: 55% of the diet  
+- **SBM48**: 30% of the diet  
+
+However, you haven't provided the **SID lysine content** for maize and SBM48. Let me help you by assuming typical SID lysine values for these ingredients, which are commonly used in poultry nutrition.
+
+---
+
+### Assumed SID Lysine Values (per kg of feed):
+
+- **Maize**: Typically has a **SID lysine value of 0.85%**  
+- **SBM48 (Soybean Meal, 48% protein)**: Typically has a **SID lysine value of 1.05%**
+
+---
+
+### Step-by-step Calculation:
+
+Let’s assume the total diet is **100 kg** for simplicity.
+
+#### 1. Calculate the amount of each ingredient in the diet:
+- **Maize**: 55 kg  
+- **SBM48**: 30 kg  
+- **Remaining ingredients**: 15 kg (assumed to be other components like soybean hulls, minerals, vitamins, etc.)
+
+#### 2. Assume SID lysine values for the remaining 15 kg (we'll use an average of 0.5% for other ingredients as a placeholder):
+- **SID lysine in maize**:  
+  $ 55 \, \text{kg} \times 0.85\% = 4.675 \, \text{kg} $
+
+- **SID lysine in SBM48**:  
+  $ 30 \, \text{kg} \times 1.05\% = 3.15 \, \text{kg} $
+
+- **SID lysine in remaining ingredients**:  
+  $ 15 \, \text{kg} \times 0.5\% = 0.75 \, \text{kg} $
+
+#### 3. Total SID lysine in the diet:
+$$
+4.675 + 3.15 + 0.75 = 8.575 \, \text{kg}
+$$
+
+#### 4. Total SID lysine as a percentage of the",,,,,
+C-XD-007,Cross-Domain,multi-hop,en,"ISA Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily Ca intake (mg/hen/day). Sufficient for eggshell?",Model_C,"To estimate the **daily calcium (Ca) intake (mg/hen/day)** for **ISA Brown hens at week 30**, we can use the following information:
+
+- **Feed intake per hen per day**: 112 g
+- **Calcium requirement in feed**: 4.04% (by weight)
+
+---
+
+### Step 1: Calculate the daily calcium intake in grams
+
+$$
+\text{Daily Ca intake (g)} = \text{Feed intake (g)} \times \text{Ca percentage}
+$$
+$$
+= 112 \, \text{g} \times 0.0404 = 4.5248 \, \text{g}
+$$
+
+---
+
+### Step 2: Convert grams to milligrams
+
+$$
+\text{Daily Ca intake (mg)} = 4.5248 \, \text{g} \times 1000 = 4524.8 \, \text{mg}
+$$
+
+---
+
+### Step 3: Determine if this is sufficient for eggshell formation
+
+**Calcium requirement for eggshell formation** in laying hens is typically around **1.5 to 2.0 g of Ca per hen per day**, depending on the stage of lay and egg size.
+
+- **ISA Brown hens** are a high-performance layer breed, and at **week 30**, they are typically in the **early laying phase**.
+- At this stage, the **daily calcium requirement** is usually **around 1.5 to 1.8 g** (or **1500 to 1800 mg**) per hen.
+
+---
+
+### Conclusion:
+
+- **Estimated daily Ca intake**: **4524.8 mg/hen/day**
+- **Required Ca for eggshell**: **1500–1800 mg/hen/day**
+
+### Therefore:
+✅ **The daily calcium intake of 4524.8 mg is more than sufficient** for eggshell formation in ISA Brown hens at week 30.
+
+---
+
+### Optional: Considerations
+
+- If the hens are in the **peak laying phase** (around 30–40 weeks), the required Ca may increase slightly.
+- However, at **week 30**, the feed is likely formulated to meet the **early laying requirements**, and the **4.04% Ca** is **adequate**.
+
+Let me",,,,,
+C-DEF-005,Definitions,definition,zh,什么是代谢能？它和消化能有什么区别？,Model_D,"代谢能（Metabolizable Energy, ME）是指饲料中被动物消化吸收后，扣除尿能和气体能（对禽类而言主要是尿能，因为禽类气体能极少）后，可供动物机体代谢利用的能量。简单来说，代谢能 = 总能 - 粪能 - 尿能 - 气体能。
+
+消化能（Digestible Energy, DE）是指饲料总能中扣除粪能后剩余的能量，即被动物消化吸收的能量。消化能 = 总能 - 粪能。
+
+两者的主要区别在于：
+
+1. **扣除的能量损失不同**：消化能只扣除了粪能，而代谢能在消化能的基础上还扣除了尿能和气体能。因此，代谢能比消化能更精确地反映了饲料中真正能被动物机体利用的能量。
+
+2. **适用动物不同**：猪通常使用消化能作为能量评定指标，而家禽（鸡、鸭等）由于粪尿混合排出，且气体能损失极少，通常直接使用代谢能作为能量评定指标。
+
+3. **数值大小**：对于同一种饲料，代谢能通常低于消化能，因为代谢能额外扣除了尿能和气体能。
+
+在家禽营养中，代谢能是最常用的能量指标，用于配制饲料配方和评估饲料的能量价值。",,,,,
+C-EC-001,Edge Cases,single-value,en,What is the crude protein content of unicorn feed?,Model_E,"Unicorns are mythical creatures and do not exist in reality. Therefore, there is no such thing as ""unicorn feed,"" and consequently, it has no crude protein content or any other nutritional value.
+
+If you are interested in poultry nutrition, I can provide information on the crude protein requirements for chickens, turkeys, ducks, or other real birds at various life stages (e.g., starter, grower, layer).",,,,,
+C-PM-010,Performance Management,comparison,zh,京粉6号和海兰褐在第30周的产蛋率各是多少？哪个更高？,Model_B,"京粉6号和海兰褐在第30周的产蛋率数据如下：
+
+京粉6号在第30周的产蛋率约为92-93%左右。
+海兰褐在第30周的产蛋率约为90-91%左右。
+
+从数据来看，京粉6号在第30周的产蛋率略高于海兰褐。
+
+需要注意的是，这些数据是基于标准饲养条件下的参考值，实际产蛋率可能会因饲养管理、环境条件、饲料质量等因素而有所不同。",,,,,
+C-DEF-002,Definitions,definition,en,Define available phosphorus. Why is it different from total phosphorus?,Model_A,"
+
+**Available phosphorus (also called bio‑available or digestible phosphorus)**  
+- **Definition:** The portion of phosphorus in a feed ingredient or diet that the bird can actually absorb from the gastrointestinal tract and use for physiological functions such as bone formation, energy metabolism, nucleic‑acid synthesis, and acid‑base balance. It is the phosphorus that is *available* for the bird’s metabolic needs after accounting for losses in the digestive tract (e.g., un‑absorbed phytate‑P, endogenous secretions, and fecal excretion).
+
+**Why it is different",,,,,
+C-EC-003,Edge Cases,single-value,en,What is the body weight of ISA Brown broilers at day 35?,Model_D,"ISA Brown is not a broiler breed—it's a commercial laying hen hybrid known for its excellent egg production, not for meat production. Therefore, there isn't a standard ""broiler"" body weight for ISA Browns at day 35.
+
+However, if you're raising ISA Brown pullets (as replacement layers), their typical body weight at around 5 weeks (35 days) is approximately **350–400 grams (0.77–0.88 lbs)**.
+
+For comparison, true broiler breeds like Ross 308 or Cobb 500 would weigh around **2.0–2.5 kg (4.4–5.5 lbs)** at day 35.
+
+If you meant a different breed or have a specific management guide in mind, let me know and I can help clarify further.",,,,,
+C-FIB-009,Feed Ingredient Bank,single-value,zh,玉米的粗蛋白含量是多少？,Model_E,"玉米的粗蛋白（Crude Protein, CP）含量通常在 **8% 到 10%** 之间。
+
+具体数值会因以下因素略有差异：
+
+- **品种**：普通黄玉米、白玉米或高油玉米等，蛋白含量可能稍有不同。
+- **产地与种植条件**：土壤肥力、气候、施肥水平等会影响最终成分。
+- **加工方式**：全粒玉米 vs. 粉碎玉米，水分和杂质含量也会影响干基蛋白百分比。
+
+在禽类饲料配方中，玉米主要作为**能量来源**，而非蛋白质来源。因此，通常需要搭配豆粕、鱼粉等高蛋白原料来满足鸡只对蛋白质的需求。
+
+> ✅ 参考值（干物质基础）：  
+> - 粗蛋白：**8–10%**  
+> - 代谢能（ME）：约 3,350–3,450 kcal/kg  
+> - 淀粉：约 70–72%
+
+如需精确数据，建议以实验室检测为准，或使用当地饲料原料数据库中的实测值。",,,,,
+C-PM-005,Performance Management,open-ended,en,"Track the body weight of Isa Brown pullets at week 5, 10, and 15. What is the weight at each point?",Model_B,"Isa Brown pullets typically follow this growth pattern:
+
+- Week 5: Approximately 450-500 grams (1.0-1.1 pounds)
+- Week 10: Approximately 850-950 grams (1.9-2.1 pounds)
+- Week 15: Approximately 1.3-1.5 kg (2.9-3.3 pounds)
+
+These weights can vary based on genetics, nutrition, management practices, and environmental conditions. Proper feeding and good management practices are essential to achieve optimal growth rates.",,,,,
+C-DEF-004,Definitions,single-value,en,"A feed sample has 2.5% nitrogen. Using N×6.25, what is the crude protein percentage?",Model_B,"To calculate the crude protein percentage from the nitrogen content, we use the conversion factor N×6.25.
+
+Given:
+- Nitrogen content = 2.5%
+
+Calculation:
+Crude protein percentage = Nitrogen percentage × 6.25
+Crude protein percentage = 2.5% × 6.25
+Crude protein percentage = 15.625%
+
+Therefore, the crude protein percentage in the feed sample is 15.625%.",,,,,
+C-PM-006,Performance Management,open-ended,en,"Isa Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily calcium intake in mg/hen/day. Is it sufficient for eggshell (~4000 mg/day)?",Model_G,"**Daily Calcium Intake Calculation**  
+- Feed intake: 112 g/day [from Nutrient tool]  
+- Ca requirement: 4.04% [from Nutrient tool]  
+- Ca intake = 112 g × 0.0404 = **4.525 g/day = 4,525 mg/hen/day** [from Nutrient tool; confirmed by Performance tool]  
+
+**Sufficiency Assessment**  
+
+| Parameter | Value |  
+|-----------|-------|  
+| Daily Ca intake | **4,525 mg/hen/day** |  
+| Eggshell Ca requirement | ~4,000 mg/day |  
+| **Margin** | **+525 mg/day (≈13% surplus)** |  
+
+**Conclusion:** Yes, the calcium intake is **sufficient** for eggshell formation. The hen consumes **4,525 mg Ca/day**, which exceeds the ~4,000 mg needed for the shell, leaving a 13% safety margin.  
+
+*Note: Both specialist",,,,,
+C-DEF-005,Definitions,definition,zh,什么是代谢能？它和消化能有什么区别？,Model_G,"**代谢能（ME）**是指饲料总能（GE）减去粪便能损失和尿液能损失（含氮排泄物如尿酸）后，家禽实际可利用的能量。**消化能（DE）**则仅从总能中扣除粪便能损失，不扣除尿液能损失。
+
+**核心区别：**
+- **消化能**只扣除粪便中的能量损失（未消化部分）。
+- **代谢能**在消化能基础上，进一步扣除尿液中的能量损失（如尿酸等含氮废物）。
+
+**关键应用：** 由于家禽粪尿混合排出，难以单独区分粪便和尿液能量损失，因此**家禽营养中普遍采用代谢能（ME）**作为能量评价体系，而消化能（DE）更多用于猪等哺乳动物。这也是家禽饲料配方中代谢能指标更常用的原因。
+
+**补充说明：** 更精确的指标是**真代谢能（TME）**，它进一步校正了内源性",,,,,
+C-XD-004,Cross-Domain,constraint,en,"A Lay I diet: 55% maize + 30% SBM48. Using SID lysine values, calculate total SID lysine. Does it meet 0.77%?",Model_A,,,,,,
+C-NR-007,Nutrient Requirements,single-value,en,A feed ingredient has total lysine of 0.85% and SID lysine digestibility of 88%. What is the SID lysine content (in %)?,Model_G,"**SID Lysine (%) = Total Lysine (%) × SID Lysine Digestibility (%)**
+
+= 0.85% × 0.88  
+= **0.748%**
+
+**Final answer: 0.748% SID lysine** [from calculation based on user-provided values].
+
+**Note:** The supplementary feed ingredient bank data (poultry meal, 60-70% protein) shows a total lysine of 0.48% (on as-fed basis), which is unrelated to the user’s given values. The user’s total lysine (0.85%) and digestibility (88%) are the inputs to use; no conflict exists between the specialist response and the supplementary data—they refer to different ingredients.",,,,,
+C-NR-005,Nutrient Requirements,comparison,en,"Compare calcium requirement: Isa Brown vs Dawu Jinfeng, both in Lay I. Which is higher?",Model_A,"
+
+Excellent question. This is a nuanced topic because calcium requirements depend heavily on the breed's genetics, specifically their egg production rate and efficiency.
+
+Based on standard poultry nutrition guidelines and breed performance data:
+
+*   **Isa Brown** (a highly productive commercial hybrid layer) generally has a **higher** calcium requirement during Lay Phase I.
+*   **Dawu Jinfeng** (a Chinese indigenous breed or improved native breed) typically has a slightly lower requirement.
+
+Here’s a detailed comparison:
+
+| Feature | Isa Brown (Commercial Hybrid) | Dawu Jinfeng (Indigenous/Improved Breed) |
+| :--- | :--- | :--- |
+| **Egg Production** | Very high (300+ eggs per year). Peak production often >95%. | Moderate to good (240-280 eggs per year). |
+| **Dietary Calcium Need** | **Higher**, typically **3.8% - 4.0%** of the diet (as-fed basis) during peak lay. | **Slightly lower**, typically **3.5% - 3.7%** of the diet (as-fed basis) during peak lay. |
+| **Reasoning** | To support the formation of **large, heavy eggs** at an extremely high rate, their calcium demand is very high. Their skeleton is also more efficiently mobilized to support shell formation. | While a good layer, the lower egg number and often slightly smaller egg size result in a proportionally lower daily calcium requirement. |
+
+### Key Context and Caveats:
+
+1.  **Phase I is",,,,,
+C-PM-008,Performance Management,definition,en,Define hen-day egg production. How is it calculated?,Model_F,"**Hen-day egg production** is a measure of the average number of eggs laid per hen per day over a specific period, typically expressed as a percentage. It reflects the actual laying performance of the flock on a daily basis, accounting for the number of hens alive and present in the house each day.
+
+### How It Is Calculated
+
+The formula is:
+
+\[
+\text{Hen-day production (\%)} = \left( \frac{\text{Total eggs laid during the period}}{\text{Total hen-days during the period}} \right) \times 100
+\]
+
+Where:
+- **Total eggs laid** = the sum of all eggs collected during the period (e.g., a week, a month).
+- **Total hen-days** = the sum of the number of hens alive and in the flock each day of the period.  
+  For example, if you have 1,000 hens on Day 1, 990 on Day 2, and 980 on Day 3, the total hen-days for those 3 days = 1,000 + 990 + 980 = 2,970.
+
+### Example Calculation
+
+Suppose a flock of 1,000 hens produces 850 eggs on Day 1, 840 on Day 2, and 830 on Day 3.
+
+- Total eggs = 850 + 840 + 830 = 2,520 eggs
+- Total hen-days = 1,000 + 1,000 + 1,000 = 3,000 (assuming no mortality)
+
+\[
+\text{Hen-day production} = \left( \frac{2,520}{3,000} \right) \times 100 = 84\%
+\]
+
+### Key Points
+
+- **It excludes dead or culled hens** because the denominator only counts hens present each day. This makes it a more accurate reflection of the laying ability of the surviving flock.
+- **It is a daily average**, not a cumulative or peak measure. It is often used to track the production curve over the laying cycle (e.g., peak at ~90–95% around 25–30 weeks of age, then gradual decline).
+- **It differs from hen-housed production**, which divides eggs by the number of hens originally housed (including those that died or were culled). Hen-housed production is always lower than hen-day production when mortality occurs.
+
+In practice, hen-day production is the standard metric for monitoring flock performance and adjusting feed formulations, lighting programs, and",,,,,
+C-NR-003,Nutrient Requirements,single-value,en,What is the crude protein requirement for Jinghong 1 in Layer I?,Model_B,"The crude protein requirement for Jinghong 1 in Layer I (typically referring to the initial laying period, around 18-20 weeks of age) is approximately 16.5-17.5%.
+
+This is based on standard layer nutrition guidelines for the initial laying phase, where hens are just beginning to lay and have specific protein needs to support both egg production and body maintenance. However, exact requirements can vary slightly depending on:
+
+1. Feed formulation
+2. Environmental conditions
+3. Management practices
+4. Health status of the flock
+
+For precise recommendations specific to your operation, I'd suggest consulting the Jinghong 1 breed guidelines from the supplier or a poultry nutritionist familiar with your particular circumstances.",,,,,
+C-PM-008,Performance Management,definition,en,Define hen-day egg production. How is it calculated?,Model_D,"Hen-day egg production is a measure of the rate of egg laying in a flock of hens. It expresses the number of eggs produced relative to the number of hens alive on a given day, usually presented as a percentage.
+
+**Calculation:**
+
+Hen-day egg production (%) = (Number of eggs produced on a given day ÷ Number of hens alive on that day) × 100
+
+**Example:** If a flock has 950 live hens and collects 855 eggs in one day, the hen-day production is (855 ÷ 950) × 100 = 90%.
+
+This metric is useful because it accounts for mortality—hens that have died are not counted in the denominator, so the figure reflects the productivity of the surviving birds. It is commonly used to monitor flock performance over time and to compare production across flocks of different sizes.",,,,,
+C-NR-010,Nutrient Requirements,single-value,zh,大午金凤在产蛋I期的钙需要量是多少？,Model_E,"根据《大午金凤蛋鸡饲养管理手册》及相关的营养标准，**大午金凤在产蛋 I 期（通常指开产后至 45 周龄左右）的钙需要量建议如下：**
+
+*   **日粮钙含量：3.8% – 4.0%**
+    *   这是指饲料中钙元素的百分比浓度。
+*   **每日每只鸡采食量对应的钙摄入量：约 4.2 – 4.5 克/只·天**
+    *   计算依据：假设该阶段平均日采食量约为 110–115 克，则 110g × 3.8% ≈ 4.18g；115g × 4.0% ≈ 4.6g。因此推荐范围通常在 **4.2–4.5 克/只·天**。
+
+### 关键说明：
+
+1.  **产蛋 I 期定义**：一般指从首次产蛋开始到 45 周龄（或产蛋率稳定在高峰后的一段时期）。此阶段蛋壳质量要求高，需保证充足钙源以形成坚固蛋壳并维持骨骼储备。
+2.  **磷钙比例**：同时需注意有效磷含量，钙磷比应保持在 **7:1 至 9:1** 之间，以确保钙的最佳吸收利用。
+3.  **实际调整因素**：
+    *   若夏季高温导致采食量下降，可能需要适当提高日粮钙浓度（如增至 4.0%–4.2%），以保证绝对摄入量。
+    *   若发现软壳蛋、薄壳蛋增多，应检查是否缺钙或维生素 D₃不足。
+    *   不同批次或具体品系可能略有差异，建议结合现场生产数据（蛋壳强度、破损率、血钙水平等）进行微调。
+
+✅ **总结推荐值**：  
+> **日粮钙浓度：3.8%–4.0%**  
+> **每日钙摄入量：4.2–4.5 克/只**
+
+请根据您使用的具体饲料配方和鸡群实际采食量进行精确计算和调整。如有实验室检测条件，可辅以血液生化指标评估钙代谢状况。",,,,,
+C-NR-010,Nutrient Requirements,single-value,zh,大午金凤在产蛋I期的钙需要量是多少？,Model_B,"大午金凤鸡在产蛋I期（通常指开产至产蛋高峰期前）的钙需要量约为3.5%-3.8%。这一阶段的钙摄入对蛋壳形成和骨骼健康至关重要。
+
+需要注意的是，钙的供应应考虑以下因素：
+1. 钙源的选择（如石粉、贝壳粉等）
+2. 钙的粒度（较大颗粒的钙源有助于在肌胃中缓慢释放）
+3. 饲喂时间（傍晚额外补充钙源有助于满足夜间蛋壳形成的需求）
+
+随着产蛋率提高，进入产蛋高峰期后，钙的需要量可能会增加到3.8%-4.2%。建议根据实际产蛋表现和蛋壳质量进行适当调整。",,,,,
+C-PM-007,Performance Management,single-value,en,"Isa Brown at week 30: hen-day production 95.5%, average egg weight 61.5g. Calculate egg mass in g/hen/day.",Model_F,"To calculate egg mass in grams per hen per day (g/hen/day), you multiply the hen-day production rate (as a decimal) by the average egg weight.
+
+**Formula:**
+Egg mass (g/hen/day) = Hen-day production (%) × Average egg weight (g)
+
+**Calculation:**
+- Hen-day production = 95.5% = 0.955
+- Average egg weight = 61.5 g
+
+Egg mass = 0.955 × 61.5 g = **58.7325 g/hen/day**
+
+**Rounded answer:**  
+**58.73 g/hen/day** (or approximately **58.7 g/hen/day**).",,,,,
+C-XD-003,Cross-Domain,constraint,en,Can limestone at 9% inclusion meet the Ca requirement of 4.04% for ISA Brown layers? Calculate the Ca contribution.,Model_B,"To determine if 9% limestone inclusion can meet the 4.04% calcium requirement for ISA Brown layers, I'll calculate the actual calcium contribution.
+
+Limestone is approximately 34-38% calcium, with 36% being a commonly used average value for calculation purposes.
+
+Calcium contribution = Limestone inclusion × Calcium content in limestone
+Calcium contribution = 9% × 36%
+Calcium contribution = 3.24%
+
+The calculated calcium contribution of 3.24% from 9% limestone inclusion is below the required 4.04% for ISA Brown layers.
+
+Therefore, 9% limestone inclusion would not be sufficient to meet the calcium requirement. You would need to increase the limestone inclusion to approximately 11.2% to meet the 4.04% requirement (4.04% ÷ 36% = 11.22%).
+
+Note: The actual calcium content of limestone can vary, so it's best to check the specific product's guaranteed analysis for more precise formulation.",,,,,
+C-FIB-010,Feed Ingredient Bank,comparison,zh,豆粕48和菜粕的代谢能各是多少？哪个更高？,Model_C,"豆粕（Soybean Meal）和菜粕（Rapeseed Meal，也称菜籽粕）都是常见的植物性蛋白质饲料原料，常用于禽类（如鸡、鸭、鹅）的饲料配方中。它们的代谢能（Metabolizable Energy, ME）是衡量其能量价值的重要指标，直接影响动物的生产性能和饲料效率。
+
+---
+
+### 一、代谢能（ME）的定义
+
+代谢能是指饲料中可被动物消化吸收并用于维持和生产的能量，通常以 **kcal/kg**（千卡/千克）为单位表示。
+
+---
+
+### 二、豆粕48的代谢能
+
+**豆粕48** 是指粗蛋白质含量约为48%的豆粕，通常来源于大豆脱脂后的产品。
+
+- **代谢能（ME）**：约 **2,800 – 3,000 kcal/kg**
+- **粗蛋白质（CP）**：约 **48%**
+- **粗脂肪（CF）**：约 **15 – 20%**
+- **粗纤维（CF）**：约 **3 – 5%**
+- **水分**：约 **10 – 12%**
+
+豆粕的代谢能较高，主要因为其含有丰富的可消化蛋白质和脂肪，且其氨基酸组成较均衡，适合禽类的营养需求。
+
+---
+
+### 三、菜粕的代谢能
+
+**菜粕** 是从油菜籽中提取油脂后剩下的副产品，其代谢能因品种、加工方式和含水量不同而有所差异。
+
+- **代谢能（ME）**：约 **2,400 – 2,600 kcal/kg**
+- **粗蛋白质（CP）**：约 **35 – 45%**
+- **粗脂肪（CF）**：约 **10 – 15%**
+- **粗纤维（CF）**：约 **15 – 20%**
+- **水分**：约 **10 – 12%**
+
+菜粕的代谢能通常低于豆粕，主要是因为其含有较多的粗纤维和抗营养因子（如硫葡萄糖苷、植酸等），这些成分会降低其能量利用率。
+
+---
+
+### 四、比较：豆粕48 vs 菜粕
+
+| 项目 | 豆粕48 | 菜粕 |
+|------|--------|------|
+",,,,,
+C-NR-009,Nutrient Requirements,definition,en,Define SID (Standardized Ileal Digestible) amino acids. Why is it preferred over total amino acids?,Model_B,"# Standardized Ileal Digestible (SID) Amino Acids
+
+SID amino acids represent the portion of amino acids that are truly available for absorption and utilization by the poultry after accounting for:
+- Endogenous amino acid losses (those secreted into the gut from digestive enzymes, mucosal cells, etc.)
+- Indigestibility of feed amino acids
+
+## Why SID is Preferred Over Total Amino Acids
+
+1. **More Accurate Assessment**: Total amino acid analysis doesn't account for what's actually absorbed. SID provides a better measure of amino acids that will be available for metabolism.
+
+2. **Accounts for Endogenous Losses**: Poultry lose some amino acids naturally through digestive secretions. SID corrects for these losses, giving a clearer picture of net amino acid absorption.
+
+3. **Improved Diet Formulation**: Using SID values allows for more precise formulation of poultry diets, optimizing amino acid levels to match bird requirements more closely.
+
+4. **Better Prediction of Performance**: SID values correlate better with bird performance (growth, egg production) than total amino acid values.
+
+5. **Reduced Environmental Impact**: By more accurately matching amino acid supply to requirements, SID formulation helps reduce excess nitrogen excretion, minimizing environmental pollution.
+
+6. **Standardization**: SID provides a standardized approach across different feed ingredients and laboratories, making comparisons more meaningful.
+
+In essence, SID amino acids provide a more biologically relevant measure of amino acid availability than total amino acids, leading to more efficient and sustainable poultry nutrition programs.",,,,,
+C-NR-004,Nutrient Requirements,comparison,en,Compare calcium requirement: Isa Brown Lay I vs Lay III. Which is higher?,Model_F,"In commercial layer nutrition, the calcium requirement is **higher in the **Lay III** phase** compared to the **Lay I** phase for Isa Brown hens.
+
+Here’s the breakdown of why and how:
+
+**1. The Phases Defined (Standard Isa Brown Management Guide):**
+- **Lay I (Peak Production):** Typically from point-of-lay (around 16–18 weeks) up to around 40–45 weeks of age. This phase focuses on rapid egg size increase and peak egg mass.
+- **Lay III (Late Production):** Typically from around 60–65 weeks of age until depopulation (often 90–100 weeks). 
+
+**2. Why Lay III Requires More Calcium:**
+- **Eggshell Thickness & Quality:** As hens age, their ability to absorb and metabolize calcium declines, and their bone structure (medullary bone) becomes less efficient at storing and releasing calcium. To maintain shell quality (prevent thin, cracked, or pimpled shells) in older hens, the dietary calcium level must be **increased** to compensate for this physiological decline.
+- **Egg Size:** Eggs continue to get slightly larger in Lay III. A larger egg has a larger shell surface area, requiring more total calcium per egg.
+- **Bone Health (Osteoporosis Prevention):** Older hens are prone to cage-layer fatigue and bone breakage. Higher dietary calcium helps maintain skeletal integrity.
+
+**3. Typical Numerical Comparison (Standard Isa Brown Guide):**
+- **Lay I:** Calcium is typically formulated at **3.8% – 4.0%** of the diet (often starting at 3.5% at point-of-lay and increasing to 4.0% by peak).
+- **Lay III:** Calcium is typically formulated at **4.2% – 4.5%** of the diet. 
+
+**Important Note:** The *form* of calcium also changes. In Lay III, you will often see a higher proportion of **large-particle limestone** (e.g., 2–4 mm) used, because it releases calcium slowly through the digestive tract overnight, which is critical for older hens to maintain shell formation during the dark hours.
+
+**Summary:** **Lay III requires a higher calcium percentage (approx. 4.2–4.5%) than Lay I (approx. 3.8–4.0%)** due to reduced calcium absorption efficiency, larger egg size, and the need to protect",,,,,
+C-XD-007,Cross-Domain,multi-hop,en,"ISA Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily Ca intake (mg/hen/day). Sufficient for eggshell?",Model_F,"To estimate the daily calcium intake for your ISA Brown hens at week 30, we can use the provided feed intake and calcium requirement.
+
+**Step 1: Calculate daily calcium intake (in grams)**
+
+- Feed intake = 112 g/day  
+- Calcium requirement = 4.04% (which is 4.04 g Ca per 100 g feed)
+
+\[
+\text{Ca intake (g/day)} = 112 \, \text{g feed} \times \frac{4.04}{100} = 4.5248 \, \text{g Ca/day}
+\]
+
+**Step 2: Convert to milligrams**
+
+\[
+4.5248 \, \text{g} \times 1000 = 4524.8 \, \text{mg Ca/day}
+\]
+
+**So, the estimated daily calcium intake is approximately 4,525 mg/hen/day.**
+
+---
+
+**Step 3: Is this sufficient for eggshell formation?**
+
+For a typical ISA Brown at peak production (around week 30), the **total daily calcium requirement** is generally considered to be **4.0–4.5 g (4,000–4,500 mg) per hen per day** when feed intake is around 110–120 g/day. This includes:
+
+- **Eggshell calcium**: ~2.0–2.2 g per egg (for a 60–65 g egg with ~95% shell calcium carbonate).
+- **Maintenance and metabolic needs**: ~1.5–2.0 g/day (bone turnover, physiological functions).
+
+Your calculated intake of **4.525 g/day** falls right at the **upper end of the recommended range**, which is generally considered **sufficient** for good eggshell quality, provided:
+
+1. The calcium source is highly bioavailable (e.g., limestone or oyster shell with adequate particle size – a mix of fine and coarse particles is ideal).
+2. Phosphorus, vitamin D₃, and other minerals (e.g., manganese, zinc) are balanced in the diet.
+3. The hens are not under heat stress or other stressors that reduce feed intake or calcium absorption.
+
+**Conclusion:**  
+At 4,525 mg/day, the calcium intake is **sufficient** for eggshell formation under normal conditions. However, monitor eggshell quality (e.g., shell thickness, breakage) and adjust if you see issues, as individual variation and environmental factors can affect utilization.",,,,,
+C-NR-008,Nutrient Requirements,single-value,en,"A diet has 0.45% total phosphorus and 0.30% phytate phosphorus. If phytase improves phytate P release by 50%, what is the effective available phosphorus?",Model_C,"To calculate the **effective available phosphorus (EAP)** in a poultry diet, we need to consider the **total phosphorus (TP)**, the **phytate phosphorus (PPhy)**, and the **effect of phytase** on releasing phosphorus from phytate.
+
+### Given:
+- **Total phosphorus (TP)** = 0.45%
+- **Phytate phosphorus (PPhy)** = 0.30%
+- **Phytase improves phytate P release by 50%** (i.e., it increases the availability of phytate P by 50%)
+
+### Step 1: Determine the available phosphorus from phytate
+Phytate phosphorus is not fully available to poultry unless it is broken down by phytase. Typically, without phytase, only about **30-40%** of phytate P is available. However, since the question states that **phytase improves phytate P release by 50%**, we can assume that the **availability of phytate P is increased by 50%**.
+
+Let’s assume the **baseline availability of phytate P is 30%** (a common estimate in poultry nutrition). Then:
+
+- **Baseline available phytate P** = 0.30% × 30% = 0.09%
+- **With 50% improvement**, the **available phytate P** becomes:
+  $$
+  0.09\% \times (1 + 0.50) = 0.09\% \times 1.50 = 0.135\%
+  $$
+
+### Step 2: Determine the available phosphorus from non-phytate sources
+The **non-phytate phosphorus (NPP)** is the total phosphorus minus the phytate phosphorus:
+$$
+NPP = TP - PPhy = 0.45\% - 0.30\% = 0.15\%
+$$
+Non-phytate phosphorus is generally **100% available** to poultry.
+
+### Step 3: Add available phosphorus from both sources
+$$
+EAP = NPP + \text{Available PPhy} = 0.15\% + 0.135\% = 0.2",,,,,
+C-PM-005,Performance Management,open-ended,en,"Track the body weight of Isa Brown pullets at week 5, 10, and 15. What is the weight at each point?",Model_D,"Based on the **ISA Brown Commercial Management Guide**, the target body weights for ISA Brown pullets are as follows:
+
+-   **Week 5:** ~380 grams (0.84 lbs)
+-   **Week 10:** ~870 grams (1.92 lbs)
+-   **Week 15:** ~1,380 grams (3.04 lbs)
+
+*Note: These are standard breed targets. Actual weights can vary slightly depending on the specific genetic line (e.g., ISA Brown vs. Hy-Line Brown) and the nutritional density of the feed, but these figures represent the ideal growth curve for optimal future egg production.*",,,,,
+C-FIB-006,Feed Ingredient Bank,open-ended,en,List three plant protein sources from the feed ingredient bank with crude protein above 30%. Cite exact CP values.,Model_F,"Based on standard feed ingredient databases (e.g., NRC, Feedipedia, or commercial ingredient banks), here are three plant protein sources with crude protein (CP) above 30%, with exact typical values:
+
+1. **Soybean Meal (solvent-extracted, 48% CP)** – **CP: 48%** (as-fed basis, typical commercial grade; dehulled, high-protein variety).  
+   *Note: This is the most common plant protein source in poultry diets.*
+
+2. **Canola Meal (solvent-extracted)** – **CP: 36%** (as-fed basis, typical value; range 34–38% depending on processing and variety).
+
+3. **Pea Protein Concentrate** – **CP: 55%** (as-fed basis, commercial concentrate; derived from field peas via dry or wet fractionation).  
+   *Note: This is a highly concentrated plant protein, often used in specialty or allergen-free poultry feeds.*
+
+*All values are typical from feed ingredient banks (e.g., NRC 1994, Feedipedia 2023). Always verify with your specific supplier’s lab analysis, as CP can vary by batch and processing method.*",,,,,
+C-XD-004,Cross-Domain,constraint,en,"A Lay I diet: 55% maize + 30% SBM48. Using SID lysine values, calculate total SID lysine. Does it meet 0.77%?",Model_E,"To calculate the total SID (Standardized Ileal Digestible) lysine in this diet, we need to use standard feed ingredient values. Since specific laboratory analysis data was not provided, I will use **common industry reference values** for maize and Soybean Meal (48% CP).
+
+### Step 1: Identify SID Lysine Values for Ingredients
+*(Note: These values can vary slightly by region and crop year, but these are widely accepted averages for formulation.)*
+
+*   **Maize (Corn):** ~0.25% SID Lysine
+*   **Soybean Meal (48% CP):** ~2.75% SID Lysine
+
+### Step 2: Calculate Contribution from Each Ingredient
+
+**1. Maize Contribution:**
+$$ \text{SID Lys}_{\text{maize}} = \text{Inclusion Rate} \times \text{Ingredient SID Lys Value} $$
+$$ \text{SID Lys}_{\text{maize}} = 0.55 \times 0.25\% = 0.1375\% $$
+
+**2. SBM48 Contribution:**
+$$ \text{SID Lys}_{\text{SBM}} = \text{Inclusion Rate} \times \text{Ingredient SID Lys Value} $$
+$$ \text{SID Lys}_{\text{SBM}} = 0.30 \times 2.75\% = 0.825\% $$
+
+### Step 3: Sum Total SID Lysine
+$$ \text{Total SID Lys} = 0.1375\% + 0.825\% = 0.9625\% $$
+
+### Step 4: Compare with Requirement
+*   **Calculated Total SID Lysine:** **0.96%** (rounded)
+*   **Target Requirement:** **0.77%**
+
+$$ 0.96\% > 0.77\% $$
+
+---
+
+### ✅ Conclusion
+**Yes, the diet meets the requirement.**  
+The calculated total SID lysine is approximately **0.96%**, which is significantly higher than the target of **0.77%**.
+
+---
+
+### ⚠️ Important Notes for Poultry Nutritionists:
+1.  **Remaining 15% of Diet:** The calculation above",,,,,
+C-NR-009,Nutrient Requirements,definition,en,Define SID (Standardized Ileal Digestible) amino acids. Why is it preferred over total amino acids?,Model_F,"**Standardized Ileal Digestible (SID) amino acids** are a measure of the proportion of amino acids in a feed ingredient that are absorbed by the animal, specifically measured at the end of the small intestine (ileum), and corrected for the animal's own baseline (endogenous) losses. 
+
+Here is the precise definition and the formula:
+
+**Definition:**
+SID is calculated using the following equation:
+
+**SID (%) = [ (Amino acid intake – Ileal amino acid outflow) + Basal Endogenous Losses ] ÷ Amino acid intake × 100**
+
+- **Amino acid intake:** The total amount of the specific amino acid consumed in the diet.
+- **Ileal amino acid outflow:** The total amount of that amino acid that passes the terminal ileum (i.e., not absorbed before the large intestine).
+- **Basal Endogenous Losses (BEL):** The minimum, unavoidable amount of amino acids that the animal secretes into the gut (from digestive enzymes, mucin, sloughed gut cells) regardless of diet composition. 
+
+By adding back the *basal* endogenous losses, SID values isolate the digestibility of the *feed ingredient itself*, removing the confounding effect of the animal's own metabolic contributions.
+
+---
+
+**Why is SID preferred over Total Amino Acids (TAA)?**
+
+Using total amino acids (the gross amount in the ingredient) is misleading because it assumes 100% of the amino acids are absorbed, which is never true. SID is preferred for three primary reasons:
+
+**1. It accurately reflects true absorption (Bioavailability)**
+Total amino acids ignore indigestible fractions (e.g., fiber-bound, heat-damaged, or Maillard-reacted proteins). SID accounts for the fact that a portion of the amino acids will pass through the ileum undigested and be lost in the feces (or fermented by hindgut bacteria, which yields no nutritional benefit to the animal). 
+
+**2. It is additive in feed formulation (Matrix values are linear)**
+This is the most critical practical advantage. SID values are **additive** across ingredients. When you mix corn, soybean meal, and synthetic amino acids, the SID values of each ingredient can be simply multiplied by their inclusion rate and summed to predict the total SID supply in the complete diet. Total amino acid values are *not* additive because the digestibility of each ingredient varies independently. Formulating on a total basis leads to over- or under-supplementation.
+
+**",,,,,
+C-NR-011,Nutrient Requirements,comparison,zh,大午金凤从产蛋I期到产蛋III期，钙需要量怎么变化？,Model_D,"大午金凤蛋鸡从产蛋I期到产蛋III期，钙的需要量总体呈**逐步增加**的趋势，主要原因包括：
+
+1. **产蛋率变化**：产蛋I期（产蛋初期）产蛋率逐步上升，钙需要量中等；产蛋II期（产蛋高峰及高峰后期）产蛋率高、蛋重大，钙需要量最高；产蛋III期（产蛋后期）产蛋率虽有所下降，但蛋重增大、蛋壳质量容易变差，同时鸡对钙的吸收利用能力下降，因此饲料中钙水平仍需保持较高，甚至进一步提高。
+
+2. **具体参考范围**（全价料中钙含量）：
+   - 产蛋I期：约 **3.5%～3.8%**
+   - 产蛋II期：约 **3.8%～4.0%**
+   - 产蛋III期：约 **4.0%～4.2%**，部分资料建议后期可提高到 **4.2%～4.5%**
+
+3. **钙源与粒度**：产蛋后期建议适当增加**石粉颗粒比例**（如大颗粒石粉占钙源的一半以上），有利于延长钙在消化道中的停留时间，改善蛋壳质量。
+
+4. **钙磷比例**：产蛋期钙磷比一般保持在 **5～6:1** 左右，后期磷水平可适当降低，避免影响钙的吸收。
+
+总结：大午金凤从产蛋I期到产蛋III期，钙需要量应**逐渐提高**，产蛋后期尤其要重视钙的供给和钙源粒度搭配。",,,,,
+C-XD-009,Cross-Domain,multi-hop,zh,一个产蛋I期配方用60%玉米（总赖氨酸0.247%，SID消化率90%）和25%豆粕48（总赖氨酸0.620%，SID消化率88%）。这两样原料的SID赖氨酸加起来是多少？能不能满足大午金凤蛋鸡的需要量（0.76%）？,Model_D,"好的，我们一步步来计算。
+
+**1. 已知条件：**
+
+- 玉米用量：60%，总赖氨酸 0.247%，SID 消化率 90%
+- 豆粕48用量：25%，总赖氨酸 0.620%，SID 消化率 88%
+- 大午金凤蛋鸡产蛋I期 SID 赖氨酸需要量：0.76%
+
+---
+
+**2. 计算玉米提供的 SID 赖氨酸：**
+
+玉米 SID 赖氨酸含量：
+
+\[
+0.247\% \times 90\% = 0.2223\%
+\]
+
+配方中玉米占 60%，所以贡献为：
+
+\[
+0.2223\% \times 60\% = 0.13338\%
+\]
+
+---
+
+**3. 计算豆粕提供的 SID 赖氨酸：**
+
+豆粕 SID 赖氨酸含量：
+
+\[
+0.620\% \times 88\% = 0.5456\%
+\]
+
+配方中豆粕占 25%，所以贡献为：
+
+\[
+0.5456\% \times 25\% = 0.1364\%
+\]
+
+---
+
+**4. 两者合计：**
+
+\[
+0.13338\% + 0.1364\% = 0.26978\% \approx 0.270\%
+\]
+
+---
+
+**5. 与需要量比较：**
+
+需要量是 0.76%，而这两种原料只提供了约 0.270% 的 SID 赖氨酸，**差距很大**，仅满足需要量的约：
+
+\[
+\frac{0.270}{0.76} \times 100\% \approx 35.5\%
+\]
+
+---
+
+**结论：**
+
+这两样原料合计提供的 SID 赖氨酸约为 **0.270%**，远不能满足大午金凤蛋鸡产蛋I期的需要量（0.76%），还需要额外补充富含赖氨酸的原料（如合成赖氨酸、鱼粉、其他高赖氨酸粕类等）来满足需求。",,,,,
+C-FIB-008,Feed Ingredient Bank,definition,en,Define metabolizable energy (ME). How does it differ from gross energy?,Model_F,"**Metabolizable Energy (ME)** is the amount of energy actually available to an animal for physiological processes (maintenance, growth, egg production, etc.) after accounting for energy lost in feces, urine, and (in birds) gaseous products of digestion. 
+
+In practical poultry nutrition, ME is the standard energy system used because it accurately reflects the usable energy in feed ingredients.
+
+Here is the step-by-step breakdown of how ME is calculated:
+
+**Gross Energy (GE)** → *minus* **Fecal Energy (FE)** = **Digestible Energy (DE)** 
+**DE** → *minus* **Urinary Energy (UE)** and **Gaseous Energy (GEg)** = **Metabolizable Energy (ME)**
+
+- **Fecal Energy (FE):** Undigested feed, metabolic fecal losses (enzymes, sloughed gut cells, bacteria).
+- **Urinary Energy (UE):** Nitrogenous waste (uric acid in birds, urea in mammals) excreted in urine.
+- **Gaseous Energy (GEg):** Methane produced by microbial fermentation (negligible in poultry, but significant in ruminants).
+
+---
+
+### How ME differs from Gross Energy (GE)
+
+**Gross Energy (GE)** is the **total chemical energy** contained in a feed, measured by completely burning the sample in a bomb calorimeter. It represents the absolute maximum energy possible, but **none of it is usable** because the animal cannot extract 100% of the energy from the chemical bonds.
+
+The key differences are:
+
+| Feature | **Gross Energy (GE)** | **Metabolizable Energy (ME)** |
+| :--- | :--- | :--- |
+| **Definition** | Total energy released when feed is completely oxidized (burned). | Usable energy after losses in feces, urine, and gas. |
+| **Measurement** | Bomb calorimetry (lab instrument). | Calculated from GE minus fecal, urinary, and gaseous losses (requires animal trials or prediction equations). |
+| **What it represents** | Theoretical maximum energy. | Practical, biologically available energy. |
+| **Losses accounted for** | None. | Accounts for indigestible fiber, undigested protein, nitrogenous waste, and fermentation gases. |
+| **Use in poultry** | Rarely used for formulation; only as a starting point. | **The standard** for feed formulation (e.g., ""ME kcal/kg"" on feed tags). |
+| **Example** | Corn GE ≈ 4,400 kcal",,,,,
+C-FIB-004,Feed Ingredient Bank,comparison,en,"Which has higher metabolizable energy, maize or soft wheat? State both values.",Model_A,"
+
+Maize typically has a higher metabolizable energy (ME) for poultry compared to soft wheat.
+
+- **Maize:** Approximately **3,300–3,400 kcal ME/kg** (on a dry matter basis, typical for poultry).
+- **Soft Wheat:** Approximately **3,000–3,200 kcal ME/kg** (on a dry matter basis, typical for poultry).
+
+Thus, maize is generally considered a higher-energy ingredient in poultry diets. Values can vary slightly depending on variety, composition, and processing.",,,,,
+C-EC-003,Edge Cases,single-value,en,What is the body weight of ISA Brown broilers at day 35?,Model_G,"**Key clarification:** ISA Brown is a **layer breed**, not a broiler. Therefore, there is no ""broiler"" body weight for this breed at day 35.
+
+**ISA Brown body weight at day 35 (week 5):**  
+- **370 g** [from Performance tool]  
+- Feed intake at this age: 37.0 g/d [from Performance tool]  
+- Egg production: 0% (not yet in lay) [from Performance tool]
+
+**Note on discrepancy:** No conflict exists between specialists—the only response with relevant data (Performance tool) correctly identified the breed as a layer. The Nutrient tool provided vitamin/mineral recommendations for ISA Brown layers but no body weight data, so it does not contradict the 370 g figure.
+
+**If you intended a true broiler breed** (e.g., Ross 308, Cobb 500), day-35 body weight would typically be **2,000–2,400 g**, but that",,,,,
+C-DEF-001,Definitions,definition,en,Define metabolizable energy (ME). How does it differ from digestible energy (DE)?,Model_D,"Metabolizable energy (ME) and digestible energy (DE) are both measures used to describe the energy content of animal feed, but they represent energy availability at different stages of digestion and metabolism.
+
+**Digestible Energy (DE)** is the energy remaining after subtracting the energy lost in feces from the gross energy (GE) of the feed. It represents the energy that was digested and absorbed by the animal.
+
+**Metabolizable Energy (ME)** goes one step further. It is the energy remaining after subtracting both the energy lost in feces AND the energy lost in urine and gaseous products of digestion (mainly methane) from the gross energy.
+
+**Key Differences:**
+
+| Feature | Digestible Energy (DE) | Metabolizable Energy (ME) |
+| :--- | :--- | :--- |
+| **Calculation** | GE - Fecal Energy | GE - Fecal Energy - Urinary Energy - Gas Energy |
+| **What it represents** | Energy absorbed from the digestive tract | Energy actually available to the animal for metabolism (maintenance, growth, production) |
+| **Losses accounted for** | Fecal losses only | Fecal, urinary, and gaseous losses |
+| **Value relative to GE** | Higher than ME (less is subtracted) | Lower than DE (more is subtracted) |
+| **Primary use** | Commonly used for pigs and horses | Commonly used for poultry and sometimes pigs |
+
+**In summary:** DE tells you how much energy the animal absorbed, while ME tells you how much energy the animal can actually use after accounting for additional losses in urine and gas. ME is therefore a more precise measure of the energy truly available to the animal.",,,,,
+C-NR-006,Nutrient Requirements,open-ended,en,How does the calcium requirement for Isa Brown change from Developer through Lay III? State the Ca% for each phase.,Model_F,"For Isa Brown hens, the calcium requirement increases significantly as they transition from the rearing phase into peak egg production, and then it is adjusted slightly downward in late lay to manage eggshell quality and bone health. 
+
+Here is the standard calcium (Ca%) requirement for each phase, based on the **Isa Brown Commercial Management Guide (Nutrient Specifications)**:
+
+- **Developer (Weeks 10–16):** **0.90% – 1.00% Ca** 
+  *(This phase focuses on skeletal development and frame growth, but not eggshell formation. Too much calcium here can impair kidney function and reduce feed intake.)*
+
+- **Pre-Lay / Pre-Peak (Weeks 17–18):** **2.50% – 2.75% Ca**
+  *(This is a critical ""priming"" phase. The hen needs a sudden increase in calcium to build medullary bone—a labile calcium reserve in the marrow that will be used for shell formation once laying begins. This is often fed as a separate pre-lay diet.)*
+
+- **Lay I (Weeks 19–40, Peak Production):** **3.80% – 4.00% Ca**
+  *(This is the highest requirement. The hen is laying at 95%+ peak, producing large eggs, and needs maximum calcium for shell formation. Feed particle size should be 50% large particles (2–4 mm) and 50% fine.)*
+
+- **Lay II (Weeks 41–60, Mid-Lay):** **3.80% – 4.00% Ca**
+  *(Requirement remains high, but you may start shifting to slightly more coarse limestone to improve shell quality as egg size increases. The percentage stays the same, but the particle size ratio shifts to ~60% large particles.)*
+
+- **Lay III (Weeks 61+ / End of Lay):** **3.60% – 3.80% Ca**
+  *(Calcium percentage is slightly reduced because egg production drops, but egg size is largest. The reduction helps prevent over-mineralization of the shell (which can cause cracks) and reduces the risk of kidney stress. However, you must increase the **particle size** to 70–80% large particles (3–4 mm) to ensure the calcium is released slowly overnight when the shell is being calcified.)*
+
+**Key Management Note:** 
+The **calcium percentage** is only half the story",,,,,
+C-EC-005,Edge Cases,comparison,en,Compare the metabolizable energy of fish meal and limestone.,Model_C,"Fish meal and limestone are two different materials with very different roles in poultry nutrition. Here's a comparison of their **metabolizable energy** content:
+
+---
+
+### **1. Fish Meal**
+- **What it is**: Fish meal is a high-protein feed ingredient derived from fish processing by-products (such as fish heads, bones, and viscera).
+- **Energy Content**: Fish meal is **not a significant source of metabolizable energy** for poultry. Its primary function is as a **protein and amino acid supplement**.
+- **Metabolizable Energy (ME)**: Fish meal typically has a **metabolizable energy content of around 3,000 to 3,500 kcal/kg**.
+- **Why it has energy**: The energy in fish meal comes mainly from **protein** and **fat**. However, the energy is not as concentrated as in grains or oils, and it is not typically used as an energy source in poultry diets.
+- **Role in Poultry Nutrition**: It is used to provide **high-quality protein**, essential amino acids, and minerals like calcium and phosphorus.
+
+---
+
+### **2. Limestone**
+- **What it is**: Limestone is a **source of calcium** and is commonly used as a **calcium supplement** in poultry feed.
+- **Energy Content**: Limestone is **not a source of metabolizable energy**. It is an **inert mineral** with **very low energy value**.
+- **Metabolizable Energy (ME)**: Limestone has a **metabolizable energy content of approximately 0 kcal/kg**.
+- **Why it has no energy**: Limestone is primarily composed of **calcium carbonate (CaCO₃)**, which is not digestible or metabolizable by poultry. It is used to meet **calcium requirements** for eggshell formation and bone development.
+- **Role in Poultry Nutrition**: It is a **critical component** in laying hen diets to support **egg production** and **bone health**, but it does not contribute to energy intake.
+
+---
+
+### **Summary Table**
+
+| Component       | Metabolizable Energy (kcal/kg) | Primary Role in Poultry Nutrition         |
+|----------------|-------------------------------|--------------------------------------------|
+| **Fish Meal**   | ~3,000 – 3,500                | Protein and amino acid source              |
+| **Limestone**  | ~0                            | Calcium supplement for eggshell and bone    |
+
+---
+
+### **Key Takeaway",,,,,
+C-DEF-002,Definitions,definition,en,Define available phosphorus. Why is it different from total phosphorus?,Model_E,"**Available Phosphorus (AP)**, often referred to as **digestible phosphorus**, is the portion of total phosphorus in a feed ingredient that an animal can actually absorb and utilize for metabolic functions, such as bone formation, energy metabolism, and eggshell production.
+
+### Why Available Phosphorus Differs from Total Phosphorus
+
+The difference arises because **not all phosphorus present in a feed ingredient is biologically accessible to poultry.** This discrepancy is primarily due to the chemical form of phosphorus and the physiological limitations of birds.
+
+#### 1. Chemical Form: Organic vs. Inorganic
+- **Total Phosphorus (TP)** includes *all* phosphorus atoms in the feed, regardless of their chemical state.
+- **Available Phosphorus (AP)** only includes phosphorus that is soluble and digestible.
+
+In plant-based ingredients (e.g., corn, soybean meal), most phosphorus exists as **phytate-bound phosphorus** (organic phosphorus). Poultry lack sufficient endogenous enzymes (specifically phytase) in their digestive tract to break down phytate efficiently. Therefore, this phosphorus passes through the gut undigested and is excreted.
+
+#### 2. Enzymatic Limitations
+- Birds have limited natural phytase activity in their small intestine.
+- Without supplemental microbial phytase added to the diet, up to **60–75%** of the phosphorus in plant ingredients may be unavailable.
+- Only the non-phytate phosphorus (inorganic phosphate forms like dicalcium phosphate or monocalcium phosphate) is readily absorbed.
+
+#### 3. Antinutritional Factors
+- Other components in feed can bind phosphorus or interfere with its absorption:
+  - **Calcium:** High calcium levels can form insoluble calcium-phosphate complexes, reducing AP.
+  - **Fiber and tannins:** Can trap phosphorus or inhibit enzyme activity.
+  - **pH of the gut:** Optimal phosphorus absorption occurs at specific pH ranges; deviations reduce availability.
+
+---
+
+### Practical Example
+
+Consider **soybean meal**:
+- **Total Phosphorus:** ~0.6%
+- **Phytate-bound Phosphorus:** ~0.45% (unavailable without phytase)
+- **Non-phytate (Available) Phosphorus:** ~0.15%
+
+If you formulate a diet using only total phosph",,,,,
+C-FIB-001,Feed Ingredient Bank,single-value,en,What is the crude protein content of maize?,Model_D,"The crude protein content of maize (corn) typically ranges from **7% to 10%** on an as-fed basis, with an average of about **8–9%**. 
+
+However, the exact value can vary depending on the maize variety, growing conditions, and processing method. It is also important to note that maize protein is relatively low in certain essential amino acids, particularly **lysine** and **tryptophan**, so it is usually supplemented with other protein sources in poultry diets.",,,,,
+C-XD-008,Cross-Domain,open-ended,en,"A nutritionist has maize, SBM48, limestone, and dicalcium phosphate. Explain how to balance Ca and P in a layer diet. What constraints must be satisfied?",Model_G,"**Balancing Ca and P in a layer diet (maize, SBM48, limestone, DCP)**
+
+**1. Requirements (typical brown/white layer, peak production ~50%):**
+- **Calcium (Ca):** 3.8–4.2% of diet (higher in peak, lower in late lay) [from NRC/industry standards].
+- **Available phosphorus (AvP):** 0.32–0.40% (max 0.45% to avoid eggshell quality issues) [from NRC/industry standards].
+- **Ca:AvP ratio:** ~10–12:1 (critical for shell formation and bone metabolism).
+
+**2. Ingredient contributions (typical values):**
+- **Maize:** Ca ~0.02%, total P ~0.28% (AvP ~0.08%) [from Feed Ingredient Bank].
+- **SBM48:** Ca ~0.30%, total P ~",,,,,
+C-XD-006,Cross-Domain,counterfactual,en,SBM price doubles. Replace 50% of SBM with canola meal. Original: 25% SBM (CP=52.6%). New: 12.5% SBM + 12.5% canola (CP=41.0%). Calculate the CP contribution change.,Model_F,"To calculate the change in crude protein (CP) contribution, we compare the CP provided by the original 25% SBM with the CP provided by the new blend (12.5% SBM + 12.5% canola meal).
+
+**Step 1: Calculate CP contribution of the original formula**  
+- Original SBM inclusion: 25% of the diet  
+- SBM CP: 52.6%  
+- CP contribution = 25% × 52.6% = **13.15% CP** (i.e., 13.15 percentage points of the diet's total CP)
+
+**Step 2: Calculate CP contribution of the new formula**  
+- New SBM inclusion: 12.5% of the diet  
+- SBM CP: 52.6%  
+- CP from SBM = 12.5% × 52.6% = 6.575%  
+
+- New canola meal inclusion: 12.5% of the diet  
+- Canola meal CP: 41.0%  
+- CP from canola = 12.5% × 41.0% = 5.125%  
+
+- Total CP contribution from the new blend = 6.575% + 5.125% = **11.70% CP**
+
+**Step 3: Calculate the change**  
+- Change = New CP − Original CP = 11.70% − 13.15% = **−1.45 percentage points**  
+- Relative change = (−1.45 / 13.15) × 100 = **−11.03%**
+
+**Summary:**  
+- **CP contribution drops by 1.45 percentage points** (from 13.15% to 11.70%).  
+- This is an **11% reduction** in CP from the SBM/canola portion.  
+- To maintain the original total dietary CP, you would need to add other protein sources or increase total inclusion of the blend (e.g., use more canola meal or add synthetic amino acids to compensate for the lower CP and potential differences in amino acid digestibility).",,,,,
+C-PM-011,Performance Management,single-value,zh,京粉6号第30周的产蛋率和蛋重各是多少？,Model_A,"
+
+根据国内蛋鸡品种标准性能指标，**京粉6号**（国产高产蛋鸡配套系）在 **第30周** 的典型生产性能如下：
+
+*   **产蛋率**：约 **92% - 94%**
+*   **平均蛋重**：约 **60 - 62克**
+
+**重要说明：**
+1.  **数据来源**：以上数据是基于该品种育种公司（北京市华牧家禽育种中心等）发布的**标准生产性能手册**或行业统计数据中的典型值。
+2.  **实际表现**：实际生产中的产蛋率和蛋重会受到**饲养管理水平、饲料营养水平、环境条件（温度、光照）、鸡群健康状况**等多种因素的直接影响，可能会有一定波动。
+3.  **参考价值**：这些数据可作为**参考标准**。在最佳养殖条件下，京粉6号在30周龄左右通常能达到其产蛋高峰期，蛋重也会稳步增加。
+
+建议在实际生产中持续记录并对比本场鸡群的数据，以评估饲养效果。",,,,,
+C-PM-004,Performance Management,comparison,en,Compare daily feed intake: Isa Brown week 30 vs Hy-Line Brown week 30.,Model_C,"When comparing the **daily feed intake** of **Isa Brown** and **Hy-Line Brown** at **week 30**, it's important to consider that both are high-performance laying hens, but they are different breeds developed by different companies (ISA and Hy-Line). Their feed intake can vary slightly due to differences in genetics, body size, metabolic rates, and feed efficiency.
+
+Here's a general comparison based on typical data from commercial poultry operations:
+
+---
+
+### **Isa Brown (ISA Brown) Week 30 Feed Intake**
+- **Average daily feed intake (DFI):** ~ **100–110 grams per bird per day**
+- **Feed conversion ratio (FCR):** Typically around **1.6–1.8 kg feed per kg of egg output**
+- **Key factors:**
+  - Isa Browns are known for their **high egg production** and **good feed efficiency**.
+  - They are generally **medium-sized** hens, which can influence their feed intake.
+  - Their feed intake is often **well-optimized** for egg production, especially in the later laying phase.
+
+---
+
+### **Hy-Line Brown Week 30 Feed Intake**
+- **Average daily feed intake (DFI):** ~ **105–115 grams per bird per day**
+- **Feed conversion ratio (FCR):** Typically around **1.6–1.7 kg feed per kg of egg output**
+- **Key factors:**
+  - Hy-Line Browns are also high producers, but they are often **slightly larger** than Isa Browns.
+  - They tend to have **slightly higher feed intake** due to their larger body size and potentially higher metabolic demands.
+  - Hy-Line has made significant improvements in **feed efficiency** and **health**, which can result in more consistent feed intake and better performance.
+
+---
+
+### **Summary Comparison**
+| Parameter | Isa Brown Week 30 | Hy-Line Brown Week 30 |
+|----------|------------------|------------------------|
+| **Average DFI** | ~100–110 g/day | ~105–115 g/day |
+| **Feed Conversion Ratio (FCR)** | ~1.6–1.8 | ~1.6–1.7 |
+| **Body Size** | Medium | Slightly larger |
+| **Feed Efficiency** | Good | Improved |
+| **Egg Production** | High | High (often slightly better) |
+|",,,,,
+C-PM-005,Performance Management,open-ended,en,"Track the body weight of Isa Brown pullets at week 5, 10, and 15. What is the weight at each point?",Model_E,"Based on standard performance targets for **Isa Brown** pullets (as defined by the manufacturer’s management guide), here are the typical body weight ranges at weeks 5, 10, and 15.
+
+> ⚠️ **Note:** Actual weights can vary based on feed quality, environment, health status, and vaccination programs. These figures represent **ideal target weights** for optimal laying performance later in life.
+
+### 📊 Isa Brown Pullet Body Weight Targets
+
+| Age (Weeks) | Target Body Weight (grams) | Target Body Weight (pounds) |
+|-------------|----------------------------|-----------------------------|
+| **Week 5**  | 380 – 420 g                | ~0.84 – 0.93 lb             |
+| **Week 10** | 780 – 850 g                | ~1.72 – 1.87 lb             |
+| **Week 15** | 1,150 – 1,250 g            | ~2.54 – 2.76 lb             |
+
+---
+
+### 🔍 Key Observations & Management Tips
+
+1. **Uniformity is Critical**:  
+   At each weigh-in, aim for **≥80% uniformity** (i.e., most birds within ±10% of the average weight). Poor uniformity leads to uneven onset of lay and increased mortality.
+
+2. **Feed Intake Correlation**:  
+   - By week 5, pullets should be consuming ~25–30 g/feed/day.  
+   - By week 10, intake rises to ~50–60 g/day.  
+   - By week 15, expect ~70–80 g/day.  
+   *Underfeeding delays growth; overfeeding causes fat deposition and reduces future egg production.*
+
+3. **Adjustment Strategy**:  
+   - If birds are **below target**, check feeder space, water access, and disease status before increasing feed quantity.  
+   - If birds are **above target**, do not restrict feed severely—instead, ensure proper ventilation and reduce energy density if necessary.
+
+4. **Weighing Protocol**:  
+   Weigh a random sample of **at least 50–100 birds** per house at the same time of day (preferably morning, after feeding but before major activity) for consistency.",,,,,
+C-PM-011,Performance Management,single-value,zh,京粉6号第30周的产蛋率和蛋重各是多少？,Model_E,"京粉6号（Jingfen No. 6）是由北京华都峪口禽业有限责任公司培育的高产蛋鸡品种。根据该品种的官方饲养管理手册及典型生产性能数据，**第30周龄**时的参考指标如下：
+
+### 📊 第30周龄典型生产性能
+| 指标 | 数值范围/平均值 | 说明 |
+|------|------------------|------|
+| **产蛋率** | **92% – 95%** | 此时已接近或达到产蛋高峰后期，若管理良好可维持较高水平 |
+| **平均蛋重** | **58 – 60 克** | 蛋重随周龄增加而逐渐增大，30周时通常在此区间 |
+
+---
+
+### ⚠️ 重要提示：实际值受多种因素影响
+上述数据为**理想饲养条件下的平均水平**。实际生产中，以下因素会导致显著差异：
+
+1. **光照管理**：是否按时、足量提供光照（建议16小时光照）。
+2. **营养水平**：饲料中能量、蛋白质、氨基酸（尤其是蛋氨酸）、钙磷比例是否达标。
+3. **环境控制**：温度（最佳18–24℃）、湿度、通风、应激情况。
+4. **健康状况**：是否有疾病、寄生虫或疫苗接种反应。
+5. **开产时间**：若开产较早（如17–18周），30周可能已过高峰；若开产较晚（如20–21周），30周可能仍在上升期。
+
+---
+
+### ✅ 建议操作
+- **查阅本批次记录**：最准确的数据应来自您自己鸡群的每日生产报表。
+- **对比标准曲线**：将实际数据与《京粉6号饲养管理手册》中的标准曲线对比，判断是否存在偏差。
+- **调整策略**：
+  - 若产蛋率低于90%，需排查疾病、营养不足或应激因素。
+  - 若蛋重偏小，可适当提高日粮能量和粗蛋白水平。
+  - 若蛋重过大但产蛋率下降，注意防止脂肪肝综合征。
+
+如需更精准的分析，请提供您鸡群的实际开产日期、当前饲喂方案及近期健康情况。",,,,,
+C-PM-009,Performance Management,single-value,zh,京粉6号在第30周的产蛋率是多少？,Model_A,"
+
+京粉6号蛋鸡在第30周处于产蛋高峰期，其产蛋率通常约为 **92%-95%**。实际数值可能受饲养管理、饲料营养、环境条件等因素影响，建议参考具体养殖场的实际生产数据或品种标准手册。",,,,,
+C-EC-002,Edge Cases,single-value,en,What is the calcium requirement for Lohmann Tinted in Lay I?,Model_F,"For Lohmann Tinted hens in **Lay I** (the first phase of the laying period, typically from 18 to 40 weeks of age), the calcium requirement is **3.8% to 4.0%** of the complete feed (as-fed basis).
+
+Here are the specific nutritional guidelines for this phase:
+
+- **Calcium (Ca):** 3.8% – 4.0%
+- **Available Phosphorus (AvP):** 0.40% – 0.45%
+- **Sodium (Na):** 0.16% – 0.18%
+
+**Important management notes for Lay I:**
+
+1. **Particle size matters:** To ensure good shell quality and calcium absorption, at least **50% of the supplemental calcium** should be provided as **coarse limestone or oyster shell** (particle size 2–4 mm). This helps maintain calcium in the gizzard overnight when the hen is forming the shell.
+2. **Feed intake:** The requirement is based on a standard feed intake of about **110–115 g/day**. If feed intake is lower (e.g., due to hot weather), you may need to increase the calcium percentage slightly (up to 4.2%) to meet the daily gram requirement (approx. 4.2–4.5 g of calcium per hen per day).
+3. **Transition:** Do not feed the Lay I diet too early. Start it when the first egg appears (around 18 weeks) or when the hen reaches 5% egg production, whichever comes first. This prevents kidney damage and ensures proper shell formation.
+
+Always follow the latest **Lohmann Tierzucht Management Guide** for your specific flock, as genetics and local conditions can slightly adjust these figures.",,,,,
+C-EC-005,Edge Cases,comparison,en,Compare the metabolizable energy of fish meal and limestone.,Model_D,"I'd be happy to help with this comparison, but I should point out that fish meal and limestone serve very different roles in poultry nutrition, which makes their metabolizable energy (ME) values quite distinct.
+
+**Fish Meal:**
+- Fish meal is a high-quality protein source
+- It contains significant metabolizable energy, typically ranging from **2,800 to 3,200 kcal/kg** (varies by species, processing method, and fat content)
+- The energy comes primarily from its protein and lipid (fat) content
+- Higher fat fish meals (e.g., from oily fish like menhaden or anchovy) will have higher ME values
+
+**Limestone:**
+- Limestone (calcium carbonate) is a mineral supplement used primarily as a calcium source
+- It provides **essentially zero metabolizable energy** (0 kcal/kg)
+- Limestone is inorganic and contains no carbohydrates, proteins, or fats that could be metabolized for energy
+- Its sole purpose in poultry diets is to supply calcium for bone formation, eggshell quality, and other physiological functions
+
+**Key Takeaway:**
+Fish meal contributes meaningful energy to poultry diets, while limestone contributes none. They are not interchangeable ingredients—fish meal supplies protein and energy, while limestone supplies only calcium.",,,,,
+C-NR-010,Nutrient Requirements,single-value,zh,大午金凤在产蛋I期的钙需要量是多少？,Model_F,"大午金凤鸡蛋鸡在产蛋I期（通常指开产至产蛋高峰期，约18-40周龄）的钙需要量，**推荐日粮钙水平为 3.5% - 4.0%**（以风干基础计）。
+
+具体建议如下：
+
+1. **推荐范围**：产蛋I期（高峰期）建议钙水平为 **3.8%** 左右，安全范围在 **3.5% - 4.0%** 之间。
+2. **磷配合**：有效磷（可利用磷）建议为 **0.40% - 0.45%**，总磷约 **0.55% - 0.60%**，钙磷比（钙:有效磷）控制在 **8:1 至 10:1**。
+3. **石粉粒度**：建议使用 **2/3 粗颗粒石粉（2-4mm）+ 1/3 细石粉**，以利于夜间钙的持续释放，减少笼养蛋鸡疲劳症。
+4. **采食量调整**：若采食量偏低（如夏季高温），需适当提高日粮钙浓度至 **4.0%**；若采食量偏高，可降至 **3.5%**，确保每日每只鸡摄入钙量约 **3.8 - 4.2 克**。
+
+**注意**：大午金凤属于高产蛋鸡品种，对钙敏感，钙不足易导致软壳蛋、破壳蛋增加；钙过高则影响采食和磷吸收。建议根据实际蛋重、产蛋率和蛋壳质量进行微调，并定期检测石粉质量。",,,,,
+C-PM-003,Performance Management,comparison,en,Compare hen-day production: Isa Brown week 30 vs Hy-Line Brown week 30. Which is higher?,Model_G,"**Final Answer:**
+
+At week 30, **Hy-Line Brown** has a marginally higher hen-day production than ISA Brown: **95.7% vs 95.5%** [from Performance tool]. The difference is only 0.2 percentage points, so both breeds are performing at essentially the same excellent peak level.
+
+**Supporting data at week 30 [from Performance tool]:**
+- Egg weight: ISA Brown 61.5 g vs Hy-Line Brown 61.3 g
+- Feed intake: ISA Brown 112 g/d vs Hy-Line Brown 113 g/d
+- Body weight: ISA Brown 1,828 g vs Hy-Line Brown 1,980 g
+- Mortality: ISA Brown 1.2% vs Hy-Line Brown 0.71%
+
+**Note:** The supplementary reference [from Performance tool] shows Hy-Line Brown at week 99 (71.2% production), which is not relevant to the week",,,,,
+C-XD-010,Cross-Domain,constraint,zh,石灰石含钙35%，大午金凤蛋鸡的钙需要量是3.90%。配方里要加多少石灰石才能满足？,Model_G,"## 最终答案
+
+**结论：** 在假设配方中其他原料不提供钙的前提下，需添加 **11.14%** 的石灰石（即每吨饲料约 **111.4 kg**）才能满足大午金凤蛋鸡 3.90% 的钙需要量。
+
+**计算依据：**
+- 石灰石钙含量：**35.0%** [from FEED - Feed Ingredient Bank]
+- 大午金凤蛋鸡钙需要量：**3.90%**（产蛋期I阶段，5%–90%产蛋率）[from NUTRITION - Nutrient Requirements]
+- 计算公式：石灰石添加量 = 钙需要量 ÷ 石灰石钙含量 × 100% = 3.90% ÷ 35% × 100% = **11.14%**
+
+**关于石灰石钙含量的说明：**
+- 各来源数据存在差异：FEED数据库",,,,,
+C-EC-002,Edge Cases,single-value,en,What is the calcium requirement for Lohmann Tinted in Lay I?,Model_G,"**Calcium requirement for Lohmann Tinted (Lohmann Pink) in Lay I (19–50 weeks): 4.1%** [from Nutrient tool – Lohmann Pink Official Manual].
+
+Full phase specifications (Lay I, 19–50w):  
+- Calcium: **4.1%**  
+- ME: 2700 kcal/kg  
+- Crude Protein: 17.3%  
+- Available Phosphorus: 0.43%  
+- Lysine: 0.918%  
+
+**Note:** The Lay I phase for Lohmann Tinted (Lohmann Pink) spans 19–50 weeks of age. No conflicting values were provided by other specialists. The 4.1% figure is directly sourced from the official Lohmann Pink manual and is the best‑supported value.",,,,,
+C-XD-003,Cross-Domain,constraint,en,Can limestone at 9% inclusion meet the Ca requirement of 4.04% for ISA Brown layers? Calculate the Ca contribution.,Model_A,,,,,,
+C-NR-005,Nutrient Requirements,comparison,en,"Compare calcium requirement: Isa Brown vs Dawu Jinfeng, both in Lay I. Which is higher?",Model_F,"In commercial poultry nutrition, the **Isa Brown** (a highly productive white-egg layer) has a **higher calcium requirement** than the **Dawu Jinfeng** (a Chinese indigenous breed) during **Lay I** (the first laying phase, typically 18–40 weeks of age).
+
+Here’s the breakdown:
+
+| Parameter | Isa Brown (Lay I) | Dawu Jinfeng (Lay I) |
+|----------|-------------------|----------------------|
+| **Daily calcium intake (mg/bird/day)** | ~4,200 – 4,500 mg | ~3,200 – 3,600 mg |
+| **Dietary calcium level (%)** | 3.8 – 4.2% (often 4.0%) | 3.2 – 3.6% (often 3.4%) |
+| **Egg production rate** | Very high (peak >95%) | Moderate (peak ~70–80%) |
+| **Egg weight** | ~60–63 g | ~45–50 g |
+| **Shell quality demand** | High (thin shells risk) | Moderate (thicker relative to size) |
+
+**Why Isa Brown is higher:**
+1. **Higher egg mass output** – Isa Brown lays more eggs and larger eggs, so more calcium is secreted into the shell per day.
+2. **Faster shell calcification** – The shell gland requires a higher daily calcium flux, so the diet must supply more calcium to avoid depletion of medullary bone.
+3. **Genetic selection** – Isa Brown is bred for maximum persistency and shell strength, which demands a higher dietary calcium-to-phosphorus ratio and absolute calcium intake.
+
+**Dawu Jinfeng** (a local Chinese breed) has a lower metabolic rate, smaller egg size, and lower peak production, so its calcium requirement is roughly **15–20% lower** than Isa Brown in Lay I.
+
+**Practical note:** If you feed a Dawu Jinfeng diet (3.4% Ca) to Isa Brown, you will see increased shell defects (cracks, soft shells) and potential cage-layer fatigue. Conversely, feeding Isa Brown levels (4.0% Ca) to Dawu Jinfeng may cause excess calcium in the gut, reducing phosphorus availability and potentially causing kidney issues.
+
+**Conclusion:** **Isa Brown has the higher calcium requirement** in Lay I.",,,,,
+C-XD-008,Cross-Domain,open-ended,en,"A nutritionist has maize, SBM48, limestone, and dicalcium phosphate. Explain how to balance Ca and P in a layer diet. What constraints must be satisfied?",Model_C,"Balancing calcium (Ca) and phosphorus (P) in a layer diet is essential for maintaining optimal egg production, shell quality, and overall health of laying hens. The primary goal is to ensure that the diet provides the correct ratio and levels of these minerals to support eggshell formation and bone health.
+
+### Key Components:
+- **Maize**: A common energy source, but it is low in both Ca and P.
+- **SBM48 (Soybean Meal 48%)**: A protein source, also low in Ca and P.
+- **Limestone (CaCO₃)**: A primary source of calcium.
+- **Dicalcium Phosphate (CaHPO₄)**: A source of both calcium and phosphorus.
+
+---
+
+## **1. Importance of Ca and P in Layer Diets**
+
+- **Calcium (Ca)**: Essential for eggshell formation. A deficiency can lead to thin or cracked shells, reduced egg production, and bone demineralization.
+- **Phosphorus (P)**: Important for bone development, energy metabolism, and egg production. It also works synergistically with calcium.
+- **Ca:P Ratio**: The ideal ratio for laying hens is typically **1.5:1 to 2.0:1** (Ca to P). This ensures proper utilization of both minerals and prevents imbalances that can lead to health issues.
+
+---
+
+## **2. Steps to Balance Ca and P in a Layer Diet**
+
+### **Step 1: Determine the Required Levels of Ca and P**
+- **Calcium Requirement**: For laying hens, the recommended Ca level is **3.5–4.5%** of the diet.
+- **Phosphorus Requirement**: The recommended P level is **0.35–0.50%** of the diet.
+- **Ca:P Ratio**: Aim for **1.5:1 to 2.0:1**.
+
+### **Step 2: Analyze the Feed Ingredients**
+You need to know the Ca and P content of each ingredient to calculate the total contribution to the diet. Here's a typical analysis:
+
+| Ingredient         | Ca (%) | P (%) |
+|--------------------|--------|-------|
+| Maize              | 0.01   | 0.01  |
+| SBM48              | 0.01   | 0.25  |
+| Limestone          | 35.0   | 0.0   |
+",,,,,

@@ -1,0 +1,224 @@
+{
+  "log_dir": "logs\\comp_layer_20260612_183548",
+  "n_boot": 10000,
+  "seed": 42,
+  "agreement": {
+    "nutriagent_correctness": {
+      "n": 54,
+      "spearman_rho": 0.575,
+      "ci_low": 0.246,
+      "ci_high": 0.807,
+      "within_1_point": 0.926
+    },
+    "nutriagent_precision": {
+      "n": 34,
+      "spearman_rho": 0.038,
+      "ci_low": -0.272,
+      "ci_high": 0.419,
+      "within_1_point": 0.794
+    },
+    "nutriagent_scientific_depth": {
+      "n": 54,
+      "spearman_rho": 0.529,
+      "ci_low": 0.274,
+      "ci_high": 0.734,
+      "within_1_point": 0.926
+    },
+    "pooled_correctness": {
+      "n": 378,
+      "spearman_rho": 0.478,
+      "ci_low": 0.388,
+      "ci_high": 0.564
+    },
+    "pooled_precision": {
+      "n": 237,
+      "spearman_rho": 0.156,
+      "ci_low": 0.027,
+      "ci_high": 0.285
+    },
+    "pooled_scientific_depth": {
+      "n": 378,
+      "spearman_rho": 0.516,
+      "ci_low": 0.435,
+      "ci_high": 0.591
+    }
+  },
+  "paired_vs_baselines": {
+    "aliyun/Qwen3-8B": {
+      "correctness": {
+        "n": 54,
+        "mean_diff": 1.1296,
+        "ci_low": 0.7593,
+        "ci_high": 1.5185,
+        "cohen_dz": 0.784,
+        "wilcoxon_p": 1e-05,
+        "holm_p": 6e-05
+      },
+      "precision": {
+        "n": 37,
+        "mean_diff": 1.4865,
+        "ci_low": 0.973,
+        "ci_high": 2.0,
+        "cohen_dz": 0.904,
+        "wilcoxon_p": 7e-05,
+        "holm_p": 0.00042
+      },
+      "scientific_depth": {
+        "n": 54,
+        "mean_diff": 1.2037,
+        "ci_low": 0.9259,
+        "ci_high": 1.4444,
+        "cohen_dz": 1.206,
+        "wilcoxon_p": 0.0,
+        "holm_p": 0.0
+      }
+    },
+    "siliconflow/GLM-4.5-Air": {
+      "correctness": {
+        "n": 54,
+        "mean_diff": 0.7593,
+        "ci_low": 0.4074,
+        "ci_high": 1.1296,
+        "cohen_dz": 0.553,
+        "wilcoxon_p": 0.00048,
+        "holm_p": 0.0024
+      },
+      "precision": {
+        "n": 38,
+        "mean_diff": 1.0789,
+        "ci_low": 0.5789,
+        "ci_high": 1.5526,
+        "cohen_dz": 0.674,
+        "wilcoxon_p": 0.00093,
+        "holm_p": 0.00372
+      },
+      "scientific_depth": {
+        "n": 54,
+        "mean_diff": 1.037,
+        "ci_low": 0.7778,
+        "ci_high": 1.2963,
+        "cohen_dz": 1.068,
+        "wilcoxon_p": 0.0,
+        "holm_p": 0.0
+      }
+    },
+    "aliyun/Qwen3.5-Flash": {
+      "correctness": {
+        "n": 54,
+        "mean_diff": 0.7222,
+        "ci_low": 0.3519,
+        "ci_high": 1.0926,
+        "cohen_dz": 0.514,
+        "wilcoxon_p": 0.00098,
+        "holm_p": 0.00392
+      },
+      "precision": {
+        "n": 36,
+        "mean_diff": 1.3333,
+        "ci_low": 0.7778,
+        "ci_high": 1.8889,
+        "cohen_dz": 0.773,
+        "wilcoxon_p": 0.00035,
+        "holm_p": 0.00175
+      },
+      "scientific_depth": {
+        "n": 54,
+        "mean_diff": 0.3704,
+        "ci_low": 0.0926,
+        "ci_high": 0.6296,
+        "cohen_dz": 0.352,
+        "wilcoxon_p": 0.01203,
+        "holm_p": 0.01203
+      }
+    },
+    "deepseek/DeepSeek-V4-Pro": {
+      "correctness": {
+        "n": 54,
+        "mean_diff": 0.4074,
+        "ci_low": 0.0926,
+        "ci_high": 0.7222,
+        "cohen_dz": 0.334,
+        "wilcoxon_p": 0.01997,
+        "holm_p": 0.01997
+      },
+      "precision": {
+        "n": 38,
+        "mean_diff": 0.7368,
+        "ci_low": 0.2895,
+        "ci_high": 1.1579,
+        "cohen_dz": 0.523,
+        "wilcoxon_p": 0.00518,
+        "holm_p": 0.01554
+      },
+      "scientific_depth": {
+        "n": 54,
+        "mean_diff": 0.6111,
+        "ci_low": 0.3704,
+        "ci_high": 0.8333,
+        "cohen_dz": 0.696,
+        "wilcoxon_p": 4e-05,
+        "holm_p": 0.00012
+      }
+    },
+    "deepseek/DeepSeek-V4-Flash": {
+      "correctness": {
+        "n": 54,
+        "mean_diff": 0.4444,
+        "ci_low": 0.1296,
+        "ci_high": 0.7593,
+        "cohen_dz": 0.368,
+        "wilcoxon_p": 0.00896,
+        "holm_p": 0.01792
+      },
+      "precision": {
+        "n": 39,
+        "mean_diff": 0.7436,
+        "ci_low": 0.2821,
+        "ci_high": 1.1795,
+        "cohen_dz": 0.508,
+        "wilcoxon_p": 0.00704,
+        "holm_p": 0.01554
+      },
+      "scientific_depth": {
+        "n": 54,
+        "mean_diff": 0.5185,
+        "ci_low": 0.2778,
+        "ci_high": 0.7407,
+        "cohen_dz": 0.586,
+        "wilcoxon_p": 7e-05,
+        "holm_p": 0.00014
+      }
+    },
+    "siliconflow/MiniMax-M2.5": {
+      "correctness": {
+        "n": 54,
+        "mean_diff": 0.4815,
+        "ci_low": 0.1481,
+        "ci_high": 0.8148,
+        "cohen_dz": 0.388,
+        "wilcoxon_p": 0.00583,
+        "holm_p": 0.01749
+      },
+      "precision": {
+        "n": 36,
+        "mean_diff": 0.8611,
+        "ci_low": 0.3333,
+        "ci_high": 1.3611,
+        "cohen_dz": 0.548,
+        "wilcoxon_p": 0.00625,
+        "holm_p": 0.01554
+      },
+      "scientific_depth": {
+        "n": 54,
+        "mean_diff": 0.6852,
+        "ci_low": 0.4074,
+        "ci_high": 0.9444,
+        "cohen_dz": 0.681,
+        "wilcoxon_p": 2e-05,
+        "holm_p": 8e-05
+      }
+    }
+  },
+  "second_rater": null,
+  "note": "The submitted manuscript reported rho=0.83/0.67/0.37 for correctness/depth/precision. The recomputed NutriAgent-only values above are the values supported by the deposited scores."
+}

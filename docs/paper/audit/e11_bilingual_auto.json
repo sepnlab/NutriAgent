@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "en": {
+      "correctness": {
+        "mean": 4.69,
+        "sd": 0.643,
+        "n": 42,
+        "ci95": [
+          4.476,
+          4.857
+        ]
+      },
+      "precision": {
+        "mean": 4.686,
+        "sd": 0.867,
+        "n": 35,
+        "ci95": [
+          4.371,
+          4.943
+        ]
+      },
+      "scientific_depth": {
+        "mean": 4.262,
+        "sd": 0.767,
+        "n": 42,
+        "ci95": [
+          4.024,
+          4.476
+        ]
+      }
+    },
+    "zh": {
+      "correctness": {
+        "mean": 4.917,
+        "sd": 0.289,
+        "n": 12,
+        "ci95": [
+          4.75,
+          5.0
+        ]
+      },
+      "precision": {
+        "mean": 4.8,
+        "sd": 0.422,
+        "n": 10,
+        "ci95": [
+          4.5,
+          5.0
+        ]
+      },
+      "scientific_depth": {
+        "mean": 4.417,
+        "sd": 0.669,
+        "n": 12,
+        "ci95": [
+          4.0,
+          4.75
+        ]
+      }
+    }
+  },
+  "zh_minus_en": {
+    "correctness": 0.226,
+    "precision": 0.114,
+    "scientific_depth": 0.155
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "Multi-Agent (validation on)": {
+    "n_claims": 101,
+    "counts": {
+      "direct": 11,
+      "attribute": 10,
+      "any_number": 14,
+      "unsupported": 66
+    },
+    "rates": {
+      "direct": 0.109,
+      "attribute": 0.099,
+      "any_number": 0.139,
+      "unsupported": 0.653
+    },
+    "rows": [
+      {
+        "query": "What is the calcium requirement for Isa Brown in Lay I?",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 0
+      },
+      {
+        "query": "A Lay I diet: 55% maize + 30% SBM48. Using SID lysine values, calculate total SID lysine. Does it meet 0.77%?",
+        "n_claims": 8,
+        "direct": 0,
+        "attribute": 1,
+        "any_number": 0,
+        "unsupported": 7
+      },
+      {
+        "query": "What is the calcium content of limestone?",
+        "n_claims": 3,
+        "direct": 1,
+        "attribute": 1,
+        "any_number": 0,
+        "unsupported": 1
+      },
+      {
+        "query": "What is the crude protein content of maize?",
+        "n_claims": 7,
+        "direct": 2,
+        "attribute": 2,
+        "any_number": 0,
+        "unsupported": 3
+      },
+      {
+        "query": "What is the metabolizable energy of soybean meal 48% in kcal/kg?",
+        "n_claims": 4,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "List three plant protein sources from the feed ingredient bank with crude protein above 30%. Cite exact CP values.",
+        "n_claims": 5,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 5
+      },
+      {
+        "query": "Compare the crude protein of soybean meal 48% and canola meal. Which is higher and by how much?",
+        "n_claims": 3,
+        "direct": 1,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 2
+      },
+      {
+        "query": "Compare the SID lysine digestibility of maize and soybean meal 48%. What does this imply for formulation?",
+        "n_claims": 6,
+        "direct": 1,
+        "attribute": 1,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "豆粕48和菜粕的代谢能各是多少？哪个更高？",
+        "n_claims": 2,
+        "direct": 0,
+        "attribute": 1,
+        "any_number": 0,
+        "unsupported": 1
+      },
+      {
+        "query": "Compare calcium requirement: Isa Brown Lay I vs Lay III. Which is higher?",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 0
+      },
+      {
+        "query": "What is the crude protein requirement for Jinghong 1 in Layer I?",
+        "n_claims": 6,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 6,
+        "unsupported": 0
+      },
+      {
+        "query": "How does the calcium requirement for Isa Brown change from Developer through Lay III? State the Ca% for each phase.",
+        "n_claims": 6,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 6
+      },
+      {
+        "query": "A feed ingredient has total lysine of 0.85% and SID lysine digestibility of 88%. What is the SID lysine content (in %)?",
+        "n_claims": 3,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 3
+      },
+      {
+        "query": "A diet has 0.45% total phosphorus and 0.30% phytate phosphorus. If phytase improves phytate P release by 50%, what is th",
+        "n_claims": 6,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 6
+      },
+      {
+        "query": "Isa Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily calcium intake in mg/hen/day. Is it su",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 0
+      },
+      {
+        "query": "A feed sample has 2.5% nitrogen. Using N×6.25, what is the crude protein percentage?",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 1
+      },
+      {
+        "query": "A Lay I diet uses 60% maize (total lysine=0.247%, SID=90%) and 25% SBM48 (total lysine=0.620%, SID=88%). Calculate the S",
+        "n_claims": 4,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "Ca requirement for ISA Brown layers is 4.04%. Limestone has 35% Ca. What % of limestone is needed in the diet?",
+        "n_claims": 3,
+        "direct": 3,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 0
+      },
+      {
+        "query": "Maize CP drops from 8.8% to 5.0% (severe drought). Original formula: 60% maize. By how many percentage points must SBM48",
+        "n_claims": 6,
+        "direct": 0,
+        "attribute": 1,
+        "any_number": 0,
+        "unsupported": 5
+      },
+      {
+        "query": "Can limestone at 9% inclusion meet the Ca requirement of 4.04% for ISA Brown layers? Calculate the Ca contribution.",
+        "n_claims": 7,
+        "direct": 3,
+        "attribute": 1,
+        "any_number": 0,
+        "unsupported": 3
+      },
+      {
+        "query": "SBM price doubles. Replace 50% of SBM with canola meal. Original: 25% SBM (CP=52.6%). New: 12.5% SBM + 12.5% canola (CP=",
+        "n_claims": 6,
+        "direct": 0,
+        "attribute": 2,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "ISA Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily Ca intake (mg/hen/day). Sufficient for",
+        "n_claims": 4,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 4,
+        "unsupported": 0
+      },
+      {
+        "query": "A nutritionist has maize, SBM48, limestone, and dicalcium phosphate. Explain how to balance Ca and P in a layer diet. Wh",
+        "n_claims": 2,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 1
+      },
+      {
+        "query": "What is the crude protein content of unicorn feed?",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 1
+      },
+      {
+        "query": "Compare the metabolizable energy of fish meal and limestone.",
+        "n_claims": 5,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 5
+      }
+    ]
+  },
+  "Multi-Agent (validation off)": {
+    "n_claims": 96,
+    "counts": {
+      "direct": 16,
+      "attribute": 6,
+      "any_number": 13,
+      "unsupported": 61
+    },
+    "rates": {
+      "direct": 0.167,
+      "attribute": 0.062,
+      "any_number": 0.135,
+      "unsupported": 0.635
+    },
+    "rows": [
+      {
+        "query": "What is the calcium requirement for Isa Brown in Lay I?",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 1
+      },
+      {
+        "query": "What is the calcium content of limestone?",
+        "n_claims": 3,
+        "direct": 2,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 1
+      },
+      {
+        "query": "What is the calcium requirement for Lohmann Tinted in Lay I?",
+        "n_claims": 3,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 3
+      },
+      {
+        "query": "A Lay I diet: 55% maize + 30% SBM48. Using SID lysine values, calculate total SID lysine. Does it meet 0.77%?",
+        "n_claims": 7,
+        "direct": 1,
+        "attribute": 2,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "What is the crude protein content of maize?",
+        "n_claims": 5,
+        "direct": 1,
+        "attribute": 1,
+        "any_number": 0,
+        "unsupported": 3
+      },
+      {
+        "query": "What is the metabolizable energy of soybean meal 48% in kcal/kg?",
+        "n_claims": 5,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 5
+      },
+      {
+        "query": "List three plant protein sources from the feed ingredient bank with crude protein above 30%. Cite exact CP values.",
+        "n_claims": 5,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 5
+      },
+      {
+        "query": "Compare the crude protein of soybean meal 48% and canola meal. Which is higher and by how much?",
+        "n_claims": 4,
+        "direct": 4,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 0
+      },
+      {
+        "query": "Compare the SID lysine digestibility of maize and soybean meal 48%. What does this imply for formulation?",
+        "n_claims": 5,
+        "direct": 2,
+        "attribute": 2,
+        "any_number": 0,
+        "unsupported": 1
+      },
+      {
+        "query": "豆粕48和菜粕的代谢能各是多少？哪个更高？",
+        "n_claims": 2,
+        "direct": 0,
+        "attribute": 1,
+        "any_number": 1,
+        "unsupported": 0
+      },
+      {
+        "query": "What is the SID methionine requirement for Isa Brown in Lay I?",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 0
+      },
+      {
+        "query": "Compare calcium requirement: Isa Brown Lay I vs Lay III. Which is higher?",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 0
+      },
+      {
+        "query": "What is the crude protein requirement for Jinghong 1 in Layer I?",
+        "n_claims": 6,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 6,
+        "unsupported": 0
+      },
+      {
+        "query": "How does the calcium requirement for Isa Brown change from Developer through Lay III? State the Ca% for each phase.",
+        "n_claims": 7,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 7
+      },
+      {
+        "query": "A feed ingredient has total lysine of 0.85% and SID lysine digestibility of 88%. What is the SID lysine content (in %)?",
+        "n_claims": 4,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "A diet has 0.45% total phosphorus and 0.30% phytate phosphorus. If phytase improves phytate P release by 50%, what is th",
+        "n_claims": 4,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "Compare calcium requirement: Isa Brown vs Dawu Jinfeng, both in Lay I. Which is higher?",
+        "n_claims": 2,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 1
+      },
+      {
+        "query": "大午金凤在产蛋I期的SID蛋氨酸需要量是多少？",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 0
+      },
+      {
+        "query": "Isa Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily calcium intake in mg/hen/day. Is it su",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 0
+      },
+      {
+        "query": "A Lay I diet uses 60% maize (total lysine=0.247%, SID=90%) and 25% SBM48 (total lysine=0.620%, SID=88%). Calculate the S",
+        "n_claims": 4,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "Ca requirement for ISA Brown layers is 4.04%. Limestone has 35% Ca. What % of limestone is needed in the diet?",
+        "n_claims": 3,
+        "direct": 2,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 1
+      },
+      {
+        "query": "Can limestone at 9% inclusion meet the Ca requirement of 4.04% for ISA Brown layers? Calculate the Ca contribution.",
+        "n_claims": 8,
+        "direct": 4,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "Maize CP drops from 8.8% to 5.0% (severe drought). Original formula: 60% maize. By how many percentage points must SBM48",
+        "n_claims": 4,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 4
+      },
+      {
+        "query": "SBM price doubles. Replace 50% of SBM with canola meal. Original: 25% SBM (CP=52.6%). New: 12.5% SBM + 12.5% canola (CP=",
+        "n_claims": 3,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 3
+      },
+      {
+        "query": "ISA Brown at week 30: feed intake 112 g/day, Ca requirement 4.04%. Estimate daily Ca intake (mg/hen/day). Sufficient for",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 1,
+        "unsupported": 0
+      },
+      {
+        "query": "What is the crude protein content of unicorn feed?",
+        "n_claims": 1,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 1
+      },
+      {
+        "query": "Compare the metabolizable energy of fish meal and limestone.",
+        "n_claims": 5,
+        "direct": 0,
+        "attribute": 0,
+        "any_number": 0,
+        "unsupported": 5
+      }
+    ]
+  }
+}

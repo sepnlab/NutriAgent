@@ -1,0 +1,478 @@
+{
+  "Feed Ingredient Bank": [
+    {
+      "id": "C-FIB-001",
+      "query": "What is the crude protein content of maize?",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 8.8
+    },
+    {
+      "id": "C-FIB-002",
+      "query": "What is the calcium content of limestone?",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 35.0
+    },
+    {
+      "id": "C-FIB-003",
+      "query": "What is the metabolizable energy of soybean meal 48% in kcal/kg?",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 2260.0
+    },
+    {
+      "id": "C-FIB-004",
+      "query": "Which has higher metabolizable energy, maize or soft wheat? State both values.",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 3090.0
+    },
+    {
+      "id": "C-FIB-005",
+      "query": "Compare the crude protein of soybean meal 48% and canola meal. Which is higher and by how much?",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 11.6
+    },
+    {
+      "id": "C-FIB-006",
+      "query": "List three plant protein sources from the feed ingredient bank with crude protein above 30%. Cite exact CP values.",
+      "type": "open-ended",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L2",
+      "language": "en"
+    },
+    {
+      "id": "C-FIB-007",
+      "query": "Compare the SID lysine digestibility of maize and soybean meal 48%. What does this imply for formulation?",
+      "type": "open-ended",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L2",
+      "language": "en"
+    },
+    {
+      "id": "C-FIB-008",
+      "query": "Define metabolizable energy (ME). How does it differ from gross energy?",
+      "type": "definition",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "en"
+    },
+    {
+      "id": "C-FIB-009",
+      "query": "玉米的粗蛋白含量是多少？",
+      "type": "single-value",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 8.8
+    },
+    {
+      "id": "C-FIB-010",
+      "query": "豆粕48和菜粕的代谢能各是多少？哪个更高？",
+      "type": "comparison",
+      "category": "Feed Ingredient Bank",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 2260.0
+    }
+  ],
+  "Nutrient Requirements": [
+    {
+      "id": "C-NR-001",
+      "query": "What is the calcium requirement for Ross 308 in Starter?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 0.95
+    },
+    {
+      "id": "C-NR-002",
+      "query": "What is the SID methionine requirement for Ross 308 in Starter?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 0.55
+    },
+    {
+      "id": "C-NR-003",
+      "query": "What is the crude protein requirement for Ross 308 in Grower?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 21.5
+    },
+    {
+      "id": "C-NR-004",
+      "query": "Compare calcium requirement: Ross 308 Starter vs Finisher. Which is higher?",
+      "type": "comparison",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 0.95
+    },
+    {
+      "id": "C-NR-005",
+      "query": "Compare SID lysine: Ross 308 Starter vs Grower. Which is higher?",
+      "type": "comparison",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 1.32
+    },
+    {
+      "id": "C-NR-006",
+      "query": "How does the crude protein requirement for Ross 308 change from Starter to Finisher? State the CP% for each phase.",
+      "type": "open-ended",
+      "category": "Nutrient Requirements",
+      "difficulty": "L2",
+      "language": "en"
+    },
+    {
+      "id": "C-NR-007",
+      "query": "A feed ingredient has total lysine of 0.85% and SID lysine digestibility of 88%. What is the SID lysine content (in %)?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 0.748
+    },
+    {
+      "id": "C-NR-008",
+      "query": "A diet has 0.45% total phosphorus and 0.30% phytate phosphorus. If phytase improves phytate P release by 50%, what is the effective available phosphorus?",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 0.3
+    },
+    {
+      "id": "C-NR-009",
+      "query": "Define SID (Standardized Ileal Digestible) amino acids. Why is it preferred over total amino acids?",
+      "type": "definition",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "en"
+    },
+    {
+      "id": "C-NR-010",
+      "query": "ross 308在开产期的钙需要量是多少？",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 0.95
+    },
+    {
+      "id": "C-NR-011",
+      "query": "ross 308从开产期到育成期，钙需要量怎么变化？",
+      "type": "comparison",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 0.95
+    },
+    {
+      "id": "C-NR-012",
+      "query": "ross 308在生长期的SID蛋氨酸需要量是多少？",
+      "type": "single-value",
+      "category": "Nutrient Requirements",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 0.51
+    }
+  ],
+  "Performance Management": [
+    {
+      "id": "C-PM-001",
+      "query": "What is the body weight for Aa+ at week 35?",
+      "type": "single-value",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 2142.0
+    },
+    {
+      "id": "C-PM-002",
+      "query": "What is the daily feed intake for Aa+ at day 42?",
+      "type": "single-value",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 188.0
+    },
+    {
+      "id": "C-PM-003",
+      "query": "Compare body weight: Aa+ week 35 vs Aa+ week 42. Which is higher?",
+      "type": "comparison",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 2758.0
+    },
+    {
+      "id": "C-PM-004",
+      "query": "Compare daily feed intake: Aa+ week 35 vs Aa+ week 42.",
+      "type": "comparison",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_value": 188.0
+    },
+    {
+      "id": "C-PM-005",
+      "query": "Track the body weight of Aa+ broilers at day 7, 14, and 21. What is the weight at each point?",
+      "type": "open-ended",
+      "category": "Performance Management",
+      "difficulty": "L2",
+      "language": "en"
+    },
+    {
+      "id": "C-PM-006",
+      "query": "Aa+ at day 35: feed intake 166 g/day, CP requirement 23.0%. Estimate daily crude protein intake in g/bird/day.",
+      "type": "open-ended",
+      "category": "Performance Management",
+      "difficulty": "L3",
+      "language": "en",
+      "expected_value": 38.2
+    },
+    {
+      "id": "C-PM-007",
+      "query": "Aa+ at day 35: BW=2142g, cumulative feed intake=3052g. Calculate the FCR.",
+      "type": "single-value",
+      "category": "Performance Management",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 1.425
+    },
+    {
+      "id": "C-PM-008",
+      "query": "Define hen-day egg production. How is it calculated?",
+      "type": "definition",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "en"
+    },
+    {
+      "id": "C-PM-009",
+      "query": "AA+在第35周的体重是多少？",
+      "type": "single-value",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 2142.0
+    },
+    {
+      "id": "C-PM-010",
+      "query": "AA+和AA+在第35周的体重各是多少？哪个更高？",
+      "type": "comparison",
+      "category": "Performance Management",
+      "difficulty": "L1",
+      "language": "zh",
+      "expected_value": 2758.0
+    }
+  ],
+  "Definitions": [
+    {
+      "id": "C-DEF-001",
+      "query": "Define metabolizable energy (ME). How does it differ from digestible energy (DE)?",
+      "type": "definition",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "en"
+    },
+    {
+      "id": "C-DEF-002",
+      "query": "Define available phosphorus. Why is it different from total phosphorus?",
+      "type": "definition",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "en"
+    },
+    {
+      "id": "C-DEF-003",
+      "query": "What is feed conversion ratio (FCR)? How is it calculated?",
+      "type": "definition",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "en"
+    },
+    {
+      "id": "C-DEF-004",
+      "query": "A feed sample has 2.5% nitrogen. Using N×6.25, what is the crude protein percentage?",
+      "type": "single-value",
+      "category": "Definitions",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 15.625
+    },
+    {
+      "id": "C-DEF-005",
+      "query": "什么是代谢能？它和消化能有什么区别？",
+      "type": "definition",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "zh"
+    },
+    {
+      "id": "C-DEF-006",
+      "query": "蛋鸡饲料配方为什么优先用代谢能而不是消化能？",
+      "type": "open-ended",
+      "category": "Definitions",
+      "difficulty": "L1",
+      "language": "zh"
+    }
+  ],
+  "Cross-Domain": [
+    {
+      "id": "C-XD-001",
+      "query": "A Starter diet uses 60% maize (total lysine=0.247%, SID=90%) and 25% SBM48 (total lysine=0.620%, SID=88%). Calculate the SID lysine contribution. Does it meet the Ross 308 starters requirement (1.32%)?",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 0.27
+    },
+    {
+      "id": "C-XD-002",
+      "query": "Ca requirement for Ross 308 starters is 0.95%. Limestone has 35% Ca. What % of limestone is needed in the diet?",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 2.7
+    },
+    {
+      "id": "C-XD-003",
+      "query": "Can limestone at 9% inclusion meet the Ca requirement of 0.95% for Ross 308 starters? Calculate the Ca contribution.",
+      "type": "constraint",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 3.15
+    },
+    {
+      "id": "C-XD-004",
+      "query": "A Starter diet: 55% maize + 30% SBM48. Using SID lysine values, calculate total SID lysine. Does it meet 1.32%?",
+      "type": "constraint",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_value": 0.286
+    },
+    {
+      "id": "C-XD-005",
+      "query": "Maize CP drops from 8.8% to 5.0% (severe drought). Original formula: 60% maize. By how many percentage points must SBM48 (CP=52.6%) increase to maintain total CP?",
+      "type": "counterfactual",
+      "category": "Cross-Domain",
+      "difficulty": "L3",
+      "language": "en",
+      "expected_value": 0.04
+    },
+    {
+      "id": "C-XD-006",
+      "query": "SBM price doubles. Replace 50% of SBM with canola meal. Original: 25% SBM (CP=52.6%). New: 12.5% SBM + 12.5% canola (CP=41.0%). Calculate the CP contribution change.",
+      "type": "counterfactual",
+      "category": "Cross-Domain",
+      "difficulty": "L3",
+      "language": "en",
+      "expected_value": 11.7
+    },
+    {
+      "id": "C-XD-007",
+      "query": "AA+ at day 35: feed intake 166 g/day, CP requirement 23.0%. Estimate daily CP intake (g/bird/day).",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "difficulty": "L3",
+      "language": "en",
+      "expected_value": 38.2
+    },
+    {
+      "id": "C-XD-008",
+      "query": "A nutritionist has maize, SBM48, limestone, and dicalcium phosphate. Explain how to balance Ca and P in a layer diet. What constraints must be satisfied?",
+      "type": "open-ended",
+      "category": "Cross-Domain",
+      "difficulty": "L3",
+      "language": "en"
+    },
+    {
+      "id": "C-XD-009",
+      "query": "一个开产期配方用60%玉米（总赖氨酸0.247%，SID消化率90%）和25%豆粕48（总赖氨酸0.620%，SID消化率88%）。这两样原料的SID赖氨酸加起来是多少？能不能满足罗斯308雏鸡的需要量（1.32%）？",
+      "type": "multi-hop",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "zh",
+      "expected_value": 0.27
+    },
+    {
+      "id": "C-XD-010",
+      "query": "石灰石含钙35%，罗斯308雏鸡的钙需要量是0.95%。配方里要加多少石灰石才能满足？",
+      "type": "constraint",
+      "category": "Cross-Domain",
+      "difficulty": "L2",
+      "language": "zh",
+      "expected_value": 2.7
+    }
+  ],
+  "Edge Cases": [
+    {
+      "id": "C-EC-001",
+      "query": "What is the crude protein content of unicorn feed?",
+      "type": "single-value",
+      "category": "Edge Cases",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_behavior": "Should indicate ingredient not found in database"
+    },
+    {
+      "id": "C-EC-002",
+      "query": "What is the calcium requirement for Lohmann Tinted in Lay I?",
+      "type": "single-value",
+      "category": "Edge Cases",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_behavior": "Should indicate breed not found; list available breeds"
+    },
+    {
+      "id": "C-EC-003",
+      "query": "What is the hen-day production of Ross 308 layers at week 30?",
+      "type": "single-value",
+      "category": "Edge Cases",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_behavior": "Should clarify Ross 308 is a broiler breed, not layer"
+    },
+    {
+      "id": "C-EC-004",
+      "query": "What is the methionine requirement for ISA Brown in Lay I?",
+      "type": "single-value",
+      "category": "Edge Cases",
+      "difficulty": "L1",
+      "language": "en",
+      "expected_behavior": "Should either provide the value or indicate column name difference (SID_Met_pct vs methionine)"
+    },
+    {
+      "id": "C-EC-005",
+      "query": "Compare the metabolizable energy of fish meal and limestone.",
+      "type": "comparison",
+      "category": "Edge Cases",
+      "difficulty": "L2",
+      "language": "en",
+      "expected_behavior": "Should note limestone has 0 ME (mineral, not energy source)"
+    }
+  ]
+}

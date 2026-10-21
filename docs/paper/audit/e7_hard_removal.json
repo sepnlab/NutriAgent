@@ -1,0 +1,332 @@
+{
+  "n_queries": 20,
+  "full": {
+    "correctness": {
+      "mean": 4.4,
+      "std": 0.5982,
+      "n": 20
+    },
+    "precision": {
+      "mean": 4.4,
+      "std": 0.7539,
+      "n": 20
+    },
+    "scientific_depth": {
+      "mean": 3.7,
+      "std": 0.4702,
+      "n": 20
+    },
+    "per_query": [
+      {
+        "id": "C-FIB-001",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-002",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-003",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-004",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-005",
+        "correctness": 4,
+        "precision": 3,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-FIB-006",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-007",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-FIB-008",
+        "correctness": 5,
+        "precision": 3,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-009",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-010",
+        "correctness": 5,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-001",
+        "correctness": 3,
+        "precision": 3,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-002",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-003",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-004",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-005",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-006",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-007",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-008",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-009",
+        "correctness": 4,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-010",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      }
+    ]
+  },
+  "hard_removal": {
+    "correctness": {
+      "mean": 4.7,
+      "std": 0.6569,
+      "n": 20
+    },
+    "precision": {
+      "mean": 4.4737,
+      "std": 0.7723,
+      "n": 19
+    },
+    "scientific_depth": {
+      "mean": 3.7,
+      "std": 0.5712,
+      "n": 20
+    },
+    "per_query": [
+      {
+        "id": "C-FIB-001",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-002",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-FIB-003",
+        "correctness": 5,
+        "precision": 4,
+        "scientific_depth": 5
+      },
+      {
+        "id": "C-FIB-004",
+        "correctness": 4,
+        "precision": 3,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-FIB-005",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-006",
+        "correctness": 4,
+        "precision": 4,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-FIB-007",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-008",
+        "correctness": 5,
+        "precision": null,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-009",
+        "correctness": 5,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-FIB-010",
+        "correctness": 5,
+        "precision": 4,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-001",
+        "correctness": 3,
+        "precision": 3,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-002",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-003",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-004",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-005",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-006",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-007",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      },
+      {
+        "id": "C-XD-008",
+        "correctness": 3,
+        "precision": 3,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-009",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 3
+      },
+      {
+        "id": "C-XD-010",
+        "correctness": 5,
+        "precision": 5,
+        "scientific_depth": 4
+      }
+    ]
+  },
+  "responses": {
+    "full": [
+      "**Crude protein content of maize: 8.8% (as-fed basis)** [from Feed Ingredient Bank].\n\n**Supplementary details (as-fed basis):**  \n- Dry matter: 90.0%  \n- Crude protein: 8.8%  \n- Ether extract: 4.1%  \n- Crude fiber: 2.6%  \n- Ash: 1.4%  \n- Starch: 73.9%  \n- Sugars: 2.0%  \n- NDF: 12.4%  \n- ADF: 3.1%  \n- GE: 3840 kcal/kg  \n- ME (poultry): 3090 kcal/kg  \n- ME (cock): 3160 kcal/kg  \n- Ca: 0.04%, P_total: 0.25%, P_phyt: 0.19%  \n- Lys: 0.247%, Met: 0.168%,",
+      "**Calcium content of limestone: 35.0%** [from Feed Ingredient Bank].\n\nThis is the standard value for feed-grade limestone, used as a calcium supplement in poultry diets (especially layers for eggshell formation).\n\n**Note on discrepancy:** A supplementary definition lists ~38% calcium [from Definitions]. The 35% value is more accurate for commercial feed-grade limestone, as it accounts for typical impurities and particle size variations. Pure calcium carbonate (CaCO₃) contains 40% calcium, but feed-grade sources are rarely pure. The 35% figure is the industry-standard analytical value for practical diet formulation.",
+      "**Metabolizable Energy of Soybean Meal 48%: 2,220 kcal/kg** [from FEED - Feed Ingredient Bank]\n\nThis value is based on the INRAE-CIRAD-AFZ feed tables (feedtables.com) for the ingredient \"Soybean meal, oil < 5%, 46% protein + oil\" — which corresponds to commercial soybean meal 48% (CP 49.5%).\n\n**Supporting data:**\n- **ME (as-fed):** 2,220 kcal/kg\n- **ME (cock):** 2,260 kcal/kg (alternative value for adult roosters)\n- **Gross Energy (GE):** 4,090 kcal/kg\n- **Crude Protein:** 49.5%\n- **Ether Extract:** 1.9%\n- **Crude Fiber:** 7.2%\n- **Ash:** 7.4%\n- **Starch:** 6.8",
+      "**Maize has higher metabolizable energy than soft wheat.**\n\n| Ingredient | ME (kcal/kg) |\n|---|---|\n| **Maize** | **3,090** |\n| **Soft Wheat** | **2,860** |\n\nDifference: **230 kcal/kg** in favor of maize. [from FEED - Feed Ingredient Bank]\n\n*Note: These are standard apparent ME values for poultry. If using true metabolizable energy (TME, corrected for endogenous losses), maize would still rank higher, but the absolute values would differ slightly.* [from Definitions - supplementary]",
+      "**Final Answer:**\n\n**Soybean meal (48%) is higher in crude protein than canola meal.**\n\n| Ingredient | CP (%) |\n|------------|--------|\n| **Soybean Meal** (48% protein grade) | **48.0%** (as labeled) |\n| **Canola Meal** (typical) | **36–41%** (range depending on source) |\n\n**Difference:** Soybean meal is higher by **7–12 percentage points**, depending on the canola meal source.\n\n**Best-supported values:**\n- **Soybean meal 48%** – The label value of **48.0% CP** is the most reliable for this specific product grade [from Feed Ingredient Bank].\n- **Canola meal** – The Feed Ingredient Bank lists **41.0% CP** for standard canola meal (oil <5%) [from Feed Ingredient Bank]. A supplementary definition cites **36% CP** for canola meal",
+      "**Final Answer:**\n\nBased on the feed ingredient bank, three plant protein sources with crude protein (CP) above 30% are:\n\n1. **Soybean meal (solvent-extracted, 48% CP)** – CP: **48.0%** [from Feed Ingredient Bank – INRAE-CIRAD-AFZ tables]\n2. **Rapeseed meal (solvent-extracted)** – CP: **36.0%** [from Feed Ingredient Bank – INRAE-CIRAD-AFZ tables]\n3. **Sunflower meal (solvent-extracted, partially dehulled)** – CP: **34.0%** [from Feed Ingredient Bank – INRAE-CIRAD-AFZ tables]\n\n*Note:* The supplementary reference provided (processed animal proteins, poultry) is **not a plant protein** and was excluded. All three values above are from the plant-based feed ingredient bank and exceed the 30% CP",
+      "**SID Lysine Digestibility Comparison (Maize vs. Soybean Meal 48%)**\n\n| Parameter | Maize (corn) | Soybean Meal (48% CP) |\n|-----------|-------------|----------------------|\n| **Total Lysine (%)** | ~0.25–0.30% | ~2.9–3.1% |\n| **SID Lysine coefficient** | **~78%** | **~88–90%** |\n| **Digestible Lysine (% of ingredient)** | ~0.20% | ~2.6% |\n\n*Note: The Feed Ingredient Bank response used \"corn gluten feed\" (a by-product) and \"soybean meal 46% protein + oil\" – not the exact ingredients asked. For true maize grain and SBM 48%, the values above are the standard published figures (INRAE, CVB, NRC).*\n\n**Key Findings**\n\n1. **Soy",
+      "**Metabolizable Energy (ME):** The energy available to the bird after subtracting fecal and urinary energy losses from gross energy. In practical poultry nutrition, ME is the standard measure for diet formulation because it reflects the energy the bird can actually use for maintenance, growth, and production.\n\n**Gross Energy (GE):** The total energy content of a feed ingredient, measured by completely burning it in a bomb calorimeter. It represents the maximum possible energy, but not all of it is digestible or metabolizable.\n\n**Key difference:** GE is the total chemical energy in the feed (from bomb calorimetry), while ME is GE minus energy lost in feces and urine. ME is always lower than GE and is the biologically meaningful value for poultry.\n\n**Supplementary note:** True Metabolizable Energy (TME) is a refinement of ME that also corrects for endogenous energy losses (e.g., digestive secretions, sloughed cells), providing an even more accurate measure of available energy [from Definitions].",
+      "**玉米的粗蛋白含量取决于具体指哪种玉米产品：**\n\n1. **普通玉米籽实（Corn Grain，能量饲料）**：粗蛋白含量通常为 **7–9%**，具体因品种、产地和检测标准略有差异。  \n   - 参考数据（INRAE-CIRAD-AFZ饲料表）：**CP 8.8%**（干物质90%基础）[from Feed Ingredient Bank - Maize]。\n\n2. **玉米蛋白饲料（Corn Gluten Feed，湿法加工副产品）**：粗蛋白含量为 **21.6%** [from Feed Ingredient Bank - Corn Gluten Feed]。  \n   - 注意：此数据**不是**普通玉米籽实，而是淀粉生产后的副产品，蛋白含量显著更高。\n\n**结论**：  \n若用户问的是常规饲料用玉米（籽实），答案应为 **7–9%（典型值8.8%）**；若问的是",
+      "## 豆粕48 vs 菜粕：代谢能对比\n\n| 指标 | 豆粕（Soybean Meal） | 菜粕（Rapeseed Meal） |\n|------|---------------------|----------------------|\n| **代谢能（ME）** | **2,220 kcal/kg** | **1,450 kcal/kg** |\n| 粗蛋白（CP） | 49.5% | 38.1% |\n| 粗脂肪（EE） | 1.9% | 2.4% |\n| 粗纤维（CFiber） | 7.2% | 14.3% |\n\n### 结论\n**豆粕的代谢能（2,220 kcal/kg）显著高于菜粕（1,450 kcal/kg）**，高出约 **770 kcal/kg**（约53%）。\n\n### 原因分析\n- 菜粕的**粗纤维含量（14.3%）**远高于豆粕",
+      "**Final Answer:**\n\n## SID Lysine Calculation\n\n**Step 1: Calculate SID lysine from each ingredient**\n\n**Maize (60% inclusion):**\n- Total lysine = 0.247% [from Feed Ingredient Bank]\n- SID coefficient = 90% [from question]\n- SID lysine in maize = 0.247% × 0.90 = **0.2223%**\n- Contribution to diet = 0.2223% × 0.60 = **0.1334%**\n\n**SBM48 (25% inclusion):**\n- Total lysine = 0.620% [from Feed Ingredient Bank]\n- SID coefficient = 88% [from question]\n- SID lysine in SBM48 = 0.620% × 0.88 = **0.5456%**\n- Contribution to diet = 0.5456% × 0.25 = **0.",
+      "**Final Answer:**\n\n**Limestone needed: ~11.54% of the diet** [from NUTRITION – Nutrient Requirements; FEED – Feed Ingredient Bank]\n\n**Calculation:**\n- Ca requirement: 4.04% (ISA Brown, Lay I phase, 21–40 weeks) [from NUTRITION – Nutrient Requirements]\n- Limestone Ca content: 35.0% [from FEED – Feed Ingredient Bank; NUTRITION – Nutrient Requirements]\n- Limestone inclusion = (4.04 ÷ 35.0) × 100 = **11.54%**\n\n**Important caveats:**\n- This assumes limestone is the **sole** calcium source. In practice, other ingredients (e.g., dicalcium phosphate, meat/bone meal, soybean meal) contribute calcium, so actual limestone inclusion would be **lower**.\n- **Discrepancy note:** The supplementary definition lists limestone at 38% Ca, but both specialist agents (",
+      "**Final Answer:**\n\n**No**, limestone at 9% inclusion does **not** meet the 4.04% Ca requirement for ISA Brown layers (Lay I phase, 21–40 weeks) [from Nutrient Requirements].\n\n**Ca contribution calculation:**\n\n- **Limestone Ca content:** The most reliable value is **38% Ca** for feed-grade limestone [from Definitions – supplementary source]. The Feed Ingredient Bank value of 35% is slightly lower but within normal analytical variation; 38% is the standard reference for poultry feed-grade limestone.\n- **Calculation:** 9% × 38% = **3.42% Ca** [from Nutrition specialist, using 38% Ca].\n\n**Comparison:**\n\n| Parameter | Value |\n|---|---|\n| Ca requirement (ISA Brown) | 4.04% [from Nutrient Requirements] |\n| Ca supplied by 9% limestone | 3.42% [calculated with 38% Ca] |\n| **Deficit** |",
+      "**Total SID Lysine Calculation:**\n\n**Maize (55% of diet):**\n- Total Lys: 0.247% [from Feed Ingredient Bank]\n- SID coefficient: 90% [from Feed Ingredient Bank]\n- Contribution: 0.55 × 0.247% × 0.90 = **0.1223%**\n\n**Soybean Meal (30% of diet):**\n- Total Lys: 0.62% [from Feed Ingredient Bank]\n- SID coefficient: 88% [from Feed Ingredient Bank]\n- Contribution: 0.30 × 0.62% × 0.88 = **0.1637%**\n\n**Total SID Lysine = 0.1223% + 0.1637% = 0.2860%**\n\n**Comparison to requirement:**\n- Requirement for Lay I (21–40w) = **0.77%** [from Nutrition tool",
+      "**Final Answer:**\n\nThe SBM48 inclusion must increase by **4.34 percentage points** (e.g., from 20% to 24.34%) to maintain total dietary CP when maize CP drops from 8.8% to 5.0% at 60% inclusion.\n\n**Calculation:**\n- **Original maize CP contribution:** 60% × 8.8% = 5.28% [from Nutrition specialist, consistent with Feed Ingredient Bank]\n- **Drought maize CP contribution:** 60% × 5.0% = 3.00% [from Nutrition specialist]\n- **CP deficit:** 5.28% − 3.00% = 2.28% [from Nutrition specialist]\n- **SBM48 CP content:** 52.6% [given in question]\n- **Required SBM48 increase:** 2.28% ÷ 0.526 = **4.34 percentage points** [calculated]",
+      "**CP Contribution Change Calculation**\n\n**Original formulation (25% SBM):**  \n- SBM: 25% × 52.6% CP = **13.15% CP** [from user-stated SBM CP]\n\n**New formulation (12.5% SBM + 12.5% Canola):**  \n- SBM: 12.5% × 52.6% = 6.575% CP [from user-stated SBM CP]  \n- Canola: 12.5% × 41.0% = 5.125% CP [from Feed Ingredient Bank – canola CP 41.0%]  \n- **Total = 11.70% CP**\n\n**Change:**  \n13.15% − 11.70% = **−1.45 percentage points CP** (a reduction of 1.45% CP in the complete feed).\n\n---\n\n**Notes on discrepancies:**  \n- The Feed",
+      "## Daily Calcium Intake & Eggshell Sufficiency — ISA Brown, Week 30\n\n**Calculation:**\n- Feed intake: 112 g/day [from Performance tool]\n- Ca requirement: 4.04% of diet [from Nutrient tool]\n- Daily Ca intake = 112 g × 0.0404 = **4.525 g = 4,525 mg/hen/day**\n\n**Sufficiency for eggshell:**\n- **Yes, sufficient.** A typical ISA Brown eggshell contains ~2.0–2.2 g Ca (95% CaCO₃, ~40% elemental Ca) [from Nutrient tool].\n- At 4,525 mg/day, the hen receives **more than double** the shell requirement, allowing for:\n  - ~95% shell calcification efficiency\n  - Bone calcium reserves (medullary bone) for nighttime shell formation\n  - Margin for variability in feed intake or egg size\n\n**Cross-validation note:**  \nThe performance",
+      "**Balancing Ca and P in a layer diet** requires meeting the hen’s absolute daily requirements while respecting the **Ca:P ratio** and **phytate‑P** limitations. Using maize, SBM48, limestone, and dicalcium phosphate (DCP), the process is:\n\n---\n\n### 1. **Set the target requirements** (per kg of complete feed, typical brown layer, 100 g/day intake):\n- **Calcium (Ca):** 3.8–4.2 g/kg (peak lay) → **3.8–4.2%**  \n- **Available phosphorus (avP):** 0.35–0.45% (peak lay)  \n- **Total P:** 0.55–0.65% (to account for phytate‑P in maize/SBM)  \n- **Ca:avP ratio:** **~10:1** (range 8–12:1) – critical for shell",
+      "**计算两种原料的SID赖氨酸贡献：**\n\n- **玉米（60%添加）**  \n  总赖氨酸 0.247% × SID消化率 90% = 0.2223% SID赖氨酸（原料本身）  \n  在日粮中的贡献 = 0.2223% × 60% = **0.1334%** [from Nutrient tool]\n\n- **豆粕48（25%添加）**  \n  总赖氨酸 0.620% × SID消化率 88% = 0.5456% SID赖氨酸（原料本身）  \n  在日粮中的贡献 = 0.5456% × 25% = **0.1364%** [from Nutrient tool]\n\n**合计SID赖氨酸 = 0.1334% + 0.1364% = 0.2698%**\n\n---\n\n**能否满足大午金凤蛋鸡I期",
+      "**结论：** 需添加约 **11.14%** 的石灰石（按全价料重量计）才能满足3.90%的钙需求。\n\n**计算依据：**\n- 石灰石含钙量：**35.0%** [from Feed Ingredient Bank]\n- 大午金凤蛋鸡钙需要量：**3.90%** [from Nutrition tool]\n- 计算：3.90 ÷ 35 × 100 = **11.14%**\n\n**重要说明：**\n1. **假设前提**：此计算基于石灰石是唯一钙源，其他原料（玉米、豆粕等）不贡献钙。实际配方中其他原料含少量钙（约0.03%–0.2%），因此实际石灰石添加量通常**略低于11.14%**，需根据全价料配方中其他原料的钙贡献进行微调。\n2. **关于石灰石含钙"
+    ],
+    "hard_removal": [
+      "**Crude Protein Content of Maize: ~8–9% (as-fed)**\n\nThe crude protein content of maize (corn) is **approximately 8–9%** on an as-fed basis, though this can vary slightly by variety, growing conditions, and processing. This value is standard in poultry feed composition tables.\n\n- **Key value:** ~8.5% (typical average) [from Nutrition tool / standard feed tables]\n- **Energy note:** Maize provides ~3,350 kcal/kg ME, making it the primary energy source in poultry diets [from Definitions tool].\n\n**Important clarification:** The three specialist agents did not provide a direct numeric value, as this fell outside their individual scopes. However, the **Definitions specialist** correctly noted that crude protein is calculated as nitrogen × 6.25, and the **Nutrition specialist** confirmed that maize is an energy-dense grain, not a protein source. The 8–9% figure is the well-established industry standard",
+      "**Calcium content of limestone:** Approximately **38% calcium** [from Definitions tool].\n\nThis is the standard value used in poultry feed formulation for feed-grade limestone (calcium carbonate). The exact percentage can vary slightly by source and purity, but 38% is the accepted industry benchmark.\n\n*Note: The Nutrition and Performance specialists deferred this question as outside their scope, but the Definitions tool provides the authoritative value.*",
+      "**Metabolizable Energy of Soybean Meal 48% (kcal/kg)**  \n\nThe nitrogen-corrected apparent metabolizable energy (AMEn) of soybean meal (48% CP) for poultry is typically **2,240–2,450 kcal/kg** (as-fed basis).  \n\n- **Most commonly cited value:** **2,240 kcal/kg** (AMEn, as-fed) — consistent with major feed composition tables (e.g., NRC, Brazilian Tables, CVB).  \n- **Higher-end values (2,400–2,450 kcal/kg)** appear in some commercial databases, often reflecting solvent-extracted meal with higher oil content or different assay conditions.  \n\n**Key notes:**  \n- The value varies with **oil extraction efficiency**, **processing temperature**, and **fiber content** (hulls).  \n- For formulation, use **2,240 kcal/kg** as a conservative baseline; adjust if the specific supplier provides a lab-analyzed value.",
+      "**Maize (corn) has higher metabolizable energy than soft wheat.**\n\n- **Maize:** ~3,350 kcal/kg ME [from Definitions tool]\n- **Soft wheat:** No specific value in the database; commonly cited in practice at ~3,000–3,100 kcal/kg ME [from Definitions tool, noting this is practical knowledge, not database-sourced]\n\n**Discrepancy note:** The Nutrition and Performance specialists declined to answer, as ingredient composition is outside their scope. The Definitions tool provided the maize value but lacked a soft wheat figure. The practical range for soft wheat is well-supported in feed composition literature, though not from the internal database.\n\n**Bottom line:** Maize is the higher-energy ingredient by roughly 250–350 kcal/kg ME. For precise formulation, consult a full feed composition table, as soft wheat ME can vary with variety and processing.",
+      "**Soybean meal 48% is higher in crude protein than canola meal by approximately 12 percentage points.**\n\n- **Soybean meal 48%**: ~48% crude protein [from Definitions tool]  \n- **Canola meal**: ~36% crude protein [from Definitions tool; supplementary reference confirms 36% CP]  \n\n**Difference**: 48% − 36% = **12 percentage points** (absolute, not relative).  \n\n**Note on specialist responses**: The Nutrition and Performance specialists declined to answer, citing scope limitations. The Definitions specialist provided the direct comparison, which aligns with standard feed composition tables. No contradictions exist among the data provided.  \n\n**Practical implication**: This is why soybean meal is the primary protein source in poultry diets, while canola meal is used as a partial replacement (e.g., up to 10–15% in layer feeds) due to its lower protein and different amino acid profile.",
+      "**Final Answer:**\n\nBased on the feed ingredient bank, three plant protein sources with crude protein (CP) above 30% are:\n\n1. **Soybean meal (solvent-extracted, 44% CP)** – CP = **44%** [from feed ingredient bank]\n2. **Canola meal (solvent-extracted)** – CP = **36%** [from feed ingredient bank]\n3. **Sunflower meal (dehulled, solvent-extracted)** – CP = **34%** [from feed ingredient bank]\n\n*Note:* The Nutrition and Performance specialists declined to answer as this falls outside their defined scopes. The Definitions specialist confirmed the ingredient bank values above. No contradictions were found among the responding specialists.",
+      "**SID lysine digestibility:**\n- **Maize:** ~81–85% (typical value ~83%) [from NRC/INRA/AMINODat tables]\n- **Soybean meal 48%:** ~88–90% (typical value ~89%) [from NRC/INRA/AMINODat tables]\n\n**Implication for formulation:**\n- SBM 48% provides **more digestible lysine per unit protein** than maize. In a corn–soy diet, the SBM is the primary lysine source; maize contributes less digestible lysine but still needs to be accounted for.\n- When formulating on a **SID basis**, you must use the ingredient-specific digestibility coefficients, not total lysine. Using total lysine would overestimate maize’s contribution and underestimate SBM’s relative value.\n- In practice, this means:\n  - **Maize** is a poor lysine source; its",
+      "**Metabolizable Energy (ME):** The energy available to the bird after subtracting fecal and urinary energy losses from gross energy. In poultry, ME is the standard measure for feed formulation because it reflects the energy actually usable for maintenance, growth, and production.\n\n**Gross Energy (GE):** The total energy content of a feed ingredient, determined by complete combustion in a bomb calorimeter. It represents the maximum theoretical energy, but not all of it is digestible or metabolizable.\n\n**Key difference:** GE is the total energy in the feed (measured by bomb calorimetry), while ME accounts for losses in feces (undigested material) and urine (nitrogenous waste). Thus, ME is always lower than GE and provides a realistic estimate of usable energy. In practical poultry nutrition, ME is preferred over GE because GE overestimates the energy truly available to the bird.\n\n**Supplementary note:** True Metabolizable Energy (TME) is a refined version of ME that corrects for",
+      "玉米的粗蛋白含量通常在 **7%–9%** 之间（以干物质计，典型值为 **8%** 左右），具体取决于品种、产地和加工方式。\n\n- **来源说明**：此数值基于行业通用饲料原料数据库（如NRC、Feedipedia等）的典型范围，并非来自上述三位专家（营养、性能、定义）的直接数据——他们均表示该问题超出其专业范围。\n- **补充说明**：玉米是家禽日粮的主要能量来源（约3350 kcal/kg ME），其蛋白质含量相对较低，因此日粮中通常需补充豆粕等蛋白原料以满足氨基酸需求。\n\n**注意**：若需精确值，建议查阅具体饲料原料分析报告或当地数据库，因为不同玉米样本的粗蛋白可能波动在6.5%–9.5%之间。",
+      "**豆粕48和菜粕的代谢能（禽类）**\n\n- **豆粕48（粗蛋白约48%）**：代谢能约为 **2,400–2,500 kcal/kg**（禽类，NRC或常见饲料数据库值）。  \n- **菜粕（普通菜粕，粗蛋白约36%）**：代谢能约为 **1,800–2,000 kcal/kg**（禽类）。若为低硫苷的**加拿大菜粕（Canola meal）**，代谢能略高，约 **2,000–2,200 kcal/kg**。\n\n**结论：豆粕48的代谢能显著高于菜粕**，差值通常在 **400–600 kcal/kg** 左右。\n\n---\n\n**说明与来源：**  \n- 以上数值为家禽（鸡）常用参考值，基于NRC（1994）及中国饲料数据库典型值。  \n- 豆粕因蛋白含量高、纤维低，",
+      "**SID lysine contribution calculation:**\n\n**Maize (60% inclusion):**\n- Total lysine = 0.247%  \n- SID coefficient = 90% (0.90)  \n- SID lysine in maize = 0.247% × 0.90 = **0.2223%**  \n- Contribution = 0.2223% × 0.60 = **0.1334%** [from Nutrient tool]\n\n**SBM48 (25% inclusion):**\n- Total lysine = 0.620%  \n- SID coefficient = 88% (0.88)  \n- SID lysine in SBM48 = 0.620% × 0.88 = **0.5456%**  \n- Contribution = 0.5456% × 0.25 = **0.1364%** [from Nutrient tool]\n\n**Total SID lysine from these two ingredients:**\n0",
+      "**Final Answer:**\n\nThe calcium requirement for ISA Brown layers (Lay I phase, 21–40 weeks) is **4.04%** [from Nutrient tool].  \n\nTo calculate the limestone inclusion:  \n- Limestone contains **35% Ca** (as stated in the question).  \n- Required limestone = 4.04 ÷ 0.35 = **11.54%** of the diet.  \n\n**Note on discrepancy:** One supplementary source lists limestone as ~38% Ca, which would give 4.04 ÷ 0.38 = **10.63%**. However, the question explicitly specifies 35% Ca, so **11.54%** is the correct answer based on the given data. The 38% figure is a general reference and not applicable here.  \n\n**Final answer: 11.54% limestone** (using the 35% Ca value provided).",
+      "**Final Answer:**\n\nUsing a standard practical limestone calcium content of **38%** [from Nutrient tool; supplementary definition confirms ~38% Ca], the calcium contribution at **9% inclusion** is calculated as follows:\n\n- 9% inclusion = 90 kg limestone per tonne of feed  \n- Ca contribution = 90 kg × 0.38 = **34.2 kg Ca/tonne**  \n- As a percentage: **3.42% Ca**\n\n**Conclusion:**  \nAt 9% inclusion, limestone provides **3.42% Ca**, which is **below** the ISA Brown requirement of **4.04% Ca**. Therefore, **limestone alone at 9% cannot meet the requirement** — an additional **0.62% Ca** (e.g., from other calcium sources or higher limestone inclusion) would be needed.\n\n**Key numbers:**  \n- Limestone Ca content: 38% [from Nutrient tool; supplementary definition]  \n- Ca contribution at",
+      "**Final Answer:**\n\n**Total SID Lysine Calculation:**  \n- **Maize (55%):** SID Lys = 0.23% (as-fed) → 0.55 × 0.23 = **0.127%** [from Nutrient tool – maize SID Lys value]  \n- **SBM48 (30%):** SID Lys = 2.48% (as-fed) → 0.30 × 2.48 = **0.744%** [from Nutrient tool – SBM48 SID Lys value]  \n- **Total SID Lys = 0.127 + 0.744 = 0.871%**  \n\n**Requirement Check:**  \n- Lay I (21–40w) SID Lys requirement = **0.77%** [from Nutrient tool – Layer I phase requirement]  \n- **0.871% > 0.77%** → **Meets and exceeds requirement by",
+      "**Final Answer:**\n\nSBM48 must increase by **4.34 percentage points** of the total diet to maintain total CP.\n\n**Calculation:**\n- Maize CP loss: 8.8% − 5.0% = 3.8 percentage points\n- Total diet CP loss from 60% maize: 3.8 × 0.60 = **2.28 percentage points**\n- SBM48 CP = 52.6%, so required increase = 2.28 ÷ 0.526 = **4.34 percentage points**\n\n**Note:** This assumes no other ingredient changes and that the SBM48 replaces an inert filler (or reduces another ingredient with negligible CP). If SBM48 replaces another protein source, the calculation would differ. The value of **4.34 pp** is the correct, best-supported answer [from Nutrition specialist calculation].",
+      "**CP Contribution Change Calculation**\n\n**Original formulation (25% SBM):**\n- 25% × 52.6% CP = **13.15% CP contribution** [from Nutrition specialist calculation]\n\n**New formulation (12.5% SBM + 12.5% canola meal):**\n- SBM: 12.5% × 52.6% = 6.575% CP\n- Canola meal: 12.5% × 41.0% = 5.125% CP\n- **Total = 11.70% CP contribution** [from Nutrition specialist calculation]\n\n**Change:**\n- 13.15% − 11.70% = **−1.45 percentage points CP** (a reduction of 1.45% CP in the diet)\n\n---\n\n**Notes on specialist responses:**\n- The **Nutrition specialist** provided the correct, complete calculation.\n- The **Performance specialist** correctly declined to calculate,",
+      "**Daily Ca Intake Calculation**  \n- Feed intake: 112 g/day × 4.04% Ca = **4.52 g Ca/hen/day** = **4,525 mg Ca/hen/day** [from Performance tool, Nutrient tool – both agree].\n\n**Sufficiency for Eggshell**  \n- **Yes, sufficient.** A laying hen producing a 61.5 g egg needs ~2.0–2.2 g Ca in the shell itself, plus maintenance and bone turnover. Total daily requirement for shell formation is typically **3.5–4.5 g Ca/day** [from Nutrient tool].  \n- Your hen’s intake of **4.52 g/day** exceeds the lower end and meets the upper end of this range, providing adequate margin for shell quality [from Performance tool].\n\n**Key Notes**  \n- Calcium is critical for eggshell formation and bone health [from Definitions].  \n- No contradiction between specialists – both calculated identical intake and confirmed",
+      "**Balancing Ca and P in a layer diet** requires meeting both the **absolute requirements** and the **Ca:P ratio constraint**, while accounting for the **limited P availability** in plant ingredients.\n\n**1. Nutrient targets (typical layer phase):**\n- **Calcium (Ca):** 3.8–4.2% of diet (higher than grower/breeder diets) [from NRC/industry standards].\n- **Available phosphorus (AvP):** 0.35–0.45% of diet (not total P, because phytate P in maize/SBM is poorly digested by layers) [from NRC/industry standards].\n- **Ca:AvP ratio:** Must be **≥ 2:1** and **≤ 4:1** (ideal ~10:1 for layers, but the *minimum* constraint is 2:1 to avoid P deficiency; the *maximum* is 4:1 to avoid Ca-induced P binding",
+      "两种原料的SID赖氨酸贡献计算如下：\n\n**玉米（60%）**  \n- 总赖氨酸 0.247% × SID消化率 90% = 0.2223% SID赖氨酸（原料本身）  \n- 配方贡献：0.2223% × 60% = **0.1334%**\n\n**豆粕48（25%）**  \n- 总赖氨酸 0.620% × SID消化率 88% = 0.5456% SID赖氨酸（原料本身）  \n- 配方贡献：0.5456% × 25% = **0.1364%**\n\n**合计SID赖氨酸 = 0.1334% + 0.1364% = 0.2698%**\n\n---\n\n**能否满足大午金凤产蛋I期需要量（0.76%）？**  \n**不能。** 0.2698%",
+      "**石灰石添加量计算**\n\n根据大午金凤蛋鸡产蛋期（5%–90%产蛋率）钙需要量 **3.90%** [from Nutrient tool]，石灰石含钙量按 **35%** 计算（注：部分资料显示石灰石含钙约38%，但本问题明确给定35% [from supplementary reference]）。\n\n**计算公式：**\n\\[\n\\text{石灰石添加量} = \\frac{3.90\\%}{35\\%} \\times 100 = 11.14\\%\n\\]\n\n**答案：** 需添加 **约11.14%** 的石灰石（占全价料重量）。\n\n**关键说明：**\n- 此计算假设石灰石是**唯一**钙源。实际配方中，其他原料（如磷酸氢钙、肉骨粉等）也提供钙，需相应调整石灰石用量。\n- 若使用含钙38%的石灰石，"
+    ]
+  },
+  "hard_minus_full": {
+    "correctness": 0.3,
+    "precision": 0.0737,
+    "scientific_depth": 0.0
+  }
+}
